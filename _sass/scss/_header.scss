@@ -1,0 +1,39 @@
+/* * * * * * * * * * * * * * * * * * * * * * *
+
+  Header
+
+* * * * * * * * * * * * * * * * * * * * * * */
+
+header {
+  .usa-disclaimer {
+    border-top: 6px solid $accent-color;
+    border-bottom: 2px solid $header-border-color;
+    font-size: 0.7em;
+    padding: 0.5em 4em;
+
+    @include media($small) {
+      padding: 0.5em 1.5em;
+    }
+
+    .usa-disclaimer-official {
+      float: right;
+
+      @include media(max-width 1150px) {
+        float: none;
+      }
+
+      .usa-flag_icon {
+        padding-left: 0.5em;
+        vertical-align: top;
+      }
+    }
+
+    .usa-disclaimer-bold {
+      font-weight: bold;
+    }
+
+    .usa-disclaimer-italic {
+      font-style: italic;
+    }
+  }
+}

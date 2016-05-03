@@ -2,23 +2,96 @@
 layout: default
 ---
 
-<div class="home">
+<section class="usa-banner">
+  <div class="grid">
+    <div class="usa-width-twelve">
+      <h1>
+        <span class="usa-banner-subtitle">
+          {{ site.data.home.usa_intro }}
+        </span>
+        {{ site.data.home.banner_title }}
+      </h1>
+      <h2>{{ site.data.home.banner_label }}</h2>
+      <a href="{{ site.data.home.banner_cta_link }}">
+        <h3 class="usa-cta">
+          {{ site.data.home.banner_cta }}
+        </h3>
+      </a>
+    </div>
+  </div>
+</section>
 
-  <h1 class="page-heading">Posts</h1>
+<section class="usa-section">
+  <div class="grid">
+    <div class="usa-width-six">
+      <h1 class="usa-banner-title">
+        {{ site.data.home.first_section_title }}
+      </h1>
+      <h2 class="usa-intro">
+        {{ site.data.home.first_section_intro }}
+      </h2>
+      <h3 class="usa-text">
+        {{ site.data.home.first_section_text }}
+      </h3>
+      <a href="{{ site.data.home.first_section_cta_link }}">
+        <h3 class="usa-cta">
+          {{ site.data.home.first_section_cta }}
+        </h3>
+      </a>
+    </div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <div class="usa-width-six right-aligned-image">
+      <img src="{{ site.data.home.first_section_img }}">
+    </div>
+  </div>
+</section>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-        <p> This is a change pushed up by Socrata for testing.</p>
-      </li>
-    {% endfor %}
-  </ul>
+<section class="usa-section usa-section-alt">
+  <div class="grid">
+    <div class="usa-width-six">
+      <img src="{{ site.data.home.second_section_img }}">
+    </div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    <div class="usa-width-six">
+      <h1 class="usa-banner-title">
+        {{ site.data.home.second_section_title }}
+      </h1>
+      <h2 class="usa-intro">
+        {{ site.data.home.second_section_intro }}
+      </h2>
+      <h3 class="usa-text">
+        {{ site.data.home.second_section_text }}
+      </h3>
+      <a href="{{ site.data.home.second_section_cta_link }}">
+        <h3 class="usa-cta">
+          {{ site.data.home.second_section_cta }}
+        </h3>
+      </a>
+    </div>
+  </div>
+</section>
 
-</div>
+<section class="usa-section">
+  <div class="grid">
+    <div class="usa-width-six">
+      <h1 class="usa-banner-title">
+        {{ site.data.home.third_section_title }}
+      </h1>
+      <h2 class="usa-intro">
+        {{ site.data.home.second_section_intro }}
+      </h2>
+      <h3 class="usa-text">
+        {{ site.data.home.third_section_text }}
+      </h3>
+      <a href="{{ site.data.home.third_section_cta_link }}">
+        <h3 class="usa-cta">
+          {{ site.data.home.third_section_cta }}
+        </h3>
+      </a>
+    </div>
+
+    <div class="usa-width-six right-aligned-image">
+      <img src="{{ site.data.home.third_section_img }}">
+    </div>
+  </div>
+</section>

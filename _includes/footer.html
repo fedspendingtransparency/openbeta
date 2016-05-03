@@ -1,35 +1,23 @@
-<footer class="site-footer">
+<footer class="usa-site-footer" role="footer">
 
-  <div class="wrapper">
+  <div class="usa-data-act-footer">
 
-    <h2 class="footer-heading">{{ site.title }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
+    <div class="grid">
+      <div class="usa-width-two">
+        <img alt="{{ site.data.footer.data_act_logo_alt_text }}" src="{{ site.data.footer.data_act_logo }}" > 
       </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
+      <div class="usa-width-ten">
+        <h3>{{ site.data.footer.data_act_text }}</h3>
       </div>
+    </div>
 
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
+  </div>
+
+  <div class="open-beta-footer">
+
+    <div class="grid">
+      <div class="usa-width-twelve">
+        <img alt="{{ site.data.footer.open_beta_logo_alt_text }}" src="{{ site.data.footer.open_beta_logo }}" > 
       </div>
     </div>
 

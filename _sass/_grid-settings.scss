@@ -1,0 +1,24 @@
+/* * * * * * * * * * * * * * * * * * * * * * *
+
+  Neat Settings
+
+* * * * * * * * * * * * * * * * * * * * * * */
+
+@import "vendor/neat/neat-helpers";
+
+// Display visual grid
+$visual-grid: false !global;
+
+// Visual grid colour
+$visual-grid-color: #d5eefb !global;
+
+// Define grid settings
+$grid-columns: 12;
+$max-width: em(1200);
+
+// Custom breakpoints
+$tiny: new-breakpoint(max-width 480px 2); 
+$small: new-breakpoint(max-width 550px 4); 
+$medium: new-breakpoint(max-width 768px 8);  
+$large: new-breakpoint(max-width 1050px 12);  
+$xlarge: new-breakpoint(min-width 1051px 12);

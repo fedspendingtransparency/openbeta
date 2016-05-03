@@ -1,0 +1,10 @@
+# Footer settings
+
+# Data Act footer
+data_act_logo: http://placehold.it/150x50
+data_act_logo_alt_text: Placeholder text
+data_act_text: 'Visit <a href="/">Federal Spending Transparency</a> to see the process for the implementation of the DATA Act requirements.'
+
+# Open Beta Footer
+open_beta_logo: http://placehold.it/300x120
+open_beta_logo_alt_text: OpenBeta logo
