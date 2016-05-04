@@ -16,6 +16,7 @@
 
   <!-- Slick Carousel -->
   <link rel="stylesheet" type="text/css" href="/assets/vendor/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="/assets/vendor/slick/slick-theme.css"/>
 </head>
 
 
@@ -26,6 +27,7 @@
   <div class="usa-disclaimer">
 
     <span class="usa-disclaimer-spending-data">
+      <img class="usa-disclaimer_icon" src="/assets/img/alert-icon_info_100x100.png" alt="Alert icon to draw attention to the user the disclaimer text">
       <span class="usa-disclaimer-bold">
       OpenBeta is not intended to be an official resource for Federal spending data.
       </span>
@@ -40,7 +42,7 @@
     </span>
   </div>
 
-  <nav class="usa-site-navbar" role="navigation">
+  <nav class="usa-site-navbar" role="navigation" aria-label="Main menu">
   <div class="logo">
     <a href="/"><img class="openbeta_logo" alt="OpenBeta logo" src="/assets/img/openbeta_logo.png" ></a>
   </div>
@@ -48,11 +50,11 @@
   <input type="checkbox" name="toggle" id="toggle">
   <label for="toggle" class="menu-btn">Menu</label>
 
-  <ul class="usa-topnavigation-list usa-unstyled-list">
+  <ul class="usa-topnavigation-list usa-unstyled-list" role="menubar">
   
     
 
-    <li>
+    <li role="menuitem" aria-haspopup="false">
       <a class="usa-navigation-links active" href="/">
       Home
       </a>
@@ -60,7 +62,7 @@
   
     
 
-    <li>
+    <li role="menuitem" aria-haspopup="false">
       <a class="usa-navigation-links" href="/concepts">
       Concepts
       </a>
@@ -68,7 +70,7 @@
   
     
 
-    <li>
+    <li role="menuitem" aria-haspopup="false">
       <a class="usa-navigation-links" href="/about">
       About
       </a>
@@ -76,7 +78,7 @@
   
     
 
-    <li>
+    <li role="menuitem" aria-haspopup="false">
       <a class="usa-navigation-links" href="/contact">
       Contact
       </a>
@@ -89,21 +91,228 @@
 
 
     <div class="page-content">
-      <section class="usa-banner">
+      <section class="usa-banner desktop">
   <div class="grid">
-    <div class="usa-width-twelve">
-      <h1>
-        <span class="usa-banner-subtitle">
-          Feedback Discussion:
-        </span>
-        Search Functionality
-      </h1>
-      <h2>Which search option works best for you?</h2>
-      <a href="/">
-        <h3 class="usa-cta">
-          Join the discussion
-        </h3>
-      </a>
+    <div class="carousel">
+      
+      <div class="grid">
+        <div class="usa-width-six">
+          <div class="usa-banner-text">
+            <h1>
+              <span class="usa-banner-subtitle">
+                Feedback Discussion:
+              </span>
+              Search Functionality
+            </h1>
+            <h2>Which search option works best for you?</h2>
+            <a href="/">
+              <h3 class="usa-cta">
+                Join the discussion
+              </h3>
+            </a>
+          </div>
+        </div>
+
+        <div class="usa-width-six right-aligned-image">
+          <img src="/assets/img/illustration_process_500x250.png" alt="alt">
+        </div>
+      </div>
+      
+      <div class="grid">
+        <div class="usa-width-six">
+          <div class="usa-banner-text">
+            <h1>
+              <span class="usa-banner-subtitle">
+                Slide Two Intro:
+              </span>
+              Slide Two Title
+            </h1>
+            <h2>Slide Two Label</h2>
+            <a href="/">
+              <h3 class="usa-cta">
+                Slide Two CTA
+              </h3>
+            </a>
+          </div>
+        </div>
+
+        <div class="usa-width-six right-aligned-image">
+          <img src="/assets/img/logo_openbeta_bw_300x120.png" alt="alt">
+        </div>
+      </div>
+      
+      <div class="grid">
+        <div class="usa-width-six">
+          <div class="usa-banner-text">
+            <h1>
+              <span class="usa-banner-subtitle">
+                Slide Three Intro:
+              </span>
+              Slide Three Title
+            </h1>
+            <h2>Slide Three Label</h2>
+            <a href="/">
+              <h3 class="usa-cta">
+                Slide Three CTA
+              </h3>
+            </a>
+          </div>
+        </div>
+
+        <div class="usa-width-six right-aligned-image">
+          <img src="/assets/img/illustration_process_500x250.png" alt="alt">
+        </div>
+      </div>
+      
+      <div class="grid">
+        <div class="usa-width-six">
+          <div class="usa-banner-text">
+            <h1>
+              <span class="usa-banner-subtitle">
+                Slide Four Intro:
+              </span>
+              Slide Four Title
+            </h1>
+            <h2>Slide Four Label</h2>
+            <a href="/">
+              <h3 class="usa-cta">
+                Slide Four CTA
+              </h3>
+            </a>
+          </div>
+        </div>
+
+        <div class="usa-width-six right-aligned-image">
+          <img src="/assets/img/illustration_process_500x250.png" alt="alt">
+        </div>
+      </div>
+      
+      <div class="grid">
+        <div class="usa-width-six">
+          <div class="usa-banner-text">
+            <h1>
+              <span class="usa-banner-subtitle">
+                Slide Five Intro:
+              </span>
+              Slide Five Title
+            </h1>
+            <h2>Slide Five Label</h2>
+            <a href="/">
+              <h3 class="usa-cta">
+                Slide Five CTA
+              </h3>
+            </a>
+          </div>
+        </div>
+
+        <div class="usa-width-six right-aligned-image">
+          <img src="/assets/img/logo_openbeta_bw_300x120.png" alt="alt">
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<section class="usa-banner mobile">
+  <div class="grid">
+    <div class="carousel">
+      
+      <div class="grid">
+        <div class="usa-width-twelve">
+          <div class="usa-banner-text">
+            <h1>
+              <span class="usa-banner-subtitle">
+                Feedback Discussion:
+              </span>
+              Search Functionality
+            </h1>
+            <h2>Which search option works best for you?</h2>
+            <a href="/">
+              <h3 class="usa-cta">
+                Join the discussion
+              </h3>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="grid">
+        <div class="usa-width-twelve">
+          <div class="usa-banner-text">
+            <h1>
+              <span class="usa-banner-subtitle">
+                Slide Two Intro:
+              </span>
+              Slide Two Title
+            </h1>
+            <h2>Slide Two Label</h2>
+            <a href="/">
+              <h3 class="usa-cta">
+                Slide Two CTA
+              </h3>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="grid">
+        <div class="usa-width-twelve">
+          <div class="usa-banner-text">
+            <h1>
+              <span class="usa-banner-subtitle">
+                Slide Three Intro:
+              </span>
+              Slide Three Title
+            </h1>
+            <h2>Slide Three Label</h2>
+            <a href="/">
+              <h3 class="usa-cta">
+                Slide Three CTA
+              </h3>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="grid">
+        <div class="usa-width-twelve">
+          <div class="usa-banner-text">
+            <h1>
+              <span class="usa-banner-subtitle">
+                Slide Four Intro:
+              </span>
+              Slide Four Title
+            </h1>
+            <h2>Slide Four Label</h2>
+            <a href="/">
+              <h3 class="usa-cta">
+                Slide Four CTA
+              </h3>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="grid">
+        <div class="usa-width-twelve">
+          <div class="usa-banner-text">
+            <h1>
+              <span class="usa-banner-subtitle">
+                Slide Five Intro:
+              </span>
+              Slide Five Title
+            </h1>
+            <h2>Slide Five Label</h2>
+            <a href="/">
+              <h3 class="usa-cta">
+                Slide Five CTA
+              </h3>
+            </a>
+          </div>
+        </div>
+      </div>
+      
     </div>
   </div>
 </section>
@@ -128,7 +337,7 @@
     </div>
 
     <div class="usa-width-six right-aligned-image">
-      <img src="http://placehold.it/500x250">
+      <img src="/assets/img/illustration_process_500x250.png">
     </div>
   </div>
 </section>
@@ -136,7 +345,7 @@
 <section class="usa-section usa-section-alt">
   <div class="grid">
     <div class="usa-width-six">
-      <img src="http://placehold.it/500x250">
+      <img src="/assets/img/illustration_chat_500x250.png">
     </div>
 
     <div class="usa-width-six">
@@ -178,7 +387,7 @@
     </div>
 
     <div class="usa-width-six right-aligned-image">
-      <img src="http://placehold.it/500x250">
+      <img src="/assets/img/illustration_lightbulb_500x250.png">
     </div>
   </div>
 </section>
@@ -190,7 +399,7 @@
 
     <div class="grid">
       <div class="usa-width-two">
-        <img alt="Placeholder text" src="http://placehold.it/150x50" > 
+        <img class="usa-data-act-logo" alt="Placeholder text" src="/assets/img/logo_dataact_150x50.png" > 
       </div>
       <div class="usa-width-ten">
         <h3>Visit <a href="/">Federal Spending Transparency</a> to see the process for the implementation of the DATA Act requirements.</h3>
@@ -203,7 +412,7 @@
 
     <div class="grid">
       <div class="usa-width-twelve">
-        <img alt="OpenBeta logo" src="http://placehold.it/300x120" > 
+        <img class="usa-transparent-logo" alt="OpenBeta logo" src="/assets/img/logo_openbeta_bw_300x120.png" > 
       </div>
     </div>
 
@@ -215,7 +424,7 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="/assets/vendor/slick/slick.min.js"></script>
-
+    <script type="text/javascript" src="/assets/js/main.js"></script>
   </body>
 
 </html>

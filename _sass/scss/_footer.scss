@@ -13,6 +13,15 @@
 
   h3 {
     font-size: 1em;
+    margin-top: 0.9em;
+
+    @include media($large) {
+      margin-top: 0;
+    }
+  }
+
+  .usa-data-act-logo {
+    margin-left: 1.5em;
   }
 }
 
@@ -29,6 +38,10 @@
 
     .usa-width-twelve {
       text-align: left;
+
+      .usa-transparent-logo {
+        width: 300px;
+      }
     }
   }
 }

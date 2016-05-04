@@ -1,11 +1,42 @@
 # Home Page
 
-# Banner Section
-usa_intro: 'Feedback Discussion:'
-banner_title: Search Functionality
-banner_label: Which search option works best for you?
-banner_cta: Join the discussion
-banner_cta_link: /
+# Carousel Section
+carousel:
+- usa_intro: 'Feedback Discussion:'
+  banner_title: Search Functionality
+  banner_label: Which search option works best for you?
+  banner_cta: Join the discussion
+  banner_cta_link: /
+  banner_image: /assets/img/illustration_process_500x250.png
+  banner_image_alt_text: alt
+- usa_intro: 'Slide Two Intro:'
+  banner_title: Slide Two Title
+  banner_label: Slide Two Label
+  banner_cta: Slide Two CTA
+  banner_cta_link: /
+  banner_image: /assets/img/logo_openbeta_bw_300x120.png
+  banner_image_alt_text: alt
+- usa_intro: 'Slide Three Intro:'
+  banner_title: Slide Three Title
+  banner_label: Slide Three Label
+  banner_cta: Slide Three CTA
+  banner_cta_link: /
+  banner_image: /assets/img/illustration_process_500x250.png
+  banner_image_alt_text: alt
+- usa_intro: 'Slide Four Intro:'
+  banner_title: Slide Four Title
+  banner_label: Slide Four Label
+  banner_cta: Slide Four CTA
+  banner_cta_link: /
+  banner_image: /assets/img/illustration_process_500x250.png
+  banner_image_alt_text: alt
+- usa_intro: 'Slide Five Intro:'
+  banner_title: Slide Five Title
+  banner_label: Slide Five Label
+  banner_cta: Slide Five CTA
+  banner_cta_link: /
+  banner_image: /assets/img/logo_openbeta_bw_300x120.png
+  banner_image_alt_text: alt
 
 #First Section
 first_section_title: What is OpenBeta?
@@ -13,7 +44,7 @@ first_section_intro: A new way to build government websites
 first_section_text: OpenBeta.usaspending.gov is the feedback platform for features and functionality being considered for the future USAspending.gov. You can find ongoing discussions on our development of the site which we encourage you to join.
 first_section_cta: Learn more
 first_section_cta_link: /
-first_section_img: http://placehold.it/500x250
+first_section_img: /assets/img/illustration_process_500x250.png
 
 #Second Section
 second_section_title: What can you do here?
@@ -21,7 +52,7 @@ second_section_intro: Collaborate with the site developers
 second_section_text: 'Visit the Concepts page to see what we are currently developing and voice your thoughts, concerns, and suggestions in ongoing discussions.'
 second_section_cta: Join our discussions
 second_section_cta_link: /
-second_section_img: http://placehold.it/500x250
+second_section_img: /assets/img/illustration_chat_500x250.png
 
 #Third Section
 third_section_title: Why does OpenBeta matter?
@@ -29,4 +60,4 @@ third_section_intro: The public is helping to build a 21st century government
 third_section_text: 'OpenBeta presents an exceptional opportunity for everyone interested in Federal spending to shape and influence how you access Federal spending data.  With your help and participation, the discussions on openbeta.usaspending.gov will guide us in building a website that best serves your needs.'
 third_section_cta: Learn more about this project
 third_section_cta_link: /
-third_section_img: http://placehold.it/500x250
+third_section_img: /assets/img/illustration_lightbulb_500x250.png
