@@ -25,7 +25,7 @@ layout: default
         </div>
 
         <div class="usa-width-six right-aligned-image">
-          <img src="{{ slide.banner_image }}" alt="{{ slide.banner_image_alt_text }}">
+          <img src="{{ site.baseurl }}{{ slide.banner_image }}" alt="{{ slide.banner_image_alt_text }}">
         </div>
       </div>
       {% endfor %}
@@ -80,7 +80,7 @@ layout: default
     </div>
 
     <div class="usa-width-six right-aligned-image">
-      <img src="{{ site.data.home.first_section_img }}" alt="{{ site.data.home.first_section_alt_text }}">
+      <img src="{{ site.baseurl }}{{ site.data.home.first_section_img }}" alt="{{ site.data.home.first_section_alt_text }}">
     </div>
   </div>
 </section>
@@ -88,7 +88,7 @@ layout: default
 <section class="usa-section usa-section-alt">
   <div class="grid">
     <div class="usa-width-six">
-      <img src="{{ site.data.home.second_section_img }}" alt="{{ site.data.home.second_section_alt_text }}">
+      <img src="{{ site.baseurl }}{{ site.data.home.second_section_img }}" alt="{{ site.data.home.second_section_alt_text }}">
     </div>
 
     <div class="usa-width-six">
@@ -130,7 +130,7 @@ layout: default
     </div>
 
     <div class="usa-width-six right-aligned-image">
-      <img src="{{ site.data.home.third_section_img }}" alt="{{ site.data.home.third_section_alt_text }}">
+      <img src="{{ site.baseurl }}{{ site.data.home.third_section_img }}" alt="{{ site.data.home.third_section_alt_text }}">
     </div>
   </div>
 </section>

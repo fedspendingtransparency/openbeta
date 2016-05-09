@@ -1,6 +1,6 @@
 <nav class="usa-site-navbar" role="navigation" aria-label="Main menu">
   <div class="logo">
-    <a href="/"><img class="openbeta_logo" alt="OpenBeta logo" src="/assets/img/openbeta_logo.png" ></a>
+    <a href="/"><img class="openbeta_logo" alt="OpenBeta logo" src="{{ site.baseurl }}/assets/img/openbeta_logo.png" ></a>
   </div>
 
   <input type="checkbox" name="toggle" id="toggle">
@@ -15,7 +15,7 @@
     {% endif %}
 
     <li role="menuitem" aria-haspopup="false">
-      <a class="{{ class }}" href="{{nav_bar_menu_item.url}}">
+      <a class="{{ class }}" href="{{ site.baseurl }}{{nav_bar_menu_item.url}}">
       {{ nav_bar_menu_item.text }}
       </a>
     </li>

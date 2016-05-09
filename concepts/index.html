@@ -17,7 +17,7 @@ title: Concepts
 
             {% for row in tab.topics %}
               <h3>
-                <a href="{{ row.link }}">{{ row.headline }}</a>
+                <a href="{{ site.baseurl }}{{ row.link }}">{{ row.headline }}</a>
               </h3>
               <p>{{ row.description }}</p>
             {% endfor %}
