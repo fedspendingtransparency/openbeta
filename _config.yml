@@ -3,7 +3,7 @@ title: OpenBeta
 description: OpenBeta Description
 relative_permalinks: false
 markdown: kramdown
-url: "http://yourdomain.com"
+url: "http://treasury-dact-jekyll.s3-website-us-east-1.amazonaws.com/dev/"
 
 # Concepts Pages
 collections:
