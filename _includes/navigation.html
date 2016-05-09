@@ -1,0 +1,24 @@
+<nav class="usa-site-navbar" role="navigation">
+  <div class="logo">
+    <a href="/"><img class="openbeta_logo" alt="OpenBeta logo" src="/assets/img/openbeta_logo.png" ></a>
+  </div>
+
+  <input type="checkbox" name="toggle" id="toggle">
+  <label for="toggle" class="menu-btn">Menu</label>
+
+  <ul class="usa-topnavigation-list usa-unstyled-list">
+  {% for nav_bar_menu_item in site.data.header.nav_bar_menu_items %}
+    {% if nav_bar_menu_item.url == page.dir %}
+      {% assign class = "usa-navigation-links active" %}
+    {% else %}
+      {% assign class = "usa-navigation-links" %}
+    {% endif %}
+
+    <li>
+      <a class="{{ class }}" href="{{nav_bar_menu_item.url}}">
+      {{ nav_bar_menu_item.text }}
+      </a>
+    </li>
+  {% endfor %} 
+  </ul>
+</nav>

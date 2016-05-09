@@ -1,0 +1,41 @@
+/* * * * * * * * * * * * * * * * * * * * * * *
+
+  FOOTER 
+
+* * * * * * * * * * * * * * * * * * * * * * */
+
+.usa-data-act-footer {
+  background-color: $secondary-background-color;
+  border-top: 2px solid #CCC;
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
+  text-align: center;
+
+  h3 {
+    font-size: 1em;
+  }
+}
+
+.open-beta-footer {
+  background-color: #404041;
+  border-top: 6px solid $primary;
+  text-align: center;
+  padding: 30px 0;
+
+  .grid {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+
+    .usa-width-twelve {
+      text-align: left;
+    }
+  }
+}
+
+.open-beta-footer:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}

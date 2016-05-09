@@ -4,9 +4,17 @@
 @charset "utf-8";
 
 
+// Colours
+$primary: #333;
+$secondary: #999;
+$accent-color: #68BF74;
+$header-border-color: #CCC;
+
+$primary-background-color: #FFF;
+$secondary-background-color: #F3F4F4;
 
 // Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
@@ -14,23 +22,23 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+/*$text-color:       #111;*/
+/*$background-color: #fdfdfd;*/
+/*$brand-color:      #2a7ae2;*/
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+/*$grey-color:       #828282;*/
+/*$grey-color-light: lighten($grey-color, 40%);*/
+/*$grey-color-dark:  darken($grey-color, 25%);*/
 
 // Width of the content area
-$content-width:    800px;
+$content-width:    1200px;
 
-$on-palm:          600px;
-$on-laptop:        800px;
+/*$on-palm:          600px;*/
+/*$on-laptop:        800px;*/
 
 
 
-// Use media queries like this:
+/*// Use media queries like this:
 // @include media-query($on-palm) {
 //     .wrapper {
 //         padding-right: $spacing-unit / 2;
@@ -41,13 +49,9 @@ $on-laptop:        800px;
     @media screen and (max-width: $device) {
         @content;
     }
-}
+}*/
 
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "layout",
-        "syntax-highlighting"
-;
+@import "styles";
