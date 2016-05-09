@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <div class="grid">
+      <p>{{ page.category }}</p>
+      <p>{{ page.headline }}</p>
+
+      <p>{{ page.discussion_title }}</p>
+      <ul>
+        {% for item in page.discussion_bullet_points %}
+          <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    
+
+      <div class="scroll-on-page">
+        <ul class="accordion-tabs-minimal">
+        {% for tab in page.tabs %}
+
+          <li class="tab-header-and-content">
+
+            {% if forloop.first == true %}
+              {% assign class = "tab-link is-active" %}
+            {% else %}
+              {% assign class = "tab-link" %}
+            {% endif %}
+
+            <a href="#" class="{{ class }}">{{ tab.title }}</a>
+            
+            <div class="tab-content">
+              <div id="concept-summary" class="usa-width-nine">
+                <p>{{ tab.description }}</p>
+                <ul>
+                {% for item in tab.features %}
+                  <li>{{ item.description }}</li>
+                {% endfor %}
+                </ul>
+              </div>
+
+              <div class="usa-width-three">
+                <aside id="scroll-on-page-top">
+                  <a class="scroll-on-page-link" href="#concept-summary">Concept Summary</a>
+                  <a class="scroll-on-page-link" href="#discussion">Discussion</a>
+                </aside>
+              </div>
+            </div>
+          
+          </li>
+
+        {% endfor %}
+        </ul>
+      </div>
+
+    </div>
+
+    {% include footer.html %}
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="/assets/vendor/slick/slick.min.js"></script>
+     <script type="text/javascript" src="/assets/js/main.js"></script>
+
+  </body>
+
+</html>

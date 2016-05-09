@@ -1,0 +1,49 @@
+# This data populates the /concepts page
+
+active_tab:
+  - category: Search
+    scroll_id: search
+    topics:
+      - headline: Search Functionality
+        description: How you search through our data
+        link: /concepts/search-functionality
+      - headline: Search Results
+        description: How we display the results of your searches
+        link: /concepts/search-results
+  - category: Summary Pages
+    scroll_id: summary-pages
+    topics:
+      - headline: Contract Award Summary
+        description: How we display contract award data
+        link: /concepts/contract-award-summary
+      - headline: Agency Summary
+        description: How we display agency award data
+        link: /concepts/agency-summary
+      - headline: Recipient Summary
+        description: How we display recipient award data
+        link: /concepts/recipient-summary
+
+completed_tab:
+  - category: Design
+    scroll_id: design
+    topics:
+      - headline: Logo
+        description: The identity of OpenBeta
+        link: /concepts/logo
+  - category: Miscellaneous
+    scroll_id: miscellaneous
+    topics:
+      - headline: Glossary
+        description: How we display our glossary of terms
+        link: /concepts/glossary
+
+archived_tab: 
+  - category: Data
+    scroll_id: data
+    topics:
+      - headline: Award Data
+        description: The data surrounding awards
+        link: /concepts/award-data
+      - headline: Grant Data
+        description: The data surrounding grants
+        link: /concepts/grant-data

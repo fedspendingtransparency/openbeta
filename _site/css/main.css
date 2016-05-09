@@ -462,6 +462,78 @@ header .usa-disclaimer {
 .usa-cta {
   font-weight: lighter; }
 
+.accordion-tabs-minimal {
+  line-height: 1.5;
+  padding: 0; }
+  .accordion-tabs-minimal::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .accordion-tabs-minimal .tab-header-and-content {
+    list-style: none; }
+    @media screen and (min-width: 40em) {
+      .accordion-tabs-minimal .tab-header-and-content {
+        display: inline; } }
+  .accordion-tabs-minimal .tab-link {
+    background-color: #fff;
+    border-top: 1px solid #dcdcdc;
+    color: #333;
+    display: block;
+    padding: 0.75em 1.618em;
+    text-decoration: none; }
+    @media screen and (min-width: 40em) {
+      .accordion-tabs-minimal .tab-link {
+        border-top: 0;
+        display: inline-block; } }
+    .accordion-tabs-minimal .tab-link:hover {
+      color: #477dca; }
+    .accordion-tabs-minimal .tab-link:focus {
+      outline: none; }
+    .accordion-tabs-minimal .tab-link.is-active {
+      border-bottom: 0; }
+      @media screen and (min-width: 40em) {
+        .accordion-tabs-minimal .tab-link.is-active {
+          border: 1px solid #dcdcdc;
+          border-bottom-color: #fff;
+          margin-bottom: -1px; } }
+  .accordion-tabs-minimal .tab-content {
+    display: none;
+    padding: 1.5em 1.618em;
+    width: 100%; }
+    @media screen and (min-width: 40em) {
+      .accordion-tabs-minimal .tab-content {
+        border-top: 1px solid #dcdcdc;
+        float: left; } }
+
+.scroll-on-page {
+  display: inline-block; }
+  .scroll-on-page a {
+    color: #477DCA;
+    text-decoration: none; }
+  .scroll-on-page aside {
+    /*@include media($large-screen) {
+      @include span-columns(4);
+    }*/ }
+  .scroll-on-page .scroll-on-page-link {
+    border-bottom: 1px solid rgba(71, 125, 202, 0.2);
+    display: block;
+    margin-right: 1.5em;
+    outline: none;
+    padding: 0.75em 0; }
+    .scroll-on-page .scroll-on-page-link:last-child {
+      margin-bottom: 1.5em; }
+  .scroll-on-page article {
+    /*@include media($large-screen) {
+      @include span-columns(8);
+    }*/ }
+    .scroll-on-page article h4 {
+      margin: 0 0 0.5em 0; }
+    .scroll-on-page article p {
+      color: #333;
+      line-height: 1.5; }
+    .scroll-on-page article section p:last-of-type {
+      margin-bottom: 2em; }
+
 /* * * * * * * * * * * * * * * * * * * * * * *
 
   Navigation 
@@ -490,14 +562,12 @@ nav.usa-site-navbar {
     nav.usa-site-navbar #toggle + label {
       cursor: pointer; }
   nav.usa-site-navbar #toggle:checked ~ ul {
-    background-color: #fff;
-    display: block;
-    position: relative;
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
-    -ms-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out; }
+    transition: all 0.3s ease-out;
+    background-color: #fff;
+    display: block;
+    position: relative; }
   nav.usa-site-navbar label.menu-btn {
     display: none; }
     @media screen and (max-width: 768px) {

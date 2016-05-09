@@ -12,8 +12,8 @@ nav_bar_menu_items:
 - text: Home
   url: /
 - text: Concepts
-  url: /concepts
+  url: /concepts/
 - text: About
-  url: /about
+  url: /about/
 - text: Contact
-  url: /contact
+  url: /contact/
