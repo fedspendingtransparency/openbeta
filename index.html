@@ -2,21 +2,60 @@
 layout: default
 ---
 
-<section class="usa-banner">
+<section class="usa-banner desktop">
   <div class="grid">
-    <div class="usa-width-twelve">
-      <h1>
-        <span class="usa-banner-subtitle">
-          {{ site.data.home.usa_intro }}
-        </span>
-        {{ site.data.home.banner_title }}
-      </h1>
-      <h2>{{ site.data.home.banner_label }}</h2>
-      <a href="{{ site.data.home.banner_cta_link }}">
-        <h3 class="usa-cta">
-          {{ site.data.home.banner_cta }}
-        </h3>
-      </a>
+    <div class="carousel">
+      {% for slide in site.data.home.carousel %}
+      <div class="grid">
+        <div class="usa-width-six">
+          <div class="usa-banner-text">
+            <h1>
+              <span class="usa-banner-subtitle">
+                {{ slide.usa_intro }}
+              </span>
+              {{ slide.banner_title }}
+            </h1>
+            <h2>{{ slide.banner_label }}</h2>
+            <a href="{{ slide.banner_cta_link }}">
+              <h3 class="usa-cta">
+                {{ slide.banner_cta }}
+              </h3>
+            </a>
+          </div>
+        </div>
+
+        <div class="usa-width-six right-aligned-image">
+          <img src="{{ slide.banner_image }}" alt="{{ slide.banner_image_alt_text }}">
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="usa-banner mobile">
+  <div class="grid">
+    <div class="carousel">
+      {% for slide in site.data.home.carousel %}
+      <div class="grid">
+        <div class="usa-width-twelve">
+          <div class="usa-banner-text">
+            <h1>
+              <span class="usa-banner-subtitle">
+                {{ slide.usa_intro }}
+              </span>
+              {{ slide.banner_title }}
+            </h1>
+            <h2>{{ slide.banner_label }}</h2>
+            <a href="{{ slide.banner_cta_link }}">
+              <h3 class="usa-cta">
+                {{ slide.banner_cta }}
+              </h3>
+            </a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
     </div>
   </div>
 </section>

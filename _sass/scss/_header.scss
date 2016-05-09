@@ -9,10 +9,14 @@ header {
     border-top: 6px solid $accent-color;
     border-bottom: 2px solid $header-border-color;
     font-size: 0.7em;
-    padding: 0.5em 4em;
+    padding: 0.5em 5em;
 
     @include media($small) {
       padding: 0.5em 1.5em;
+    }
+
+    .usa-disclaimer_icon {
+      width: 1.8em;
     }
 
     .usa-disclaimer-official {
