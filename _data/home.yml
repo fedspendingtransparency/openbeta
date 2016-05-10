@@ -45,6 +45,7 @@ first_section_text: OpenBeta.usaspending.gov is the feedback platform for featur
 first_section_cta: Learn more
 first_section_cta_link: /
 first_section_img: /assets/img/illustration_process_500x250.png
+first_section_alt_text:
 
 #Second Section
 second_section_title: What can you do here?
@@ -53,6 +54,7 @@ second_section_text: 'Visit the Concepts page to see what we are currently devel
 second_section_cta: Join our discussions
 second_section_cta_link: /
 second_section_img: /assets/img/illustration_chat_500x250.png
+second_section_alt_text:
 
 #Third Section
 third_section_title: Why does OpenBeta matter?
@@ -61,3 +63,4 @@ third_section_text: 'OpenBeta presents an exceptional opportunity for everyone i
 third_section_cta: Learn more about this project
 third_section_cta_link: /
 third_section_img: /assets/img/illustration_lightbulb_500x250.png
+third_section_alt_text: 

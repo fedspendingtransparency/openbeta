@@ -1,0 +1,45 @@
+---
+title: Search Functionality
+
+category: Search
+
+headline: Search Functionality
+
+copy: Below are some options on how we could implement search. Please take a look at each option and tell us what you think about the functionality in the discussion section below the option.
+
+discussion_title: "Discussion suggestions:"
+
+discussion_bullet_points:
+- Are there additional fields or filters that you would like added?
+- Are there fields or filters that are not important to you?
+- Is there one option that makes search easier?
+
+tab_titles:
+  - Advanced Search
+  - Live Filters
+  - Search Builder
+  - SQL Search
+
+tabs: 
+  - title: Advanced Search
+    description: "Key Feature:"
+    features:
+      - description: This option makes all searchable fields available in one form. Select multiple filters, such as Spending Type, Fiscal Year, Agency, Place of Performance and Contractor Type.
+    below_image_content: What do you think of the Advanced Search option?
+  - title: Live Filters
+    description: "Key Feature:"
+    features:
+      - description: This option refreshes search results based on filters you choose. 
+    below_image_content: What do you think of the Live Filters option?
+  - title: Search Builer
+    description: "Key Feature:"
+    features:
+      - description: This option is a simple interface that gives you the opportunity to build your own search using selections from the drop down menu.
+    below_image_content: What do you think of the Search Builder option?
+  - title: SQL Search
+    description: "Key Feature:"
+    features:
+      - description: This option is a simple interface that gives you the opportunity to build your own search using selections from the drop down menu. 
+    below_image_content: What do you think of the SQL Search option?
+
+---
