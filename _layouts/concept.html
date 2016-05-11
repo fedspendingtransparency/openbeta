@@ -3,13 +3,17 @@
 
   {% include head.html %}
 
-  <body>
+  <body class="concepts">
 
     {% include header.html %}
 
     <div class="grid">
       <p>{{ page.category }}</p>
       <p>{{ page.headline }}</p>
+
+      {% for item in page.copy %}
+        <p>{{ item.text }}</p>
+      {% endfor %}
 
       <p>{{ page.discussion_title }}</p>
       <ul>
