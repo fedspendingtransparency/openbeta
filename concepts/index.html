@@ -3,94 +3,110 @@ layout: default
 title: Concepts
 ---
 
-<div class="grid">
-  <div class="scroll-on-page">
-    <ul class="accordion-tabs-minimal">
-      <li class="tab-header-and-content">
-        <a href="#" class="tab-link is-active">Active</a>
-        <div class="tab-content">
-          <div class="usa-width-nine">
+<section class="usa-banner">
+  <div class="grid">
+    <div class="usa-width-twelve">
+      <h1>
+        {{ site.data.concepts-landing-page.banner_title }}
+      </h1>
 
-          {% for tab in site.data.concepts-landing-page.active_tab %}
-
-            <h2 id="{{ tab.scroll_id }}" class="category-header">{{ tab.category }}</h2>
-
-            {% for row in tab.topics %}
-              <h3>
-                <a href="{{ site.baseurl }}{{ row.link }}">{{ row.headline }}</a>
-              </h3>
-              <p>{{ row.description }}</p>
-            {% endfor %}
-
-          {% endfor %}
-          </div>
-          
-          <div class="usa-width-three">
-            <aside id="scroll-on-page-top">
-            {% for sidebar-item in site.data.concepts-landing-page.active_tab %}
-              <a class="scroll-on-page-link" href="#{{ sidebar-item.scroll_id }}">{{ sidebar-item.category }}</a>
-            {% endfor %}
-            </aside>
-          </div>
-
-        </div>
-      </li>
-      <li class="tab-header-and-content">
-        <a href="#" class="tab-link">Completed</a>
-        <div class="tab-content">
-          <div class="usa-width-nine">
-
-          {% for tab in site.data.concepts-landing-page.completed_tab %}
-
-            <h2 id="{{ tab.scroll_id }}" class="category-header">{{ tab.category }}</h2>
-
-            {% for row in tab.topics %}
-              <h3>
-                <a href="{{ row.link }}">{{ row.headline }}</a>
-              </h3>
-              <p>{{ row.description }}</p>
-            {% endfor %}
-            
-          {% endfor %}
-          </div>
-          
-          <div class="usa-width-three">
-            <aside id="scroll-on-page-top">
-            {% for sidebar-item in site.data.concepts-landing-page.completed_tab %}
-              <a class="scroll-on-page-link" href="#{{ sidebar-item.scroll_id }}">{{ sidebar-item.category }}</a>
-            {% endfor %}
-            </aside>
-          </div>
-        </div>
-      </li>
-      <li class="tab-header-and-content">
-        <a href="#" class="tab-link">Archived</a>
-        <div class="tab-content">
-          <div class="usa-width-nine">
-
-          {% for tab in site.data.concepts-landing-page.archived_tab %}
-
-            <h2 id="{{ tab.scroll_id }}" class="category-header">{{ tab.category }}</h2>
-
-            {% for row in tab.topics %}
-              <h3>
-                <a href="{{ row.link }}">{{ row.headline }}</a>
-              </h3>
-              <p>{{ row.description }}</p>
-            {% endfor %}
-            
-          {% endfor %}
-          </div>
-          
-          <div class="usa-width-three">
-            <aside id="scroll-on-page-top">
-            {% for sidebar-item in site.data.concepts-landing-page.archived_tab %}
-              <a class="scroll-on-page-link" href="#{{ sidebar-item.scroll_id }}">{{ sidebar-item.category }}</a>
-            {% endfor %}
-            </aside>
-          </div>   
-        </div>
-      </li>
-    </ul>
+      {% for line in site.data.concepts-landing-page.banner_label %}
+        <h2>{{ line.text }}</h2>
+      {% endfor %}
+    </div>
   </div>
-</div>
+</section>
+
+<section class="usa-section">
+  <div class="grid">
+    <div class="scroll-on-page">
+      <ul class="accordion-tabs-minimal">
+        <li class="tab-header-and-content">
+          <a href="#" class="tab-link is-active">Active</a>
+          <div class="tab-content">
+            <div class="usa-width-nine">
+
+            {% for tab in site.data.concepts-landing-page.active_tab %}
+
+              <h2 id="{{ tab.scroll_id }}" class="category-header">{{ tab.category }}</h2>
+
+              {% for row in tab.topics %}
+                <h3>
+                  <a href="{{ site.baseurl }}{{ row.link }}">{{ row.headline }}</a>
+                </h3>
+                <p>{{ row.description }}</p>
+              {% endfor %}
+
+            {% endfor %}
+            </div>
+            
+            <div class="usa-width-three">
+              <aside id="scroll-on-page-top">
+              {% for sidebar-item in site.data.concepts-landing-page.active_tab %}
+                <a class="scroll-on-page-link" href="#{{ sidebar-item.scroll_id }}">{{ sidebar-item.category }}</a>
+              {% endfor %}
+              </aside>
+            </div>
+
+          </div>
+        </li>
+        <li class="tab-header-and-content">
+          <a href="#" class="tab-link">Completed</a>
+          <div class="tab-content">
+            <div class="usa-width-nine">
+
+            {% for tab in site.data.concepts-landing-page.completed_tab %}
+
+              <h2 id="{{ tab.scroll_id }}" class="category-header">{{ tab.category }}</h2>
+
+              {% for row in tab.topics %}
+                <h3>
+                  <a href="{{ row.link }}">{{ row.headline }}</a>
+                </h3>
+                <p>{{ row.description }}</p>
+              {% endfor %}
+              
+            {% endfor %}
+            </div>
+            
+            <div class="usa-width-three">
+              <aside id="scroll-on-page-top">
+              {% for sidebar-item in site.data.concepts-landing-page.completed_tab %}
+                <a class="scroll-on-page-link" href="#{{ sidebar-item.scroll_id }}">{{ sidebar-item.category }}</a>
+              {% endfor %}
+              </aside>
+            </div>
+          </div>
+        </li>
+        <li class="tab-header-and-content">
+          <a href="#" class="tab-link">Archived</a>
+          <div class="tab-content">
+            <div class="usa-width-nine">
+
+            {% for tab in site.data.concepts-landing-page.archived_tab %}
+
+              <h2 id="{{ tab.scroll_id }}" class="category-header">{{ tab.category }}</h2>
+
+              {% for row in tab.topics %}
+                <h3>
+                  <a href="{{ row.link }}">{{ row.headline }}</a>
+                </h3>
+                <p>{{ row.description }}</p>
+              {% endfor %}
+              
+            {% endfor %}
+            </div>
+            
+            <div class="usa-width-three">
+              <aside id="scroll-on-page-top">
+              {% for sidebar-item in site.data.concepts-landing-page.archived_tab %}
+                <a class="scroll-on-page-link" href="#{{ sidebar-item.scroll_id }}">{{ sidebar-item.category }}</a>
+              {% endfor %}
+              </aside>
+            </div>   
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

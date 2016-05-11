@@ -1,14 +1,19 @@
 # This data populates the /concepts page
 
+banner_title: Concepts
+banner_label: 
+  - text: Below are features that we are currently developing and would like your feedback about.
+  - text: Select a topic to learn more and join the discussion.
+
 active_tab:
   - category: Search
     scroll_id: search
     topics:
       - headline: Search Functionality
-        description: How you search through our data
+        description: How you can search our data
         link: /concepts/search-functionality
       - headline: Search Results
-        description: How we display the results of your searches
+        description: How we display search results
         link: /concepts/search-results
   - category: Summary Pages
     scroll_id: summary-pages
@@ -16,12 +21,12 @@ active_tab:
       - headline: Contract Award Summary
         description: How we display contract award data
         link: /concepts/contract-award-summary
-      - headline: Agency Summary
-        description: How we display agency award data
-        link: /concepts/agency-summary
-      - headline: Recipient Summary
-        description: How we display recipient award data
-        link: /concepts/recipient-summary
+  - category: Home Page
+    scroll_id: home-page
+    topics:
+      - headline: Home Page
+        description: The design and features of the home page
+        link: /concepts/home-page
 
 completed_tab:
   - category: Design

@@ -382,9 +382,8 @@ header .usa-disclaimer {
     .usa-banner.desktop {
       display: none; } }
   .usa-banner h1 {
-    font-size: 3.2em;
-    font-weight: bold;
-    margin-bottom: 0; }
+    font-size: 2.8em;
+    font-weight: bold; }
     @media screen and (max-width: 768px) {
       .usa-banner h1 {
         font-size: 2em; } }
@@ -393,10 +392,12 @@ header .usa-disclaimer {
       font-weight: lighter;
       font-size: 0.5em; }
   .usa-banner h2 {
-    font-size: 1.3em; }
+    font-size: 1.3em;
+    line-height: 1em; }
     @media screen and (max-width: 550px) {
       .usa-banner h2 {
-        font-size: 1.2em; } }
+        font-size: 1.2em;
+        line-height: 0.6em; } }
   .usa-banner h3.usa-cta {
     font-size: 1.6em;
     font-weight: lighter;
@@ -506,7 +507,8 @@ header .usa-disclaimer {
         float: left; } }
 
 .scroll-on-page {
-  display: inline-block; }
+  display: inline-block;
+  text-align: left; }
   .scroll-on-page a {
     color: #477DCA;
     text-decoration: none; }

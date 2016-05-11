@@ -1,0 +1,38 @@
+---
+title: Contract Award Summary
+
+category: Summary Pages
+
+headline: Contract Award Summary
+
+copy:
+  - text: Below are some preliminary options for how data could be displayed when you click on an Award ID in the Search results. Please keep in mind that combining features from the options could be the best solution.
+  - text: Take a look at each option and give us your feedback in the discussion section at the bottom of each option.
+
+discussion_title: "Discussion suggestions:"
+
+discussion_bullet_points:
+- Are there missing data points or data points that are not of interest to you?
+- Are the labels and terminology clear?
+
+tab_titles:
+  - Version A
+
+tabs: 
+  - title: Version A
+    description: "Key Features:"
+    features:
+      - description: This option displays high-level views of award details, a table of the prime transactions and subawards, a spending over time graph, and a treemap showing data by funding agency and appropriations account.
+    below_image_content: What do you think of the Contract Award Summary -- Version A?
+  - title: Version B
+    description: "Key Features:"
+    features:
+      - description: This option features a visual timeline of an award's transactions.
+    below_image_content: What do you think of the Contract Award Summary - Version B?
+  - title: Version C
+    description: "Key Features:"
+    features:
+      - description: This option allows you to navigate the details of the award and displays a table view of those details.
+    below_image_content: What do you think of the Contract Award Summary - Version C?
+
+---

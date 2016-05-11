@@ -1,11 +1,12 @@
 ---
 title: Search Functionality
 
-category: Search
+category: "Search:"
 
 headline: Search Functionality
 
-copy: Below are some options on how we could implement search. Please take a look at each option and tell us what you think about the functionality in the discussion section below the option.
+copy: 
+  - text: Below are some options on how we could implement search. Please take a look at each option and tell us what you think about the functionality in the discussion section below the option.
 
 discussion_title: "Discussion suggestions:"
 
