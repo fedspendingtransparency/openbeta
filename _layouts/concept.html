@@ -35,7 +35,7 @@
               {% assign class = "tab-link" %}
             {% endif %}
 
-            <a href="{{ tab.url_hash }}" class="{{ class }}">{{ tab.title }}</a>
+            <a href="{{ tab.url_hash }}" class="{{ class }}" onclick="reset('{{ tab.disqus_identifier }}', '{{ tab.disqus_url }}');">{{ tab.title }}</a>
             
             <div class="tab-content">
               <div id="concept-summary" class="usa-width-nine">
@@ -45,6 +45,11 @@
                   <li>{{ item.description }}</li>
                 {% endfor %}
                 </ul>
+
+                <div id="disqus_thread"></div>
+
+                {% include disqus.html disqus_identifier=tab.disqus_identifier disqus_url=tab.disqus_url %}
+
               </div>
 
               <div class="usa-width-three">
@@ -68,7 +73,7 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="{{ site.baseurl }}/assets/vendor/slick/slick.min.js"></script>
-     <script type="text/javascript" src="{{ site.baseurl }}/assets/js/main.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/main.js"></script>
 
   </body>
 

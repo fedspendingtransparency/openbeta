@@ -24,24 +24,32 @@ tab_titles:
 tabs: 
   - title: Advanced Search
     url_hash: "#advanced-search"
+    disqus_identifier: 1234
+    disqus_url: "http://treasury-dact-jekyll.s3-website-us-east-1.amazonaws.com/dev/concepts/search-functionality/#advanced-search"
     description: "Key Feature:"
     features:
       - description: This option makes all searchable fields available in one form. Select multiple filters, such as Spending Type, Fiscal Year, Agency, Place of Performance and Contractor Type.
     below_image_content: What do you think of the Advanced Search option?
   - title: Live Filters
     url_hash: "#live-filters"
+    disqus_identifier: 12345
+    disqus_url: "http://treasury-dact-jekyll.s3-website-us-east-1.amazonaws.com/dev/concepts/search-functionality/#live-filters"
     description: "Key Feature:"
     features:
       - description: This option refreshes search results based on filters you choose. 
     below_image_content: What do you think of the Live Filters option?
   - title: Search Builer
     url_hash: "#search-builder"
+    disqus_identifier: 123456
+    disqus_url: "http://treasury-dact-jekyll.s3-website-us-east-1.amazonaws.com/dev/concepts/search-functionality/#search-builder"
     description: "Key Feature:"
     features:
       - description: This option is a simple interface that gives you the opportunity to build your own search using selections from the drop down menu.
     below_image_content: What do you think of the Search Builder option?
   - title: SQL Search
     url_hash: "#sql-search"
+    disqus_identifier: 1234567
+    disqus_url: "http://treasury-dact-jekyll.s3-website-us-east-1.amazonaws.com/dev/concepts/search-functionality/#sql-search"
     description: "Key Feature:"
     features:
       - description: This option is a simple interface that gives you the opportunity to build your own search using selections from the drop down menu. 
