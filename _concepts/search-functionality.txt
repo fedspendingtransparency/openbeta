@@ -23,21 +23,25 @@ tab_titles:
 
 tabs: 
   - title: Advanced Search
+    url_hash: "#advanced-search"
     description: "Key Feature:"
     features:
       - description: This option makes all searchable fields available in one form. Select multiple filters, such as Spending Type, Fiscal Year, Agency, Place of Performance and Contractor Type.
     below_image_content: What do you think of the Advanced Search option?
   - title: Live Filters
+    url_hash: "#live-filters"
     description: "Key Feature:"
     features:
       - description: This option refreshes search results based on filters you choose. 
     below_image_content: What do you think of the Live Filters option?
   - title: Search Builer
+    url_hash: "#search-builder"
     description: "Key Feature:"
     features:
       - description: This option is a simple interface that gives you the opportunity to build your own search using selections from the drop down menu.
     below_image_content: What do you think of the Search Builder option?
   - title: SQL Search
+    url_hash: "#sql-search"
     description: "Key Feature:"
     features:
       - description: This option is a simple interface that gives you the opportunity to build your own search using selections from the drop down menu. 

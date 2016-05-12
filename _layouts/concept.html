@@ -35,7 +35,7 @@
               {% assign class = "tab-link" %}
             {% endif %}
 
-            <a href="#" class="{{ class }}">{{ tab.title }}</a>
+            <a href="{{ tab.url_hash }}" class="{{ class }}">{{ tab.title }}</a>
             
             <div class="tab-content">
               <div id="concept-summary" class="usa-width-nine">

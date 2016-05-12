@@ -20,16 +20,19 @@ tab_titles:
 
 tabs: 
   - title: Version A
+    url_hash: "#version-a"
     description: "Key Features:"
     features:
       - description: This option displays high-level views of award details, a table of the prime transactions and subawards, a spending over time graph, and a treemap showing data by funding agency and appropriations account.
     below_image_content: What do you think of the Contract Award Summary -- Version A?
   - title: Version B
+    url_hash: "#version-b"
     description: "Key Features:"
     features:
       - description: This option features a visual timeline of an award's transactions.
     below_image_content: What do you think of the Contract Award Summary - Version B?
   - title: Version C
+    url_hash: "#version-c"
     description: "Key Features:"
     features:
       - description: This option allows you to navigate the details of the award and displays a table view of those details.
