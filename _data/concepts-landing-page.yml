@@ -11,21 +11,25 @@ active_tab:
     topics:
       - headline: Search Functionality
         description: How you can search our data
+        total_concepts: 4
         link: /concepts/search-functionality
       - headline: Search Results
         description: How we display search results
+        total_concepts: 1
         link: /concepts/search-results
   - category: Summary Pages
     scroll_id: summary-pages
     topics:
       - headline: Contract Award Summary
         description: How we display contract award data
+        total_concepts: 3
         link: /concepts/contract-award-summary
   - category: Home Page
     scroll_id: home-page
     topics:
       - headline: Home Page
         description: The design and features of the home page
+        total_concepts: 0
         link: /concepts/home-page
 
 completed_tab:
@@ -34,12 +38,14 @@ completed_tab:
     topics:
       - headline: Logo
         description: The identity of OpenBeta
+        total_concepts: 0
         link: /concepts/logo
   - category: Miscellaneous
     scroll_id: miscellaneous
     topics:
       - headline: Glossary
         description: How we display our glossary of terms
+        total_concepts: 0
         link: /concepts/glossary
 
 archived_tab: 
@@ -48,7 +54,9 @@ archived_tab:
     topics:
       - headline: Award Data
         description: The data surrounding awards
+        total_concepts: 0
         link: /concepts/award-data
       - headline: Grant Data
         description: The data surrounding grants
+        total_concepts: 0
         link: /concepts/grant-data
