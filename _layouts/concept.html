@@ -35,7 +35,10 @@
               {% assign class = "tab-link" %}
             {% endif %}
 
-            <a href="{{ tab.url_hash }}" class="{{ class }}" onclick="reset('{{ tab.disqus_identifier }}', '{{ tab.disqus_url }}');">{{ tab.title }}</a>
+            <a href="{{ tab.url_hash }}" class="{{ class }}" onclick="reset('{{ tab.disqus_identifier }}', '{{ tab.disqus_url }}');">{{ tab.title }}
+              <div class="disqus-concept-comment-count" data-disqus-identifier="{{ tab.disqus_identifier }}"></div>
+              <div class="disqus-thread-updated" data-disqus-identifier="{{ tab.disqus_identifier }}"></div>
+            </a>
             
             <div class="tab-content">
               <div id="concept-summary" class="usa-width-nine">
@@ -45,10 +48,6 @@
                   <li>{{ item.description }}</li>
                 {% endfor %}
                 </ul>
-
-                <div id="disqus_thread"></div>
-
-                {% include disqus.html disqus_identifier=tab.disqus_identifier disqus_url=tab.disqus_url %}
 
               </div>
 
@@ -68,11 +67,22 @@
 
     </div>
 
+    <div class="grid">
+      {% for tab in page.tabs %}
+
+        {% if forloop.first == true %}
+          {% include disqus.html disqus_identifier=tab.disqus_identifier disqus_url=tab.disqus_url %}
+        {% endif %}
+
+      {% endfor %}
+    </div>
+
     {% include footer.html %}
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="{{ site.baseurl }}/assets/vendor/slick/slick.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timeago/1.5.2/jquery.timeago.min.js"></script>
     <script type="text/javascript" src="{{ site.baseurl }}/assets/js/main.js"></script>
 
   </body>

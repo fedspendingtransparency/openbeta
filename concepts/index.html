@@ -34,6 +34,16 @@ title: Concepts
                 <h3>
                   <a href="{{ site.baseurl }}{{ row.link }}">{{ row.headline }}</a>
                 </h3>
+
+                <ul>
+                  {% if row.total_concepts == 1 %}
+                    <li class="total-concepts">{{ row.total_concepts }} <span>concept</span></li>
+                  {% else %}
+                    <li class="total-concepts">{{ row.total_concepts }} <span>concepts</span></li>
+                  {% endif %}
+                  <li class="disqus-total-comment-count" data-disqus-identifier="{{ row.headline }}"></li>
+                </ul>
+
                 <p>{{ row.description }}</p>
               {% endfor %}
 
