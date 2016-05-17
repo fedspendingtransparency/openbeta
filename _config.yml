@@ -4,6 +4,7 @@ description: OpenBeta Description
 relative_permalinks: false
 markdown: kramdown
 baseurl: "/dev" # the subpath of your site, e.g. /blog
+disqus_shortname: "openbetasocratatest2" # this is the shortname found in the Disqus admin settings
 
 # Concepts Pages
 collections:
