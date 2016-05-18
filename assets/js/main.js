@@ -24,7 +24,9 @@ $(document).ready(function () {
     window.location = $(this).first().children().find('a:first').attr('href');
   });
   $('.accordion-tabs-minimal').on('click', 'li > a.tab-link', function(event) {
-    if (!$(this).hasClass('is-active')) {
+    if ($(this).hasClass('disabled')) {
+      return event.preventDefault;
+    } else if (!$(this).hasClass('is-active')) {
       event.preventDefault();
       var accordionTabs = $(this).closest('.accordion-tabs-minimal');
       accordionTabs.find('.is-open').removeClass('is-open').hide();
@@ -33,6 +35,10 @@ $(document).ready(function () {
       accordionTabs.find('.is-active').removeClass('is-active');
       $(this).addClass('is-active');
       window.location = $(this).attr('href');
+
+      var sideNavBar = $('.is-open #scroll-on-page-top');
+      sideNavBar.find('a').removeClass('sidebar-is-active');
+      sideNavBar.find('a:first').addClass('sidebar-is-active');
     } else {
       event.preventDefault();
     }
@@ -51,6 +57,11 @@ $(document).ready(function () {
 
       options = jQuery.extend(defaults, options);
       return jQuery(options.selector).click(function (e) {
+
+        var sideNavBar = $(this).closest('#scroll-on-page-top');
+        sideNavBar.find('.sidebar-is-active').removeClass('sidebar-is-active');
+        $(this).addClass('sidebar-is-active');
+
         var jumpobj = jQuery(this);
         var target = jumpobj.attr('href');
         var thespeed = 1000;

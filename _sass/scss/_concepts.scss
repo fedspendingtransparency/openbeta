@@ -1,0 +1,56 @@
+/* * * * * * * * * * * * * * * * * * * * * * *
+
+  Concepts Collection Pages
+
+* * * * * * * * * * * * * * * * * * * * * * */
+
+.concepts, .search-functionality, .contract-award-summary {
+
+  &.usa-banner {
+    background-size: cover;
+    padding: 80px 0;
+
+    @include media($small) {
+      padding: 40px 0;
+    }
+  }
+
+  .grid {
+    width: 100%;
+
+    .scroll-on-page {
+      width: 100%;
+    }
+  }
+}
+
+.concepts {
+  &.usa-banner {
+    background-image: url(../assets/img/header_concepts-01.png);
+  }
+}
+
+.search-functionality {
+  &.usa-banner {
+    background-image: url(../assets/img/header_search-functionality-01.png);
+  }
+}
+
+.contract-award-summary {
+  &.usa-banner {
+    background-image: url(../assets/img/header_contract-award-summary-01.png);
+  }
+}
+
+.main-content {
+  margin: 3em 1em;
+
+  @include media($medium) {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
+
+.list-header {
+  font-weight: bold;
+}

@@ -3,7 +3,7 @@ layout: default
 title: Concepts
 ---
 
-<section class="usa-banner">
+<section class="concepts usa-banner">
   <div class="grid">
     <div class="usa-width-twelve">
       <h1>
@@ -17,7 +17,7 @@ title: Concepts
   </div>
 </section>
 
-<section class="usa-section">
+<section class="concepts usa-section">
   <div class="grid">
     <div class="scroll-on-page">
       <ul class="accordion-tabs-minimal">
@@ -29,31 +29,43 @@ title: Concepts
             {% for tab in site.data.concepts-landing-page.active_tab %}
 
               <h2 id="{{ tab.scroll_id }}" class="category-header">{{ tab.category }}</h2>
-
+              <div class="category-section">
               {% for row in tab.topics %}
-                <h3>
-                  <a href="{{ site.baseurl }}{{ row.link }}">{{ row.headline }}</a>
-                </h3>
+              
+                <div class="topic-row">
+                  <ul>
+                    <li>
+                      <h3>
+                        <a class="concept-headline" href="{{ site.baseurl }}{{ row.link }}">{{ row.headline }}</a>
+                      </h3>
+                    </li>
 
-                <ul>
-                  {% if row.total_concepts == 1 %}
-                    <li class="total-concepts">{{ row.total_concepts }} <span>concept</span></li>
-                  {% else %}
-                    <li class="total-concepts">{{ row.total_concepts }} <span>concepts</span></li>
-                  {% endif %}
-                  <li class="disqus-total-comment-count" data-disqus-identifier="{{ row.headline }}"></li>
-                </ul>
+                    <li>
+                      {% if row.total_concepts == 1 %}
+                        <p class="total-concepts">{{ row.total_concepts }} <span>concept</span></p>
+                      {% else %}
+                        <p class="total-concepts">{{ row.total_concepts }} <span>concepts</span></p>
+                      {% endif %}
+                    </li>
+                  </ul>
 
-                <p>{{ row.description }}</p>
+                  <p>{{ row.description }}</p>
+                </div>
+              
               {% endfor %}
-
+              </div>
             {% endfor %}
+
             </div>
             
             <div class="usa-width-three">
               <aside id="scroll-on-page-top">
               {% for sidebar-item in site.data.concepts-landing-page.active_tab %}
-                <a class="scroll-on-page-link" href="#{{ sidebar-item.scroll_id }}">{{ sidebar-item.category }}</a>
+                {% if forloop.first == true %}
+                  <a class="scroll-on-page-link is-active" href="#{{ sidebar-item.scroll_id }}">{{ sidebar-item.category }}</a>
+                {% else %}
+                  <a class="scroll-on-page-link" href="#{{ sidebar-item.scroll_id }}">{{ sidebar-item.category }}</a>
+                {% endif %}
               {% endfor %}
               </aside>
             </div>
@@ -61,7 +73,7 @@ title: Concepts
           </div>
         </li>
         <li class="tab-header-and-content">
-          <a href="#completed" class="tab-link">Completed</a>
+          <a href="#completed" class="tab-link disabled">Completed</a>
           <div class="tab-content">
             <div class="usa-width-nine">
 
@@ -89,7 +101,7 @@ title: Concepts
           </div>
         </li>
         <li class="tab-header-and-content">
-          <a href="#archived" class="tab-link">Archived</a>
+          <a href="#archived" class="tab-link disabled">Archived</a>
           <div class="tab-content">
             <div class="usa-width-nine">
 
