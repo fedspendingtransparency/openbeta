@@ -1,6 +1,8 @@
 /* * * * * * * * * * * * * * * * * * * * * * *
 
-  Home Page 
+  Grids
+
+  Neat Framework: neat.bourbon.io
 
 * * * * * * * * * * * * * * * * * * * * * * */
 
@@ -71,6 +73,13 @@
   padding-right: 1em;
 }
 
+
+/* * * * * * * * * * * * * * * * * * * * * * *
+
+  Section Layouts 
+
+* * * * * * * * * * * * * * * * * * * * * * */
+
 .usa-banner {
   background-color: $accent-color;
   border-top: 1px solid $header-border-color;
@@ -121,7 +130,7 @@
 
     @include media($small) {
       font-size: 1.2em;
-      line-height: 0.6em;
+      line-height: 1.2em;
     }
   }
 
@@ -217,7 +226,65 @@
   font-weight: lighter;
 }
 
+.category-header {
+  border-bottom: 1px solid #dcdcdc;
+  padding-top: 2em;
+}
 
+.category-header:first-child {
+  padding-top: 0;
+}
+
+.topic-row {
+  border-bottom: 1px solid #dcdcdc;
+  padding-top: 1em;
+
+  h3 {
+    margin-bottom: 0;
+  }
+
+  ul {
+    list-style: none;
+    margin-bottom: 0;
+    margin-left: 0;
+    overflow: auto;
+
+    li {
+      float: left;
+    }
+     li:last-child {
+      float: right;
+     }
+  }
+
+  .total-concepts {
+    font-size: 0.9em;
+    margin-bottom: 0;
+    padding-right: 1.5em;
+    text-align: center;
+
+    @include media($tiny) {
+      display: none;
+    }
+
+    span {
+      display: block;
+    }
+  }
+}
+
+.category-section .topic-row:last-of-type {
+  border-bottom: none;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * *
+
+  Tabs 
+
+  Refills: refills.bourbon.io
+
+* * * * * * * * * * * * * * * * * * * * * * */
 
 .accordion-tabs-minimal {
   $base-border-color: #dcdcdc !default;
@@ -231,7 +298,7 @@
   $tab-active-background: $base-background-color;
   $tab-inactive-color: $base-background-color;
   $tab-inactive-hover-color: #c0c0c0;
-  $tab-mode: $medium-screen;
+  $tab-mode: $medium;
 
   @include clearfix;
   line-height: 1.5;
@@ -239,23 +306,37 @@
 
   .tab-header-and-content {
     list-style: none;
+    display: inline;
 
     @include media($tab-mode) {
-      display: inline;
+      display: block;
     }
   }
 
   .tab-link {
     background-color: $tab-inactive-color;
-    border-top: $tab-border;
     color: $tab-link-color;
-    display: block;
     padding: ($base-spacing / 2) $gutter;
     text-decoration: none;
+    border-top: 0;
+    display: inline-block;
+
+    &.disabled {
+      color: #dcdcdc;
+      cursor: default;
+
+      &:hover {
+        color: #dcdcdc;
+      }
+
+      &:focus {
+        color: #dcdcdc;
+      }
+    }
 
     @include media($tab-mode) {
-      border-top: 0;
-      display: inline-block;
+      border-top: $tab-border;
+      display: block;
     }
 
     &:hover {
@@ -268,29 +349,58 @@
 
     &.is-active {
       border-bottom: 0;
+      border: $tab-border;
+      border-bottom-color: $tab-active-background;
+      border-left: 3px solid $accent-color;
+      font-weight: bold;
+      margin-bottom: -1px;
 
       @include media($tab-mode) {
-        border: $tab-border;
-        border-bottom-color: $tab-active-background;
-        margin-bottom: -1px;
+        border-right: none;
+
       }
     }
   }
 
   .tab-content {
     display: none;
-    padding: $base-spacing $gutter;
     width: 100%;
+    padding: 3em 0em;
+    border-top: $tab-border;
+    float: left;
 
     @include media($tab-mode) {
-      border-top: $tab-border;
-      float: left;
+      float: none;
+      border-top: none;
+    }
+
+    .usa-width-nine {
+      @include media($tab-mode) {
+        float: none;
+        padding-left: 1em;
+        padding-right: 1em;
+      }
     }
   }
 }
 
 
+/* * * * * * * * * * * * * * * * * * * * * * *
+
+  Sidebar Navigation
+
+  Refills: refills.bourbon.io
+
+* * * * * * * * * * * * * * * * * * * * * * */
+
+#scroll-on-page-top {
+  a:first-child {
+    padding-top: 0;
+  }
+}
+
 .scroll-on-page {
+  $base-border-color: #dcdcdc !default;
   $base-line-height: 1.5em !default;
   $base-spacing: 1.5em !default;
   $action-color: #477DCA !default;
@@ -301,26 +411,47 @@
   display: inline-block;
   text-align: left;
 
-  a {
-    color: $action-color;
-    text-decoration: none;
+  .accordion-tabs-minimal {
+    margin-left: 1em;
+    margin-right: 1em;
+
+    @include media($small) {
+      margin-left: 1em;
+      margin-right: 1em;
+    }
+
+    .usa-width-three {
+      @include media($medium) {
+        display: none;
+      }
+    }
   }
 
-  aside {
-    /*@include media($large-screen) {
-      @include span-columns(4);
-    }*/
+  a {
+    color: $dark-gray;
+    text-decoration: none;
+
+    &.concept-headline {
+      color: $accent-color;
+      font-size: 1.2em;
+      text-decoration: underline;
+    }
   }
 
   .scroll-on-page-link {
-    border-bottom: 1px solid transparentize($action-color, 0.8);
     display: block;
-    margin-right: $base-spacing;
+    margin-left: $base-spacing;
     outline: none;
-    padding: ($base-spacing / 2) 0;
+    padding: ($base-spacing / 2) 0 ($base-spacing / 2) 1em;
 
     &:last-child {
       margin-bottom: $base-spacing;
+    }
+
+    &.sidebar-is-active {
+      border-bottom: 1px solid $base-border-color;
+      border-left: 3px solid $accent-color;
+      font-weight: bold;
     }
   }
 
@@ -337,9 +468,18 @@
     section p:last-of-type {
       margin-bottom: 2em;
     }
-
-    /*@include media($large-screen) {
-      @include span-columns(8);
-    }*/
   }
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * *
+
+  Disqus
+
+* * * * * * * * * * * * * * * * * * * * * * */
+
+#disqus_thread {
+  margin-bottom: 5em;
+  margin-left: 1em;
+  margin-right: 1em;
 }

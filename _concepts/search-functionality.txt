@@ -1,5 +1,6 @@
 ---
 title: Search Functionality
+class: search-functionality
 
 category: "Search:"
 
