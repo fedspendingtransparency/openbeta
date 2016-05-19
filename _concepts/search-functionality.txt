@@ -30,6 +30,8 @@ tabs:
     description: "Key Feature:"
     features:
       - description: This option makes all searchable fields available in one form. Select multiple filters, such as Spending Type, Fiscal Year, Agency, Place of Performance and Contractor Type.
+    image: /assets/img/adv_search.png
+    image_alt_text: alt text
     below_image_content: What do you think of the Advanced Search option?
   - title: Live Filters
     url_hash: "#!live-filters"
@@ -37,7 +39,9 @@ tabs:
     disqus_url: "http://treasury-dact-jekyll.s3-website-us-east-1.amazonaws.com/dev/concepts/search-functionality/#!live-filters"
     description: "Key Feature:"
     features:
-      - description: This option refreshes search results based on filters you choose. 
+      - description: This option refreshes search results based on filters you choose.
+    image: /assets/img/filters.png
+    image_alt_text: alt text
     below_image_content: What do you think of the Live Filters option?
   - title: Search Builder
     url_hash: "#!search-builder"
@@ -46,6 +50,8 @@ tabs:
     description: "Key Feature:"
     features:
       - description: This option is a simple interface that gives you the opportunity to build your own search using selections from the drop down menu.
+    image: /assets/img/search_builder.png
+    image_alt_text: alt text
     below_image_content: What do you think of the Search Builder option?
   - title: SQL Search
     url_hash: "#!sql-search"
@@ -53,7 +59,9 @@ tabs:
     disqus_url: "http://treasury-dact-jekyll.s3-website-us-east-1.amazonaws.com/dev/concepts/search-functionality/#!sql-search"
     description: "Key Feature:"
     features:
-      - description: This option is a simple interface that gives you the opportunity to build your own search using selections from the drop down menu. 
+      - description: This option is a simple interface that gives you the opportunity to build your own search using selections from the drop down menu.
+    image: /assets/img/sql_search.png
+    image_alt_text: alt text
     below_image_content: What do you think of the SQL Search option?
 
 ---
