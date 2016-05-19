@@ -62,7 +62,7 @@ title: Concepts
               <aside id="scroll-on-page-top">
               {% for sidebar-item in site.data.concepts-landing-page.active_tab %}
                 {% if forloop.first == true %}
-                  <a class="scroll-on-page-link is-active" href="#{{ sidebar-item.scroll_id }}">{{ sidebar-item.category }}</a>
+                  <a class="scroll-on-page-link sidebar-is-active" href="#{{ sidebar-item.scroll_id }}">{{ sidebar-item.category }}</a>
                 {% else %}
                   <a class="scroll-on-page-link" href="#{{ sidebar-item.scroll_id }}">{{ sidebar-item.category }}</a>
                 {% endif %}
