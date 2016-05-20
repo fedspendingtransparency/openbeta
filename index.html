@@ -3,11 +3,12 @@ layout: default
 ---
 
 <section class="usa-banner desktop">
-  <div class="grid">
-    <div class="carousel">
-      {% for slide in site.data.home.carousel %}
+  <div class="carousel">
+    {% for slide in site.data.home.carousel %}
+    <div class="slide-image">
+      <div class="slide-background" style="background-image:url({{ site.baseurl }}{{ slide.banner_image }});"></div>
       <div class="grid">
-        <div class="usa-width-six">
+        <div class="usa-width-twelve">
           <div class="usa-banner-text">
             <h1>
               <span class="usa-banner-subtitle">
@@ -16,22 +17,19 @@ layout: default
               {{ slide.banner_title }}
             </h1>
             <h2>{{ slide.banner_label }}</h2>
-            <a href="{{ slide.banner_cta_link }}">
+            <a href="{{ site.baseurl }}{{ slide.banner_cta_link }}">
               <h3 class="usa-cta">
                 {{ slide.banner_cta }}
               </h3>
             </a>
           </div>
         </div>
-
-        <div class="usa-width-six right-aligned-image">
-          <img src="{{ site.baseurl }}{{ slide.banner_image }}" alt="{{ slide.banner_image_alt_text }}">
-        </div>
       </div>
-      {% endfor %}
     </div>
+    {% endfor %}
   </div>
 </section>
+
 
 <section class="usa-banner mobile">
   <div class="grid">

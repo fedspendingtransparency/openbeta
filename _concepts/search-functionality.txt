@@ -23,16 +23,6 @@ tab_titles:
   - SQL Search
 
 tabs: 
-  - title: Advanced Search
-    url_hash: "#!advanced-search"
-    disqus_identifier: 1234
-    disqus_url: "http://treasury-dact-jekyll.s3-website-us-east-1.amazonaws.com/dev/concepts/search-functionality/#!advanced-search"
-    description: "Key Feature:"
-    features:
-      - description: This option makes all searchable fields available in one form. Select multiple filters, such as Spending Type, Fiscal Year, Agency, Place of Performance and Contractor Type.
-    image: /assets/img/adv_search.png
-    image_alt_text: alt text
-    below_image_content: What do you think of the Advanced Search option?
   - title: Live Filters
     url_hash: "#!live-filters"
     disqus_identifier: 12345
@@ -43,6 +33,16 @@ tabs:
     image: /assets/img/filters.png
     image_alt_text: alt text
     below_image_content: What do you think of the Live Filters option?
+  - title: Advanced Search
+    url_hash: "#!advanced-search"
+    disqus_identifier: 1234
+    disqus_url: "http://treasury-dact-jekyll.s3-website-us-east-1.amazonaws.com/dev/concepts/search-functionality/#!advanced-search"
+    description: "Key Feature:"
+    features:
+      - description: This option makes all searchable fields available in one form. Select multiple filters, such as Spending Type, Fiscal Year, Agency, Place of Performance and Contractor Type.
+    image: /assets/img/adv_search.png
+    image_alt_text: alt text
+    below_image_content: What do you think of the Advanced Search option?
   - title: Search Builder
     url_hash: "#!search-builder"
     disqus_identifier: 123456

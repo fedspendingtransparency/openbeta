@@ -50,6 +50,7 @@
     border: none;
     outline: none;
     background: transparent;
+    z-index: 1;
 }
 .slick-prev:hover,
 .slick-prev:focus,
@@ -89,7 +90,7 @@
 
 .slick-prev
 {
-    left: -25px;
+    left: 10px;
 }
 [dir='rtl'] .slick-prev
 {
@@ -107,7 +108,7 @@
 
 .slick-next
 {
-    right: -25px;
+    right: 10px;
 }
 [dir='rtl'] .slick-next
 {
@@ -132,7 +133,7 @@
 .slick-dots
 {
     position: absolute;
-    bottom: -45px;
+    bottom: 0;
 
     display: block;
 
@@ -142,6 +143,9 @@
     list-style: none;
 
     text-align: center;
+}
+.slick-dots ul {
+    margin-left: 0;
 }
 .slick-dots li
 {

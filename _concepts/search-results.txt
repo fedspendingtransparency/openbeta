@@ -1,0 +1,21 @@
+---
+title: Search Results
+class: search-results
+
+category: "Search:"
+
+headline: Search Results
+
+copy: 
+  - text: Below is an example of how search results could be displayed. Please take a look and tell us what you think in the discussion section.
+
+discussion_title: "Discussion suggestions:"
+
+discussion_bullet_points:
+- Are there additional fields you would like added to the Results table?
+- Is it important to see results geographically?
+- What other data points do you want added to the results?
+
+tabs:
+
+---

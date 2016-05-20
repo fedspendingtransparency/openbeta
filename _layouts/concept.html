@@ -61,6 +61,8 @@
                 {% endfor %}
                 </ul>
 
+                <a class="lightbox" href="{{ site.baseurl }}{{ tab.image }}" data-lightbox="concepts">Full Screen</a>
+
                 <img src="{{ site.baseurl }}{{ tab.image }}" alt="{{ tab.image_alt_text }}" >
 
                 <p>{{ tab.below_image_content }}</p>
@@ -102,6 +104,7 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="{{ site.baseurl }}/assets/vendor/slick/slick.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/vendor/lightbox2/lightbox.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timeago/1.5.2/jquery.timeago.min.js"></script>
     <script type="text/javascript" src="{{ site.baseurl }}/assets/js/main.js"></script>
 
