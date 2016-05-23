@@ -4,9 +4,10 @@
 
 * * * * * * * * * * * * * * * * * * * * * * */
 
-.concepts, .search-functionality, .contract-award-summary {
+.usa-concepts {
 
   &.usa-banner {
+    background-image: url(../assets/img/header_concepts-01.png);
     background-size: cover;
     padding: 80px 0;
 
@@ -22,27 +23,13 @@
       width: 100%;
     }
   }
-}
 
-.concepts {
-  &.usa-banner {
-    background-image: url(../assets/img/header_concepts-01.png);
+  .usa-intro {
+    margin-bottom: 0;
   }
 }
 
-.search-functionality {
-  &.usa-banner {
-    background-image: url(../assets/img/header_search-functionality-01.png);
-  }
-}
-
-.contract-award-summary {
-  &.usa-banner {
-    background-image: url(../assets/img/header_contract-award-summary-01.png);
-  }
-}
-
-.main-content {
+.usa-main-content {
   margin: 3em 1em;
 
   @include media($medium) {
@@ -55,7 +42,22 @@
   font-weight: bold;
 }
 
-.scroll-on-page a.lightbox-text {
-  text-align: right;
+.scroll-on-page a.full-screen-image {
   color: $accent-color;
+}
+
+.full-screen-image:after {
+  font-family: 'FontAwesome';
+  content: "\f065";
+  padding-left: 0.5em;
+}
+
+.image-background {
+  background-color: #dcdcdc;
+  padding: 2em 1.2em;
+  margin-bottom: 2em;
+
+  img {
+    box-shadow: 10px 10px 5px #cfcfd0;
+  }
 }

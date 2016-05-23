@@ -2,7 +2,7 @@
 title: Contract Award Summary
 class: contract-award-summary
 
-category: Summary Pages
+category: "Summary Pages:"
 
 headline: Contract Award Summary
 
@@ -16,39 +16,41 @@ discussion_bullet_points:
 - Are there missing data points or data points that are not of interest to you?
 - Are the labels and terminology clear?
 
-tab_titles:
-  - Version A
+tabs_required: yes
 
 tabs: 
   - title: Version A
     url_hash: "#!version-a"
-    disqus_identifier: 2345
-    disqus_url: "http://treasury-dact-jekyll.s3-website-us-east-1.amazonaws.com/dev/concepts/contract-award-summary/#!version-a"
     description: "Key Features:"
     features:
       - description: This option displays high-level views of award details, a table of the prime transactions and subawards, a spending-over-time graph, and a treemap showing data by funding agency and appropriations account.
+    disclaimer_text: this demo is for consideration purposes and is not indicative of a final design
     image: /assets/img/award-wireframes_A.png
     image_alt_text: alt text
-    below_image_content: What do you think of the Contract Award Summary -- Version A?
+    below_image_content: What do you think of the Contract Award Summary - Version A?
+    disqus_identifier: 2345
+    disqus_url: "http://treasury-dact-jekyll.s3-website-us-east-1.amazonaws.com/dev/concepts/contract-award-summary/#!version-a"
   - title: Version B
     url_hash: "#!version-b"
-    disqus_identifier: 23456
-    disqus_url: "http://treasury-dact-jekyll.s3-website-us-east-1.amazonaws.com/dev/concepts/contract-award-summary/#!version-b"
     description: "Key Features:"
     features:
       - description: This option features a visual timeline of an award's transactions.
+    disclaimer_text: this demo is for consideration purposes and is not indicative of a final design
     image: /assets/img/award-wireframes_B.png
     image_alt_text: alt text
     below_image_content: What do you think of the Contract Award Summary - Version B?
+    disqus_identifier: 23456
+    disqus_url: "http://treasury-dact-jekyll.s3-website-us-east-1.amazonaws.com/dev/concepts/contract-award-summary/#!version-b"
   - title: Version C
     url_hash: "#!version-c"
-    disqus_identifier: 234567
-    disqus_url: "http://treasury-dact-jekyll.s3-website-us-east-1.amazonaws.com/dev/concepts/contract-award-summary/#!version-c"
     description: "Key Features:"
     features:
       - description: This option allows you to navigate the details of the award and displays a table view of those details.
+    disclaimer_text: this demo is for consideration purposes and is not indicative of a final design
     image: /assets/img/award-wireframes_C.png
     image_alt_text: alt text
     below_image_content: What do you think of the Contract Award Summary - Version C?
+    disqus_identifier: 234567
+    disqus_url: "http://treasury-dact-jekyll.s3-website-us-east-1.amazonaws.com/dev/concepts/contract-award-summary/#!version-c"
 
 ---

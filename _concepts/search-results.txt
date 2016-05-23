@@ -16,6 +16,13 @@ discussion_bullet_points:
 - Is it important to see results geographically?
 - What other data points do you want added to the results?
 
-tabs:
+tabs_required: no
+
+disclaimer_text: this demo is for consideration purposes and is not indicative of a final design
+image: "/assets/img/filters.png"
+image_alt_text: alt text
+below_image_content: What do you think of the Search Results option?
+disqus_identifier: 34567
+disqus_url: "http://treasury-dact-jekyll.s3-website-us-east-1.amazonaws.com/dev/concepts/search-results/"
 
 ---

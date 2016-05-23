@@ -273,7 +273,7 @@ nav {
 
   .tab-link {
     background-color: $tab-inactive-color;
-    color: $tab-link-color;
+    color: $accent-color;
     padding: ($base-spacing / 2) $gutter;
     text-decoration: none;
     border-top: 0;
@@ -310,6 +310,7 @@ nav {
       border: $tab-border;
       border-bottom-color: $tab-active-background;
       border-left: 3px solid $accent-color;
+      color: $tab-link-color;
       font-weight: bold;
       margin-bottom: -1px;
 

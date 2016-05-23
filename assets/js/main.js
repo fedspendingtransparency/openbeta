@@ -19,30 +19,32 @@ $(document).ready(function(){
 });
 
 $(document).ready(function () {
-  $('.accordion-tabs-minimal').each(function(index) {
-    $(this).children('li').first().children('a').addClass('is-active').next().addClass('is-open').show();
-    window.location = $(this).first().children().find('a:first').attr('href');
-  });
-  $('.accordion-tabs-minimal').on('click', 'li > a.tab-link', function(event) {
-    if ($(this).hasClass('disabled')) {
-      return event.preventDefault;
-    } else if (!$(this).hasClass('is-active')) {
-      event.preventDefault();
-      var accordionTabs = $(this).closest('.accordion-tabs-minimal');
-      accordionTabs.find('.is-open').removeClass('is-open').hide();
+  if ($('.accordion-tabs-minimal')) {
+    $('.accordion-tabs-minimal').each(function(index) {
+      $(this).children('li').first().children('a').addClass('is-active').next().addClass('is-open').show();
+      window.location = $(this).first().children().find('a:first').attr('href');
+    });
+    $('.accordion-tabs-minimal').on('click', 'li > a.tab-link', function(event) {
+      if ($(this).hasClass('disabled')) {
+        return event.preventDefault;
+      } else if (!$(this).hasClass('is-active')) {
+        event.preventDefault();
+        var accordionTabs = $(this).closest('.accordion-tabs-minimal');
+        accordionTabs.find('.is-open').removeClass('is-open').hide();
 
-      $(this).next().toggleClass('is-open').toggle();
-      accordionTabs.find('.is-active').removeClass('is-active');
-      $(this).addClass('is-active');
-      window.location = $(this).attr('href');
+        $(this).next().toggleClass('is-open').toggle();
+        accordionTabs.find('.is-active').removeClass('is-active');
+        $(this).addClass('is-active');
+        window.location = $(this).attr('href');
 
-      var sideNavBar = $('.is-open #scroll-on-page-top');
-      sideNavBar.find('a').removeClass('sidebar-is-active');
-      sideNavBar.find('a:first').addClass('sidebar-is-active');
-    } else {
-      event.preventDefault();
-    }
-  });
+        var sideNavBar = $('.is-open #scroll-on-page-top');
+        sideNavBar.find('a').removeClass('sidebar-is-active');
+        sideNavBar.find('a:first').addClass('sidebar-is-active');
+      } else {
+        event.preventDefault();
+      }
+    });
+  }
 });
 
 (function (jQuery) {

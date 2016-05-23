@@ -80,7 +80,7 @@
 
 * * * * * * * * * * * * * * * * * * * * * * */
 
-.usa-banner {
+.usa-banner, .usa-banner-block {
   border-top: 1px solid $header-border-color;
   color: #fff;
   text-align: center;
@@ -164,6 +164,15 @@
     width: 100%;
   }
 
+}
+
+.usa-banner-block {
+  background-color: $accent-color;
+  height: 10px;
+
+  @include media($small) {
+    padding: 0;
+  }
 }
 
 .usa-section {
@@ -275,6 +284,15 @@
 
 .category-section .topic-row:last-of-type {
   border-bottom: none;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.paragraph-line-break {
+  border-bottom: 1px solid #dcdcdc;
+  padding-bottom: 1.5em;
 }
 
 

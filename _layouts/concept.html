@@ -7,97 +7,139 @@
 
     {% include header.html %}
 
-    <section class="{{ page.class }} usa-banner">
+    <section class="usa-concepts usa-banner-block"></section>
+
+    <section class="usa-concepts">
       <div class="grid">
-        <div class="usa-width-twelve">
-          <h1>
-            <span class="usa-banner-subtitle">
-              {{ page.category }}
-            </span>
-            {{ page.headline }}
-          </h1>
+        <div class="usa-width-twelve usa-main-content">
+          <h1 class="usa-intro">{{ page.category }}</h1>
+          <h1 class="usa-banner-title list-header">{{ page.headline }}</h2>
+
+          {% for item in page.copy %}
+            <p>{{ item.text }}</p>
+          {% endfor %}
+
+          <p class="list-header">{{ page.discussion_title }}</p>
+          <ul>
+            {% for item in page.discussion_bullet_points %}
+              <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
         </div>
       </div>
     </section>
 
-    <div class="grid">
-      <div class="main-content">
-        {% for item in page.copy %}
-          <p>{{ item.text }}</p>
-        {% endfor %}
+    {% if page.tabs_required == false %}
 
-        <p class="list-header">{{ page.discussion_title }}</p>
-        <ul>
-          {% for item in page.discussion_bullet_points %}
-            <li>{{ item }}</li>
-          {% endfor %}
-        </ul>
-      </div>
-    
+      <section class="usa-concepts">
+        <div class="grid">
+          <div class="scroll-on-page">
+            <div id="concept-summary" class="usa-width-nine">
+              <ul class="usa-disclaimer">
+                <li>disclaimer: {{ page.disclaimer_text }}</li>
+                <li><a class="full-screen-image" href="{{ site.baseurl }}{{ page.image }}" data-lightbox="concepts">View Fullscreen</a></li>
+              </ul>
 
-      <div class="scroll-on-page">
-        <ul class="accordion-tabs-minimal">
+              <div class="image-background">
+                <img src="{{ site.baseurl }}{{ page.image }}" alt="{{ page.image_alt_text }}" >
+              </div>
+
+              <p class="list-header center-text paragraph-line-break">{{ page.below_image_content }}</p>
+            </div>
+
+            <div class="usa-width-three">
+              <aside id="scroll-on-page-top">
+                <a class="scroll-on-page-link sidebar-is-active" href="#concept-summary">Concept Summary</a>
+                <a class="scroll-on-page-link" href="#discussion">Discussion</a>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="usa-concepts">
+        <div class="grid">
+          <div id="discussion" class="usa-width-nine">
+            {% include disqus.html disqus_identifier=tab.disqus_identifier disqus_url=tab.disqus_url %}
+          </div>
+        </div>
+      </section>
+
+    {% else %}
+
+      <section class="usa-concepts">
+        <div class="grid">
+          <div class="scroll-on-page">
+            <ul class="accordion-tabs-minimal">
+            {% for tab in page.tabs %}
+
+              <li class="tab-header-and-content">
+
+                {% if forloop.first == true %}
+                  {% assign class = "tab-link is-active" %}
+                {% else %}
+                  {% assign class = "tab-link" %}
+                {% endif %}
+
+                <a href="{{ tab.url_hash }}" class="{{ class }}" onclick="reset('{{ tab.disqus_identifier }}', '{{ tab.disqus_url }}');">{{ tab.title }}
+                  <div class="disqus-concept-comment-count" data-disqus-identifier="{{ tab.disqus_identifier }}"></div>
+                  <div class="disqus-thread-updated" data-disqus-identifier="{{ tab.disqus_identifier }}"></div>
+                </a>
+                
+                <div class="tab-content">
+                  <div id="concept-summary" class="usa-width-nine">
+                    <p class="list-header">{{ tab.description }}</p>
+                    <ul>
+                    {% for item in tab.features %}
+                      <li>{{ item.description }}</li>
+                    {% endfor %}
+                    </ul>
+
+                    <ul class="usa-disclaimer">
+                      <li>disclaimer: {{ tab.disclaimer_text }}</li>
+                      <li><a class="full-screen-image" href="{{ site.baseurl }}{{ tab.image }}" data-lightbox="concepts">View Fullscreen</a></li>
+                    </ul>
+
+                    <div class="image-background">
+                      <img src="{{ site.baseurl }}{{ tab.image }}" alt="{{ tab.image_alt_text }}" >
+                    </div>
+
+                    <p class="list-header center-text paragraph-line-break">{{ tab.below_image_content }}</p>
+
+                  </div>
+
+                  <div class="usa-width-three">
+                    <aside id="scroll-on-page-top">
+                      <a class="scroll-on-page-link sidebar-is-active" href="#concept-summary">Concept Summary</a>
+                      <a class="scroll-on-page-link" href="#discussion">Discussion</a>
+                    </aside>
+                  </div>
+                </div>
+              
+              </li>
+
+            {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </section>
+    {% endif %}
+
+    <section class="usa-concepts">
+      <div class="grid">
         {% for tab in page.tabs %}
 
-          <li class="tab-header-and-content">
+          {% if forloop.first == true %}
 
-            {% if forloop.first == true %}
-              {% assign class = "tab-link is-active" %}
-            {% else %}
-              {% assign class = "tab-link" %}
-            {% endif %}
+          <div id="discussion" class="usa-width-nine">
+            {% include disqus.html disqus_identifier=tab.disqus_identifier disqus_url=tab.disqus_url %}
+          </div>
 
-            <a href="{{ tab.url_hash }}" class="{{ class }}" onclick="reset('{{ tab.disqus_identifier }}', '{{ tab.disqus_url }}');">{{ tab.title }}
-              <div class="disqus-concept-comment-count" data-disqus-identifier="{{ tab.disqus_identifier }}"></div>
-              <div class="disqus-thread-updated" data-disqus-identifier="{{ tab.disqus_identifier }}"></div>
-            </a>
-            
-            <div class="tab-content">
-              <div id="concept-summary" class="usa-width-nine">
-                <p class="list-header">{{ tab.description }}</p>
-                <ul>
-                {% for item in tab.features %}
-                  <li>{{ item.description }}</li>
-                {% endfor %}
-                </ul>
-
-                <a class="lightbox" href="{{ site.baseurl }}{{ tab.image }}" data-lightbox="concepts">Full Screen</a>
-
-                <img src="{{ site.baseurl }}{{ tab.image }}" alt="{{ tab.image_alt_text }}" >
-
-                <p>{{ tab.below_image_content }}</p>
-
-              </div>
-
-              <div class="usa-width-three">
-                <aside id="scroll-on-page-top">
-                  <a class="scroll-on-page-link sidebar-is-active" href="#concept-summary">Concept Summary</a>
-                  <a class="scroll-on-page-link" href="#discussion">Discussion</a>
-                </aside>
-              </div>
-            </div>
-          
-          </li>
+          {% endif %}
 
         {% endfor %}
-        </ul>
       </div>
-
-    </div>
-
-    <div class="grid">
-      {% for tab in page.tabs %}
-
-        {% if forloop.first == true %}
-
-        <div id="discussion" class="usa-width-nine">
-          {% include disqus.html disqus_identifier=tab.disqus_identifier disqus_url=tab.disqus_url %}
-        </div>
-
-        {% endif %}
-
-      {% endfor %}
-    </div>
+    </section>
 
     {% include footer.html %}
 
