@@ -109,7 +109,8 @@
   }
 
   .usa-banner-text {
-    padding-top: 80px;
+    padding-top: 40px;
+    text-decoration: none;
 
     @include media($medium) {
       padding-top: 0;
@@ -118,7 +119,7 @@
 
   h1 {
     font-size: 2.8em;
-    font-weight: bold;
+    font-weight: 600;
 
     @include media($medium) {
       font-size: 2em;
@@ -126,13 +127,14 @@
 
     span.usa-banner-subtitle {
       display: block;
-      font-weight: lighter;
+      font-weight: 300;
       font-size: 0.5em;
     }
   }
 
   h2 {
     font-size: 1.3em;
+    font-weight: 300;
     line-height: 1em;
 
     @include media($small) {
@@ -177,7 +179,7 @@
 
 .usa-section {
   text-align: center;
-  padding: 60px 0;
+  padding: 30px 0 10px 0;
 
   @include media($medium) {
     height: 100%;
@@ -213,6 +215,10 @@
   vertical-align: middle;
 }
 
+section.usa-section:nth-of-type(5) {
+  padding-bottom: 30px;
+}
+
 .usa-section-alt {
   background-color: $secondary-background-color;
 }
@@ -228,11 +234,24 @@
 .usa-text {
   color: #525252;
   font-size: 1em;
+  font-weight: 300;
   margin-bottom: 2em;
 }
 
 .usa-cta {
-  font-weight: lighter;
+  font-weight: 300;
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  a:focus {
+    text-decoration: underline;
+  }
 }
 
 .category-header {
@@ -302,8 +321,18 @@
 
 * * * * * * * * * * * * * * * * * * * * * * */
 
+.carousel {
+  h1, h2, .usa-cta {
+    text-shadow: 1px 1px 2px #808080;
+  }
+
+  &.slick-slider {
+    margin-bottom: 0;
+  }
+}
+
 .slide-image.slick-slide {
-  height: 400px;
+  height: 300px;
 }
 
 .slide-background {

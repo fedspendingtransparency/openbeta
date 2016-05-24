@@ -28,8 +28,8 @@ carousel:
 first_section_title: What is OpenBeta?
 first_section_intro: A new way to build government websites
 first_section_text: OpenBeta.usaspending.gov is the feedback platform for features and functionality being considered for the future of USAspending.gov. You will find ongoing discussions on our development of the site which we encourage you to join.
-first_section_cta: Learn more
-first_section_cta_link: /
+first_section_cta: Join our discussions
+first_section_cta_link: /concepts
 first_section_img: /assets/img/illustration_process_500x250.png
 first_section_alt_text: alt
 
@@ -37,8 +37,8 @@ first_section_alt_text: alt
 second_section_title: What can you do here?
 second_section_intro: Collaborate with the site developers
 second_section_text: 'Visit the Concepts page to see what we are currently developing and voice your thoughts, concerns, and suggestions in ongoing discussions.'
-second_section_cta: Learn more
-second_section_cta_link: /
+second_section_cta: Join our discussions
+second_section_cta_link: /concepts
 second_section_img: /assets/img/illustration_chat_500x250.png
 second_section_alt_text: alt
 
@@ -46,7 +46,7 @@ second_section_alt_text: alt
 third_section_title: Why does OpenBeta matter?
 third_section_intro: The public is helping to build a 21st century government
 third_section_text: 'OpenBeta presents an exceptional opportunity for everyone interested in Federal spending to shape and influence how you access Federal spending data. On OpenBeta, you can give feedback on the design and functionality for the future of USAspending.gov. With your help and participation, the discussions on openbeta.usaspending.gov will guide us in building a website that best serves your needs.'
-third_section_cta: Learn more
-third_section_cta_link: /
+third_section_cta: Start now
+third_section_cta_link: /about
 third_section_img: /assets/img/illustration_lightbulb_500x250.png
 third_section_alt_text: alt 

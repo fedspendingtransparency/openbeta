@@ -3,31 +3,31 @@ layout: default
 ---
 
 <section class="usa-banner desktop">
-  <div class="carousel">
-    {% for slide in site.data.home.carousel %}
-    <div class="slide-image">
-      <div class="slide-background" style="background-image:url({{ site.baseurl }}{{ slide.banner_image }});"></div>
-      <div class="grid">
-        <div class="usa-width-twelve">
-          <div class="usa-banner-text">
-            <h1>
-              <span class="usa-banner-subtitle">
-                {{ slide.usa_intro }}
-              </span>
-              {{ slide.banner_title }}
-            </h1>
-            <h2>{{ slide.banner_label }}</h2>
-            <a href="{{ site.baseurl }}{{ slide.banner_cta_link }}">
-              <h3 class="usa-cta">
-                {{ slide.banner_cta }}
-              </h3>
-            </a>
+    <div class="carousel">
+      {% for slide in site.data.home.carousel %}
+        <div class="slide-image">
+          <div class="slide-background" style="background-image:url({{ site.baseurl }}{{ slide.banner_image }});"></div>
+          <div class="grid">
+            <div class="usa-width-twelve">
+              <div class="usa-banner-text">
+                <h1>
+                  <span class="usa-banner-subtitle">
+                    {{ slide.usa_intro }}
+                  </span>
+                  {{ slide.banner_title }}
+                </h1>
+                <h2>{{ slide.banner_label }}</h2>
+                <a href="{{ site.baseurl }}{{ slide.banner_cta_link }}">
+                  <h3 class="usa-cta">
+                    {{ slide.banner_cta }}
+                  </h3>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      {% endfor %}
     </div>
-    {% endfor %}
-  </div>
 </section>
 
 
@@ -45,7 +45,7 @@ layout: default
               {{ slide.banner_title }}
             </h1>
             <h2>{{ slide.banner_label }}</h2>
-            <a href="{{ slide.banner_cta_link }}">
+            <a href="{{ site.baseurl }}{{ slide.banner_cta_link }}">
               <h3 class="usa-cta">
                 {{ slide.banner_cta }}
               </h3>
@@ -70,11 +70,11 @@ layout: default
       <h3 class="usa-text">
         {{ site.data.home.first_section_text }}
       </h3>
-      <a href="{{ site.data.home.first_section_cta_link }}">
-        <h3 class="usa-cta">
+      <h3 class="usa-cta">
+        <a href="{{ site.baseurl }}{{ site.data.home.first_section_cta_link }}">
           {{ site.data.home.first_section_cta }}
-        </h3>
-      </a>
+        </a>
+      </h3>
     </div>
 
     <div class="usa-width-six right-aligned-image">
@@ -99,11 +99,11 @@ layout: default
       <h3 class="usa-text">
         {{ site.data.home.second_section_text }}
       </h3>
-      <a href="{{ site.data.home.second_section_cta_link }}">
-        <h3 class="usa-cta">
+      <h3 class="usa-cta">
+        <a href="{{ site.baseurl }}{{ site.data.home.second_section_cta_link }}">
           {{ site.data.home.second_section_cta }}
-        </h3>
-      </a>
+        </a>
+      </h3>
     </div>
   </div>
 </section>
@@ -120,11 +120,11 @@ layout: default
       <h3 class="usa-text">
         {{ site.data.home.third_section_text }}
       </h3>
-      <a href="{{ site.data.home.third_section_cta_link }}">
-        <h3 class="usa-cta">
+      <h3 class="usa-cta">
+        <a href="{{ site.baseurl }}{{ site.data.home.third_section_cta_link }}">
           {{ site.data.home.third_section_cta }}
-        </h3>
-      </a>
+        </a>
+      </h3>
     </div>
 
     <div class="usa-width-six right-aligned-image">

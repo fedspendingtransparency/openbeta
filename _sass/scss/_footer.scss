@@ -21,7 +21,7 @@
   }
 
   .usa-data-act-logo {
-    margin-left: 1.5em;
+    margin-left: 0.6em;
 
     @include media($medium) {
       margin-bottom: 0.8em;
@@ -42,6 +42,7 @@
     width: 100%;
 
     .usa-width-twelve {
+      padding-left: 0;
       text-align: left;
 
       @include media($medium) {
