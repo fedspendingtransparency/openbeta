@@ -2,9 +2,9 @@
 
 # Data Act footer
 data_act_logo: /assets/img/logo_dataact_150x50.png
-data_act_logo_alt_text: Placeholder text
+data_act_logo_alt_text: "The logo for the DATA Act. It features a cube like icon in red, beige, blue and black and thin, widely spaced, black text that reads 'DATA Act'."
 data_act_text: 'Visit <a href="/">Federal Spending Transparency</a> to see the process for the implementation of the DATA Act requirements.'
 
 # Open Beta Footer
 open_beta_logo: /assets/img/logo_openbeta_bw_300x120.png
-open_beta_logo_alt_text: OpenBeta logo
+open_beta_logo_alt_text: "The logo of openbeta.usaspending.gov in black and white. It features a doughnut chart with multiple segments with the top right quarter offset. The text, 'OpenBeta.' appears on the first line in a light grey with 'USASPENDING.GOV' underneath in all caps font in a dark grey color."

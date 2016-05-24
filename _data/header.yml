@@ -2,6 +2,7 @@
 
 # Disclaimer header
 usa_disclaimer_icon: /assets/img/alert-icon_info_100x100.png
+usa_disclaimer_icon_alt_text: "An icon denoting additional information. It features a green circle with a lowercase 'i' in it's center."
 usa_disclaimer_spending_data: OpenBeta is not intended to be an official resource for Federal spending data.
 usa_disclaimer_link: 'For official Federal Spending data, please visit <a href="https://www.usaspending.gov">USAspending.gov</a>.'
 usa_disclaimer_official: An official website of the United States Government

@@ -8,21 +8,21 @@ carousel:
   banner_cta: Join the discussion
   banner_cta_link: /concepts/search-functionality
   banner_image: /assets/img/header_search-functionality-01.png
-  banner_image_alt_text: alt
+  banner_image_alt_text: A background image featuring a color gradient from light green to a mint green with a blurred wireframe of a search bar in the foreground.
 - usa_intro: 'Feedback Discussion:'
   banner_title: Search Results
   banner_label: What fields are most important to you?
   banner_cta: Join the discussion
   banner_cta_link: /concepts/search-results
   banner_image: /assets/img/header_search-results-01.png
-  banner_image_alt_text: alt
+  banner_image_alt_text: A background image featuring a color gradient from light green to a mint green with a blurred image of a bar chart in the foreground.
 - usa_intro: 'Feedback Discussion:'
   banner_title: Contract Award Summary
   banner_label: Which features from the three options are most important to you?
   banner_cta: Join the discussion
   banner_cta_link: /concepts/contract-award-summary
   banner_image: /assets/img/header_contract-award-summary-01.png
-  banner_image_alt_text: alt
+  banner_image_alt_text: A background image featuring a color gradient from light green to a mint green with a blurred wireframe of a vertical timeline in the foreground.
 
 #First Section
 first_section_title: What is OpenBeta?
@@ -31,7 +31,7 @@ first_section_text: OpenBeta.usaspending.gov is the feedback platform for featur
 first_section_cta: Join our discussions
 first_section_cta_link: /concepts
 first_section_img: /assets/img/illustration_process_500x250.png
-first_section_alt_text: alt
+first_section_alt_text: "An image illustrating the OpenBeta process, which consists of three components: the first one being discussion on open beta (represented by two speech bubbles) followed by agile development process (represented by a circular arrow juxtaposed with a straight arrow), followed by a software release (represented by a website displayed in a monitor)."
 
 #Second Section
 second_section_title: What can you do here?
@@ -40,7 +40,7 @@ second_section_text: 'Visit the Concepts page to see what we are currently devel
 second_section_cta: Join our discussions
 second_section_cta_link: /concepts
 second_section_img: /assets/img/illustration_chat_500x250.png
-second_section_alt_text: alt
+second_section_alt_text: "An illustration of a conversation, featuring two speech bubbles, one in green and the other in a lighter green."
 
 #Third Section
 third_section_title: Why does OpenBeta matter?
@@ -49,4 +49,4 @@ third_section_text: 'OpenBeta presents an exceptional opportunity for everyone i
 third_section_cta: Start now
 third_section_cta_link: /about
 third_section_img: /assets/img/illustration_lightbulb_500x250.png
-third_section_alt_text: alt 
+third_section_alt_text: "An illustration of a light bulb, depicted in a flat style in all green, with 5 short lines radiating from the bulb, suggesting light emitting from it."

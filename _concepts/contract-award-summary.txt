@@ -26,9 +26,9 @@ tabs:
       - description: This option displays high-level views of award details, a table of the prime transactions and subawards, a spending-over-time graph, and a treemap showing data by funding agency and appropriations account.
     disclaimer_text: this demo is for consideration purposes and is not indicative of a final design
     image: /assets/img/award-wireframes_A.png
-    image_alt_text: alt text
+    image_alt_text: An image of a proposed contract award summary page design. It features the award ID and recipient information at the top left of the page and the award amounts at the top right. The next section below contains more contract award details on the left and a timeline of award modifications on the right. The next section below features treemap graphics that illustrate the share of funding amounts divided among all of the funding offices as well as the distribution of obligations by appropriations account. The last section at the bottom contains a table view of the contract award's modifications. A tab exists to view sub awards.
     below_image_content: What do you think of the Contract Award Summary - Version A?
-    disqus_identifier: 2345
+    disqus_identifier: 71538462
     disqus_url: "http://treasury-dact-jekyll.s3-website-us-east-1.amazonaws.com/dev/concepts/contract-award-summary/#!version-a"
   - title: Version B
     url_hash: "#!version-b"
@@ -37,9 +37,9 @@ tabs:
       - description: This option features a visual timeline of an award's transactions.
     disclaimer_text: this demo is for consideration purposes and is not indicative of a final design
     image: /assets/img/award-wireframes_B.png
-    image_alt_text: alt text
+    image_alt_text: An image of a proposed layout for the contract award summary page that features the award ID, recipient information, agency information and contract description at the top left section, contract award values and contract term dates at the top right, and a vertical timeline of the contract activity in the bottom section which features information about modifications and sub awards displayed chronologically.
     below_image_content: What do you think of the Contract Award Summary - Version B?
-    disqus_identifier: 23456
+    disqus_identifier: 56237819
     disqus_url: "http://treasury-dact-jekyll.s3-website-us-east-1.amazonaws.com/dev/concepts/contract-award-summary/#!version-b"
   - title: Version C
     url_hash: "#!version-c"
@@ -48,9 +48,9 @@ tabs:
       - description: This option allows you to navigate the details of the award and displays a table view of those details.
     disclaimer_text: this demo is for consideration purposes and is not indicative of a final design
     image: /assets/img/award-wireframes_C.png
-    image_alt_text: alt text
+    image_alt_text: An image of a proposed layout for the contract award summary page that features the award ID, recipient information, agency information and contract description at the top left section, contract award values and contract term dates at the top right, and featured at the bottom of the page is a set of square buttons labeled with a count of various contract attributes that trigger the display of a table view to the left containing contract details corresponding to that button's label.
     below_image_content: What do you think of the Contract Award Summary - Version C?
-    disqus_identifier: 234567
+    disqus_identifier: 74813926
     disqus_url: "http://treasury-dact-jekyll.s3-website-us-east-1.amazonaws.com/dev/concepts/contract-award-summary/#!version-c"
 
 ---
