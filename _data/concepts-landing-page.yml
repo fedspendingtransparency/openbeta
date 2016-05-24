@@ -24,13 +24,6 @@ active_tab:
         description: How we display contract award data
         total_concepts: 3
         link: /concepts/contract-award-summary
-  - category: Home Page
-    scroll_id: home-page
-    topics:
-      - headline: Home Page
-        description: The design and features of the home page
-        total_concepts: 0
-        link: /concepts/home-page
 
 completed_tab:
   - category: Design

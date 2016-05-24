@@ -197,7 +197,15 @@ nav {
 
     &.concept-headline {
       color: $accent-color;
-      font-size: 1.2em;
+      font-size: 1.1em;
+      font-weight: 700;
+    }
+
+    &.concept-headline:hover {
+      text-decoration: underline;
+    }
+
+    &.concept-headline:focus {
       text-decoration: underline;
     }
   }
@@ -206,7 +214,7 @@ nav {
     display: block;
     margin-left: $base-spacing;
     outline: none;
-    padding: ($base-spacing / 2) 0 ($base-spacing / 2) 1em;
+    padding: 0.3em 0 0.3em 1em;
 
     &:last-child {
       margin-bottom: $base-spacing;
@@ -216,6 +224,7 @@ nav {
       border-bottom: 1px solid $base-border-color;
       border-left: 3px solid $accent-color;
       font-weight: bold;
+      margin-bottom: 0.5em
     }
   }
 
@@ -248,7 +257,7 @@ nav {
   $base-border-color: #dcdcdc !default;
   $base-background-color: #fff !default;
   $base-spacing: 1.5em !default;
-  $action-color: #477dca !default;
+  $action-color: #41994d !default;
   $dark-gray: #333 !default;
   $medium-screen: 40em !default;
   $tab-link-color: $dark-gray;

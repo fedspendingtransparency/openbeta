@@ -36,7 +36,7 @@
           <div class="scroll-on-page">
             <div id="concept-summary" class="usa-width-nine">
               <ul class="usa-disclaimer">
-                <li>disclaimer: {{ page.disclaimer_text }}</li>
+                <li><span class="usa-disclaimer-bold">disclaimer:</span> {{ page.disclaimer_text }}</li>
                 <li><a class="full-screen-image" href="{{ site.baseurl }}{{ page.image }}" data-lightbox="concepts">View Fullscreen</a></li>
               </ul>
 
@@ -44,7 +44,6 @@
                 <img src="{{ site.baseurl }}{{ page.image }}" alt="{{ page.image_alt_text }}" >
               </div>
 
-              <p class="list-header center-text paragraph-line-break">{{ page.below_image_content }}</p>
             </div>
 
             <div class="usa-width-three">
@@ -96,15 +95,13 @@
                     </ul>
 
                     <ul class="usa-disclaimer">
-                      <li>disclaimer: {{ tab.disclaimer_text }}</li>
+                      <li><span class="usa-disclaimer-bold">disclaimer:</span> {{ tab.disclaimer_text }}</li>
                       <li><a class="full-screen-image" href="{{ site.baseurl }}{{ tab.image }}" data-lightbox="concepts">View Fullscreen</a></li>
                     </ul>
 
                     <div class="image-background">
                       <img src="{{ site.baseurl }}{{ tab.image }}" alt="{{ tab.image_alt_text }}" >
                     </div>
-
-                    <p class="list-header center-text paragraph-line-break">{{ tab.below_image_content }}</p>
 
                   </div>
 
