@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<section class="usa-concepts usa-banner-block"></section>
+
+<section id="contact" class="usa-section">
+  <div class="grid">
+    <div class="usa-width-twelve">
+      <h1 class="usa-banner-title list-header">
+        {{ site.data.contact.headline }}
+      </h1>
+
+      {% for paragraph in site.data.contact.content %}
+        <p>{{ paragraph.text | replace: '!SITE_BASEURL!', site.baseurl }}</p>
+      {% endfor %}
+      <p>We encourage you to review the <a href='{{ site.baseurl }}/concepts'>Concepts</a> being proposed for the future USAspending.gov and join the discussion on each Topic.</p>
+    </div>
+  </div>
+</section>

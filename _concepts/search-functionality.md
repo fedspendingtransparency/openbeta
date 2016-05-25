@@ -24,7 +24,7 @@ tabs:
     description: "Key Feature:"
     features:
       - description: This option refreshes search results based on filters you choose.
-    disclaimer_text: this demo is for consideration purposes and is not indicative of a final design
+    disclaimer_text: This demo is the first phase only and not indicative of the final design.
     image: /assets/img/filters.png
     image_alt_text: The live filters feature allows users to further refine search results after they are returned without reloading the page.
     below_image_content: What do you think of the Live Filters option?
@@ -35,7 +35,7 @@ tabs:
     description: "Key Feature:"
     features:
       - description: This option makes all searchable fields available in one form. Select multiple filters, such as Spending Type, Fiscal Year, Agency, Place of Performance and Contractor Type.
-    disclaimer_text: this demo is for consideration purposes and is not indicative of a final design
+    disclaimer_text:
     image: /assets/img/adv_search.png
     image_alt_text: The advanced search feature allows users to create a search query by filling in a form which specifies exactly what data to return.
     below_image_content: What do you think of the Advanced Search option?
@@ -46,7 +46,7 @@ tabs:
     description: "Key Feature:"
     features:
       - description: This option is a simple interface that gives you the opportunity to build your own search using selections from the drop down menu.
-    disclaimer_text: this demo is for consideration purposes and is not indicative of a final design
+    disclaimer_text:
     image: /assets/img/search_builder.png
     image_alt_text: The search builder feature allows the user to construct a search query using dropdown menus to include specific search filters.
     below_image_content: What do you think of the Search Builder option?
@@ -56,8 +56,8 @@ tabs:
     url_hash: "#!sql-search"
     description: "Key Feature:"
     features:
-      - description: This option is a simple interface that gives you the opportunity to build your own search using selections from the drop down menu.
-    disclaimer_text: this demo is for consideration purposes and is not indicative of a final design
+      - description: This option gives you the ability to search the database using SQL queries.
+    disclaimer_text:
     image: /assets/img/sql_search.png
     image_alt_text: The SQL search feature provides a terminal style interface and the ability to search using structured query language (SQL).
     below_image_content: What do you think of the SQL Search option?

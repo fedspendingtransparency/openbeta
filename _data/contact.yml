@@ -1,0 +1,7 @@
+# Contact Page
+
+headline: Contact
+
+content:
+  - text: "If you have general questions about OpenBeta.usaspending.gov or the DATA Act, or have questions about the information on the site, or find technical problems, please contact us at <a href='mailto:fedspending@treasury.gov'>fedspending@treasury.gov</a>."
+  - text: "Due to high volume, we may not be able to respond directly to all emails."

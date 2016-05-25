@@ -36,7 +36,11 @@
           <div class="scroll-on-page">
             <div id="concept-summary" class="usa-width-nine">
               <ul class="usa-disclaimer">
-                <li><span class="usa-disclaimer-bold">disclaimer:</span> {{ page.disclaimer_text }}</li>
+              {% if page.disclaimer_text %}
+                <li><span class="usa-disclaimer-bold">Disclaimer:</span> {{ page.disclaimer_text }}</li>
+              {% else %}
+                <li></li>
+              {% endif %}
                 <li><a class="full-screen-image" href="{{ site.baseurl }}{{ page.image }}" data-lightbox="concepts">View Fullscreen</a></li>
               </ul>
 
@@ -94,8 +98,12 @@
                     {% endfor %}
                     </ul>
 
-                    <ul class="usa-disclaimer">
-                      <li><span class="usa-disclaimer-bold">disclaimer:</span> {{ tab.disclaimer_text }}</li>
+                    <ul class="usa-disclaimer">                    
+                    {% if tab.disclaimer_text %}
+                      <li><span class="usa-disclaimer-bold">Disclaimer:</span> {{ tab.disclaimer_text }}</li>
+                    {% else %}
+                      <li></li>
+                    {% endif %}
                       <li><a class="full-screen-image" href="{{ site.baseurl }}{{ tab.image }}" data-lightbox="concepts">View Fullscreen</a></li>
                     </ul>
 
