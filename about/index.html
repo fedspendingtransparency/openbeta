@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<section class="usa-concepts usa-banner-block"></section>
+
+<section id="about" class="usa-section">
+  <div class="grid">
+    <div class="usa-width-twelve">
+      <h1 class="usa-banner-title list-header">
+        {{ site.data.about.headline }}
+      </h1>
+
+      {% for paragraph in site.data.about.content %}
+        <p>{{ paragraph.text }}</p>
+      {% endfor %}
+    </div>
+  </div>
+</section>

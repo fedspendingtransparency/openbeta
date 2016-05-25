@@ -1,0 +1,28 @@
+/* * * * * * * * * * * * * * * * * * * * * * *
+
+  About Page
+
+* * * * * * * * * * * * * * * * * * * * * * */
+
+#about {
+  .usa-width-twelve {
+    padding: 1em 6em 6em 6em;
+    text-align: left;
+
+    @include media($medium) {
+      padding: 0em 1em;
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a:focus {
+    text-decoration: underline;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
