@@ -8,7 +8,9 @@
 
   <ul class="usa-topnavigation-list usa-unstyled-list" role="menubar">
   {% for nav_bar_menu_item in site.data.header.nav_bar_menu_items %}
-    {% if nav_bar_menu_item.url == page.dir %}
+    {% if page.url == nav_bar_menu_item.url %}
+      {% assign class = "usa-navigation-links active" %}
+    {% elsif page.relative_path contains '_concepts' and nav_bar_menu_item.text == 'Concepts' %}
       {% assign class = "usa-navigation-links active" %}
     {% else %}
       {% assign class = "usa-navigation-links" %}
