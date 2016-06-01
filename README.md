@@ -40,10 +40,6 @@ jekyll serve --watch
 
 Page content can be found in either a YAML or Markdown file.
 
-### Head:
-
-* `/_data/head.yml`
-
 ### Header:
 
 * `/_data/header.yml`
