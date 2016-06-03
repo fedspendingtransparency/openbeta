@@ -4,7 +4,6 @@ description: OpenBeta Description
 relative_permalinks: false
 markdown: kramdown
 baseurl: "/dev" # the subpath of your site, e.g. /blog
-disqus_shortname: "dataact-openbeta" # this is the shortname found in the Disqus admin settings
 
 # Concepts Pages
 collections:
@@ -18,3 +17,9 @@ defaults:
       type: "concepts"
     values:
       layout: concept
+
+# Disqus
+disqus_shortname: "dataact-openbeta" # this is the shortname found in the Disqus admin settings
+
+# Google Analytics
+google_analytics_id: "UA-77512441-1"
