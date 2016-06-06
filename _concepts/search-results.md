@@ -19,7 +19,7 @@ discussion_bullet_points:
 tabs_required: no
 
 disclaimer_text:
-image: "/assets/img/filters.png"
+image: "/assets/img/search_results.png"
 image_alt_text: An image of a proposed layout for the search results page that consists of a list of search filters on the left side of the page and to the right, a heat map of spending within the U.S., pie charts showing the distribution of awards by category and object class, a list of top awarding agencies, a list of top awarded recipients, and below, a table of all award results separated by award type, in tabs.
 below_image_content: What do you think of the Search Results option?
 disqus_identifier: 59476183
