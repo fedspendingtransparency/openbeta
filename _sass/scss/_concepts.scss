@@ -11,8 +11,14 @@
     background-size: cover;
     padding: 70px 0;
 
+    @include media($medium) {
+      padding: 30px 10px;
+      height: 250px;
+    }
+
     @include media($small) {
-      padding: 40px 0;
+      padding: 20px;
+      height: 275px;
     }
 
     h1, h2 {
@@ -79,5 +85,13 @@
 
   span {
     font-weight: 400;
+  }
+}
+
+.usa-no-tabs {
+  padding-left: 1em;
+
+  .usa-disclaimer {
+    margin-top: 0;
   }
 }
