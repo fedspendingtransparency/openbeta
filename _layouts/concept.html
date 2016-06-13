@@ -7,9 +7,9 @@
 
     {% include header.html %}
 
-    <section class="usa-concepts usa-banner-block"></section>
+    <div class="usa-concepts usa-banner-block"></div>
 
-    <section class="usa-concepts">
+    <div class="usa-concepts">
       <div class="grid">
         <div class="usa-width-twelve usa-main-content">
           <h1 class="usa-intro">{{ page.category }}</h1>
@@ -27,124 +27,127 @@
           </ul>
         </div>
       </div>
-    </section>
+    </div>
 
     {% if page.tabs_required == false %}
 
-      <section class="usa-concepts">
-        <div class="grid">
-          <div class="scroll-on-page">
-            <div id="concept-summary" class="usa-width-nine">
-              <ul class="usa-disclaimer">
-              {% if page.disclaimer_text %}
-                <li><span class="usa-disclaimer-bold">Disclaimer:</span> {{ page.disclaimer_text }}</li>
-              {% else %}
-                <li></li>
-              {% endif %}
-                <li><a class="full-screen-image" href="{{ site.baseurl }}{{ page.image }}" data-lightbox="concepts">View Fullscreen</a></li>
-              </ul>
+      <div id="usa-sidebar-wrapper">
+        <div class="usa-concepts">
+          <div class="grid">
+            <div class="scroll-on-page">
+              <div id="concept-summary" class="usa-width-nine usa-no-tabs">
+                <ul class="usa-disclaimer">
+                {% if page.disclaimer_text %}
+                  <li><span class="usa-disclaimer-bold">Disclaimer:</span> {{ page.disclaimer_text }}</li>
+                {% else %}
+                  <li></li>
+                {% endif %}
+                  <li><a class="full-screen-image" href="{{ site.baseurl }}{{ page.image }}" data-lightbox="concepts">View Fullscreen</a></li>
+                </ul>
 
-              <div class="image-background">
-                <img src="{{ site.baseurl }}{{ page.image }}" alt="{{ page.image_alt_text }}" >
+                <div class="image-background">
+                  <img src="{{ site.baseurl }}{{ page.image }}" alt="{{ page.image_alt_text }}" >
+                </div>
+
               </div>
 
-            </div>
-
-            <div class="usa-width-three">
-              <aside id="scroll-on-page-top">
-                <a class="scroll-on-page-link sidebar-is-active" href="#concept-summary">Concept Summary</a>
-                <a class="scroll-on-page-link" href="#discussion">Discussion</a>
-              </aside>
+              <div class="usa-width-three">
+                <aside id="scroll-on-page-top">
+                  <a class="scroll-on-page-link sidebar-is-active" href="#concept-summary">Concept Summary</a>
+                  <a class="scroll-on-page-link" href="#discussion">Discussion</a>
+                </aside>
+              </div>
             </div>
           </div>
         </div>
-      </section>
 
-      <section class="usa-concepts">
-        <div class="grid">
-          <div id="discussion" class="usa-width-nine">
-            {% include disqus.html disqus_identifier=tab.disqus_identifier disqus_url=tab.disqus_url %}
+        <div class="usa-concepts">
+          <div class="grid">
+            <div id="discussion" class="usa-width-nine">
+              {% include disqus.html disqus_identifier=tab.disqus_identifier disqus_url=tab.disqus_url %}
+            </div>
           </div>
         </div>
-      </section>
+      </div>
 
     {% else %}
+      <div id="usa-sidebar-wrapper">
+        <div class="usa-concepts">
+          <div class="grid">
+            <div class="scroll-on-page">
+              <ul class="accordion-tabs-minimal">
+              {% for tab in page.tabs %}
 
-      <section class="usa-concepts">
-        <div class="grid">
-          <div class="scroll-on-page">
-            <ul class="accordion-tabs-minimal">
-            {% for tab in page.tabs %}
+                <li class="tab-header-and-content">
 
-              <li class="tab-header-and-content">
+                  {% if forloop.first == true %}
+                    {% assign class = "tab-link is-active" %}
+                  {% else %}
+                    {% assign class = "tab-link" %}
+                  {% endif %}
 
-                {% if forloop.first == true %}
-                  {% assign class = "tab-link is-active" %}
-                {% else %}
-                  {% assign class = "tab-link" %}
-                {% endif %}
+                  <a href="{{ tab.url_hash }}" class="{{ class }}" onclick="reset('{{ tab.disqus_identifier }}', '{{ tab.disqus_url }}');">{{ tab.title }}
+                    <div class="disqus-concept-comment-count" data-disqus-identifier="{{ tab.disqus_identifier }}"></div>
+                    <div class="disqus-thread-updated" data-disqus-identifier="{{ tab.disqus_identifier }}"></div>
+                  </a>
+                  
+                  <div class="tab-content">
+                    <div id="concept-summary" class="usa-width-nine">
+                      <p class="list-header">{{ tab.description }}</p>
+                      <ul>
+                      {% for item in tab.features %}
+                        <li>{{ item.description }}</li>
+                      {% endfor %}
+                      </ul>
 
-                <a href="{{ tab.url_hash }}" class="{{ class }}" onclick="reset('{{ tab.disqus_identifier }}', '{{ tab.disqus_url }}');">{{ tab.title }}
-                  <div class="disqus-concept-comment-count" data-disqus-identifier="{{ tab.disqus_identifier }}"></div>
-                  <div class="disqus-thread-updated" data-disqus-identifier="{{ tab.disqus_identifier }}"></div>
-                </a>
-                
-                <div class="tab-content">
-                  <div id="concept-summary" class="usa-width-nine">
-                    <p class="list-header">{{ tab.description }}</p>
-                    <ul>
-                    {% for item in tab.features %}
-                      <li>{{ item.description }}</li>
-                    {% endfor %}
-                    </ul>
+                      <ul class="usa-disclaimer">                    
+                      {% if tab.disclaimer_text %}
+                        <li><span class="usa-disclaimer-bold">Disclaimer:</span> {{ tab.disclaimer_text }}</li>
+                      {% else %}
+                        <li></li>
+                      {% endif %}
+                        <li><a class="full-screen-image" href="{{ site.baseurl }}{{ tab.image }}" data-lightbox="concepts">View Fullscreen</a></li>
+                      </ul>
 
-                    <ul class="usa-disclaimer">                    
-                    {% if tab.disclaimer_text %}
-                      <li><span class="usa-disclaimer-bold">Disclaimer:</span> {{ tab.disclaimer_text }}</li>
-                    {% else %}
-                      <li></li>
-                    {% endif %}
-                      <li><a class="full-screen-image" href="{{ site.baseurl }}{{ tab.image }}" data-lightbox="concepts">View Fullscreen</a></li>
-                    </ul>
+                      <div class="image-background">
+                        <img src="{{ site.baseurl }}{{ tab.image }}" alt="{{ tab.image_alt_text }}" >
+                      </div>
 
-                    <div class="image-background">
-                      <img src="{{ site.baseurl }}{{ tab.image }}" alt="{{ tab.image_alt_text }}" >
                     </div>
 
+                    <div class="usa-width-three">
+                      <aside id="scroll-on-page-top">
+                        <a class="scroll-on-page-link sidebar-is-active" href="#concept-summary">Concept Summary</a>
+                        <a class="scroll-on-page-link" href="#discussion">Discussion</a>
+                      </aside>
+                    </div>
                   </div>
+                
+                </li>
 
-                  <div class="usa-width-three">
-                    <aside id="scroll-on-page-top">
-                      <a class="scroll-on-page-link sidebar-is-active" href="#concept-summary">Concept Summary</a>
-                      <a class="scroll-on-page-link" href="#discussion">Discussion</a>
-                    </aside>
-                  </div>
-                </div>
-              
-              </li>
-
-            {% endfor %}
-            </ul>
+              {% endfor %}
+              </ul>
+            </div>
           </div>
         </div>
-      </section>
-    {% endif %}
+      {% endif %}
 
-    <section class="usa-concepts">
-      <div class="grid">
-        {% for tab in page.tabs %}
+        <div class="usa-concepts">
+          <div class="grid">
+            {% for tab in page.tabs %}
 
-          {% if forloop.first == true %}
+              {% if forloop.first == true %}
 
-          <div id="discussion" class="usa-width-nine">
-            {% include disqus.html disqus_identifier=tab.disqus_identifier disqus_url=tab.disqus_url %}
+              <div id="discussion" class="usa-width-nine">
+                {% include disqus.html disqus_identifier=tab.disqus_identifier disqus_url=tab.disqus_url %}
+              </div>
+
+              {% endif %}
+
+            {% endfor %}
           </div>
-
-          {% endif %}
-
-        {% endfor %}
+        </div>
       </div>
-    </section>
 
     {% include footer.html %}
 
@@ -152,6 +155,7 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="{{ site.baseurl }}/assets/vendor/slick/slick.min.js"></script>
     <script type="text/javascript" src="{{ site.baseurl }}/assets/vendor/lightbox2/lightbox.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/vendor/sticky-kit/sticky-kit.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timeago/1.5.2/jquery.timeago.min.js"></script>
     <script type="text/javascript" src="{{ site.baseurl }}/assets/js/main.js"></script>
 
