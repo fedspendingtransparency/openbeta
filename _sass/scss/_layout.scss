@@ -83,6 +83,11 @@
 
   padding-left: 1em;
   padding-right: 1em;
+
+  @include media($medium) {
+    padding-left: 0;
+    padding-right: 1.5em;
+  }
 }
 
 
@@ -96,16 +101,17 @@
   border-top: 1px solid $header-border-color;
   color: #fff;
   text-align: center;
+  overflow: hidden;
 
   @include media($medium) {
     background: $accent-color;
-    height: 350px;
+    height: 300px;
     padding-left: 1em;
     padding-right: 1em;
   }
 
   @include media($small) {
-    padding: 3em 0.2em;
+    padding: 3em 0em 3em 1em;
   }
 
   &.mobile {
@@ -327,6 +333,10 @@ section.usa-section:nth-of-type(5) {
   padding-bottom: 1.5em;
 }
 
+.usa-bold {
+  font-weight: 700;
+}
+
 
 /* * * * * * * * * * * * * * * * * * * * * * *
 
@@ -374,8 +384,22 @@ ul.slick-dots {
 
 * * * * * * * * * * * * * * * * * * * * * * */
 
-#disqus_thread {
+#discussion {
   margin-bottom: 5em;
   margin-left: 1em;
   margin-right: 1em;
+  padding-right: 1em;
+
+  @include media($medium) {
+    padding-right: 2em;
+  }
+
+  .topic-row {
+    margin: 1em 0 3em;
+    font-weight: 600;
+
+    a {
+      text-decoration: none;
+    }
+  }
 }
