@@ -1,0 +1,21 @@
+# About Page
+
+headline: OpenBeta Commenting Policy
+
+content:
+  - text: "The Bureau of Fiscal Service (Fiscal Service) strives to utilize innovative and emerging interactive technologies to increase openness and transparency in federal government. By encouraging relevant discussion and engaging the public in an ongoing dialog, Fiscal Service hopes to more effectively and more efficiently realize its commitment to the American people to improve communication."
+  - text: "To better engage the public in ongoing dialog, Fiscal Service is using the third-party platform Disqus. When interacting with Disqus, you may reveal certain personal information to the Fiscal Service or to third parties. Except when used by Fiscal Service web staff for the purpose of responding to a specific message or request, Fiscal Service will neither use nor share nor retain such data."
+  - text: "<span class='usa-bold'>Posting:</span> We want your comments to drive the conversation, but we also expect that they will be respectful of polite discourse. Comments should relate strictly to the Concepts (mockups and wireframes) that are posted. Fiscal Service will decline to publish and/or remove any comments that:"
+  - text: "<ol><li>contain obscene or vulgar language, personal attacks of any kind, or offensive terms that target a specific race, color, sex, sexual orientation, national origin, ethnicity, age, religion,  or disability;</li><li>promote commercial services or products (relevant non-commercial links are not per se prohibited);</li><li>are off-topic;</li><li>make unsupported accusations;</li><li>contain copyrighted or other proprietary material without clear indication of permission to copy the material from the original source*);</li><li>suggest or encourage illegal activity;</li><li>are repetitive postings or \"spam.\"</li></ol>"
+  - text: "If you have registered for a Disqus account, you will be able to \"like\" or \"dislike\" others’ comments. Please remember that comments and preferences reflect the views of the commenters and not the official views of Fiscal Service or the federal government."
+  - text: "<span class='usa-bold'>Moderation:</span> All comments are moderated prior to being posted. Comments are accepted or rejected in whole – we do not edit comments to remove objectionable content."
+  - text: "We recognize the internet is an always-on medium, and your comments are welcome at any time. However, given the need to conserve federal resources, moderating and posting of comments will occur as speedily as possible, during normal business hours."
+  - text: "Words commonly associated with spam and strings of numbers that resemble phone numbers or social security numbers are automatically flagged. Any flagged comments are reviewed and are either re-posted within one business day or removed from the site. Records are kept of all removed comments."
+  - text: "From time to time, the moderator posts responses to comments in the threads. This does not mean we agree or disagree with the comment. The goal of the moderator is to answer specific questions or to make sure the conversation stays productive and on topic."
+  - text: "Comments may be treated as federal records subject to the Federal Records Act and maintained consistent with that Act."
+  - text: "<span class='usa-bold'>OpenBeta.usaspending.gov PRIVACY POLICY</span>"
+  - text: "Please remember that any information you provide will be visible to the general public. To protect your privacy and the privacy of others, please do not include phone numbers, email addresses, or other personal information in the body of your comment."
+  - text: "Should any personal information be included in a comment, Fiscal Service will not sell it, nor will Fiscal Service share it except as permitted by law."
+  - text: "Fiscal Service does not collect any personally identifiable information from the comments."
+  - text: "The Bureau of Fiscal Service reserves the right to modify this policy at any time."
+  - text: "*You agree to grant a non-exclusive, irrevocable, royalty-free license to the rest of the world for submissions under the <a href='http://creativecommons.org/licenses/by/3.0/us/' target='_blank'>Creative Commons Attribution 3.0 United States License.</a>"

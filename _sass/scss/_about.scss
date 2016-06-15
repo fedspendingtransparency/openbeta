@@ -4,7 +4,7 @@
 
 * * * * * * * * * * * * * * * * * * * * * * */
 
-#about, #contact {
+#about, #contact, #commenting-policy {
   .usa-width-twelve {
     padding: 1em 6em 6em 6em;
     text-align: left;
@@ -12,6 +12,10 @@
     @include media($medium) {
       padding: 0em 1em;
     }
+  }
+
+  ol {
+    list-style-type: decimal;
   }
 
   a {

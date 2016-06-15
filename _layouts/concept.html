@@ -64,6 +64,9 @@
         <div class="usa-concepts">
           <div class="grid">
             <div id="discussion" class="usa-width-nine">
+              <div class="topic-row">
+                <p>Read our <a href="{{ site.baseurl }}/commenting-policy">Commenting Policy</a> for more information about our discussions.</p>
+              </div>
               {% include disqus.html disqus_identifier=tab.disqus_identifier disqus_url=tab.disqus_url %}
             </div>
           </div>
@@ -139,6 +142,9 @@
               {% if forloop.first == true %}
 
               <div id="discussion" class="usa-width-nine">
+                <div class="topic-row">
+                  <p>Read our <a href="{{ site.baseurl }}/commenting-policy">Commenting Policy</a> for more information about our discussions.</p>
+                </div>
                 {% include disqus.html disqus_identifier=tab.disqus_identifier disqus_url=tab.disqus_url %}
               </div>
 
