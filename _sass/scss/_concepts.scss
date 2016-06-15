@@ -91,7 +91,15 @@
 .usa-no-tabs {
   padding-left: 1em;
 
+  @include media($medium) {
+    padding-right: 1em;
+  }
+
   .usa-disclaimer {
     margin-top: 0;
+  }
+
+  + .usa-width-three {
+    padding-right: 1em;
   }
 }

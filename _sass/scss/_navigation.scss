@@ -194,11 +194,11 @@ nav {
       margin-left: 1em;
       margin-right: 1em;
     }
+  }
 
-    .usa-width-three {
-      @include media($medium) {
-        display: none;
-      }
+  .usa-width-three {
+    @include media($medium) {
+      display: none;
     }
   }
 
