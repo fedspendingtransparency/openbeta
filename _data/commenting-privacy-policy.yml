@@ -1,6 +1,8 @@
 # About Page
 
-headline: OpenBeta Commenting Policy
+headline: 
+  - text: "PLEASE READ THE DISQUS <a href='https://help.disqus.com/customer/portal/articles/1657951?utm_source=disqus&utm_medium=embed-footer&utm_content=privacy-btn' target='_blank'>PRIVACY POLICY</a>."
+  - text: OpenBeta Commenting Policy
 
 content:
   - text: "The Bureau of Fiscal Service (Fiscal Service) strives to utilize innovative and emerging interactive technologies to increase openness and transparency in federal government. By encouraging relevant discussion and engaging the public in an ongoing dialog, Fiscal Service hopes to more effectively and more efficiently realize its commitment to the American people to improve communication."
