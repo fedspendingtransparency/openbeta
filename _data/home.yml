@@ -3,13 +3,6 @@
 # Carousel Section
 carousel:
 - usa_intro: 'Feedback Discussion:'
-  banner_title: Search Functionality
-  banner_label: Which search option works best for you?
-  banner_cta: Join the discussion
-  banner_cta_link: /concepts/search-functionality
-  banner_image: /assets/img/header_search-functionality-01.png
-  banner_image_alt_text: A background image featuring a color gradient from light green to a mint green with a blurred wireframe of a search bar in the foreground.
-- usa_intro: 'Feedback Discussion:'
   banner_title: Search Results
   banner_label: What fields are most important to you?
   banner_cta: Join the discussion
@@ -23,6 +16,13 @@ carousel:
   banner_cta_link: /concepts/contract-award-summary
   banner_image: /assets/img/header_contract-award-summary-01.png
   banner_image_alt_text: A background image featuring a color gradient from light green to a mint green with a blurred wireframe of a vertical timeline in the foreground.
+- usa_intro: 'Feedback Discussion:'
+  banner_title: Search Functionality
+  banner_label: Which search option works best for you?
+  banner_cta: Join the discussion
+  banner_cta_link: /concepts/search-functionality
+  banner_image: /assets/img/header_search-functionality-01.png
+  banner_image_alt_text: A background image featuring a color gradient from light green to a mint green with a blurred wireframe of a search bar in the foreground.
 
 #First Section
 first_section_title: What is OpenBeta?
