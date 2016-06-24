@@ -24,6 +24,13 @@ active_tab:
         description: How we display contract award data
         total_concepts: 3
         link: /concepts/contract-award-summary
+  - category: General Pages
+    scroll_id: general-pages
+    topics:
+      - headline: Home Page
+        description: Our introduction to USAspending.gov
+        total_concepts: 1
+        link: /concepts/home-page
 
 completed_tab:
   - category: Design
