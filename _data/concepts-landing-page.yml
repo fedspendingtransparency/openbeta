@@ -42,14 +42,10 @@ completed_tab:
         link: /concepts/glossary
 
 archived_tab: 
-  - category: Data
-    scroll_id: data
+  - category: Search
+    scroll_id: archived-search
     topics:
-      - headline: Award Data
-        description: The data surrounding awards
-        total_concepts: 0
-        link: /concepts/award-data
-      - headline: Grant Data
-        description: The data surrounding grants
-        total_concepts: 0
-        link: /concepts/grant-data
+      - headline: Search Functionality
+        description: How you can search our data
+        total_concepts: 1
+        link: /concepts/archived-search-functionality
