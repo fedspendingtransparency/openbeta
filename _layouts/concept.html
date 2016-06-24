@@ -13,7 +13,18 @@
       <div class="grid">
         <div class="usa-width-twelve usa-main-content">
           <h1 class="usa-intro">{{ page.category }}</h1>
-          <h1 class="usa-banner-title list-header">{{ page.headline }}</h2>
+
+          <ul class="usa-archived-items">
+            <li><h1 class="usa-banner-title list-header">{{ page.headline }}</h2></li>
+
+            {% if page.archived_page == true %}
+              <li><span class="usa-archived-button">Archived</span></li>
+            {% endif %}
+          </ul>
+
+          {% if page.archived_page == true %}
+            <p class="usa-archived-text usa-bold">{{ page.archived_page_text }}</p>
+          {% endif %}
 
           {% for item in page.copy %}
             <p>{{ item.text }}</p>
@@ -36,6 +47,11 @@
           <div class="grid">
             <div class="scroll-on-page">
               <div id="concept-summary" class="usa-width-nine usa-no-tabs">
+
+                {% if page.archived_page == true %}
+                  <p class="usa-archived-text">{{ page.archived_text }}</p>
+                {% endif %}
+
                 <ul class="usa-disclaimer">
                 {% if page.disclaimer_text %}
                   <li><span class="usa-disclaimer-bold">Disclaimer:</span> {{ page.disclaimer_text }}</li>
@@ -53,8 +69,23 @@
 
               <div class="usa-width-three">
                 <aside id="scroll-on-page-top">
-                  <a class="scroll-on-page-link sidebar-is-active" href="#concept-summary">Concept Summary</a>
-                  <a class="scroll-on-page-link" href="#discussion">Discussion</a>
+
+                  {% if page.archived_page == true %}
+                    {% assign class = "scroll-on-page-link sidebar-is-active usa-archived-item" %}
+                  {% else %}
+                    {% assign class = "scroll-on-page-link sidebar-is-active" %}
+                  {% endif %}
+
+                  <a class="{{ class }}" href="#concept-summary">Concept Summary</a>
+
+                  {% if page.archived_page == true %}
+                    {% assign class = "scroll-on-page-link usa-archived-item" %}
+                  {% else %}
+                    {% assign class = "scroll-on-page-link" %}
+                  {% endif %}
+
+                  <a class="{{ class }}" href="#discussion">Discussion</a>
+
                 </aside>
               </div>
             </div>
@@ -84,9 +115,17 @@
                 <li class="tab-header-and-content">
 
                   {% if forloop.first == true %}
-                    {% assign class = "tab-link is-active" %}
+                    {% if page.archived_page == true %}
+                      {% assign class = "tab-link usa-archived-tab is-active" %}
+                    {% else %}
+                      {% assign class = "tab-link is-active" %}
+                    {% endif %}
                   {% else %}
-                    {% assign class = "tab-link" %}
+                    {% if page.archived_page == true %}
+                      {% assign class = "tab-link usa-archived-tab" %}
+                    {% else %}
+                      {% assign class = "tab-link" %}
+                    {% endif %}
                   {% endif %}
 
                   <a href="{{ tab.url_hash }}" class="{{ class }}" onclick="reset('{{ tab.disqus_identifier }}', '{{ tab.disqus_url }}');">{{ tab.title }}
@@ -96,6 +135,11 @@
                   
                   <div class="tab-content">
                     <div id="concept-summary" class="usa-width-nine">
+
+                      {% if page.archived_page == true %}
+                        <p class="usa-archived-text">{{ tab.archived_text }}</p>
+                      {% endif %}
+
                       <p class="list-header">{{ tab.description }}</p>
                       <ul>
                       {% for item in tab.features %}
@@ -120,8 +164,23 @@
 
                     <div class="usa-width-three">
                       <aside id="scroll-on-page-top">
-                        <a class="scroll-on-page-link sidebar-is-active" href="#concept-summary">Concept Summary</a>
-                        <a class="scroll-on-page-link" href="#discussion">Discussion</a>
+
+                        {% if page.archived_page == true %}
+                          {% assign class = "scroll-on-page-link sidebar-is-active usa-archived-item" %}
+                        {% else %}
+                          {% assign class = "scroll-on-page-link sidebar-is-active" %}
+                        {% endif %}
+
+                        <a class="{{ class }}" href="#concept-summary">Concept Summary</a>
+
+                        {% if page.archived_page == true %}
+                          {% assign class = "scroll-on-page-link usa-archived-item" %}
+                        {% else %}
+                          {% assign class = "scroll-on-page-link" %}
+                        {% endif %}
+
+                        <a class="{{ class }}" href="#discussion">Discussion</a>
+
                       </aside>
                     </div>
                   </div>
@@ -129,6 +188,11 @@
                 </li>
 
               {% endfor %}
+
+              {% if page.link_to_archived_designs != nil %}
+                <li class="usa-cta usa-link-to-archive"><a href="{{ site.baseurl }}{{ page.link_to_archived_designs }}">Archived Designs</a></li>
+              {% endif %}
+
               </ul>
             </div>
           </div>

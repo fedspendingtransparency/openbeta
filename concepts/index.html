@@ -81,13 +81,30 @@ title: Concepts
               {% for tab in site.data.concepts-landing-page.completed_tab %}
 
                 <h2 id="{{ tab.scroll_id }}" class="category-header">{{ tab.category }}</h2>
-
+                <div class="category-section">
                 {% for row in tab.topics %}
-                  <h3>
-                    <a href="{{ row.link }}">{{ row.headline }}</a>
-                  </h3>
-                  <p>{{ row.description }}</p>
+                  <div class="topic-row">
+                    <ul>
+                      <li>
+                        <h3>
+                          <a class="concept-headline" href="{{ site.baseurl }}{{ row.link }}">{{ row.headline }}</a>
+                        </h3>
+                        <p>{{ row.description }}</p>
+                      </li>
+
+                      <li>
+                        {% if row.total_concepts == 1 %}
+                          <p class="total-concepts">{{ row.total_concepts }} <span>concept</span></p>
+                        {% else %}
+                          <p class="total-concepts">{{ row.total_concepts }} <span>concepts</span></p>
+                        {% endif %}
+                      </li>
+                    </ul>
+
+                  </div>
+
                 {% endfor %}
+                </div>
                 
               {% endfor %}
               </div>
@@ -102,20 +119,36 @@ title: Concepts
             </div>
           </li>
           <li class="tab-header-and-content">
-            <a href="#archived" class="tab-link disabled">Archived</a>
+            <a href="#archived" class="tab-link usa-archived-tab">Archived</a>
             <div class="tab-content">
               <div class="usa-width-nine">
 
               {% for tab in site.data.concepts-landing-page.archived_tab %}
 
                 <h2 id="{{ tab.scroll_id }}" class="category-header">{{ tab.category }}</h2>
-
+                <div class="category-section">
                 {% for row in tab.topics %}
-                  <h3>
-                    <a href="{{ row.link }}">{{ row.headline }}</a>
-                  </h3>
-                  <p>{{ row.description }}</p>
+                  <div class="topic-row">
+                    <ul>
+                      <li>
+                        <h3>
+                          <a class="concept-headline usa-archived-page" href="{{ site.baseurl }}{{ row.link }}">{{ row.headline }}</a>
+                        </h3>
+                        <p>{{ row.description }}</p>
+                      </li>
+
+                      <li>
+                        {% if row.total_concepts == 1 %}
+                          <p class="total-concepts">{{ row.total_concepts }} <span>concept</span></p>
+                        {% else %}
+                          <p class="total-concepts">{{ row.total_concepts }} <span>concepts</span></p>
+                        {% endif %}
+                      </li>
+                    </ul>
+
+                  </div>
                 {% endfor %}
+                </div>
                 
               {% endfor %}
               </div>
@@ -123,7 +156,7 @@ title: Concepts
               <div class="usa-width-three">
                 <aside id="scroll-on-page-top">
                 {% for sidebar-item in site.data.concepts-landing-page.archived_tab %}
-                  <a class="scroll-on-page-link" href="#{{ sidebar-item.scroll_id }}">{{ sidebar-item.category }}</a>
+                  <a class="scroll-on-page-link usa-archived-item" href="#{{ sidebar-item.scroll_id }}">{{ sidebar-item.category }}</a>
                 {% endfor %}
                 </aside>
               </div>   

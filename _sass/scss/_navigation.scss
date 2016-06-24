@@ -189,6 +189,7 @@ nav {
   .accordion-tabs-minimal {
     margin-left: 1em;
     margin-right: 1em;
+    position: relative;
 
     @include media($small) {
       margin-left: 1em;
@@ -210,6 +211,10 @@ nav {
       color: $accent-color;
       font-size: 1.1em;
       font-weight: 700;
+
+      &.usa-archived-page {
+        color: $archived-color;
+      }
     }
 
     &.concept-headline:hover {
@@ -218,6 +223,30 @@ nav {
 
     &.concept-headline:focus {
       text-decoration: underline;
+    }
+
+    &.usa-archived-link {
+      color: $archived-color;
+      text-decoration: underline;
+    }
+
+    &.usa-archived-link:hover {
+      text-decoration: none;
+    }
+
+    &.usa-archived-link:focus {
+      text-decoration: none;
+    }
+  }
+
+  .usa-link-to-archive {
+    list-style: none;
+    position: absolute;
+    right: 0.2em;
+    top: 0.8em;
+
+    a {
+      color: $accent-color;
     }
   }
 
@@ -235,7 +264,11 @@ nav {
       border-bottom: 1px solid $base-border-color;
       border-left: 3px solid $accent-color;
       font-weight: bold;
-      margin-bottom: 0.5em
+      margin-bottom: 0.5em;
+
+      &.usa-archived-item {
+        border-left-color: $archived-color;
+      }
     }
   }
 
@@ -333,6 +366,10 @@ nav {
       color: $tab-link-color;
       font-weight: bold;
       margin-bottom: -1px;
+
+      &.usa-archived-tab {
+        border-left-color: $archived-color;
+      }
 
       @include media($tab-mode) {
         border-right: none;

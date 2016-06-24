@@ -1,6 +1,9 @@
 ---
 title: Search Functionality
-class: search-functionality
+
+archived_page: no
+archived_page_text:
+link_to_archived_designs: "/concepts/archived-search-functionality"
 
 category: "Search:"
 
@@ -19,19 +22,9 @@ discussion_bullet_points:
 tabs_required: yes
 
 tabs: 
-  - title: Live Filters
-    url_hash: "#!live-filters"
-    description: "Key Feature:"
-    features:
-      - description: This option refreshes search results based on filters you choose.
-    disclaimer_text: This demo is the first phase only and not indicative of the final design.
-    image: /assets/img/filters.png
-    image_alt_text: The live filters feature allows users to further refine search results after they are returned without reloading the page.
-    below_image_content: What do you think of the Live Filters option?
-    disqus_identifier: 35891276
-    disqus_url: "http://treasury-dact-jekyll.s3-website-us-east-1.amazonaws.com/dev/concepts/search-functionality/#!live-filters"
   - title: Advanced Search
     url_hash: "#!advanced-search"
+    archived_text:
     description: "Key Feature:"
     features:
       - description: This option makes all searchable fields available in one form. Select multiple filters, such as Spending Type, Fiscal Year, Agency, Place of Performance and Contractor Type.
@@ -43,6 +36,7 @@ tabs:
     disqus_url: "http://treasury-dact-jekyll.s3-website-us-east-1.amazonaws.com/dev/concepts/search-functionality/#!advanced-search"
   - title: Search Builder
     url_hash: "#!search-builder"
+    archived_text:
     description: "Key Feature:"
     features:
       - description: This option is a simple interface that gives you the opportunity to build your own search using selections from the drop down menu.
@@ -54,6 +48,7 @@ tabs:
     disqus_url: "http://treasury-dact-jekyll.s3-website-us-east-1.amazonaws.com/dev/concepts/search-functionality/#!search-builder"
   - title: SQL Search
     url_hash: "#!sql-search"
+    archived_text:
     description: "Key Feature:"
     features:
       - description: This option gives you the ability to search the database using SQL queries.

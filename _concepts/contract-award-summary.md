@@ -1,6 +1,9 @@
 ---
 title: Contract Award Summary
-class: contract-award-summary
+
+archived_page: no
+archived_page_text:
+link_to_archived_designs:
 
 category: "Summary Pages:"
 
@@ -21,6 +24,7 @@ tabs_required: yes
 tabs: 
   - title: Version A
     url_hash: "#!version-a"
+    archived_text:
     description: "Key Features:"
     features:
       - description: This option displays high-level views of award details, a table of the prime transactions and subawards, a spending-over-time graph, and a treemap showing data by funding agency and appropriations account.
@@ -32,6 +36,7 @@ tabs:
     disqus_url: "http://treasury-dact-jekyll.s3-website-us-east-1.amazonaws.com/dev/concepts/contract-award-summary/#!version-a"
   - title: Version B
     url_hash: "#!version-b"
+    archived_text:
     description: "Key Features:"
     features:
       - description: This option features a visual timeline of an award's transactions.
@@ -43,6 +48,7 @@ tabs:
     disqus_url: "http://treasury-dact-jekyll.s3-website-us-east-1.amazonaws.com/dev/concepts/contract-award-summary/#!version-b"
   - title: Version C
     url_hash: "#!version-c"
+    archived_text:
     description: "Key Features:"
     features:
       - description: This option allows you to navigate the details of the award and displays a table view of those details.

@@ -1,6 +1,8 @@
 ---
 title: Search Results
-class: search-results
+
+archived_page: no
+archived_page_text:
 
 category: "Search:"
 
@@ -18,6 +20,7 @@ discussion_bullet_points:
 
 tabs_required: no
 
+archived_text:
 disclaimer_text:
 image: "/assets/img/search_results.png"
 image_alt_text: An image of a proposed layout for the search results page that consists of a list of search filters on the left side of the page and to the right, a heat map of spending within the U.S., pie charts showing the distribution of awards by category and object class, a list of top awarding agencies, a list of top awarded recipients, and below, a table of all award results separated by award type, in tabs.
