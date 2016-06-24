@@ -54,7 +54,7 @@
 
                 <ul class="usa-disclaimer">
                 {% if page.disclaimer_text %}
-                  <li><span class="usa-disclaimer-bold">Disclaimer:</span> {{ page.disclaimer_text }}</li>
+                  <li>{{ page.disclaimer_text }}</li>
                 {% else %}
                   <li></li>
                 {% endif %}
@@ -149,7 +149,7 @@
 
                       <ul class="usa-disclaimer">                    
                       {% if tab.disclaimer_text %}
-                        <li><span class="usa-disclaimer-bold">Disclaimer:</span> {{ tab.disclaimer_text }}</li>
+                        <li>{{ tab.disclaimer_text }}</li>
                       {% else %}
                         <li></li>
                       {% endif %}

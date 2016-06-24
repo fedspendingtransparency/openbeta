@@ -68,8 +68,10 @@
   padding-bottom: 1em;
 }
 
-.scroll-on-page a.full-screen-image {
-  color: $accent-color;
+.external-link:after {
+  font-family: 'FontAwesome';
+  content: "\f08e";
+  padding-left: 0.5em;
 }
 
 .full-screen-image:after {

@@ -237,6 +237,15 @@ nav {
     &.usa-archived-link:focus {
       text-decoration: none;
     }
+
+    &.usa-cta {
+      color: $accent-color;
+      font-weight: 400;
+    }
+
+    &.full-screen-image {
+      color: $accent-color;
+    }
   }
 
   .usa-link-to-archive {
@@ -301,7 +310,7 @@ nav {
   $base-border-color: #dcdcdc !default;
   $base-background-color: #fff !default;
   $base-spacing: 1.5em !default;
-  $action-color: #41994d !default;
+  $action-color: #68bf74 !default;
   $dark-gray: #333 !default;
   $medium-screen: 40em !default;
   $tab-link-color: $dark-gray;

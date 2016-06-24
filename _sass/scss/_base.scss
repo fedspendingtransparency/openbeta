@@ -96,11 +96,11 @@ a {
     text-decoration: underline;
 
     &:visited {
-        color: darken($accent-color, 15%);
+        color: $accent-color;
     }
 
     &:hover {
-        color: darken($accent-color, 15%);
+        color: $accent-color;
         text-decoration: none;
     }
 }
