@@ -28,7 +28,7 @@ active_tab:
     scroll_id: general-pages
     topics:
       - headline: Home Page
-        description: Our introduction to USAspending.gov
+        description: Your introduction to USAspending.gov
         total_concepts: 1
         link: /concepts/home-page
 
