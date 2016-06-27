@@ -16,8 +16,8 @@ copy:
 discussion_title: "Discussion suggestions:"
 
 discussion_bullet_points:
-- Are there missing data points or data points that are not of interest to you?
-- Are the labels and terminology clear?
+  - Are there missing data points or data points that are not of interest to you?
+  - Are the labels and terminology clear?
 
 tabs_required: yes
 
@@ -58,3 +58,5 @@ tabs:
     below_image_content: What do you think of the Contract Award Summary - Version C?
     disqus_identifier: 74813926
     disqus_url: "http://treasury-dact-jekyll.s3-website-us-east-1.amazonaws.com/dev/concepts/contract-award-summary/#!version-c"
+
+---
