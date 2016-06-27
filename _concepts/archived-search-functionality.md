@@ -2,7 +2,7 @@
 title: Search Functionality
 
 archived_page: yes
-archived_page_text: The following designs have been archived and are no longer being considered for implementations.
+archived_page_text: The following designs have been archived and are no longer being considered for implementation.
 link_to_archived_designs:
 
 category: "Search:"
