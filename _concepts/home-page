@@ -1,0 +1,24 @@
+---
+title: Home Page
+
+archived_page: no
+archived_page_text:
+
+category: "Genera:"
+
+headline: Home Page
+
+copy: 
+  - text: Below is a design option for the Home Page. Please take a look and tell us what you think in the discussion section below the option.
+
+discussion_title: "Discussion suggestions:"
+
+discussion_bullet_points:
+- What topics would you like to see in the Featured Stories?
+- Is there other information or data you want included?
+
+tabs_required: no
+
+archived_text:
+disclaimer_text: <a class="usa-cta external-link" href='http://9bgx80.axshare.com/home.html' target="_blank">View an interactive version of the below image</a>
+image: "/assets/img/home-page.jpg"
