@@ -56,3 +56,11 @@ archived_tab:
         description: How you can search our data
         total_concepts: 1
         link: /concepts/archived-search-functionality
+ 
+  - category: Summary Pages
+    scroll_id: archived-contract award summary
+    topics:
+      - headline: Contract Award Summary
+        description: How we display contract award data
+        total_concepts: 3
+        link: /concepts/archived-contract-award-summary
