@@ -4,6 +4,7 @@ title: Search Functionality
 archived_page: yes
 archived_page_text: The following designs have been archived and are no longer being considered for implementation.
 link_to_archived_designs:
+link_to_active_designs:
 
 category: "Search:"
 
@@ -34,5 +35,17 @@ tabs:
     below_image_content: What do you think of the Live Filters option?
     disqus_identifier: 35891276
     disqus_url: "http://treasury-dact-jekyll.s3-website-us-east-1.amazonaws.com/dev/concepts/search-functionality/#!live-filters"
+
+no_tabs:
+  - archived_text:
+    description:
+    features:
+      - description:
+    disclaimer_text:
+    image:
+    image_alt_text:
+    below_image_content:
+    disqus_identifier:
+    disqus_url:
 
 ---

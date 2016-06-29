@@ -48,13 +48,24 @@
             <div class="scroll-on-page">
               <div id="concept-summary" class="usa-width-nine usa-no-tabs">
 
+              {% for item in page.no_tabs %}
+
                 {% if page.archived_page == true %}
                   <p class="usa-archived-text">{{ page.archived_text }}</p>
                 {% endif %}
 
+                <p class="list-header">{{ item.description }}</p>
+                <ul>
+                {% for list in item.features %}
+                  {% if list.description %}
+                    <li>{{ list.description }}</li>
+                  {% endif %}
+                {% endfor %}
+                </ul>
+
                 <ul class="usa-disclaimer">
-                {% if page.disclaimer_text %}
-                  <li>{{ page.disclaimer_text }}</li>
+                {% if item.disclaimer_text %}
+                  <li>{{ item.disclaimer_text }}</li>
                 {% else %}
                   <li></li>
                 {% endif %}
@@ -65,12 +76,14 @@
                     {% assign class = "full-screen-image" %}
                   {% endif %}
 
-                  <li><a class="{{ class }}" href="{{ site.baseurl }}{{ page.image }}" data-lightbox="concepts">View Fullscreen</a></li>
+                  <li><a class="{{ class }}" href="{{ site.baseurl }}{{ item.image }}" data-lightbox="concepts">View Fullscreen</a></li>
                 </ul>
 
                 <div class="image-background">
-                  <img src="{{ site.baseurl }}{{ page.image }}" alt="{{ page.image_alt_text }}" >
+                  <img src="{{ site.baseurl }}{{ item.image }}" alt="{{ item.image_alt_text }}" >
                 </div>
+
+                {% endfor %}
 
               </div>
 

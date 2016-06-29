@@ -3,7 +3,8 @@ title: Contract Award Summary
 
 archived_page: yes
 archived_page_text: The following designs have been archived and are no longer being considered for implementation.
-link_to_archived_designs: 
+link_to_archived_designs:
+link_to_active_designs:
 
 category: "Summary Pages:"
 
@@ -58,5 +59,17 @@ tabs:
     below_image_content: What do you think of the Contract Award Summary - Version C?
     disqus_identifier: 74813926
     disqus_url: "http://treasury-dact-jekyll.s3-website-us-east-1.amazonaws.com/dev/concepts/contract-award-summary/#!version-c"
+
+no_tabs:
+  - archived_text:
+    description:
+    features:
+      - description:
+    disclaimer_text:
+    image:
+    image_alt_text:
+    below_image_content:
+    disqus_identifier:
+    disqus_url:
 
 ---
