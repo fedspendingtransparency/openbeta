@@ -22,7 +22,7 @@ active_tab:
     topics:
       - headline: Contract Award Summary
         description: How we display contract award data
-        total_concepts: 3
+        total_concepts: 1
         link: /concepts/contract-award-summary
   - category: General Pages
     scroll_id: general-pages
