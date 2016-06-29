@@ -19,24 +19,12 @@ discussion_bullet_points:
 - What topics would you like to see in the Featured Stories?
 - Is there other information or data you want included?
 
-tabs_required: no
+tabs_required: yes
 
-tabs: 
-  - title:
-    url_hash:
+tabs:
+  - title: Version 0.1A
+    url_hash: "#!version-0.1A"
     archived_text:
-    description:
-    features:
-      - description:
-    disclaimer_text:
-    image:
-    image_alt_text:
-    below_image_content:
-    disqus_identifier:
-    disqus_url:
-
-no_tabs:
-  - archived_text:
     description: "Key Features:"
     features:
       - description: Immediate access to search
@@ -49,5 +37,17 @@ no_tabs:
     below_image_content:
     disqus_identifier: 83728938
     disqus_url: "http://treasury-dact-jekyll.s3-website-us-east-1.amazonaws.com/dev/concepts/home-page/"
+
+no_tabs: 
+  - archived_text:
+    description:
+    features:
+      - description:
+    disclaimer_text:
+    image:
+    image_alt_text:
+    below_image_content:
+    disqus_identifier:
+    disqus_url:
    
 ---

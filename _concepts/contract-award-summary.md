@@ -3,7 +3,7 @@ title: Contract Award Summary
 
 archived_page: no
 archived_page_text:
-link_to_archived_designs:
+link_to_archived_designs: "/concepts/archived-contract-award-summary"
 link_to_active_designs:
 
 category: "Summary Pages:"
@@ -22,24 +22,12 @@ discussion_bullet_points:
 - Are the groupings of data sensible?
 - What do you like and dislike?
 
-tabs_required: no
+tabs_required: yes
 
-tabs: 
-  - title:
-    url_hash:
+tabs:
+  - title: Version 0.2
+    url_hash: "#!version-0.2"
     archived_text:
-    description:
-    features:
-      - description:
-    disclaimer_text:
-    image:
-    image_alt_text:
-    below_image_content:
-    disqus_identifier:
-    disqus_url:
-
-no_tabs:
-  - archived_text:
     description: "Key Features:"
     features:
       - description: Visualization of spending
@@ -51,5 +39,17 @@ no_tabs:
     below_image_content:
     disqus_identifier: 97847241
     disqus_url: "http://treasury-dact-jekyll.s3-website-us-east-1.amazonaws.com/dev/concepts/contract-award-summary/"
+
+no_tabs: 
+  - archived_text:
+    description:
+    features:
+      - description:
+    disclaimer_text:
+    image:
+    image_alt_text:
+    below_image_content:
+    disqus_identifier:
+    disqus_url:
 
 ---

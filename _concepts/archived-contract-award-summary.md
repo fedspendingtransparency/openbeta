@@ -23,8 +23,8 @@ discussion_bullet_points:
 tabs_required: yes
 
 tabs: 
-  - title: Version A
-    url_hash: "#!version-a"
+  - title: Version 0.1A
+    url_hash: "#!version-0.1A"
     archived_text: A new version has replaced this concept. 
     description: "Key Features:"
     features:
@@ -35,8 +35,8 @@ tabs:
     below_image_content: What do you think of the Contract Award Summary - Version A?
     disqus_identifier: 71538462
     disqus_url: "http://treasury-dact-jekyll.s3-website-us-east-1.amazonaws.com/dev/concepts/contract-award-summary/#!version-a"
-  - title: Version B
-    url_hash: "#!version-b"
+  - title: Version 0.1B
+    url_hash: "#!version-0.1B"
     archived_text: A new version has replaced this concept.
     description: "Key Features:"
     features:
@@ -47,8 +47,8 @@ tabs:
     below_image_content: What do you think of the Contract Award Summary - Version B?
     disqus_identifier: 56237819
     disqus_url: "http://treasury-dact-jekyll.s3-website-us-east-1.amazonaws.com/dev/concepts/contract-award-summary/#!version-b"
-  - title: Version C
-    url_hash: "#!version-c"
+  - title: Version 0.1C
+    url_hash: "#!version-0.1C"
     archived_text: A new version has replaced this concept.
     description: "Key Features:"
     features:

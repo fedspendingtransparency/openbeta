@@ -20,13 +20,11 @@ discussion_bullet_points:
 - Is it important to see results geographically?
 - What other data points do you want added to the results?
 
-tabs_required: no
+tabs_required: yes
 
-tabs: 
-  - title:
-    url_hash: ""
-    archived_text: 
-    description: "Key Features:"
+no_tabs: 
+  - archived_text: 
+    description: 
     features:
       - description:
     disclaimer_text:
@@ -36,11 +34,16 @@ tabs:
     disqus_identifier:
     disqus_url: ""
 
-no_tabs:
-  - archived_text:
-    description:
+tabs:
+  - title: Version 0.1A
+    url_hash: "#!version-0.1A"
+    archived_text:
+    description: "Key Features:"
     features:
-      - description:
+      - description: Seach filters in left sidebar
+      - description: Search term clarification
+      - description: Multiple aggregate analytic views
+      - description: Sortable table of awards
     disclaimer_text: <a class="usa-cta external-link" href='http://9bgx80.axshare.com/search_results.html' target="_blank">View an interactive version of the below image</a>
     image: "/assets/img/search_results.png"
     image_alt_text: An image of a proposed layout for the search results page that consists of a list of search filters on the left side of the page and to the right, a heat map of spending within the U.S., pie charts showing the distribution of awards by category and object class, a list of top awarding agencies, a list of top awarded recipients, and below, a table of all award results separated by award type, in tabs.
