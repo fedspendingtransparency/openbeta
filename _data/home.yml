@@ -3,6 +3,13 @@
 # Carousel Section
 carousel:
 - usa_intro: 'Feedback Discussion:'
+  banner_title: Home Page
+  banner_label: What do you think of the different features?
+  banner_cta: Join the discussion
+  banner_cta_link: /concepts/home-page
+  banner_image: /assets/img/header_homepage-01.png
+  banner_image_alt_text: A background image featuring a color gradient from light green to a mint green with a blurred image of a bar chart in the foreground.
+- usa_intro: 'Feedback Discussion:'
   banner_title: Search Results
   banner_label: What fields are most important to you?
   banner_cta: Join the discussion
