@@ -83,7 +83,7 @@
                   <img src="{{ site.baseurl }}{{ item.image }}" alt="{{ item.image_alt_text }}" >
                 </div>
 
-                {% endfor %}
+              {% endfor %}
 
               </div>
 
@@ -131,7 +131,7 @@
                 <div id="disqus_thread"></div>
               {% endif %}
 
-              {% include disqus.html disqus_identifier=tab.disqus_identifier disqus_url=tab.disqus_url %}
+              {% include disqus.html disqus_identifier=page.no_tabs.disqus_identifier disqus_url=page.no_tabs.disqus_url %}
 
             </div>
           </div>
@@ -238,42 +238,42 @@
             </div>
           </div>
         </div>
-      {% endif %}
+      </div>
 
-        <div class="usa-concepts">
-          <div class="grid">
-            {% for tab in page.tabs %}
+      <div class="usa-concepts">
+        <div class="grid">
+          {% for tab in page.tabs %}
 
-              {% if forloop.first == true %}
+            {% if forloop.first == true %}
 
-              <div id="discussion" class="usa-width-nine">
+            <div id="discussion" class="usa-width-nine">
 
-                <div class="topic-row">
-
-                  {% if page.archived_page == true %}
-                    <p>Read our <a class="usa-archived-text" href="{{ site.baseurl }}/commenting-policy">Commenting Policy</a> for more information about our discussions.</p>
-                  {% else %}
-                    <p>Read our <a href="{{ site.baseurl }}/commenting-policy">Commenting Policy</a> for more information about our discussions.</p>
-                  {% endif %}
-
-                </div>
+              <div class="topic-row">
 
                 {% if page.archived_page == true %}
-                  <div id="disqus_thread" class="usa-archived-text"></div>
+                  <p>Read our <a class="usa-archived-text" href="{{ site.baseurl }}/commenting-policy">Commenting Policy</a> for more information about our discussions.</p>
                 {% else %}
-                  <div id="disqus_thread"></div>
+                  <p>Read our <a href="{{ site.baseurl }}/commenting-policy">Commenting Policy</a> for more information about our discussions.</p>
                 {% endif %}
-
-                {% include disqus.html disqus_identifier=tab.disqus_identifier disqus_url=tab.disqus_url %}
 
               </div>
 
+              {% if page.archived_page == true %}
+                <div id="disqus_thread" class="usa-archived-text"></div>
+              {% else %}
+                <div id="disqus_thread"></div>
               {% endif %}
 
-            {% endfor %}
-          </div>
+              {% include disqus.html disqus_identifier=tab.disqus_identifier disqus_url=tab.disqus_url %}
+
+            </div>
+
+            {% endif %}
+
+          {% endfor %}
         </div>
       </div>
+    {% endif %}
 
     {% include footer.html %}
 
