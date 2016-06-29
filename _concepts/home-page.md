@@ -6,7 +6,7 @@ archived_page_text:
 link_to_archived_designs:
 link_to_active_designs:
 
-category: "Genera:"
+category: "General:"
 
 headline: Home Page
 
