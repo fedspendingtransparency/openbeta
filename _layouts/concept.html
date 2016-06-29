@@ -58,7 +58,14 @@
                 {% else %}
                   <li></li>
                 {% endif %}
-                  <li><a class="full-screen-image" href="{{ site.baseurl }}{{ page.image }}" data-lightbox="concepts">View Fullscreen</a></li>
+
+                  {% if page.archived_page == true %}
+                    {% assign class = "full-screen-image usa-archived-text" %}
+                  {% else %}
+                    {% assign class = "full-screen-image" %}
+                  {% endif %}
+
+                  <li><a class="{{ class }}" href="{{ site.baseurl }}{{ page.image }}" data-lightbox="concepts">View Fullscreen</a></li>
                 </ul>
 
                 <div class="image-background">
@@ -96,9 +103,23 @@
           <div class="grid">
             <div id="discussion" class="usa-width-nine">
               <div class="topic-row">
-                <p>Read our <a href="{{ site.baseurl }}/commenting-policy">Commenting Policy</a> for more information about our discussions.</p>
+
+                {% if page.archived_page == true %}
+                  <p>Read our <a class="usa-archived-text" href="{{ site.baseurl }}/commenting-policy">Commenting Policy</a> for more information about our discussions.</p>
+                {% else %}
+                  <p>Read our <a href="{{ site.baseurl }}/commenting-policy">Commenting Policy</a> for more information about our discussions.</p>
+                {% endif %}
+
               </div>
+
+              {% if page.archived_page == true %}
+                <div id="disqus_thread" class="usa-archived-text"></div>
+              {% else %}
+                <div id="disqus_thread"></div>
+              {% endif %}
+
               {% include disqus.html disqus_identifier=tab.disqus_identifier disqus_url=tab.disqus_url %}
+
             </div>
           </div>
         </div>
@@ -153,7 +174,14 @@
                       {% else %}
                         <li></li>
                       {% endif %}
-                        <li><a class="full-screen-image" href="{{ site.baseurl }}{{ tab.image }}" data-lightbox="concepts">View Fullscreen</a></li>
+
+                        {% if page.archived_page == true %}
+                          {% assign class = "full-screen-image usa-archived-text" %}
+                        {% else %}
+                          {% assign class = "full-screen-image" %}
+                        {% endif %}
+
+                        <li><a class="{{ class }}" href="{{ site.baseurl }}{{ tab.image }}" data-lightbox="concepts">View Fullscreen</a></li>
                       </ul>
 
                       <div class="image-background">
@@ -206,10 +234,25 @@
               {% if forloop.first == true %}
 
               <div id="discussion" class="usa-width-nine">
+
                 <div class="topic-row">
-                  <p>Read our <a href="{{ site.baseurl }}/commenting-policy">Commenting Policy</a> for more information about our discussions.</p>
+
+                  {% if page.archived_page == true %}
+                    <p>Read our <a class="usa-archived-text" href="{{ site.baseurl }}/commenting-policy">Commenting Policy</a> for more information about our discussions.</p>
+                  {% else %}
+                    <p>Read our <a href="{{ site.baseurl }}/commenting-policy">Commenting Policy</a> for more information about our discussions.</p>
+                  {% endif %}
+
                 </div>
+
+                {% if page.archived_page == true %}
+                  <div id="disqus_thread" class="usa-archived-text"></div>
+                {% else %}
+                  <div id="disqus_thread"></div>
+                {% endif %}
+
                 {% include disqus.html disqus_identifier=tab.disqus_identifier disqus_url=tab.disqus_url %}
+
               </div>
 
               {% endif %}

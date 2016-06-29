@@ -245,6 +245,10 @@ nav {
 
     &.full-screen-image {
       color: $accent-color;
+
+      &.usa-archived-text {
+        color: $archived-color;
+      }
     }
   }
 
@@ -255,7 +259,7 @@ nav {
     top: 0.8em;
 
     a {
-      color: $accent-color;
+      color: $archived-color;
     }
   }
 
