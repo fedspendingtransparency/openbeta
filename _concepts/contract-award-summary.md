@@ -46,7 +46,7 @@ no_tabs:
       - description: Visual timeline of the contract activity
       - description: A breakdown of sub-award recipients
     disclaimer_text: <a class="usa-cta external-link" href='http://9bgx80.axshare.com/#g=1&p=contract_award_summary_v1&c=1' target="_blank">View an interactive version of the below image</a>
-    image: "/assets/img/search_results.png"
+    image: "/assets/img/Contract-Award-Summary_06.30.2016.jpg"
     image_alt_text:
     below_image_content:
     disqus_identifier: 97847241
