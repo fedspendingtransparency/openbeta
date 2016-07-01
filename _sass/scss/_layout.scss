@@ -428,14 +428,6 @@ ul.slick-dots {
 * * * * * * * * * * * * * * * * * * * * * * */
 
 #discussion {
-  margin-bottom: 5em;
-  margin-left: 1em;
-  margin-right: 1em;
-  padding-right: 1em;
-
-  @include media($medium) {
-    padding-right: 2em;
-  }
 
   .topic-row {
     margin: 1em 0 3em;
@@ -447,5 +439,15 @@ ul.slick-dots {
     a:hover {
       text-decoration: underline;
     }
+  }
+}
+
+#disqus_thread {
+  margin-left: 1em;
+  margin-bottom: 5em;
+
+  @include media($medium) {
+    padding-left: 1em;
+    padding-right: 2em;
   }
 }

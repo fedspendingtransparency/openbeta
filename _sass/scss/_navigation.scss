@@ -203,6 +203,14 @@ nav {
     }
   }
 
+  #discussion .topic-row a {
+    color: $accent-color;
+
+    &.usa-archived-text {
+      color: $archived-color;
+    }
+  }
+
   a {
     color: $dark-gray;
     text-decoration: none;

@@ -115,6 +115,22 @@
         <div class="usa-concepts">
           <div class="grid">
             <div id="discussion" class="usa-width-nine">
+
+              <!-- Enable this code when ready to integrate thumbs up/down feature -->
+              <!-- <h3 class="topic-row list-header">{{ page.no_tabs.below_image_content }}</h3>
+
+              <div id="topic-rating">
+                <a>
+                  <i id="thumbsUp" class="fa fa-thumbs-o-up fa-4x" aria-hidden="true"></i>
+                </a>
+                <span id="thumbsUpCount"></span>
+
+                <a>
+                  <i id="thumbsDown" class="fa fa-thumbs-o-down fa-4x" aria-hidden="true"></i>
+                </a>
+                <span id="thumbsDownCount"></span>
+              </div> -->
+
               <div class="topic-row">
 
                 {% if page.archived_page == true %}
@@ -168,37 +184,68 @@
                   </a>
                   
                   <div class="tab-content">
-                    <div id="concept-summary" class="usa-width-nine">
-
-                      {% if page.archived_page == true %}
-                        <p class="usa-archived-text">{{ tab.archived_text }}</p>
-                      {% endif %}
-
-                      <p class="list-header">{{ tab.description }}</p>
-                      <ul>
-                      {% for item in tab.features %}
-                        <li>{{ item.description }}</li>
-                      {% endfor %}
-                      </ul>
-
-                      <ul class="usa-disclaimer">                    
-                      {% if tab.disclaimer_text %}
-                        <li>{{ tab.disclaimer_text }}</li>
-                      {% else %}
-                        <li></li>
-                      {% endif %}
+                    <div class="usa-width-nine">
+                      <div id="concept-summary">
 
                         {% if page.archived_page == true %}
-                          {% assign class = "full-screen-image usa-archived-text" %}
-                        {% else %}
-                          {% assign class = "full-screen-image" %}
+                          <p class="usa-archived-text">{{ tab.archived_text }}</p>
                         {% endif %}
 
-                        <li><a class="{{ class }}" href="{{ site.baseurl }}{{ tab.image }}" data-lightbox="concepts">View Fullscreen</a></li>
-                      </ul>
+                        <p class="list-header">{{ tab.description }}</p>
+                        <ul>
+                        {% for item in tab.features %}
+                          <li>{{ item.description }}</li>
+                        {% endfor %}
+                        </ul>
 
-                      <div class="image-background">
-                        <img src="{{ site.baseurl }}{{ tab.image }}" alt="{{ tab.image_alt_text }}" >
+                        <ul class="usa-disclaimer">                    
+                        {% if tab.disclaimer_text %}
+                          <li>{{ tab.disclaimer_text }}</li>
+                        {% else %}
+                          <li></li>
+                        {% endif %}
+
+                          {% if page.archived_page == true %}
+                            {% assign class = "full-screen-image usa-archived-text" %}
+                          {% else %}
+                            {% assign class = "full-screen-image" %}
+                          {% endif %}
+
+                          <li><a class="{{ class }}" href="{{ site.baseurl }}{{ tab.image }}" data-lightbox="concepts">View Fullscreen</a></li>
+                        </ul>
+
+                        <div class="image-background">
+                          <img src="{{ site.baseurl }}{{ tab.image }}" alt="{{ tab.image_alt_text }}" >
+                        </div>
+                      </div>
+
+                      <div id="discussion">
+
+                        <!-- Enable this code when ready to integrate thumbs up/down feature -->
+
+                        <!-- <h3 class="topic-row list-header">{{ tab.below_image_content }}</h3>
+
+                        <div id="topic-rating" class="{{ tab.url_hash | replace: '#!', '' }}">
+                          <a>
+                            <i id="thumbsUp" class="fa fa-thumbs-o-up fa-4x" aria-hidden="true"></i>
+                          </a>
+                          <span id="thumbsUpCount"></span>
+                          <a>
+                            <i id="thumbsDown" class="fa fa-thumbs-o-down fa-4x" aria-hidden="true"></i>
+                          </a>
+                          <span id="thumbsDownCount"></span>
+                        </div> -->
+
+                        <div class="topic-row">
+
+                          {% if page.archived_page == true %}
+                            <p>Read our <a class="usa-archived-text" href="{{ site.baseurl }}/commenting-policy">Commenting Policy</a> for more information about our discussions.</p>
+                          {% else %}
+                            <p>Read our <a href="{{ site.baseurl }}/commenting-policy">Commenting Policy</a> for more information about our discussions.</p>
+                          {% endif %}
+
+                        </div>
+
                       </div>
 
                     </div>
@@ -238,39 +285,27 @@
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="usa-concepts">
-        <div class="grid">
-          {% for tab in page.tabs %}
+        <div class="usa-concepts">
+          <div class="grid">
+            <div class="usa-width-nine">
+            {% for tab in page.tabs %}
 
-            {% if forloop.first == true %}
-
-            <div id="discussion" class="usa-width-nine">
-
-              <div class="topic-row">
+              {% if forloop.first == true %}    
 
                 {% if page.archived_page == true %}
-                  <p>Read our <a class="usa-archived-text" href="{{ site.baseurl }}/commenting-policy">Commenting Policy</a> for more information about our discussions.</p>
+                  <div id="disqus_thread" class="usa-archived-text"></div>
                 {% else %}
-                  <p>Read our <a href="{{ site.baseurl }}/commenting-policy">Commenting Policy</a> for more information about our discussions.</p>
+                  <div id="disqus_thread"></div>
                 {% endif %}
 
-              </div>
+                {% include disqus.html disqus_identifier=tab.disqus_identifier disqus_url=tab.disqus_url %}
 
-              {% if page.archived_page == true %}
-                <div id="disqus_thread" class="usa-archived-text"></div>
-              {% else %}
-                <div id="disqus_thread"></div>
               {% endif %}
 
-              {% include disqus.html disqus_identifier=tab.disqus_identifier disqus_url=tab.disqus_url %}
-
+            {% endfor %}
             </div>
-
-            {% endif %}
-
-          {% endfor %}
+          </div>
         </div>
       </div>
     {% endif %}
