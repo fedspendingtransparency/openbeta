@@ -11,7 +11,7 @@ active_tab:
     topics:
       - headline: Search Functionality
         description: How you can search our data
-        total_concepts: 4
+        total_concepts: 3
         link: /concepts/search-functionality
       - headline: Search Results
         description: How we display search results
