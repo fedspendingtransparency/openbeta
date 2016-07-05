@@ -18,7 +18,7 @@ carousel:
   banner_image_alt_text: A background image featuring a color gradient from light green to a mint green with a blurred image of a bar chart in the foreground.
 - usa_intro: 'Feedback Discussion:'
   banner_title: Contract Award Summary
-  banner_label: Which features from the three options are most important to you?
+  banner_label: Which features are most important to you?
   banner_cta: Join the discussion
   banner_cta_link: /concepts/contract-award-summary
   banner_image: /assets/img/header_contract-award-summary-01.png
