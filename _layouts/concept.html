@@ -117,7 +117,7 @@
             <div id="discussion" class="usa-width-nine">
 
               <!-- Enable this code when ready to integrate thumbs up/down feature -->
-              <!-- <h3 class="topic-row list-header">{{ page.no_tabs.below_image_content }}</h3>
+              <h3 class="topic-row list-header">{{ page.no_tabs.below_image_content }}</h3>
 
               <div id="topic-rating">
                 <a>
@@ -129,7 +129,7 @@
                   <i id="thumbsDown" class="fa fa-thumbs-o-down fa-4x" aria-hidden="true"></i>
                 </a>
                 <span id="thumbsDownCount"></span>
-              </div> -->
+              </div>
 
               <div class="topic-row">
 
@@ -223,7 +223,7 @@
 
                         <!-- Enable this code when ready to integrate thumbs up/down feature -->
 
-                        <!-- <h3 class="topic-row list-header">{{ tab.below_image_content }}</h3>
+                        <h3 class="topic-row list-header">{{ tab.below_image_content }}</h3>
 
                         <div id="topic-rating" class="{{ tab.url_hash | replace: '#!', '' }}">
                           <a>
@@ -234,7 +234,7 @@
                             <i id="thumbsDown" class="fa fa-thumbs-o-down fa-4x" aria-hidden="true"></i>
                           </a>
                           <span id="thumbsDownCount"></span>
-                        </div> -->
+                        </div>
 
                         <div class="topic-row">
 
@@ -317,8 +317,14 @@
     <script type="text/javascript" src="{{ site.baseurl }}/assets/vendor/slick/slick.min.js"></script>
     <script type="text/javascript" src="{{ site.baseurl }}/assets/vendor/lightbox2/lightbox.js"></script>
     <script type="text/javascript" src="{{ site.baseurl }}/assets/vendor/sticky-kit/sticky-kit.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/vendor/firebase/firebase-app.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/vendor/firebase/firebase-auth.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/vendor/firebase/firebase-database.js"></script>
     <script type="text/javascript" src="{{ site.baseurl }}/assets/js/main.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/voting.js"></script>
+    <script type="text/javascript">
 
+    </script>
   </body>
 
 </html>
