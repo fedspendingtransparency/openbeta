@@ -18,17 +18,24 @@ carousel:
   banner_image_alt_text: A background image featuring a color gradient from light green to a mint green with a blurred image of a bar chart in the foreground.
 - usa_intro: 'Feedback Discussion:'
   banner_title: Contract Award Summary
-  banner_label: Which features from the three options are most important to you?
+  banner_label: Which features are most important to you?
   banner_cta: Join the discussion
   banner_cta_link: /concepts/contract-award-summary
   banner_image: /assets/img/header_contract-award-summary-01.png
   banner_image_alt_text: A background image featuring a color gradient from light green to a mint green with a blurred wireframe of a vertical timeline in the foreground.
 - usa_intro: 'Feedback Discussion:'
-  banner_title: Search Functionality
-  banner_label: Which search option works best for you?
+  banner_title: Agency Summary
+  banner_label: Which of the two versions do you prefer?
   banner_cta: Join the discussion
-  banner_cta_link: /concepts/search-functionality
-  banner_image: /assets/img/header_search-functionality-01.png
+  banner_cta_link: /concepts/agency-summary
+  banner_image: /assets/img/header_1.png
+  banner_image_alt_text: A background image featuring a color gradient from light green to a mint green with a blurred wireframe of a search bar in the foreground.
+- usa_intro: 'Feedback Discussion:'
+  banner_title: Financial Assistance Award Summary
+  banner_label: Is there other information you would like added?
+  banner_cta: Join the discussion
+  banner_cta_link: /concepts/financial-assistance-award-summary
+  banner_image: /assets/img/header_1.png
   banner_image_alt_text: A background image featuring a color gradient from light green to a mint green with a blurred wireframe of a search bar in the foreground.
 
 #First Section
