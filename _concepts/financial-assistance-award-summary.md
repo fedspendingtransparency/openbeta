@@ -8,7 +8,7 @@ link_to_active_designs:
 
 category: "Summary Pages:"
 
-headline: Fifnancial Assistance Award Summary
+headline: Financial Assistance Award Summary
 
 copy:
   - text: Below is an idea on how to display data for a specific financial assistance award. Please take a look and give us your feedback in the discussion section at the bottom of each tab.
