@@ -28,10 +28,6 @@ active_tab:
         description: How we display financial assistance data
         total_concepts: 1
         link: /concepts/financial-assistance-award-summary
-      - headline: Program Details
-        description: How we display program data
-        total_concepts: 1
-        link: /concepts/
   - category: General Pages
     scroll_id: general-pages
     topics:
@@ -39,10 +35,6 @@ active_tab:
         description: Your introduction to USAspending.gov
         total_concepts: 1
         link: /concepts/home-page
-      - headline: Download
-        description: How to download all the data 
-        total_concepts: 1
-        link: /concepts/
 
 completed_tab:
   - category: Design
