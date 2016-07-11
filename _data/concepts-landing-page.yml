@@ -35,7 +35,7 @@ active_tab:
       - headline: Browse the Data
         description: How to access all the Summary pages. 
         total_concepts: 1
-        link: /concepts/browse-the-data
+        link: /concepts/browse
 
 completed_tab:
   - category: Design
