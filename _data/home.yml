@@ -28,14 +28,14 @@ carousel:
   banner_label: Which of the two versions do you prefer?
   banner_cta: Join the discussion
   banner_cta_link: /concepts/agency-summary
-  banner_image: /assets/img/header_1.png
+  banner_image: /assets/img/header_agency-summary-01.png
   banner_image_alt_text: A background image featuring a color gradient from light green to a mint green with a blurred wireframe of a search bar in the foreground.
 - usa_intro: 'Feedback Discussion:'
   banner_title: Financial Assistance Award Summary
   banner_label: Is there other information you would like added?
   banner_cta: Join the discussion
   banner_cta_link: /concepts/financial-assistance-award-summary
-  banner_image: /assets/img/header_1.png
+  banner_image: /assets/img/header_financial-assistance-01.png
   banner_image_alt_text: A background image featuring a color gradient from light green to a mint green with a blurred wireframe of a search bar in the foreground.
 
 #First Section
