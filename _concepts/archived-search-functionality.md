@@ -37,8 +37,7 @@ tabs:
     disqus_url: "http://treasury-dact-jekyll.s3-website-us-east-1.amazonaws.com/dev/concepts/search-functionality/#!live-filters"
   - title: Advanced Search
     url_hash: "#!advanced-search"
-    archived_text: The <a class='usa-archived-link usa-bold'
-    href='http://openbeta.usaspending.gov/concepts/search-results/index.html'>Search Results</a> concept has replaced this concept, which made it unnecessary.
+    archived_text: The <a class='usa-archived-link usa-bold' href='http://openbeta.usaspending.gov/concepts/search-results/index.html'>Search Results</a> concept has replaced this concept, which made it unnecessary.
     description: "Key Feature:"
     features:
       - description: This option makes all searchable fields available in one form. Select multiple filters, such as Spending Type, Fiscal Year, Agency, Place of Performance and Contractor Type.
@@ -50,8 +49,7 @@ tabs:
     disqus_url: "http://treasury-dact-jekyll.s3-website-us-east-1.amazonaws.com/dev/concepts/search-functionality/#!advanced-search"
   - title: Search Builder
     url_hash: "#!search-builder"
-    archived_text: The <a class='usa-archived-link usa-bold'
-    href='http://openbeta.usaspending.gov/concepts/search-results/index.html'>Search Results</a> concept has replaced this concept, which made it unnecessary.
+    archived_text: The <a class='usa-archived-link usa-bold' href='http://openbeta.usaspending.gov/concepts/search-results/index.html'>Search Results</a> concept has replaced this concept, which made it unnecessary.
     description: "Key Feature:"
     features:
       - description: This option is a simple interface that gives you the opportunity to build your own search using selections from the drop down menu.
@@ -63,8 +61,7 @@ tabs:
     disqus_url: "http://treasury-dact-jekyll.s3-website-us-east-1.amazonaws.com/dev/concepts/search-functionality/#!search-builder"
   - title: SQL Search
     url_hash: "#!sql-search"
-    archived_text: The <a class='usa-archived-link usa-bold'
-    href='http://openbeta.usaspending.gov/concepts/search-results/index.html'>Search Results</a> concept has replaced this concept, which made it unnecessary.
+    archived_text: The <a class='usa-archived-link usa-bold' href='http://openbeta.usaspending.gov/concepts/search-results/index.html'>Search Results</a> concept has replaced this concept, which made it unnecessary.
     description: "Key Feature:"
     features:
       - description: This option gives you the ability to search the database using SQL queries.
