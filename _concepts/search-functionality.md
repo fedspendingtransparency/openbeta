@@ -34,7 +34,7 @@ tabs:
     image_alt_text: The advanced search feature allows users to create a search query by filling in a form which specifies exactly what data to return.
     below_image_content: What do you think of the Advanced Search option?
     disqus_identifier: 93415672
-    disqus_url: "http://treasury-dact-jekyll.s3-website-us-east-1.amazonaws.com/dev/concepts/search-functionality/#!advanced-search"
+    disqus_url: "https://openbeta.usaspending.com/concepts/search-functionality#!advanced-search"
   - title: Search Builder
     url_hash: "#!search-builder"
     archived_text:
@@ -46,7 +46,7 @@ tabs:
     image_alt_text: The search builder feature allows the user to construct a search query using dropdown menus to include specific search filters.
     below_image_content: What do you think of the Search Builder option?
     disqus_identifier: 12697438
-    disqus_url: "http://treasury-dact-jekyll.s3-website-us-east-1.amazonaws.com/dev/concepts/search-functionality/#!search-builder"
+    disqus_url: "https://openbeta.usaspending.com/concepts/search-functionality#!search-builder"
   - title: SQL Search
     url_hash: "#!sql-search"
     archived_text:
@@ -58,7 +58,7 @@ tabs:
     image_alt_text: The SQL search feature provides a terminal style interface and the ability to search using structured query language (SQL).
     below_image_content: What do you think of the SQL Search option?
     disqus_identifier: 81493267
-    disqus_url: "http://treasury-dact-jekyll.s3-website-us-east-1.amazonaws.com/dev/concepts/search-functionality/#!sql-search"
+    disqus_url: "https://openbeta.usaspending.com/concepts/search-functionality#!sql-search"
 
 no_tabs:
   - archived_text:

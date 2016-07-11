@@ -35,7 +35,7 @@ tabs:
     image_alt_text: This image displays categories to browse for data.  At the left are links to Organizations, Spending Categories, and Industry Codes categories.  In the center of the page are links to the same categories but without the specific headings. 
     below_image_content:
     disqus_identifier: 43048475
-    disqus_url: "https://openbeta.usaspending.gov/concepts/browse/index.html#!browse-0.1"
+    disqus_url: "https://openbeta.usaspending.gov/concepts/browse#!browse-0.1"
 
 no_tabs: 
   - archived_text:

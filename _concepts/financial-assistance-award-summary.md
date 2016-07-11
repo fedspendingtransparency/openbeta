@@ -36,7 +36,7 @@ tabs:
     image_alt_text: This image displays 
     below_image_content:
     disqus_identifier: 72704398
-    disqus_url: "http://treasury-dact-jekyll.s3-website-us-east-1.amazonaws.com/dev/concepts/financial-assistance-award-summary/#!version-0.1"
+    disqus_url: "https://openbeta.usaspending.com/concepts/financial-assistance-award-summary#!version-0.1"
 
 no_tabs: 
   - archived_text:
