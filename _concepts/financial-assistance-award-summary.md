@@ -34,7 +34,7 @@ tabs:
       - description: Breakdown of sub-award recipients
       - description: Visualization of funding
       - description: Visual timeline of the financial assistance activity
-    disclaimer_text: <a class="usa-cta external-link" href='http://http://9bgx80.axshare.com/#g=1&p=financial_assistance_award_summary' target="_blank">View an interactive version of the below image</a>
+    disclaimer_text: <a class="usa-cta external-link" href='http://http://http://2m12ll.axshare.com/financial_assistance_award_summary.html' target="_blank">View an interactive version of the below image</a>
     image: "/assets/img/financial-assistance-summary.jpg"
     image_alt_text: This image displays the financial assistance award summary wireframe. Across the top of the page are three boxes that include the Award ID, the Total Amount of the Award, and the Period of Performance for the award.  At the far right is the Download button. In the section below to the left  are the details of the Prime Recipient, including the DUNS, Parent DUNS, address, and recipient type. In the next section is a list of the sub-recipients and their award amounts. Other Awards Received by this Recipient is the section below the sub-recipients. To the far right is a box with the details about the award, including the Major Awarding and Funding Agencies, and the Awarding and Funding Sub-tier Agencies, as well as the CFDA, the Award Date, the Place of Performance, and the Appropriation Account. Below is a stacked chart showing the full award amount, the amount un-spent, and the amount spent. Across the bottom of the page is the timeline of transactions and sub-awards. 
     below_image_content:
