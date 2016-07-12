@@ -11,7 +11,7 @@ category: "General:"
 headline: Browse the Data
 
 copy:
-  - text: Below are several ideas for browsing data by different categories. Agencies, Recipients, and NAICS headings link to interactive pages. Please take a look and give us your feedback in the discussion section at the bottom of each tab.
+  - text: Below are several ideas for browsing data by different categories. The Agencies, Recipients, and NAICS headings link to interactive pages. Please take a look and give us your feedback in the discussion section at the bottom of each tab.
 
 discussion_title: "Discussion suggestions:"
 
