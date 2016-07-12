@@ -36,7 +36,7 @@ tabs:
     image_alt_text: An image of a proposed contract award summary page design. It features the award ID, the total award amount, and place of performance at the top of the page. To the left is the recipient information, the sub-recipient information, and the other awards received by the recipient. To the right is a section with the awarding and funding agency information, the award date, the award type, the PSC and NAICS codes. Below this section is a nested pie chart displaying the total award amount, the funded amount, the amount spent. Across the bottom of the page is a timeline showing the modifications and sub-awards.  The next section below contains more contract award details on the left and a timeline of award modifications on the right.
     below_image_content:
     disqus_identifier: 83728938
-    disqus_url: "http://treasury-dact-jekyll.s3-website-us-east-1.amazonaws.com/dev/concepts/home-page/"
+    disqus_url: "https://openbeta.usaspending.com/concepts/home-page#!version-0.1A"
 
 no_tabs: 
   - archived_text:

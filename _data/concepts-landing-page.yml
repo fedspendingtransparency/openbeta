@@ -9,10 +9,6 @@ active_tab:
   - category: Search
     scroll_id: search
     topics:
-      - headline: Search Functionality
-        description: How you can search our data
-        total_concepts: 3
-        link: /concepts/search-functionality
       - headline: Search Results
         description: How we display search results
         total_concepts: 1
@@ -24,6 +20,14 @@ active_tab:
         description: How we display contract award data
         total_concepts: 1
         link: /concepts/contract-award-summary
+      - headline: Agency Summary
+        description: How we display agency data
+        total_concepts: 2
+        link: /concepts/agency-summary
+      - headline: Financial Assistance Award Summary
+        description: How we display financial assistance data
+        total_concepts: 1
+        link: /concepts/financial-assistance-award-summary
   - category: General Pages
     scroll_id: general-pages
     topics:
@@ -31,6 +35,10 @@ active_tab:
         description: Your introduction to USAspending.gov
         total_concepts: 1
         link: /concepts/home-page
+      - headline: Browse the Data
+        description: How to access all the Summary pages. 
+        total_concepts: 1
+        link: /concepts/browse
 
 completed_tab:
   - category: Design
@@ -54,7 +62,7 @@ archived_tab:
     topics:
       - headline: Search Functionality
         description: How you can search our data
-        total_concepts: 1
+        total_concepts: 4
         link: /concepts/archived-search-functionality
   - category: Summary Pages
     scroll_id: archived-contract award summary
