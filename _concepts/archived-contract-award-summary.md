@@ -34,7 +34,7 @@ tabs:
     image_alt_text: An image of a proposed contract award summary page design. It features the award ID and recipient information at the top left of the page and the award amounts at the top right. The next section below contains more contract award details on the left and a timeline of award modifications on the right. The next section below features treemap graphics that illustrate the share of funding amounts divided among all of the funding offices as well as the distribution of obligations by appropriations account. The last section at the bottom contains a table view of the contract award's modifications. A tab exists to view sub awards.
     below_image_content: What do you think of the Contract Award Summary - Version A?
     disqus_identifier: 71538462
-    disqus_url: "http://openbeta.usaspending.gov/concepts/contract-award-summary#!version-0.1A"
+    disqus_url: "http://openbeta.usaspending.gov/concepts/archived-contract-award-summary#!version-0.1A"
   - title: Version 0.1B
     url_hash: "#!version-0.1B"
     archived_text: A new version has replaced this concept.
@@ -46,7 +46,7 @@ tabs:
     image_alt_text: An image of a proposed layout for the contract award summary page that features the award ID, recipient information, agency information and contract description at the top left section, contract award values and contract term dates at the top right, and a vertical timeline of the contract activity in the bottom section which features information about modifications and sub awards displayed chronologically.
     below_image_content: What do you think of the Contract Award Summary - Version B?
     disqus_identifier: 56237819
-    disqus_url: "http://openbeta.usaspending.gov/concepts/contract-award-summary#!version-0.1B"
+    disqus_url: "http://openbeta.usaspending.gov/concepts/archived-contract-award-summary#!version-0.1B"
   - title: Version 0.1C
     url_hash: "#!version-0.1C"
     archived_text: A new version has replaced this concept.
@@ -58,7 +58,7 @@ tabs:
     image_alt_text: An image of a proposed layout for the contract award summary page that features the award ID, recipient information, agency information and contract description at the top left section, contract award values and contract term dates at the top right, and featured at the bottom of the page is a set of square buttons labeled with a count of various contract attributes that trigger the display of a table view to the left containing contract details corresponding to that button's label.
     below_image_content: What do you think of the Contract Award Summary - Version C?
     disqus_identifier: 74813926
-    disqus_url: "http://treasury-dact-jekyll.s3-website-us-east-1.amazonaws.com/dev/concepts/contract-award-summary/#!version-c"
+    disqus_url: "https://openbeta.usaspending.gov/concepts/archived-contract-award-summary#!version-c"
 
 no_tabs:
   - archived_text:
