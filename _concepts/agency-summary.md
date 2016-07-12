@@ -52,7 +52,7 @@ tabs:
     image: "/assets/img/concept_agency-summary_B.jpg"
     image_alt_text: This image displays a timeline of spending by Financial Assistance, Loans, Grants, Contracts, and Operational categories across the top. Below left is a pie chart showing spending by the top sub-tier agencies and to the right is a timeline of all spending. The next row, at left, displays a horizontal bar chart of the highest funded programs; to the right is a horizontal bar chart of the highest awarded recipients. The next row, at left, is a heat map showing the spending geographically; and to the right is a pie chart showing spending by object class. Just below these visualizations is a row of featured stories about the agency. Across the bottom of the page is a table of the agency's transactions by spending type.  At the far left of the page are filters related to each of the categories. 
     below_image_content:
-    disqus_identifier: 33785410
+    disqus_identifier: 14683571
     disqus_url: "https://openbeta.usaspending.gov/concepts/agency-summary#!version-0.1B"
 
 no_tabs: 
