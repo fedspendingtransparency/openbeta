@@ -11,7 +11,7 @@ category: "Summary Pages:"
 headline: Agency Summary
 
 copy:
-  - text: Below are two idea on how to display data by federal agency. Please take a look and give us your feedback in the discussion section at the bottom of each tab.
+  - text: Below are two ideas on how to display data by federal agency. Please take a look and give us your feedback in the discussion section at the bottom of each tab.
 
 discussion_title: "Discussion suggestions:"
 
@@ -29,7 +29,7 @@ tabs:
     archived_text:
     description: "Key Features:"
     features:
-      - description: Agency's mission
+      - description: Agency's mission statement
       - description: Breakdown of spending from budget to programs and recipients
       - description: Spending by geography
       - description: Table of award transactions by fiscal year
