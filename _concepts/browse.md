@@ -30,7 +30,7 @@ tabs:
     description: "Key Features:"
     features:
       - description: Direct access to all data in a specific category in one place. 
-    disclaimer_text: <a class="usa-cta external-link" href='http://2m12ll.axshare.com/browse.html' target="_blank">View an interactive version of the below image</a>
+    disclaimer_text: <a class="usa-cta external-link" href='http://my36m8.axshare.com/browse.html' target="_blank">View an interactive version of the below image</a>
     image: "/assets/img/concept_browse_A.jpg"
     image_alt_text: This image displays categories to browse for data.  At the left are links to Organizations, Spending Categories, and Industry Codes categories.  In the center of the page are links to the same categories but without the specific headings. 
     below_image_content:
