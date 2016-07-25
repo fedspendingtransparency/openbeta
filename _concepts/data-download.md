@@ -11,15 +11,15 @@ category: "General:"
 headline: Data Download
 
 copy:
-  - text: Below is an idea on how to select data for download. Please take a look and give us your feedback in the discussion section at the bottom of each tab.
+  - text: Below is an idea on how to download all the data. Please take a look and give us your feedback in the discussion section at the bottom of each tab.
 
 discussion_title: "Discussion suggestions:"
 
 discussion_bullet_points:
-- Does the layout and information help you complete your tasks?
-- Is there anything that should be removed from the layout?
-- Are the labels and terminology appropriate?
-- Are the groupings of data sensible?
+- Does the layout help you complete your tasks?
+- Is it important to download subs with the primes?
+- Are the labels appropriate?
+- Is downloading by Fiscal Year important? 
 - What do you like and dislike?
 
 tabs_required: yes
@@ -32,10 +32,10 @@ tabs:
     features:
       - description: lorum ipsum
     disclaimer_text: <a class="usa-cta external-link" href='blank' target="_blank">View an interactive version of the below image</a>
-    image: "/assets/img/blank.jpg"
-    image_alt_text: This image displays 
-    below_image_content:
-    disqus_identifier: 14507548
+    image: "/assets/img/blank-download.jpg"
+    image_alt_text: This image displays a keyword search bar and below a table with Data Preview results. To the far right is a Add/Remove Columns link that opens up Award Characteristic, Award Amount Information, Awardee/Recipient Entity Information, and Agency Information checkboxes at the bottom of the page to select which columns to add and which to remove. 
+    below_image_content :
+    disqus_identifier:  051917
     disqus_url: "https://openbeta.usaspending.gov/concepts/data-download#!version-0.1"
 
 no_tabs: 
