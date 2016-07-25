@@ -27,7 +27,11 @@ active_tab:
       - headline: Financial Assistance Award Summary
         description: How we display financial assistance data
         total_concepts: 1
-        link: /concepts/financial-assistance-award-summary
+        link: /concepts/cfda-program-summary
+       - headline:CFDA Program Summary
+        description: How we display data for CFDA programs. 
+        total_concepts: 1
+        link: /concepts/cfda-program-summary
   - category: General Pages
     scroll_id: general-pages
     topics:
@@ -39,6 +43,10 @@ active_tab:
         description: How to access all the Summary pages. 
         total_concepts: 1
         link: /concepts/browse
+      - headline: Download the Data
+        description: How to download all the data. 
+        total_concepts: 1
+        link: /concepts/download
 
 completed_tab:
   - category: Design
