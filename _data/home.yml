@@ -3,13 +3,12 @@
 # Carousel Section
 carousel:
 - usa_intro: 'Feedback Discussion:'
-  banner_title: Home Page
-  banner_label: What do you think of the different features?
+  banner_title: Data Download
+  banner_label: What fields are most important to you?
   banner_cta: Join the discussion
-  banner_cta_link: /concepts/home-page
-  banner_image: /assets/img/header_homepage-01.png
-  banner_image_alt_text: A background image featuring a color gradient from light green to a mint green with a blurred image of a bar chart in the foreground.
-- usa_intro: 'Feedback Discussion:'
+  banner_cta_link: /concepts/data-download
+  banner_image: /assets/img/header_data-download-01.png
+  banner_image_alt_text: A background image featuring a color gradient from light green to a mint green with a blurred image of a bar chart in the foreground.- usa_intro: 'Feedback Discussion:'
   banner_title: Search Results
   banner_label: What fields are most important to you?
   banner_cta: Join the discussion
@@ -17,11 +16,11 @@ carousel:
   banner_image: /assets/img/header_search-results-01.png
   banner_image_alt_text: A background image featuring a color gradient from light green to a mint green with a blurred image of a bar chart in the foreground.
 - usa_intro: 'Feedback Discussion:'
-  banner_title: Agency Summary
-  banner_label: Which of the two versions do you prefer?
+  banner_title: CFDA Program Summary 
+  banner_label: Is there other information you would like included?
   banner_cta: Join the discussion
-  banner_cta_link: /concepts/agency-summary
-  banner_image: /assets/img/header_agency-summary-01.png
+  banner_cta_link: /concepts/cfda-program-summary
+  banner_image: /assets/img/header_program-summary-01.png
   banner_image_alt_text: A background image featuring a color gradient from light green to a mint green with a blurred wireframe of a search bar in the foreground.
 - usa_intro: 'Feedback Discussion:'
   banner_title: Financial Assistance Award Summary
