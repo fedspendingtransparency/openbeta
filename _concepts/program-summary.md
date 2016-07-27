@@ -33,7 +33,7 @@ tabs:
       - description: Bar graph display total amount awarded for fiscal year
       - description: Timeline of spending over time
       - description: Breakdown of awards in program
-    disclaimer_text: <a class="usa-cta external-link" href='http://my36m8.axshare.com/#g=1&p=program_summary.html' target="_blank">View an interactive version of the below image</a>
+    disclaimer_text: <a class="usa-cta external-link" href='http://my36m8.axshare.com/program_summary.html' target="_blank">View an interactive version of the below image</a>
     image: "/assets/img/concept_program-summary.png"
     image_alt_text: This image displays information about a CFDA program and includes the major awarding agency, the sub-tier agency, how long the CFDA program has been active, the assistance types, the function type, the appropriation amount, and links to the program website and cfda.gov. Below that is a Fiscal Year timeline showing total spending to date and the total budget for the program. Below left is a heat map showing the spending across the United States, and next to it is that a timeline of spending year over year. The next row are breakdowns of the Highest Awarded Recipients and Other Related Programs. At the bottom is a table showing all the awards associated with the CFDA program. 
     below_image_content:
