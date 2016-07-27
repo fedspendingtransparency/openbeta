@@ -28,7 +28,7 @@ active_tab:
         description: How we display financial assistance data
         total_concepts: 1
         link: /concepts/cfda-program-summary
-       - headline: CFDA Program Summary
+      - headline: CFDA Program Summary
         description: How we display data for CFDA programs. 
         total_concepts: 1
         link: /concepts/program-summary
