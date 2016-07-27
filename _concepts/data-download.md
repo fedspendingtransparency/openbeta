@@ -33,7 +33,7 @@ tabs:
       - description: Keyword search
       - description: Ability to add or remove columns
       - description: Selections for prime and sub-awards by spending types
-    disclaimer_text: <a class="usa-cta external-link" href='http://my36m8.axshare.com/#g=1&p=data_download.html' target="_blank">View an interactive version of the below image</a>
+    disclaimer_text: <a class="usa-cta external-link" href='http://my36m8.axshare.com/data_download.html' target="_blank">View an interactive version of the below image</a>
     image: "/assets/img/concept_data-download.png"
     image_alt_text: This image displays a keyword search bar and below a table with Data Preview results. To the far right is a Add/Remove Columns link that opens up Award Characteristic, Award Amount Information, Awardee/Recipient Entity Information, and Agency Information checkboxes at the bottom of the page to select which columns to add and which to remove. 
     below_image_content :
