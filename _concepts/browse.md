@@ -43,7 +43,7 @@ tabs:
     features:
       - description: Direct access to summary data. 
     disclaimer_text: <a class="usa-cta external-link" href='http://http://my36m8.axshare.com/#g=1&p=browse_-_agencies.html' target="_blank">View an interactive version of the below image</a>
-    image: "/assets/img/concept_.jpg"
+    image: "/assets/img/concept_browse-agencies.jpg"
     image_alt_text: This image displays the data by agencies. At the left are links to the sub-tier agencies and at the right are links to the parent agencies.  
     below_image_content:
     disqus_identifier: 600523
