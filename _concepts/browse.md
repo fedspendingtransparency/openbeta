@@ -36,7 +36,7 @@ tabs:
     below_image_content:
     disqus_identifier: 43048475
     disqus_url: "https://openbeta.usaspending.gov/concepts/browse#!browse-0.1"
-- title: Browse-Results
+  - title: Browse-Results
     url_hash: "#!browse-results"
     archived_text:
     description: "Key Features:"
