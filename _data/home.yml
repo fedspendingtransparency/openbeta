@@ -4,7 +4,7 @@
 carousel:
 - usa_intro: 'Feedback Discussion:'
   banner_title: Data Download
-  banner_label: What fields are most important to you?
+  banner_label: Can you complete your download task?
   banner_cta: Join the discussion
   banner_cta_link: /concepts/data-download
   banner_image: /assets/img/header_data-download-01.png
@@ -18,7 +18,7 @@ carousel:
   banner_image_alt_text: A background image featuring a color gradient from light green to a mint green with a blurred image of a bar chart in the foreground.
 - usa_intro: 'Feedback Discussion:'
   banner_title: CFDA Program Summary 
-  banner_label: Is there other information you would like included?
+  banner_label: Does the information answer your questions?
   banner_cta: Join the discussion
   banner_cta_link: /concepts/cfda-program-summary
   banner_image: /assets/img/header_program-summary-01.png
