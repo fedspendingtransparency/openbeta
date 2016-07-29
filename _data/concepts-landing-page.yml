@@ -27,7 +27,7 @@ active_tab:
       - headline: Financial Assistance Award Summary
         description: How we display financial assistance data
         total_concepts: 1
-        link: /concepts/cfda-program-summary
+        link: /concepts/financial-assistance-award-summary
       - headline: CFDA Program Summary
         description: How we display data for CFDA programs. 
         total_concepts: 1
