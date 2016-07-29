@@ -20,7 +20,7 @@ carousel:
   banner_title: CFDA Program Summary 
   banner_label: Does the information answer your questions?
   banner_cta: Join the discussion
-  banner_cta_link: /concepts/cfda-program-summary
+  banner_cta_link: /concepts/program-summary
   banner_image: /assets/img/header_program-summary-01.png
   banner_image_alt_text: A background image featuring a color gradient from light green to a mint green with a blurred wireframe of a search bar in the foreground.
 - usa_intro: 'Feedback Discussion:'
