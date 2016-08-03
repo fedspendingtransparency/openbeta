@@ -1,27 +1,16 @@
 <script>
 
-  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  // CONFIGURATION VARIABLES (used here and in discussion.js)
   var disqus_shortname = '{{ site.disqus_shortname }}';
   var disqus_identifier = '{{ include.disqus_identifier }}';
   var disqus_url = '{{ include.disqus_url }}';
 
-  /* * * DON'T EDIT BELOW THIS LINE * * */
+  /* * * DON'T EDIT BELOW THIS LINE  (disqus things) * * */ 
   (function() {
     var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
     dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
   })();
-
-  /* * * Disqus Reset Function * * */
-  var reset = function (newIdentifier, newUrl) {
-    DISQUS.reset({
-      reload: true,
-      config: function () {
-        this.page.identifier = newIdentifier;
-        this.page.url = newUrl;
-      }
-    });
-  };
 
 </script>
 
