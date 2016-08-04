@@ -249,18 +249,24 @@
             <div id="discussion" class="usa-width-nine">
 
               <div class="row"> What do you think of this? </div>
+              <div class="row">
                 <button class="vote-up"
                   id="vote-up"
                   data-disqus-identifier={{tab.disqus_identifier}}
                   data-disqus-url="{{ tab.disqus_url }}"
-                > up </button>
-                <span id="vote-up-count">0</span>
+                >
+                  <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                </button>
+                <span id="vote-up-count">Loading likes...</span>
                 <button class="vote-down"
                   id="vote-down"
                   data-disqus-identifier="{{ tab.disqus_identifier }}"
                   data-disqus-url="{{ tab.disqus_url }}"
-                > down </button>
-                <span id="vote-down-count">0</span>
+                >
+                  <i class="fa fa-thumbs-down" aria-hidden="true"></i>
+                </button>
+                <span id="vote-down-count">Loading dislikes...</span>
+              </div>
               <div class="topic-row">
 
                 {% if page.archived_page == true %}
