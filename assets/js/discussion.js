@@ -58,12 +58,14 @@
     var $down_count = $('#vote-down-count');
     $.get('https://openbeta-data.usaspending.gov/resource/upgx-d3ur.json?$select=vote,count(vote)&disqus_id='+ disqus_identifier +'&$group=vote')
       .done(function(data){
-        // only two rows should ever come back, but they're not keyed by the vote type.
-        // todo: find a better way than checking each object.
+        // only two rows should ever come back, but they're not keyed by the vote type, so we normalize it.
+        var normalized_data = {};
         data.forEach(function(row, index, arr){
-          if(row.vote === '3ge6-jyz5') { $up_count.text(row.count_vote + ' people like this'); }
-          if(row.vote === 'eah3-dyfb') { $down_count.text(row.count_vote + ' people dislike this'); }
+          normalized_data[row.vote] = row.count_vote;
         });
+        // todo 1 people like this
+         $up_count.text((normalized_data['3ge6-jyz5'] === undefined ? 0 : normalized_data['3ge6-jyz5']) + ' people like this');
+         $down_count.text((normalized_data['eah3-dyfb'] === undefined ? 0 : normalized_data['eah3-dyfb']) + ' people dislike this');
       });
   }
 
