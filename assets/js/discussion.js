@@ -35,10 +35,10 @@
 
       // ersatz optimistic UI
       if($vote_button.attr('id') === 'vote-up') {
-        $('#vote-up-count').text(parseInt($('#vote-up-count').text())+1);
+        $('#vote-up-count').text("you and " + (parseInt($('#vote-up-count').text())+1) + " others like this");
       }
       else {
-        $('#vote-down-count').text(parseInt($('#vote-down-count').text())+1);
+        $('#vote-down-count').text("you and " + (parseInt($('#vote-down-count').text())+1) + " others dislike this");
       }
 
     });
@@ -61,8 +61,8 @@
         // only two rows should ever come back, but they're not keyed by the vote type.
         // todo: find a better way than checking each object.
         data.forEach(function(row, index, arr){
-          if(row.vote === '3ge6-jyz5') { $up_count.text(row.count_vote); }
-          if(row.vote === 'eah3-dyfb') { $down_count.text(row.count_vote); }
+          if(row.vote === '3ge6-jyz5') { $up_count.text(row.count_vote + ' people like this'); }
+          if(row.vote === 'eah3-dyfb') { $down_count.text(row.count_vote + ' people dislike this'); }
         });
       });
   }
