@@ -35,10 +35,12 @@
 
       // ersatz optimistic UI
       if($vote_button.attr('id') === 'vote-up') {
-        $('#vote-up-count').text("you and " + (parseInt($('#vote-up-count').text())+1) + " others like this");
+        var new_count = parseInt($('#vote-up-count').text().match(/\d+/)) + 1;
+        $('#vote-up-count').text(new_count + (new_count === 1 ? ' person likes this' : ' people like this'));
       }
       else {
-        $('#vote-down-count').text("you and " + (parseInt($('#vote-down-count').text())+1) + " others dislike this");
+        var new_count = parseInt($('#vote-down-count').text().match(/\d+/)) + 1;
+        $('#vote-down-count').text(new_count + (new_count === 1 ? ' person dislikes this' : ' people dislike this'));
       }
 
     });
@@ -54,18 +56,22 @@
     });
 
     // update vote counts
-    var $up_count = $('#vote-up-count');
-    var $down_count = $('#vote-down-count');
+    var $up_count_span = $('#vote-up-count');
+    var $down_count_span = $('#vote-down-count');
     $.get('https://openbeta-data.usaspending.gov/resource/upgx-d3ur.json?$select=vote,count(vote)&disqus_id='+ disqus_identifier +'&$group=vote')
       .done(function(data){
         // only two rows should ever come back, but they're not keyed by the vote type, so we normalize it.
         var normalized_data = {};
         data.forEach(function(row, index, arr){
-          normalized_data[row.vote] = row.count_vote;
+          normalized_data[row.vote] = parseInt(row.count_vote);
         });
-        // todo 1 people like this
-         $up_count.text((normalized_data['3ge6-jyz5'] === undefined ? 0 : normalized_data['3ge6-jyz5']) + ' people like this');
-         $down_count.text((normalized_data['eah3-dyfb'] === undefined ? 0 : normalized_data['eah3-dyfb']) + ' people dislike this');
+
+        var up_count = normalized_data['3ge6-jyz5'] || 0;
+        var down_count = normalized_data['eah3-dyfb'] || 0;
+
+        // update span
+        $up_count_span.text(up_count + (up_count === 1 ? ' person likes this' : ' people like this'));
+        $down_count_span.text(down_count + (down_count === 1 ? ' person dislikes this' : ' people dislike this'));
       });
   }
 
