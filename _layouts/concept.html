@@ -253,12 +253,14 @@
                   id="vote-up"
                   data-disqus-identifier={{tab.disqus_identifier}}
                   data-disqus-url="{{ tab.disqus_url }}"
-                >up</button>
+                > up </button>
+                <span id="vote-up-count">0</span>
                 <button class="vote-down"
                   id="vote-down"
                   data-disqus-identifier="{{ tab.disqus_identifier }}"
                   data-disqus-url="{{ tab.disqus_url }}"
-                >down</button>
+                > down </button>
+                <span id="vote-down-count">0</span>
               <div class="topic-row">
 
                 {% if page.archived_page == true %}

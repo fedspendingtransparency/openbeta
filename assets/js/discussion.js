@@ -4,7 +4,6 @@
   $('#vote-up, #vote-down').each(function(){
     $(this).click(function(e){
       var $vote_button = $(this); // new this, by the way
-      debugger
       var now = new Date();
       var form = new FormData();
       form.append("disqus_id", $vote_button.attr('data-disqus-identifier'));
@@ -28,8 +27,20 @@
         "data": form
       }
       $.ajax(settings).done(function (response) {
-        console.log(response);
+        console.log('success');
       });
+
+      // disable the button to prevent duplicate voting (sort of)
+      $vote_button.attr('disabled','disabled');
+
+      // ersatz optimistic UI
+      if($vote_button.attr('id') === 'vote-up') {
+        $('#vote-up-count').text(parseInt($('#vote-up-count').text())+1);
+      }
+      else {
+        $('#vote-down-count').text(parseInt($('#vote-down-count').text())+1);
+      }
+
     });
   });
 
@@ -39,7 +50,21 @@
       var $vote_button = $(this);
       $vote_button.attr('data-disqus-identifier', disqus_identifier);
       $vote_button.attr('data-disqus-url', disqus_url);
+      $vote_button.removeAttr('disabled');
     });
+
+    // update vote counts
+    var $up_count = $('#vote-up-count');
+    var $down_count = $('#vote-down-count');
+    $.get('https://openbeta-data.usaspending.gov/resource/upgx-d3ur.json?$select=vote,count(vote)&disqus_id='+ disqus_identifier +'&$group=vote')
+      .done(function(data){
+        // only two rows should ever come back, but they're not keyed by the vote type.
+        // todo: find a better way than checking each object.
+        data.forEach(function(row, index, arr){
+          if(row.vote === '3ge6-jyz5') { $up_count.text(row.count_vote); }
+          if(row.vote === 'eah3-dyfb') { $down_count.text(row.count_vote); }
+        });
+      });
   }
 
 // Tab handler for disqus, voting
