@@ -115,6 +115,29 @@
         <div class="usa-concepts">
           <div class="grid">
             <div id="discussion" class="usa-width-nine">
+              <div class="row usa-vote-header"> What do you think of this? </div>
+              <div class="row grid">
+                <div class="usa-vote-container usa-width-six">
+                  <button class="vote-up"
+                    id="vote-up"
+                    data-disqus-identifier={{no_tabs.disqus_identifier}}
+                    data-disqus-url="{{ no_tabs.disqus_url }}"
+                  >
+                    <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                  </button>
+                  <span id="vote-up-count">Loading likes...</span>
+                </div>
+                <div class="usa-vote-container usa-width-six">
+                  <button class="vote-down"
+                    id="vote-down"
+                    data-disqus-identifier="{{ no_tabs.disqus_identifier }}"
+                    data-disqus-url="{{ no_tabs.disqus_url }}"
+                  >
+                    <i class="fa fa-thumbs-down" aria-hidden="true"></i>
+                  </button>
+                  <span id="vote-down-count">Loading dislikes...</span>
+                </div>
+              </div>
               <div class="topic-row">
 
                 {% if page.archived_page == true %}
@@ -131,7 +154,7 @@
                 <div id="disqus_thread"></div>
               {% endif %}
 
-              {% include disqus.html disqus_identifier=page.no_tabs.disqus_identifier disqus_url=page.no_tabs.disqus_url %}
+              {% include discussion.html disqus_identifier=page.no_tabs.disqus_identifier disqus_url=page.no_tabs.disqus_url tab_title=tab.title %}
 
             </div>
           </div>
@@ -248,6 +271,29 @@
 
             <div id="discussion" class="usa-width-nine">
 
+              <div class="row usa-vote-header"> What do you think of this? </div>
+              <div class="row grid">
+                <div class="usa-vote-container usa-width-six">
+                  <button class="vote-up"
+                    id="vote-up"
+                    data-disqus-identifier={{tab.disqus_identifier}}
+                    data-disqus-url="{{ tab.disqus_url }}"
+                  >
+                    <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                  </button>
+                  <span id="vote-up-count">Loading likes...</span>
+                </div>
+                <div class="usa-vote-container usa-width-six">
+                  <button class="vote-down"
+                    id="vote-down"
+                    data-disqus-identifier="{{ tab.disqus_identifier }}"
+                    data-disqus-url="{{ tab.disqus_url }}"
+                  >
+                    <i class="fa fa-thumbs-down" aria-hidden="true"></i>
+                  </button>
+                  <span id="vote-down-count">Loading dislikes...</span>
+                </div>
+              </div>
               <div class="topic-row">
 
                 {% if page.archived_page == true %}
@@ -264,7 +310,7 @@
                 <div id="disqus_thread"></div>
               {% endif %}
 
-              {% include disqus.html disqus_identifier=tab.disqus_identifier disqus_url=tab.disqus_url %}
+              {% include discussion.html disqus_identifier=tab.disqus_identifier disqus_url=tab.disqus_url %}
 
             </div>
 
@@ -283,6 +329,7 @@
     <script type="text/javascript" src="{{ site.baseurl }}/assets/vendor/lightbox2/lightbox.js"></script>
     <script type="text/javascript" src="{{ site.baseurl }}/assets/vendor/sticky-kit/sticky-kit.js"></script>
     <script type="text/javascript" src="{{ site.baseurl }}/assets/js/main.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/discussion.js"></script>
 
   </body>
 

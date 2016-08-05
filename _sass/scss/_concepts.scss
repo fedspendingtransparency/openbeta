@@ -90,6 +90,45 @@
   }
 }
 
+.usa-vote-header {
+  border-bottom: 1px solid #dcdcdc;
+  font-size: 1.3em;
+  text-align: center;
+  padding-bottom: .5em;
+  margin-bottom: .5em
+}
+
+.usa-vote-container {
+  margin-bottom: 1em;
+  white-space: nowrap;
+}
+
+#vote-up, #vote-down {
+  vertical-align: middle;
+  margin-left: 5%;
+  text-decoration: none;
+  border: none;
+  color: #b3dfbb;
+  font-size: 3.5em;
+  background: #ffffff;
+  cursor: pointer;
+  &:hover {
+    text-decoration: none;
+  }
+  &.vote-disabled {
+    color: #69bf74;
+    cursor: auto;
+  }
+  &:active {
+    outline: none;
+  }
+}
+
+#vote-down-count, #vote-up-count {
+  font-size: 1.3em;
+  vertical-align: middle;
+}
+
 .total-concepts {
   font-weight: 700;
 
