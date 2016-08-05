@@ -248,9 +248,9 @@
 
             <div id="discussion" class="usa-width-nine">
 
-              <div class="row"> What do you think of this? </div>
-              <div class="row">
-                <div>
+              <div class="row usa-vote-header"> What do you think of this? </div>
+              <div class="row grid">
+                <div class="usa-vote-container usa-width-six">
                   <button class="vote-up"
                     id="vote-up"
                     data-disqus-identifier={{tab.disqus_identifier}}
@@ -260,7 +260,7 @@
                   </button>
                   <span id="vote-up-count">Loading likes...</span>
                 </div>
-                <div>
+                <div class="usa-vote-container usa-width-six">
                   <button class="vote-down"
                     id="vote-down"
                     data-disqus-identifier="{{ tab.disqus_identifier }}"

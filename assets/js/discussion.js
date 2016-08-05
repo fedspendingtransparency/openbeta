@@ -1,7 +1,10 @@
-  // handle voting tools (using global vars from discussion.html) #todo fix this
-  update_voting_section(disqus_identifier, disqus_url);
+  // get initial voting data
+  update_voting_section();
 
   $('#vote-up, #vote-down').each(function(){
+    // hide the focus outline while clicking in chrome
+    $(this).mouseup(function() { this.blur() });
+
     $(this).click(function(e){
       var $vote_button = $(this); // new this, by the way
       var now = new Date();
@@ -27,11 +30,12 @@
         "data": form
       }
       $.ajax(settings).done(function (response) {
-        console.log('success');
+        //console.log('success');
       });
 
       // disable the button to prevent duplicate voting (sort of)
       $vote_button.attr('disabled','disabled');
+      $vote_button.addClass('vote-disabled');
 
       // ersatz optimistic UI
       if($vote_button.attr('id') === 'vote-up') {
@@ -47,12 +51,22 @@
   });
 
   function update_voting_section(disqus_identifier, disqus_url){
-    // use attributes on the buttons to hold the data, since there's not another good way
+    // (use attributes on the buttons to hold the data, since there's not another good way)
+
+    // if no arguments, get the config data off the element
+    if(disqus_identifier === undefined){
+      disqus_identifier = $('#vote-up').attr('data-disqus-identifier');
+    }
+    if(disqus_url === undefined){
+      disqus_url = $('#vote-up').attr('data-disqus_url');
+    }
+    // reset buttons
     $('#vote-up, #vote-down').each(function(){
       var $vote_button = $(this);
       $vote_button.attr('data-disqus-identifier', disqus_identifier);
       $vote_button.attr('data-disqus-url', disqus_url);
       $vote_button.removeAttr('disabled');
+      $vote_button.removeClass('vote-disabled');
     });
 
     // update vote counts
