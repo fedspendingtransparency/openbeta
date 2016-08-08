@@ -32,7 +32,7 @@ active_tab:
         description: How we display data for CFDA programs. 
         total_concepts: 1
         link: /concepts/program-summary
-      - headline: Recipient Profile
+      - headline: Recipient Summary
         description: How we summarize and display data for each award recipient. 
         total_concepts: 1
         link: /concepts/recipient-profile
