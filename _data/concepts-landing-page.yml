@@ -32,6 +32,14 @@ active_tab:
         description: How we display data for CFDA programs. 
         total_concepts: 1
         link: /concepts/program-summary
+      - headline: Recipient Profile
+        description: How we summarize and display data for each award recipient. 
+        total_concepts: 1
+        link: /concepts/recipient-profile
+      - headline: Appropriation Account Summary
+        description: How data is displayed by Appropriation Account. 
+        total_concepts: 1
+        link: /concepts/appropriation-account-summary
   - category: General Pages
     scroll_id: general-pages
     topics:
