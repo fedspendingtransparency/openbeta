@@ -3,7 +3,7 @@ update_voting_section();
 
 $('#vote-up, #vote-down').each(function(){
   // hide the focus outline while clicking in chrome
-  $(this).mouseup(function() { this.blur() });
+  $(this).mouseup(function() { this.blur(); });
 
   $(this).click(function(e){
     var $vote_button = $(this); // new this, by the way
@@ -28,7 +28,7 @@ $('#vote-up, #vote-down').each(function(){
       "contentType": false,
       "mimeType": "multipart/form-data",
       "data": form
-    }
+    };
     $.ajax(settings).done(function (response) {
       //console.log('success');
     });
@@ -37,13 +37,15 @@ $('#vote-up, #vote-down').each(function(){
     $vote_button.attr('disabled','disabled');
     $vote_button.addClass('vote-disabled');
 
+    var new_count;
+
     // ersatz optimistic UI
     if($vote_button.attr('id') === 'vote-up') {
-      var new_count = parseInt($('#vote-up-count').text().match(/\d+/)) + 1;
+      new_count = parseInt($('#vote-up-count').text().match(/\d+/)) + 1;
       $('#vote-up-count').text(new_count + (new_count === 1 ? ' person likes this' : ' people like this'));
     }
     else {
-      var new_count = parseInt($('#vote-down-count').text().match(/\d+/)) + 1;
+      new_count = parseInt($('#vote-down-count').text().match(/\d+/)) + 1;
       $('#vote-down-count').text(new_count + (new_count === 1 ? ' person dislikes this' : ' people dislike this'));
     }
 
