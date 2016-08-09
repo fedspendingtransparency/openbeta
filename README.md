@@ -53,7 +53,7 @@ Page content can be found in either a YAML or Markdown file.
 
 * `/_data/footer.yml`
 
-### Home Page (/): 
+### Home Page (/):
 
 * `/_data/home.yml`
 * To add a new slide to the carousel, add the following under the `carousel` line item
@@ -84,7 +84,7 @@ Page content can be found in either a YAML or Markdown file.
 
 ## Topic Pages (/concepts/:path):
 
-Topics are using Jekyll's Collections feature. It works in the same way as blog posts except it has its own unique properties. Each file in the `_concepts` folder pertains to one topics page. 
+Topics are using Jekyll's Collections feature. It works in the same way as blog posts except it has its own unique properties. Each file in the `_concepts` folder pertains to one topics page.
 
 The URL is determined by the file name.
 
@@ -96,8 +96,10 @@ The page can contain tabs which are specified in the topics Markdown page throug
 
 Tab names are created from the `title:` field.
 
-To create a new Disqus comments section, include `disqus_identifier` which can be any unique ID of your choosing. In order for Disqus to enable a unique comments section per tab, the `url_hash` must contain `#!` before the name of the tab. 
+To create a new Disqus comments section, include `disqus_key` that maps to Disqus identifier, which can be any unique ID of your choosing. In order for Disqus to enable a unique comments section per tab, the `url_hash` must contain `#!` before the name of the tab.
+
+All Disqus IDs and URLs are stored in `/_data/disqus.yml` file. Each unique ID/URL pair should have a unique key.
 
 ### Search Results Page - `/concepts/search-results`
 
-This page does not contain tabs, which is specified by `tabs_required: no`.   
+This page does not contain tabs, which is specified by `tabs_required: no`.

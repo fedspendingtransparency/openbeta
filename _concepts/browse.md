@@ -3,7 +3,7 @@ title: Browse the Data
 
 archived_page: no
 archived_page_text:
-link_to_archived_designs: 
+link_to_archived_designs:
 link_to_active_designs:
 
 category: "General:"
@@ -29,27 +29,25 @@ tabs:
     archived_text:
     description: "Key Features:"
     features:
-      - description: Direct access to all data in a specific category in one place. 
+      - description: Direct access to all data in a specific category in one place.
     disclaimer_text: <a class="usa-cta external-link" href='http://my36m8.axshare.com/browse.html' target="_blank">View an interactive version of the below image</a>
     image: "/assets/img/concept_browse_A.jpg"
-    image_alt_text: This image displays categories to browse for data.  At the left are links to Organizations, Spending Categories, and Industry Codes categories.  In the center of the page are links to the same categories but without the specific headings. 
+    image_alt_text: This image displays categories to browse for data.  At the left are links to Organizations, Spending Categories, and Industry Codes categories.  In the center of the page are links to the same categories but without the specific headings.
     below_image_content:
-    disqus_identifier: 43048475
-    disqus_url: "https://openbeta.usaspending.gov/concepts/browse#!browse-0.1"
+    disqus_key: browse_0_1
   - title: Browse-Results
     url_hash: "#!browse-results"
     archived_text:
     description: "Key Features:"
     features:
-      - description: Direct access to summary data. 
+      - description: Direct access to summary data.
     disclaimer_text: <a class="usa-cta external-link" href='http://http://my36m8.axshare.com/#g=1&p=browse_-_agencies.html' target="_blank">View an interactive version of the below image</a>
     image: "/assets/img/concept_browse-agencies.png"
-    image_alt_text: This image displays the data by agencies. At the left are links to the sub-tier agencies and at the right are links to the parent agencies.  
+    image_alt_text: This image displays the data by agencies. At the left are links to the sub-tier agencies and at the right are links to the parent agencies.
     below_image_content:
-    disqus_identifier: 600523
-    disqus_url: "https://openbeta.usaspending.gov/concepts/browse#!browse-results"
+    disqus_key: browse_results
 
-no_tabs: 
+no_tabs:
   - archived_text:
     description:
     features:
@@ -58,7 +56,6 @@ no_tabs:
     image:
     image_alt_text:
     below_image_content:
-    disqus_identifier:
-    disqus_url:
+    disqus_key:
 
 ---

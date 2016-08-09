@@ -1,0 +1,62 @@
+# Disqus IDs and URLs
+
+agency_summary_0_1A:
+  id: 33785410
+  url: https://openbeta.usaspending.gov/concepts/agency-summary#!version-0.1A
+agency_summary_0_1B:
+  id: 14683571
+  url: https://openbeta.usaspending.gov/concepts/agency-summary#!version-0.1B
+archived_contract_award_summary_0_1A:
+  id: 71538462
+  url: http://openbeta.usaspending.gov/concepts/archived-contract-award-summary#!version-0.1A
+archived_contract_award_summary_0_1B:
+  id: 56237819
+  url: http://openbeta.usaspending.gov/concepts/archived-contract-award-summary#!version-0.1B
+archived_contract_award_summary_0_1C:
+  id: 74813926
+  url: https://openbeta.usaspending.gov/concepts/archived-contract-award-summary#!version-c
+archived_search_functionality_live_filters:
+  id: 35891276
+  url: https://openbeta.usaspending.com/concepts/archived-search-functionality#!live-filters
+archived_search_functionality_advanced_search:
+  id: 93415672
+  url: https://openbeta.usaspending.com/concepts/archived-search-functionality#!advanced-search
+archived_search_functionality_search_builder:
+  id: 12697438
+  url: https://openbeta.usaspending.com/concepts/archived-search-functionality#!search-builder
+archived_search_functionality_sql_search:
+  id: 81493267
+  url: https://openbeta.usaspending.com/concepts/archived-search-functionality#!sql-search
+browse_0_1:
+  id: 43048475
+  url: https://openbeta.usaspending.gov/concepts/browse#!browse-0.1
+browse_results:
+  id: 600523
+  url: https://openbeta.usaspending.gov/concepts/browse#!browse-results
+contract_award_summary_0_2:
+  id: 97847241
+  url: https://openbeta.usaspending.com/concepts/contract-award-summary#!version-0.2
+data_download_0_1:
+  id:  051917
+  url: https://openbeta.usaspending.gov/concepts/data-download#!version-0.1
+financial_assistance_award_summary_0_1:
+  id: 72704398
+  url: https://openbeta.usaspending.gov/concepts/financial-assistance-award-summary#!version-0.1
+home_page_0_1A:
+  id: 83728938
+  url: https://openbeta.usaspending.com/concepts/home-page#!version-0.1A
+program_summary_0_1:
+  id: 706896
+  url: https://openbeta.usaspending.gov/concepts/cfda-program-summary#!version-0.1
+search_functionality_advanced_search:
+  id: 93415672
+  url: https://openbeta.usaspending.com/concepts/archived-search-functionality#!advanced-search
+search_functionality_search_builder:
+  id: 12697438
+  url: https://openbeta.usaspending.com/concepts/archived-search-functionality#!search-builder
+search_functionality_sql_search:
+  id: 81493267
+  url: https://openbeta.usaspending.com/concepts/archived-search-functionality#!sql-search
+search_results_0_1A:
+  id: 59476183
+  url: https://openbeta.usaspending.com/concepts/search-results#!version-0.1A

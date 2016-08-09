@@ -10,7 +10,7 @@ category: "Search:"
 
 headline: Search Functionality
 
-copy: 
+copy:
   - text: Below are some options on how we could implement search. Please take a look at each option and tell us what you think about the functionality in the discussion section below the option.
 
 discussion_title: "Discussion suggestions:"
@@ -22,7 +22,7 @@ discussion_bullet_points:
 
 tabs_required: yes
 
-tabs: 
+tabs:
   - title: Advanced Search
     url_hash: "#!advanced-search"
     archived_text:
@@ -33,8 +33,7 @@ tabs:
     image: /assets/img/adv_search.png
     image_alt_text: The advanced search feature allows users to create a search query by filling in a form which specifies exactly what data to return.
     below_image_content: What do you think of the Advanced Search option?
-    disqus_identifier: 93415672
-    disqus_url: "https://openbeta.usaspending.com/concepts/search-functionality#!advanced-search"
+    disqus_key: search_functionality_advanced_search
   - title: Search Builder
     url_hash: "#!search-builder"
     archived_text:
@@ -45,8 +44,7 @@ tabs:
     image: /assets/img/search_builder.png
     image_alt_text: The search builder feature allows the user to construct a search query using dropdown menus to include specific search filters.
     below_image_content: What do you think of the Search Builder option?
-    disqus_identifier: 12697438
-    disqus_url: "https://openbeta.usaspending.com/concepts/search-functionality#!search-builder"
+    disqus_key: search_functionality_search_builder
   - title: SQL Search
     url_hash: "#!sql-search"
     archived_text:
@@ -57,8 +55,7 @@ tabs:
     image: /assets/img/sql_search.png
     image_alt_text: The SQL search feature provides a terminal style interface and the ability to search using structured query language (SQL).
     below_image_content: What do you think of the SQL Search option?
-    disqus_identifier: 81493267
-    disqus_url: "https://openbeta.usaspending.com/concepts/search-functionality#!sql-search"
+    disqus_key: search_functionality_sql_search
 
 no_tabs:
   - archived_text:
@@ -69,7 +66,6 @@ no_tabs:
     image:
     image_alt_text:
     below_image_content:
-    disqus_identifier:
-    disqus_url:
+    disqus_key:
 
 ---
