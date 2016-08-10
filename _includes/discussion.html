@@ -1,11 +1,17 @@
 <script>
-  /* * * DON'T EDIT BELOW THIS LINE  (disqus things) * * */ 
+  /* * * DON'T EDIT BELOW THIS LINE  (disqus things) * * */
+
+  // defined globally so that Disqus embed script can access it
+  var disqus_config = function () {
+    this.page.url = '{{ include.disqus_url }}';
+    this.page.identifier = '{{ include.disqus_identifier }}';
+  };
+
   (function() {
     var disqus_shortname = '{{ site.disqus_shortname }}';
-    var disqus_identifier = '{{ include.disqus_identifier }}';
-    var disqus_url = '{{ include.disqus_url }}';
     var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
     dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+    dsq.setAttribute('data-timestamp', +new Date());
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
   })();
 

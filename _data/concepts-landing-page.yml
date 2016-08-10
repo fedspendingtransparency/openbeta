@@ -43,6 +43,14 @@ active_tab:
         link: /concepts/program-summary
         disqus_key:
         - program_summary_0_1
+      - headline: Recipient Summary
+        description: How we summarize and display data for each award recipient.
+        total_concepts: 1
+        link: /concepts/recipient-summary
+      - headline: Appropriation Account Summary
+        description: How data is displayed by Appropriation Account.
+        total_concepts: 1
+        link: /concepts/appropriation-account-summary
   - category: General Pages
     scroll_id: general-pages
     topics:
