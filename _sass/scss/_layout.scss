@@ -30,7 +30,7 @@
 
     padding-left: 1em;
     padding-right: 1em;
-  }  
+  }
 }
 
 .usa-width-three {
@@ -38,12 +38,12 @@
 
   @include media($medium) {
     @include span-columns(8);
-  }  
+  }
 }
 
 .usa-width-six {
   @include span-columns(6);
-  
+
   padding-left: 1em;
   padding-right: 1em;
 
@@ -75,7 +75,7 @@
 
     padding-left: 1em;
     padding-right: 1em;
-  }  
+  }
 }
 
 .usa-width-twelve {
@@ -93,7 +93,7 @@
 
 /* * * * * * * * * * * * * * * * * * * * * * *
 
-  Section Layouts 
+  Section Layouts
 
 * * * * * * * * * * * * * * * * * * * * * * */
 
@@ -304,7 +304,9 @@ section.usa-section:nth-of-type(5) {
      }
   }
 
-  .total-concepts {
+  .total-concepts,
+  .comments-count {
+    float: left;
     font-size: 0.9em;
     margin-bottom: 0;
     padding-right: 1.5em;
@@ -383,7 +385,7 @@ ul {
 
 /* * * * * * * * * * * * * * * * * * * * * * *
 
-  Carousel 
+  Carousel
 
 * * * * * * * * * * * * * * * * * * * * * * */
 

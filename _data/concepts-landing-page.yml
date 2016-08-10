@@ -1,7 +1,7 @@
 # This data populates the /concepts page
 
 banner_title: Concepts
-banner_label: 
+banner_label:
   - text: Below are features that we are currently developing and would like your feedback about.
   - text: Select a topic to learn more and join the discussion.
 
@@ -13,6 +13,8 @@ active_tab:
         description: How we display search results
         total_concepts: 1
         link: /concepts/search-results
+        disqus_key:
+        - search_results_0_1A
   - category: Summary Pages
     scroll_id: summary-pages
     topics:
@@ -20,18 +22,27 @@ active_tab:
         description: How we display contract award data
         total_concepts: 1
         link: /concepts/contract-award-summary
+        disqus_key:
+        - contract_award_summary_0_2
       - headline: Agency Summary
         description: How we display agency data
         total_concepts: 2
         link: /concepts/agency-summary
+        disqus_key:
+        - agency_summary_0_1A
+        - agency_summary_0_1B
       - headline: Financial Assistance Award Summary
         description: How we display financial assistance data
         total_concepts: 1
         link: /concepts/financial-assistance-award-summary
+        disqus_key:
+        - financial_assistance_award_summary_0_1
       - headline: CFDA Program Summary
-        description: How we display data for CFDA programs. 
+        description: How we display data for CFDA programs.
         total_concepts: 1
         link: /concepts/program-summary
+        disqus_key:
+        - program_summary_0_1
   - category: General Pages
     scroll_id: general-pages
     topics:
@@ -39,14 +50,21 @@ active_tab:
         description: Your introduction to USAspending.gov
         total_concepts: 1
         link: /concepts/home-page
+        disqus_key:
+        - home_page_0_1A
       - headline: Browse the Data
-        description: How to access all the Summary pages. 
+        description: How to access all the Summary pages.
         total_concepts: 1
         link: /concepts/browse
+        disqus_key:
+        - browse_0_1
+        - browse_results
       - headline: Data Download
-        description: How to download all the data. 
+        description: How to download all the data.
         total_concepts: 1
         link: /concepts/data-download
+        disqus_key:
+        - data_download_0_1
 
 completed_tab:
   - category: Design
@@ -56,6 +74,7 @@ completed_tab:
         description: The identity of OpenBeta
         total_concepts: 0
         link: /concepts/logo
+        disqus_key:
   - category: Miscellaneous
     scroll_id: miscellaneous
     topics:
@@ -63,8 +82,9 @@ completed_tab:
         description: How we display our glossary of terms
         total_concepts: 0
         link: /concepts/glossary
+        disqus_key:
 
-archived_tab: 
+archived_tab:
   - category: Search
     scroll_id: archived-search
     topics:
@@ -72,6 +92,11 @@ archived_tab:
         description: How you can search our data
         total_concepts: 4
         link: /concepts/archived-search-functionality
+        disqus_key:
+        - archived_search_functionality_live_filters
+        - archived_search_functionality_advanced_search
+        - archived_search_functionality_search_builder
+        - archived_search_functionality_sql_search
   - category: Summary Pages
     scroll_id: archived-contract award summary
     topics:
@@ -79,3 +104,7 @@ archived_tab:
         description: How we display contract award data
         total_concepts: 3
         link: /concepts/archived-contract-award-summary
+        disqus_key:
+        - archived_contract_award_summary_0_1A
+        - archived_contract_award_summary_0_1B
+        - archived_contract_award_summary_0_1C

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Concepts
+include_at_bottom: comments_count.html
 ---
 
 <div class="usa-concepts usa-banner">
@@ -43,11 +44,15 @@ title: Concepts
                       </li>
 
                       <li>
-                        {% if row.total_concepts == 1 %}
-                          <p class="total-concepts">{{ row.total_concepts }} <span>concept</span></p>
-                        {% else %}
-                          <p class="total-concepts">{{ row.total_concepts }} <span>concepts</span></p>
-                        {% endif %}
+                        <div class="total-concepts">
+                          {{ row.total_concepts | pluralize: "<span>concept</span>", "<span>concepts</span>" }}
+                        </div>
+                        {% assign first_key = row.disqus_key | first %}
+                        {% assign keys = site.data.disqus[first_key].id %}
+                        {% for key in row.disqus_key offset:1 %}
+                          {% capture keys %}{{ keys }},{{ site.data.disqus[key].id }}{% endcapture %}
+                        {% endfor %}
+                        <div class="comments-count" data-disqus-identifiers="{{ keys }}"></div>
                       </li>
                     </ul>
 
@@ -93,11 +98,15 @@ title: Concepts
                       </li>
 
                       <li>
-                        {% if row.total_concepts == 1 %}
-                          <p class="total-concepts">{{ row.total_concepts }} <span>concept</span></p>
-                        {% else %}
-                          <p class="total-concepts">{{ row.total_concepts }} <span>concepts</span></p>
-                        {% endif %}
+                        <div class="total-concepts">
+                          {{ row.total_concepts | pluralize: "<span>concept</span>", "<span>concepts</span>" }}
+                        </div>
+                        {% assign first_key = row.disqus_key | first %}
+                        {% assign keys = site.data.disqus[first_key].id %}
+                        {% for key in row.disqus_key offset:1 %}
+                          {% capture keys %}{{ keys }},{{ site.data.disqus[key].id }}{% endcapture %}
+                        {% endfor %}
+                        <div class="comments-count" data-disqus-identifiers="{{ keys }}"></div>
                       </li>
                     </ul>
 
@@ -138,11 +147,15 @@ title: Concepts
                       </li>
 
                       <li>
-                        {% if row.total_concepts == 1 %}
-                          <p class="total-concepts">{{ row.total_concepts }} <span>concept</span></p>
-                        {% else %}
-                          <p class="total-concepts">{{ row.total_concepts }} <span>concepts</span></p>
-                        {% endif %}
+                        <div class="total-concepts">
+                          {{ row.total_concepts | pluralize: "<span>concept</span>", "<span>concepts</span>" }}
+                        </div>
+                        {% assign first_key = row.disqus_key | first %}
+                        {% assign keys = site.data.disqus[first_key].id %}
+                        {% for key in row.disqus_key offset:1 %}
+                          {% capture keys %}{{ keys }},{{ site.data.disqus[key].id }}{% endcapture %}
+                        {% endfor %}
+                        <div class="comments-count" data-disqus-identifiers="{{ keys }}"></div>
                       </li>
                     </ul>
 
@@ -167,6 +180,3 @@ title: Concepts
     </div>
   </div>
 </div>
-
-<div class="disqus-comment-count" data-disqus-identifier="59476183" data-disqus-url="https://openbeta.usaspending.com/concepts/search-results#!version-0.1A"></div>
-<script id="dsq-count-scr" src="//dataact-openbeta.disqus.com/count.js" async></script>

@@ -17,6 +17,10 @@
     <script type="text/javascript" src="{{ site.baseurl }}/assets/vendor/sticky-kit/sticky-kit.js"></script>
     <script type="text/javascript" src="{{ site.baseurl }}/assets/js/main.js"></script>
 
+    {% if page.include_at_bottom %}
+      {% include {{ page.include_at_bottom }} %}
+    {% endif %}
+
   </body>
 
 </html>
