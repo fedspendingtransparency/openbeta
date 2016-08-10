@@ -95,7 +95,7 @@
   font-size: 1.3em;
   text-align: center;
   padding-bottom: .5em;
-  margin-bottom: .5em
+  margin-bottom: 1em
 }
 
 .usa-vote-container {
@@ -104,23 +104,26 @@
 }
 
 #vote-up, #vote-down {
-  vertical-align: middle;
-  margin-left: 5%;
-  text-decoration: none;
+  @include hide-text;
+  @include retina-image('../assets/img/thumbs-sprites', 112px 108px);
+
+  width: 56px;
+  height: 54px;
+  margin: 0 1.5em;
+  padding: 0;
   border: none;
-  color: #b3dfbb;
-  font-size: 3.5em;
-  background: #ffffff;
+  background-color: $primary-background-color;
   cursor: pointer;
-  &:hover {
-    text-decoration: none;
-  }
+}
+
+#vote-up.vote-disabled {
+  background-position: 0 -54px;
+}
+
+#vote-down {
+  background-position: -56px 0;
   &.vote-disabled {
-    color: #69bf74;
-    cursor: auto;
-  }
-  &:active {
-    outline: none;
+    background-position: -56px -54px;
   }
 }
 
