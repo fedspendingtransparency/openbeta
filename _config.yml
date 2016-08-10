@@ -10,7 +10,7 @@ collections:
   concepts:
     output: true
     permalink: /concepts/:path/
-defaults: 
+defaults:
   -
     scope:
       path: ""
@@ -20,6 +20,7 @@ defaults:
 
 # Disqus
 disqus_shortname: "dataact-openbeta" # this is the shortname found in the Disqus admin settings
+disqus_api_key: "Kqjb4gW6YBIkqtMI2u8OMkVoUBAAPlZVWsO5ZoJS68PpMGIkVQaCsdhT3I1zfuph" # a public key used to make API requests
 
 # Google Analytics
 google_analytics_id: "UA-77512441-1"

@@ -189,7 +189,7 @@
                   {% endif %}
 
                   <a href="{{ tab.url_hash }}" class="{{ class }}" onclick="reset('{{ site.data.disqus[tab.disqus_key].id }}', '{{ site.data.disqus[tab.disqus_key].url }}');">{{ tab.title }}
-                    <div class="disqus-concept-comment-count" data-disqus-identifier="{{ site.data.disqus[tab.disqus_key].id }}"></div>
+                    <div class="disqus-comment-count" data-disqus-identifier="{{ site.data.disqus[tab.disqus_key].id }}"></div>
                     <div class="disqus-thread-updated" data-disqus-identifier="{{ site.data.disqus[tab.disqus_key].id }}"></div>
                   </a>
 
@@ -336,6 +336,7 @@
     <script type="text/javascript" src="{{ site.baseurl }}/assets/vendor/sticky-kit/sticky-kit.js"></script>
     <script type="text/javascript" src="{{ site.baseurl }}/assets/js/main.js"></script>
     <script type="text/javascript" src="{{ site.baseurl }}/assets/js/discussion.js"></script>
+    <script id="dsq-count-scr" src="//{{ site.disqus_shortname }}.disqus.com/count.js" async></script>
 
   </body>
 
