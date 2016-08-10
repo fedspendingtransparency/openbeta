@@ -188,9 +188,20 @@
                     {% endif %}
                   {% endif %}
 
-                  <a href="{{ tab.url_hash }}" class="{{ class }}" onclick="reset('{{ site.data.disqus[tab.disqus_key].id }}', '{{ site.data.disqus[tab.disqus_key].url }}');">{{ tab.title }}
-                    <div class="disqus-comment-count" data-disqus-identifier="{{ site.data.disqus[tab.disqus_key].id }}"></div>
-                    <div class="disqus-thread-updated" data-disqus-identifier="{{ site.data.disqus[tab.disqus_key].id }}"></div>
+                  <a href="{{ tab.url_hash }}" class="{{ class }}"
+                    onclick="reset(
+                      '{{ site.data.disqus[tab.disqus_key].id }}',
+                      '{{ site.data.disqus[tab.disqus_key].url }}'
+                    );">
+                    {{ tab.title }}
+                    <div>
+                      <div class="disqus-comment-count"
+                        data-disqus-identifier="{{ site.data.disqus[tab.disqus_key].id }}"
+                      ></div>
+                      <div class="vote-count"
+                        data-disqus-identifier="{{ site.data.disqus[tab.disqus_key].id }}"
+                      ></div>
+                    </div>
                   </a>
 
                   <div class="tab-content">

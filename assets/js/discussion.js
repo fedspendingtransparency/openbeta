@@ -1,5 +1,6 @@
 // load initial voting data
 update_voting_section();
+update_number_of_votes();
 
 $('#vote-up, #vote-down').each(function(){
   // hide the focus outline while clicking in chrome
@@ -104,3 +105,36 @@ var reset = function (newIdentifier, newUrl) {
     }
   });
 };
+
+// get number of total votes and display on all tabs
+function update_number_of_votes() {
+  // get disqus_id to retrieve votes for
+  var disqus_id_query = $('.vote-count').map(function() {
+    return 'disqus_id=' + $(this).data('disqus-identifier');
+  }).get().join(' or ');
+
+  // retrieve number of votes
+  $.get(
+    'https://openbeta-data.usaspending.gov/resource/upgx-d3ur.json?' +
+    '$select=disqus_id,count(*) as votes&' +
+    '$group=disqus_id&' +
+    '$where=' + disqus_id_query
+  ).done(function(data) {
+    // group array by disqus_id to an object
+    var votes = {};
+    data.forEach(function(row) {
+      votes[row.disqus_id] = +row.votes;
+    });
+
+    // iterate over vote-count elements to populate
+    $('.vote-count').each(function() {
+      // if there have been no votes, key would not exist
+      // since disqus id is stored in dataset as number, convert to number (remove leading 0's)
+      var count = votes[+$(this).data('disqus-identifier')] || 0;
+
+      $(this).html(count + ' ' + ((count === 1) ? 'vote' : 'votes'));
+    });
+
+    console.log(votes);
+  });
+}
