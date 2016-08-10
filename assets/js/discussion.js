@@ -134,7 +134,5 @@ function update_number_of_votes() {
 
       $(this).html(count + ' ' + ((count === 1) ? 'vote' : 'votes'));
     });
-
-    console.log(votes);
   });
 }
