@@ -35,7 +35,7 @@ active_tab:
       - headline: Recipient Summary
         description: How we summarize and display data for each award recipient. 
         total_concepts: 1
-        link: /concepts/recipient-profile
+        link: /concepts/recipient-summary
       - headline: Appropriation Account Summary
         description: How data is displayed by Appropriation Account. 
         total_concepts: 1
