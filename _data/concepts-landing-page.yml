@@ -14,7 +14,7 @@ active_tab:
         total_concepts: 1
         link: /concepts/search-results
         disqus_key:
-        - search_results_0_1A
+          - search_results_0_1A
   - category: Summary Pages
     scroll_id: summary-pages
     topics:
@@ -23,34 +23,38 @@ active_tab:
         total_concepts: 1
         link: /concepts/contract-award-summary
         disqus_key:
-        - contract_award_summary_0_2
+          - contract_award_summary_0_2
       - headline: Agency Summary
         description: How we display agency data
         total_concepts: 2
         link: /concepts/agency-summary
         disqus_key:
-        - agency_summary_0_1A
-        - agency_summary_0_1B
+          - agency_summary_0_1A
+          - agency_summary_0_1B
       - headline: Financial Assistance Award Summary
         description: How we display financial assistance data
         total_concepts: 1
         link: /concepts/financial-assistance-award-summary
         disqus_key:
-        - financial_assistance_award_summary_0_1
+          - financial_assistance_award_summary_0_1
       - headline: CFDA Program Summary
         description: How we display data for CFDA programs.
         total_concepts: 1
         link: /concepts/program-summary
         disqus_key:
-        - program_summary_0_1
+          - program_summary_0_1
       - headline: Recipient Summary
         description: How we summarize and display data for each award recipient.
         total_concepts: 1
         link: /concepts/recipient-summary
+        disqus_key:
+          - recipient_summary_0_1
       - headline: Appropriation Account Summary
         description: How data is displayed by Appropriation Account.
         total_concepts: 1
         link: /concepts/appropriation-account-summary
+        disqus_key:
+          - appropriation_account_summary_0_1
   - category: General Pages
     scroll_id: general-pages
     topics:
@@ -59,20 +63,20 @@ active_tab:
         total_concepts: 1
         link: /concepts/home-page
         disqus_key:
-        - home_page_0_1A
+          - home_page_0_1A
       - headline: Browse the Data
         description: How to access all the Summary pages.
         total_concepts: 1
         link: /concepts/browse
         disqus_key:
-        - browse_0_1
-        - browse_results
+          - browse_0_1
+          - browse_results
       - headline: Data Download
         description: How to download all the data.
         total_concepts: 1
         link: /concepts/data-download
         disqus_key:
-        - data_download_0_1
+          - data_download_0_1
 
 completed_tab:
   - category: Design
@@ -101,10 +105,10 @@ archived_tab:
         total_concepts: 4
         link: /concepts/archived-search-functionality
         disqus_key:
-        - archived_search_functionality_live_filters
-        - archived_search_functionality_advanced_search
-        - archived_search_functionality_search_builder
-        - archived_search_functionality_sql_search
+          - archived_search_functionality_live_filters
+          - archived_search_functionality_advanced_search
+          - archived_search_functionality_search_builder
+          - archived_search_functionality_sql_search
   - category: Summary Pages
     scroll_id: archived-contract award summary
     topics:
@@ -113,6 +117,6 @@ archived_tab:
         total_concepts: 3
         link: /concepts/archived-contract-award-summary
         disqus_key:
-        - archived_contract_award_summary_0_1A
-        - archived_contract_award_summary_0_1B
-        - archived_contract_award_summary_0_1C
+          - archived_contract_award_summary_0_1A
+          - archived_contract_award_summary_0_1B
+          - archived_contract_award_summary_0_1C

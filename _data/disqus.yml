@@ -6,6 +6,9 @@ agency_summary_0_1A:
 agency_summary_0_1B:
   id: 14683571
   url: https://openbeta.usaspending.gov/concepts/agency-summary#!version-0.1B
+appropriation_account_summary_0_1:
+  id: 59548620
+  url: https://openbeta.usaspending.gov/concepts/appropriation-account-summary#!version-0.1
 archived_contract_award_summary_0_1A:
   id: 71538462
   url: http://openbeta.usaspending.gov/concepts/archived-contract-award-summary#!version-0.1A
@@ -48,6 +51,9 @@ home_page_0_1A:
 program_summary_0_1:
   id: 706896
   url: https://openbeta.usaspending.gov/concepts/cfda-program-summary#!version-0.1
+recipient_summary_0_1:
+  id: 26576965
+  url: https://openbeta.usaspending.gov/concepts/recipient-summary#!version-0.1
 search_functionality_advanced_search:
   id: 93415672
   url: https://openbeta.usaspending.com/concepts/archived-search-functionality#!advanced-search

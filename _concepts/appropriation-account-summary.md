@@ -34,11 +34,10 @@ tabs:
       - description: Visual timeline of the financial assistance activity
     disclaimer_text: <a class="usa-cta external-link" href='http://my36m8.axshare.com/appropriation_account_summary.html' target="_blank">View an interactive version of the below image</a>
     image: "/assets/img/concept_appropriation-account-summary.png"
-    image_alt_text: This image displays the appropriation account summary wireframe. Across the top is the major awarding agency and the sub-tier agency  with the specific Treasury Account Symbol (TAS) number. Below is a graph showing the Amount Awarded over Time. Below the graph you can use the drop down to see the Program Activities and Product/Service Codes data. Next is a breakdown by recipients. At the bottom is the total list of awards by Appropriate Account. 
-    disqus_identifier: 59548620
-    disqus_url: "https://openbeta.usaspending.gov/concepts/appropriation-account-summary#!version-0.1"
+    image_alt_text: This image displays the appropriation account summary wireframe. Across the top is the major awarding agency and the sub-tier agency  with the specific Treasury Account Symbol (TAS) number. Below is a graph showing the Amount Awarded over Time. Below the graph you can use the drop down to see the Program Activities and Product/Service Codes data. Next is a breakdown by recipients. At the bottom is the total list of awards by Appropriate Account.
+    disqus_key: appropriation_account_summary_0_1
 
-no_tabs: 
+no_tabs:
   - archived_text:
     description:
     features:
@@ -47,7 +46,6 @@ no_tabs:
     image:
     image_alt_text:
     below_image_content:
-    disqus_identifier:
-    disqus_url:
+    disqus_key:
 
 ---
