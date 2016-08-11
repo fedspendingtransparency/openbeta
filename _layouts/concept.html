@@ -157,7 +157,7 @@
               {% assign disqus_id = site.data.disqus[page.no_tab.disqus_key].id %}
               {% assign disqus_url = site.data.disqus[page.no_tab.disqus_key].url %}
 
-              {% include discussion.html disqus_identifier=disqus_id disqus_url=disqus_url tab_title=tab.title %}
+              {% include discussion_widget.html disqus_identifier=disqus_id disqus_url=disqus_url tab_title=tab.title %}
 
             </div>
           </div>
@@ -327,7 +327,7 @@
               {% assign disqus_id = site.data.disqus[tab.disqus_key].id %}
               {% assign disqus_url = site.data.disqus[tab.disqus_key].url %}
 
-              {% include discussion.html disqus_identifier=disqus_id disqus_url=disqus_url %}
+              {% include discussion_widget.html disqus_identifier=disqus_id disqus_url=disqus_url %}
 
             </div>
 
@@ -347,9 +347,10 @@
     <script type="text/javascript" src="{{ site.baseurl }}/assets/vendor/sticky-kit/sticky-kit.js"></script>
     <script type="text/javascript" src="{{ site.baseurl }}/assets/vendor/js.cookie/js.cookie.min.js"></script>
     <script type="text/javascript" src="{{ site.baseurl }}/assets/js/main.js"></script>
-    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/discussion.js"></script>
     <script type="text/javascript" src="{{ site.baseurl }}/assets/js/record-views.js"></script>
     <script id="dsq-count-scr" src="//{{ site.disqus_shortname }}.disqus.com/count.js" async></script>
+
+    {% include voting.html %}
 
   </body>
 

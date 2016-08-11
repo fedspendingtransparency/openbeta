@@ -24,3 +24,7 @@ disqus_api_key: "Kqjb4gW6YBIkqtMI2u8OMkVoUBAAPlZVWsO5ZoJS68PpMGIkVQaCsdhT3I1zfup
 
 # Google Analytics
 google_analytics_id: "UA-77512441-1"
+
+# Socrata
+socrata_app_token: IpvjLVLiUoqVIUomSdwugAOwe
+socrata_data_site: openbeta-data.usaspending.gov
