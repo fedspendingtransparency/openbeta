@@ -1,23 +1,3 @@
-// Slick Carousel
-$(document).ready(function(){
-  $('.carousel').slick({
-    accessibility: true,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    arrows: true,
-    dots: true,
-    fade: true,
-    responsive: [
-      {
-        breakpoint: 800,
-        settings: {
-          arrows: false
-        }
-      }
-    ]
-  });
-});
-
 $(document).ready(function () {
   if ($('.accordion-tabs-minimal')) {
     $('.accordion-tabs-minimal').each(function(index) {
