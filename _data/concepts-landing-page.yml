@@ -14,9 +14,9 @@ active_tab:
         total_concepts: 1
         link: /concepts/search-results
         # enter date in YYYY-MM-DD format
-        updated_date: 2016-06-30
+        update_date: 2016-06-30
         # following text prepends date above in "time ago" format
-        updated_text: Updated
+        update_text: Updated
         disqus_identifiers:
           - 59476183
   - category: Summary Pages
@@ -26,16 +26,16 @@ active_tab:
         description: How we display contract award data
         total_concepts: 1
         link: /concepts/contract-award-summary
-        updated_date: 2016-06-29
-        updated_text: Updated
+        update_date: 2016-06-29
+        update_text: Updated
         disqus_identifiers:
           - 97847241
       - headline: Agency Summary
         description: How we display agency data
         total_concepts: 2
         link: /concepts/agency-summary
-        updated_date: 2016-07-12
-        updated_text: Posted
+        update_date: 2016-07-12
+        update_text: Posted
         disqus_identifiers:
           - 33785410
           - 14683571
@@ -43,32 +43,32 @@ active_tab:
         description: How we display financial assistance data
         total_concepts: 1
         link: /concepts/financial-assistance-award-summary
-        updated_date: 2016-07-12
-        updated_text: Posted
+        update_date: 2016-07-12
+        update_text: Posted
         disqus_identifiers:
           - 72704398
       - headline: CFDA Program Summary
         description: How we display data for CFDA programs.
         total_concepts: 1
         link: /concepts/program-summary
-        updated_date: 2016-07-26
-        updated_text: Posted
+        update_date: 2016-07-26
+        update_text: Posted
         disqus_identifiers:
           - 706896
       - headline: Recipient Summary
         description: How we summarize and display data for each award recipient.
         total_concepts: 1
         link: /concepts/recipient-summary
-        updated_date: 2016-08-12
-        updated_text: Posted
+        update_date: 2016-08-12
+        update_text: Posted
         disqus_identifiers:
           - 26576965
       - headline: Appropriation Account Summary
         description: How data is displayed by Appropriation Account.
         total_concepts: 1
         link: /concepts/appropriation-account-summary
-        updated_date: 2016-08-12
-        updated_text: Posted
+        update_date: 2016-08-12
+        update_text: Posted
         disqus_identifiers:
           - 59548620
   - category: General Pages
@@ -78,16 +78,16 @@ active_tab:
         description: Your introduction to USAspending.gov
         total_concepts: 1
         link: /concepts/home-page
-        updated_date: 2016-06-29
-        updated_text: Posted
+        update_date: 2016-06-29
+        update_text: Posted
         disqus_identifiers:
           - 83728938
       - headline: Browse the Data
         description: How to access all the Summary pages.
         total_concepts: 1
         link: /concepts/browse
-        updated_date: 2016-07-27
-        updated_text: Posted
+        update_date: 2016-07-27
+        update_text: Posted
         disqus_identifiers:
           - 43048475
           - 600523
@@ -95,8 +95,8 @@ active_tab:
         description: How to download all the data.
         total_concepts: 1
         link: /concepts/data-download
-        updated_date: 2016-07-27
-        updated_text: Posted
+        update_date: 2016-07-27
+        update_text: Posted
         disqus_identifiers:
           - 051917
 
@@ -108,8 +108,8 @@ completed_tab:
         description: The identity of OpenBeta
         total_concepts: 0
         link: /concepts/logo
-        updated_date: 2016-06-22
-        updated_text: Posted
+        update_date: 2016-06-22
+        update_text: Posted
         disqus_identifiers:
   - category: Miscellaneous
     scroll_id: miscellaneous
@@ -118,8 +118,8 @@ completed_tab:
         description: How we display our glossary of terms
         total_concepts: 0
         link: /concepts/glossary
-        updated_date: 2016-06-22
-        updated_text: Posted
+        update_date: 2016-06-22
+        update_text: Posted
         disqus_identifiers:
 
 archived_tab:
@@ -130,8 +130,8 @@ archived_tab:
         description: How you can search our data
         total_concepts: 4
         link: /concepts/archived-search-functionality
-        updated_date: 2016-06-23
-        updated_text: Archived
+        update_date: 2016-06-23
+        update_text: Archived
         disqus_identifiers:
           - 35891276
           - 93415672
@@ -144,8 +144,8 @@ archived_tab:
         description: How we display contract award data
         total_concepts: 3
         link: /concepts/archived-contract-award-summary
-        updated_date: 2016-06-27
-        updated_text: Archived
+        update_date: 2016-06-27
+        update_text: Archived
         disqus_identifiers:
           - 71538462
           - 56237819
