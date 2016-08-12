@@ -53,6 +53,7 @@ include_at_bottom: comments_count.html
                           {% capture keys %}{{ keys }},{{ site.data.disqus[key].id }}{% endcapture %}
                         {% endfor %}
                         <div class="comments-count" data-disqus-identifiers="{{ keys }}"></div>
+                        <div class="views-count" data-key="{{ site.baseurl }}{{ row.link }}"></div>
                       </li>
                     </ul>
 
@@ -107,6 +108,7 @@ include_at_bottom: comments_count.html
                           {% capture keys %}{{ keys }},{{ site.data.disqus[key].id }}{% endcapture %}
                         {% endfor %}
                         <div class="comments-count" data-disqus-identifiers="{{ keys }}"></div>
+                        <div class="views-count" data-key="{{ site.baseurl }}{{ row.link }}"></div>
                       </li>
                     </ul>
 
@@ -156,6 +158,7 @@ include_at_bottom: comments_count.html
                           {% capture keys %}{{ keys }},{{ site.data.disqus[key].id }}{% endcapture %}
                         {% endfor %}
                         <div class="comments-count" data-disqus-identifiers="{{ keys }}"></div>
+                        <div class="views-count" data-key="{{ site.baseurl }}{{ row.link }}"></div>
                       </li>
                     </ul>
 
