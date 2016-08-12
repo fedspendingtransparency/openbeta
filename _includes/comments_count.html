@@ -1,10 +1,7 @@
 <script>
   (function($) {
-    var disqus_shortname = '{{ site.disqus_shortname }}';
-    var disqus_api_key = '{{ site.disqus_api_key }}';
-
     // get all the disqus IDs from page elements
-    var disqus_ids = $('.comments-count').map(function() {
+    var disqusIds = $('.comments-count').map(function() {
       return $(this).data('disqus-identifiers');
     })
       .get() // convert to normal array
@@ -28,9 +25,9 @@
     // request Disqus thread list
     $.get(
       'https://disqus.com/api/3.0/threads/list.json?' +
-      'forum=' + disqus_shortname + '&' +
-      'api_key=' + disqus_api_key + '&' +
-      disqus_ids
+      'forum={{ site.disqus_shortname }}&' +
+      'api_key={{ site.disqus_api_key }}&' +
+      disqusIds
     )
       .done(function(data) {
         // parse response and group by thread ID
@@ -72,10 +69,10 @@
         // populate # of views
         $('.views-count').each(function() {
           var key = $(this).data('key');
-          var num_views = views[key] || 0;
-          var unit = (num_views === 1) ? 'view' : 'views';
+          var numViews = views[key] || 0;
+          var unit = (numViews === 1) ? 'view' : 'views';
 
-          $(this).html(num_views).append($('<span>').text(unit));
+          $(this).html(numViews).append($('<span>').text(unit));
         });
       });
   })(jQuery);

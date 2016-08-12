@@ -10,7 +10,7 @@
     /**
      * Records a view per location path in a Socrata dataset
      */
-    function record_view() {
+    function recordView() {
       var now = new Date();
       var form = new FormData();
       form.append('key', key);
@@ -33,24 +33,24 @@
     /**
      * Checks whether we should record a view by detecting presense of a cookie
      */
-    function check_cookie() {
-      var cookie_key = 'viewed-' + key;
+    function checkCookie() {
+      var cookieKey = 'viewed-' + key;
 
       // if a cookie does not exist (or is expired), it returns undefined
-      if (Cookies.get(cookie_key) === undefined) {
+      if (Cookies.get(cookieKey) === undefined) {
         // record a view
-        record_view();
+        recordView();
 
         // set cookie to immediate reloads don't record duplicate hits
         // set cookie to expire in 18 hours (0.75 day)
-        Cookies.set(cookie_key, true, { expires: 0.75, path: ''});
+        Cookies.set(cookieKey, true, { expires: 0.75, path: ''});
       }
 
       // do nothing if a cookie is present
     }
 
     // execute check when page is loaded
-    check_cookie();
+    checkCookie();
 
   })(jQuery, Cookies);
 </script>
