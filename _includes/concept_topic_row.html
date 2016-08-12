@@ -1,0 +1,37 @@
+<h2 id="{{ include.tab.scroll_id }}" class="category-header">{{ include.tab.category }}</h2>
+
+<div class="category-section">
+
+  {% for row in include.tab.topics %}
+
+    <div class="topic-row">
+      <ul>
+        <li class="concept-title">
+          <h3>
+            <a class="concept-headline {{ include.headline_class }}"
+              href="{{ site.baseurl }}{{ row.link }}"
+            >
+              {{ row.headline }}
+            </a>
+          </h3>
+          <p>{{ row.description }}</p>
+        </li>
+
+        <li class="concept-metadata">
+          <div class="total-concepts">
+            {{ row.total_concepts | pluralize: '<span>concept</span>', '<span>concepts</span>' }}
+          </div>
+          <div class="comments-count" data-disqus-identifiers="{{ row.disqus_identifiers | join: ',' }}"></div>
+          <div class="views-count" data-key="{{ site.baseurl }}{{ row.link }}"></div>
+        </li>
+
+        <li class="concept-update-date">
+          {{ row.updated_text | default: 'Posted' | capitalize }}
+          {{ row.updated_date | default: '2016-06-22' | convert: "data"  | timeago }}
+        </li>
+      </ul>
+    </div>
+
+  {% endfor %}
+
+</div>

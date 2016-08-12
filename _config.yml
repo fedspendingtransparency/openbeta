@@ -18,6 +18,10 @@ defaults:
     values:
       layout: concept
 
+# Plugin configuration
+jekyll_timeago:
+  depth: 1
+
 # Disqus
 disqus_shortname: "dataact-openbeta" # this is the shortname found in the Disqus admin settings
 disqus_api_key: "Kqjb4gW6YBIkqtMI2u8OMkVoUBAAPlZVWsO5ZoJS68PpMGIkVQaCsdhT3I1zfuph" # a public key used to make API requests

@@ -296,12 +296,43 @@ section.usa-section:nth-of-type(5) {
     margin-left: 0;
     overflow: auto;
 
-    li {
-      float: left;
+    .concept-title {
+      @include span-columns(6);
+
+      @include media($medium) {
+        @include span-columns(8);
+      }
     }
-     li:last-child {
-      float: right;
-     }
+
+    .concept-metadata {
+      @include span-columns(4);
+
+      @include media($medium) {
+        @include span-columns(4);
+      }
+    }
+
+    .concept-update-date {
+      @include span-columns(2);
+      font-size: 0.8em;
+      margin-top: 1.75em;
+      text-align: right;
+
+      @include media($medium) {
+        @include span-columns(4);
+      }
+
+      @include media($tiny) {
+        display: none;
+      }
+    }
+
+    // li {
+    //   float: left;
+    // }
+    //  li:last-child {
+    //   float: right;
+    //  }
   }
 
   .total-concepts,
@@ -310,8 +341,9 @@ section.usa-section:nth-of-type(5) {
     float: left;
     font-size: 0.9em;
     margin-bottom: 0;
-    padding-right: 1.5em;
+    // padding-right: 1.5em;
     text-align: center;
+    width: 33%;
 
     @include media($tiny) {
       display: none;

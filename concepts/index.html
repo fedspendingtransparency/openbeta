@@ -28,35 +28,11 @@ include_at_bottom: comments_count.html
             <div class="tab-content">
               <div class="usa-width-nine">
 
-              {% for tab in site.data.concepts-landing-page.active_tab %}
+                {% for tab in site.data.concepts-landing-page.active_tab %}
 
-                <h2 id="{{ tab.scroll_id }}" class="category-header">{{ tab.category }}</h2>
-                <div class="category-section">
-                {% for row in tab.topics %}
-
-                  <div class="topic-row">
-                    <ul>
-                      <li>
-                        <h3>
-                          <a class="concept-headline" href="{{ site.baseurl }}{{ row.link }}">{{ row.headline }}</a>
-                        </h3>
-                        <p>{{ row.description }}</p>
-                      </li>
-
-                      <li>
-                        <div class="total-concepts">
-                          {{ row.total_concepts | pluralize: "<span>concept</span>", "<span>concepts</span>" }}
-                        </div>
-                        <div class="comments-count" data-disqus-identifiers="{{ row.disqus_identifiers | join: ',' }}"></div>
-                        <div class="views-count" data-key="{{ site.baseurl }}{{ row.link }}"></div>
-                      </li>
-                    </ul>
-
-                  </div>
+                  {% include concept_topic_row.html tab=tab %}
 
                 {% endfor %}
-                </div>
-              {% endfor %}
 
               </div>
 
@@ -79,35 +55,12 @@ include_at_bottom: comments_count.html
             <div class="tab-content">
               <div class="usa-width-nine">
 
-              {% for tab in site.data.concepts-landing-page.completed_tab %}
+                {% for tab in site.data.concepts-landing-page.completed_tab %}
 
-                <h2 id="{{ tab.scroll_id }}" class="category-header">{{ tab.category }}</h2>
-                <div class="category-section">
-                {% for row in tab.topics %}
-                  <div class="topic-row">
-                    <ul>
-                      <li>
-                        <h3>
-                          <a class="concept-headline" href="{{ site.baseurl }}{{ row.link }}">{{ row.headline }}</a>
-                        </h3>
-                        <p>{{ row.description }}</p>
-                      </li>
-
-                      <li>
-                        <div class="total-concepts">
-                          {{ row.total_concepts | pluralize: "<span>concept</span>", "<span>concepts</span>" }}
-                        </div>
-                        <div class="comments-count" data-disqus-identifiers="{{ row.disqus_identifiers | join: ',' }}"></div>
-                        <div class="views-count" data-key="{{ site.baseurl }}{{ row.link }}"></div>
-                      </li>
-                    </ul>
-
-                  </div>
+                  {% include concept_topic_row.html tab=tab %}
 
                 {% endfor %}
-                </div>
 
-              {% endfor %}
               </div>
 
               <div class="usa-width-three">
@@ -124,34 +77,12 @@ include_at_bottom: comments_count.html
             <div class="tab-content">
               <div class="usa-width-nine">
 
-              {% for tab in site.data.concepts-landing-page.archived_tab %}
+                {% for tab in site.data.concepts-landing-page.archived_tab %}
 
-                <h2 id="{{ tab.scroll_id }}" class="category-header">{{ tab.category }}</h2>
-                <div class="category-section">
-                {% for row in tab.topics %}
-                  <div class="topic-row">
-                    <ul>
-                      <li>
-                        <h3>
-                          <a class="concept-headline usa-archived-page" href="{{ site.baseurl }}{{ row.link }}">{{ row.headline }}</a>
-                        </h3>
-                        <p>{{ row.description }}</p>
-                      </li>
+                  {% include concept_topic_row.html tab=tab headline_class='usa-archived-page' %}
 
-                      <li>
-                        <div class="total-concepts">
-                          {{ row.total_concepts | pluralize: "<span>concept</span>", "<span>concepts</span>" }}
-                        </div>
-                        <div class="comments-count" data-disqus-identifiers="{{ row.disqus_identifiers | join: ',' }}"></div>
-                        <div class="views-count" data-key="{{ site.baseurl }}{{ row.link }}"></div>
-                      </li>
-                    </ul>
-
-                  </div>
                 {% endfor %}
-                </div>
 
-              {% endfor %}
               </div>
 
               <div class="usa-width-three">
