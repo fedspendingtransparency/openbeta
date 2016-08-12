@@ -54,6 +54,8 @@ tabs:
     below_image_content:
     disqus_identifier: 14683571
     disqus_url: "https://openbeta.usaspending.gov/concepts/agency-summary#!version-0.1B"
+    update_date: 2016-07-14
+    update_text: updated
 
 no_tabs:
   - archived_text:
