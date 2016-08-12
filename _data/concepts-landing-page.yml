@@ -13,8 +13,8 @@ active_tab:
         description: How we display search results
         total_concepts: 1
         link: /concepts/search-results
-        disqus_key:
-          - search_results_0_1A
+        disqus_identifiers:
+          - 59476183
   - category: Summary Pages
     scroll_id: summary-pages
     topics:
@@ -22,39 +22,39 @@ active_tab:
         description: How we display contract award data
         total_concepts: 1
         link: /concepts/contract-award-summary
-        disqus_key:
-          - contract_award_summary_0_2
+        disqus_identifiers:
+          - 97847241
       - headline: Agency Summary
         description: How we display agency data
         total_concepts: 2
         link: /concepts/agency-summary
-        disqus_key:
-          - agency_summary_0_1A
-          - agency_summary_0_1B
+        disqus_identifiers:
+          - 33785410
+          - 14683571
       - headline: Financial Assistance Award Summary
         description: How we display financial assistance data
         total_concepts: 1
         link: /concepts/financial-assistance-award-summary
-        disqus_key:
-          - financial_assistance_award_summary_0_1
+        disqus_identifiers:
+          - 72704398
       - headline: CFDA Program Summary
         description: How we display data for CFDA programs.
         total_concepts: 1
         link: /concepts/program-summary
-        disqus_key:
-          - program_summary_0_1
+        disqus_identifiers:
+          - 706896
       - headline: Recipient Summary
         description: How we summarize and display data for each award recipient.
         total_concepts: 1
         link: /concepts/recipient-summary
-        disqus_key:
-          - recipient_summary_0_1
+        disqus_identifiers:
+          - 26576965
       - headline: Appropriation Account Summary
         description: How data is displayed by Appropriation Account.
         total_concepts: 1
         link: /concepts/appropriation-account-summary
-        disqus_key:
-          - appropriation_account_summary_0_1
+        disqus_identifiers:
+          - 59548620
   - category: General Pages
     scroll_id: general-pages
     topics:
@@ -62,21 +62,21 @@ active_tab:
         description: Your introduction to USAspending.gov
         total_concepts: 1
         link: /concepts/home-page
-        disqus_key:
-          - home_page_0_1A
+        disqus_identifiers:
+          - 83728938
       - headline: Browse the Data
         description: How to access all the Summary pages.
         total_concepts: 1
         link: /concepts/browse
-        disqus_key:
-          - browse_0_1
-          - browse_results
+        disqus_identifiers:
+          - 43048475
+          - 600523
       - headline: Data Download
         description: How to download all the data.
         total_concepts: 1
         link: /concepts/data-download
-        disqus_key:
-          - data_download_0_1
+        disqus_identifiers:
+          - 051917
 
 completed_tab:
   - category: Design
@@ -86,7 +86,7 @@ completed_tab:
         description: The identity of OpenBeta
         total_concepts: 0
         link: /concepts/logo
-        disqus_key:
+        disqus_identifiers:
   - category: Miscellaneous
     scroll_id: miscellaneous
     topics:
@@ -94,7 +94,7 @@ completed_tab:
         description: How we display our glossary of terms
         total_concepts: 0
         link: /concepts/glossary
-        disqus_key:
+        disqus_identifiers:
 
 archived_tab:
   - category: Search
@@ -104,11 +104,11 @@ archived_tab:
         description: How you can search our data
         total_concepts: 4
         link: /concepts/archived-search-functionality
-        disqus_key:
-          - archived_search_functionality_live_filters
-          - archived_search_functionality_advanced_search
-          - archived_search_functionality_search_builder
-          - archived_search_functionality_sql_search
+        disqus_identifiers:
+          - 35891276
+          - 93415672
+          - 12697438
+          - 81493267
   - category: Summary Pages
     scroll_id: archived-contract award summary
     topics:
@@ -116,7 +116,7 @@ archived_tab:
         description: How we display contract award data
         total_concepts: 3
         link: /concepts/archived-contract-award-summary
-        disqus_key:
-          - archived_contract_award_summary_0_1A
-          - archived_contract_award_summary_0_1B
-          - archived_contract_award_summary_0_1C
+        disqus_identifiers:
+          - 71538462
+          - 56237819
+          - 74813926

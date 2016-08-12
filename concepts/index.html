@@ -47,12 +47,7 @@ include_at_bottom: comments_count.html
                         <div class="total-concepts">
                           {{ row.total_concepts | pluralize: "<span>concept</span>", "<span>concepts</span>" }}
                         </div>
-                        {% assign first_key = row.disqus_key | first %}
-                        {% assign keys = site.data.disqus[first_key].id %}
-                        {% for key in row.disqus_key offset:1 %}
-                          {% capture keys %}{{ keys }},{{ site.data.disqus[key].id }}{% endcapture %}
-                        {% endfor %}
-                        <div class="comments-count" data-disqus-identifiers="{{ keys }}"></div>
+                        <div class="comments-count" data-disqus-identifiers="{{ row.disqus_identifiers | join: ',' }}"></div>
                         <div class="views-count" data-key="{{ site.baseurl }}{{ row.link }}"></div>
                       </li>
                     </ul>
@@ -102,12 +97,7 @@ include_at_bottom: comments_count.html
                         <div class="total-concepts">
                           {{ row.total_concepts | pluralize: "<span>concept</span>", "<span>concepts</span>" }}
                         </div>
-                        {% assign first_key = row.disqus_key | first %}
-                        {% assign keys = site.data.disqus[first_key].id %}
-                        {% for key in row.disqus_key offset:1 %}
-                          {% capture keys %}{{ keys }},{{ site.data.disqus[key].id }}{% endcapture %}
-                        {% endfor %}
-                        <div class="comments-count" data-disqus-identifiers="{{ keys }}"></div>
+                        <div class="comments-count" data-disqus-identifiers="{{ row.disqus_identifiers | join: ',' }}"></div>
                         <div class="views-count" data-key="{{ site.baseurl }}{{ row.link }}"></div>
                       </li>
                     </ul>
@@ -152,12 +142,7 @@ include_at_bottom: comments_count.html
                         <div class="total-concepts">
                           {{ row.total_concepts | pluralize: "<span>concept</span>", "<span>concepts</span>" }}
                         </div>
-                        {% assign first_key = row.disqus_key | first %}
-                        {% assign keys = site.data.disqus[first_key].id %}
-                        {% for key in row.disqus_key offset:1 %}
-                          {% capture keys %}{{ keys }},{{ site.data.disqus[key].id }}{% endcapture %}
-                        {% endfor %}
-                        <div class="comments-count" data-disqus-identifiers="{{ keys }}"></div>
+                        <div class="comments-count" data-disqus-identifiers="{{ row.disqus_identifiers | join: ',' }}"></div>
                         <div class="views-count" data-key="{{ site.baseurl }}{{ row.link }}"></div>
                       </li>
                     </ul>
