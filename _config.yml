@@ -31,4 +31,4 @@ google_analytics_id: "UA-77512441-1"
 
 # Socrata
 socrata_app_token: IpvjLVLiUoqVIUomSdwugAOwe
-socrata_data_site: openbeta-data.usaspending.gov
+socrata_data_site: data.fedspending.gov
