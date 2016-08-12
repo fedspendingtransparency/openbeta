@@ -37,7 +37,8 @@ tabs:
     image: "/assets/img/concept_program-summary.png"
     image_alt_text: This image displays information about a CFDA program and includes the major awarding agency, the sub-tier agency, how long the CFDA program has been active, the assistance types, the function type, the appropriation amount, and links to the program website and cfda.gov. Below that is a Fiscal Year timeline showing total spending to date and the total budget for the program. Below left is a heat map showing the spending across the United States, and next to it is that a timeline of spending year over year. The next row are breakdowns of the Highest Awarded Recipients and Other Related Programs. At the bottom is a table showing all the awards associated with the CFDA program.
     below_image_content:
-    disqus_key: program_summary_0_1
+    disqus_identifier: 706896
+    disqus_url: "https://openbeta.usaspending.gov/concepts/cfda-program-summary#!version-0.1"
 
 no_tabs:
   - archived_text:
@@ -48,6 +49,7 @@ no_tabs:
     image:
     image_alt_text:
     below_image_content:
-    disqus_key:
+    disqus_identifier:
+    disqus_url:
 
 ---

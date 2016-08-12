@@ -33,7 +33,8 @@ tabs:
     image: /assets/img/filters.png
     image_alt_text: The live filters feature allows users to further refine search results after they are returned without reloading the page.
     below_image_content: What do you think of the Live Filters option?
-    disqus_key: archived_search_functionality_live_filters
+    disqus_identifier: 35891276
+    disqus_url: "https://openbeta.usaspending.com/concepts/archived-search-functionality#!live-filters"
   - title: Advanced Search
     url_hash: "#!advanced-search"
     archived_text: The <a class='usa-archived-link usa-bold' href='http://openbeta.usaspending.gov/concepts/search-results/index.html'>Search Results</a> concept has replaced this concept, which made it unnecessary.
@@ -44,7 +45,8 @@ tabs:
     image: /assets/img/adv_search.png
     image_alt_text: The advanced search feature allows users to create a search query by filling in a form which specifies exactly what data to return.
     below_image_content: What do you think of the Advanced Search option?
-    disqus_key: archived_search_functionality_advanced_search
+    disqus_identifier: 93415672
+    disqus_url: "https://openbeta.usaspending.com/concepts/archived-search-functionality#!advanced-search"
   - title: Search Builder
     url_hash: "#!search-builder"
     archived_text: The <a class='usa-archived-link usa-bold' href='http://openbeta.usaspending.gov/concepts/search-results/index.html'>Search Results</a> concept has replaced this concept, which made it unnecessary.
@@ -55,7 +57,8 @@ tabs:
     image: /assets/img/search_builder.png
     image_alt_text: The search builder feature allows the user to construct a search query using dropdown menus to include specific search filters.
     below_image_content: What do you think of the Search Builder option?
-    disqus_key: archived_search_functionality_search_builder
+    disqus_identifier: 12697438
+    disqus_url: "https://openbeta.usaspending.com/concepts/archived-search-functionality#!search-builder"
   - title: SQL Search
     url_hash: "#!sql-search"
     archived_text: The <a class='usa-archived-link usa-bold' href='http://openbeta.usaspending.gov/concepts/search-results/index.html'>Search Results</a> concept has replaced this concept, which made it unnecessary.
@@ -66,7 +69,8 @@ tabs:
     image: /assets/img/sql_search.png
     image_alt_text: The SQL search feature provides a terminal style interface and the ability to search using structured query language (SQL).
     below_image_content: What do you think of the SQL Search option?
-    disqus_key: archived_search_functionality_sql_search
+    disqus_identifier: 81493267
+    disqus_url: "https://openbeta.usaspending.com/concepts/archived-search-functionality#!sql-search"
 
 no_tabs:
   - archived_text:
@@ -77,6 +81,7 @@ no_tabs:
     image:
     image_alt_text:
     below_image_content:
-    disqus_key:
+    disqus_identifier:
+    disqus_url:
 
 ---

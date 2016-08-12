@@ -120,8 +120,8 @@
                 <div class="usa-vote-container usa-width-six">
                   <button class="vote-up"
                     id="vote-up"
-                    data-disqus-identifier={{ site.data.disqus[page.no_tab.disqus_key].id }}
-                    data-disqus-url="{{ site.data.disqus[page.no_tab.disqus_key].url }}"
+                    data-disqus-identifier={{no_tabs.disqus_identifier}}
+                    data-disqus-url="{{ no_tabs.disqus_url }}"
                   >
                     Vote thumbs up if you like this concept
                   </button>
@@ -130,8 +130,8 @@
                 <div class="usa-vote-container usa-width-six">
                   <button class="vote-down"
                     id="vote-down"
-                    data-disqus-identifier="{{ site.data.disqus[page.no_tab.disqus_key].id }}"
-                    data-disqus-url="{{ site.data.disqus[page.no_tab.disqus_key].url }}"
+                    data-disqus-identifier="{{ no_tabs.disqus_identifier }}"
+                    data-disqus-url="{{ no_tabs.disqus_url }}"
                   >
                     Vote thumbs down if you dislike this concept
                   </button>
@@ -154,10 +154,7 @@
                 <div id="disqus_thread"></div>
               {% endif %}
 
-              {% assign disqus_id = site.data.disqus[page.no_tab.disqus_key].id %}
-              {% assign disqus_url = site.data.disqus[page.no_tab.disqus_key].url %}
-
-              {% include discussion_widget.html disqus_identifier=disqus_id disqus_url=disqus_url tab_title=tab.title %}
+              {% include discussion_widget.html disqus_identifier=page.no_tabs.disqus_identifier disqus_url=page.no_tabs.disqus_url tab_title=tab.title %}
 
             </div>
           </div>
@@ -189,18 +186,12 @@
                   {% endif %}
 
                   <a href="{{ tab.url_hash }}" class="{{ class }}"
-                    onclick="reset(
-                      '{{ site.data.disqus[tab.disqus_key].id }}',
-                      '{{ site.data.disqus[tab.disqus_key].url }}'
-                    );">
+                    onclick="reset('{{ tab.disqus_identifier }}', '{{ tab.disqus_url }}');"
+                  >
                     {{ tab.title }}
                     <div>
-                      <div class="disqus-comment-count"
-                        data-disqus-identifier="{{ site.data.disqus[tab.disqus_key].id }}"
-                      ></div>
-                      <div class="vote-count"
-                        data-disqus-identifier="{{ site.data.disqus[tab.disqus_key].id }}"
-                      ></div>
+                      <div class="disqus-comment-count" data-disqus-identifier="{{ tab.disqus_identifier }}"></div>
+                      <div class="vote-count" data-disqus-identifier="{{ tab.disqus_identifier }}"></div>
                     </div>
                   </a>
 
@@ -290,8 +281,8 @@
                 <div class="usa-vote-container usa-width-six">
                   <button class="vote-up"
                     id="vote-up"
-                    data-disqus-identifier="{{ site.data.disqus[tab.disqus_key].id }}"
-                    data-disqus-url="{{ site.data.disqus[tab.disqus_key].url }}"
+                    data-disqus-identifier={{tab.disqus_identifier}}
+                    data-disqus-url="{{ tab.disqus_url }}"
                   >
                     Vote thumbs up if you like this concept
                   </button>
@@ -300,8 +291,8 @@
                 <div class="usa-vote-container usa-width-six">
                   <button class="vote-down"
                     id="vote-down"
-                    data-disqus-identifier="{{ site.data.disqus[tab.disqus_key].id }}"
-                    data-disqus-url="{{ site.data.disqus[tab.disqus_key].url }}"
+                    data-disqus-identifier="{{ tab.disqus_identifier }}"
+                    data-disqus-url="{{ tab.disqus_url }}"
                   >
                     Vote thumbs down if you dislike this concept
                   </button>
@@ -324,10 +315,7 @@
                 <div id="disqus_thread"></div>
               {% endif %}
 
-              {% assign disqus_id = site.data.disqus[tab.disqus_key].id %}
-              {% assign disqus_url = site.data.disqus[tab.disqus_key].url %}
-
-              {% include discussion_widget.html disqus_identifier=disqus_id disqus_url=disqus_url %}
+              {% include discussion_widget.html disqus_identifier=tab.disqus_identifier disqus_url=tab.disqus_url %}
 
             </div>
 

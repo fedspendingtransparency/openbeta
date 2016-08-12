@@ -34,7 +34,8 @@ tabs:
     image: "/assets/img/concept_browse_A.jpg"
     image_alt_text: This image displays categories to browse for data.  At the left are links to Organizations, Spending Categories, and Industry Codes categories.  In the center of the page are links to the same categories but without the specific headings.
     below_image_content:
-    disqus_key: browse_0_1
+    disqus_identifier: 43048475
+    disqus_url: "https://openbeta.usaspending.gov/concepts/browse#!browse-0.1"
   - title: Browse-Results
     url_hash: "#!browse-results"
     archived_text:
@@ -45,7 +46,8 @@ tabs:
     image: "/assets/img/concept_browse-agencies.png"
     image_alt_text: This image displays the data by agencies. At the left are links to the sub-tier agencies and at the right are links to the parent agencies.
     below_image_content:
-    disqus_key: browse_results
+    disqus_identifier: 600523
+    disqus_url: "https://openbeta.usaspending.gov/concepts/browse#!browse-results"
 
 no_tabs:
   - archived_text:
@@ -56,6 +58,7 @@ no_tabs:
     image:
     image_alt_text:
     below_image_content:
-    disqus_key:
+    disqus_identifier:
+    disqus_url:
 
 ---

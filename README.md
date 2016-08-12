@@ -96,9 +96,7 @@ The page can contain tabs which are specified in the topics Markdown page throug
 
 Tab names are created from the `title:` field.
 
-To create a new Disqus comments section, include `disqus_key` that maps to Disqus identifier, which can be any unique ID of your choosing. In order for Disqus to enable a unique comments section per tab, the `url_hash` must contain `#!` before the name of the tab.
-
-All Disqus IDs and URLs are stored in `/_data/disqus.yml` file. Each unique ID/URL pair should have a unique key.
+To create a new Disqus comments section, include `disqus_identifier` which can be any unique ID of your choosing. In order for Disqus to enable a unique comments section per tab, the `url_hash` must contain `#!` before the name of the tab.
 
 ### Search Results Page - `/concepts/search-results`
 
