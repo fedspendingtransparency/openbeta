@@ -1,5 +1,141 @@
 <script>
+  // load initial voting data
+  updateVotingSection();
+  updateNumberOfVotes();
 
+  $('#vote-up, #vote-down').each(function(){
+    // hide the focus outline while clicking in chrome
+    $(this).mouseup(function() { this.blur(); });
 
+    $(this).click(function(e){
+      var $voteButton = $(this); // new this, by the way
+      var now = new Date();
+      var form = new FormData();
+      form.append("disqus_id", $voteButton.attr('data-disqus-identifier'));
+      form.append("disqus_url", $voteButton.attr('data-disqus-url'));
+      form.append("vote", $voteButton.attr('id') === 'vote-up' ? '3ge6-jyz5' : 'eah3-dyfb'); // 4x4 for up/down options on form
+      form.append("vote_time:month", now.getUTCMonth());
+      form.append("vote_time:day", now.getUTCDay());
+      form.append("vote_time:year", now.getUTCFullYear());
+      form.append("vote_time:hour", now.getUTCHours());
+      form.append("vote_time:minute", now.getUTCMinutes());
+      //form.append("vote_time:pm", "am");
 
+      var settings = {
+        "async": true,
+        "crossDomain": true,
+        "url": "https://{{ site.socrata_data_site }}/views/wiqh-auj7/rows.html?method=createForm&successRedirect=/views/wiqh-auj7",
+        "method": "POST",
+        "processData": false,
+        "contentType": false,
+        "mimeType": "multipart/form-data",
+        "data": form
+      };
+      $.ajax(settings).done(function (response) {
+        //console.log('success');
+      });
+
+      // disable the button to prevent duplicate voting (sort of)
+      $voteButton.attr('disabled','disabled');
+      $voteButton.addClass('vote-disabled');
+
+      var newCount;
+
+      // ersatz optimistic UI
+      if($voteButton.attr('id') === 'vote-up') {
+        newCount = parseInt($('#vote-up-count').text().match(/\d+/)) + 1;
+        $('#vote-up-count').text(newCount + (newCount === 1 ? ' person likes this' : ' people like this'));
+      }
+      else {
+        newCount = parseInt($('#vote-down-count').text().match(/\d+/)) + 1;
+        $('#vote-down-count').text(newCount + (newCount === 1 ? ' person dislikes this' : ' people dislike this'));
+      }
+
+    });
+  });
+
+  function updateVotingSection(disqusIdentifier, disqusUrl){
+    // (use attributes on the buttons to hold the data, since there's not another good way)
+
+    // if no arguments, get the config data off the element
+    if(disqusIdentifier === undefined){
+      disqusIdentifier = $('#vote-up').attr('data-disqus-identifier');
+    }
+    if(disqusUrl === undefined){
+      disqusUrl = $('#vote-up').attr('data-disqus_url');
+    }
+    // reset buttons
+    $('#vote-up, #vote-down').each(function(){
+      var $voteButton = $(this);
+      $voteButton.attr('data-disqus-identifier', disqusIdentifier);
+      $voteButton.attr('data-disqus-url', disqusUrl);
+      $voteButton.removeAttr('disabled');
+      $voteButton.removeClass('vote-disabled');
+    });
+
+    // update vote counts
+    var $upCountSpan = $('#vote-up-count');
+    var $downCountSpan = $('#vote-down-count');
+    $.get('https://{{ site.socrata_data_site }}/resource/upgx-d3ur.json?$select=vote,count(vote)&disqus_id='+ disqusIdentifier +'&$group=vote&$$app_token={{ site.socrata_app_token }}')
+      .done(function(data){
+        // only two rows should ever come back, but they're not keyed by the vote type, so we normalize it.
+        var normalizedData = {};
+        data.forEach(function(row, index, arr){
+          normalizedData[row.vote] = parseInt(row.count_vote);
+        });
+
+        var upCount = normalizedData['3ge6-jyz5'] || 0;
+        var downCount = normalizedData['eah3-dyfb'] || 0;
+
+        // update span
+        $upCountSpan.text(upCount + (upCount === 1 ? ' person likes this' : ' people like this'));
+        $downCountSpan.text(downCount + (downCount === 1 ? ' person dislikes this' : ' people dislike this'));
+      });
+  }
+
+  // Tab handler for disqus, voting
+  var reset = function (newIdentifier, newUrl) {
+    updateVotingSection(newIdentifier, newUrl);
+
+    // handle disqus
+    DISQUS.reset({
+      reload: true,
+      config: function () {
+        this.page.identifier = newIdentifier;
+        this.page.url = newUrl;
+      }
+    });
+  };
+
+  // get number of total votes and display on all tabs
+  function updateNumberOfVotes() {
+    // get disqus_id to retrieve votes for
+    var disqusIdQuery = $('.vote-count').map(function() {
+      return 'disqus_id=' + $(this).data('disqus-identifier');
+    }).get().join(' or ');
+
+    // retrieve number of votes
+    $.get(
+      'https://{{ site.socrata_data_site }}/resource/upgx-d3ur.json?' +
+      '$select=disqus_id,count(*) as votes&' +
+      '$group=disqus_id&' +
+      '$where=' + disqusIdQuery + '&' +
+      '$$app_token={{ site.socrata_app_token }}'
+    ).done(function(data) {
+      // group array by disqus_id to an object
+      var votes = {};
+      data.forEach(function(row) {
+        votes[row.disqus_id] = +row.votes;
+      });
+
+      // iterate over vote-count elements to populate
+      $('.vote-count').each(function() {
+        // if there have been no votes, key would not exist
+        // since disqus id is stored in dataset as number, convert to number (remove leading 0's)
+        var count = votes[+$(this).data('disqus-identifier')] || 0;
+
+        $(this).html(count + ' ' + ((count === 1) ? 'vote' : 'votes'));
+      });
+    });
+  }
 </script>

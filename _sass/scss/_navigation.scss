@@ -4,14 +4,14 @@
 
   - Top Navigation Bar
   - Sidebar Navigation
-  - Tabs 
+  - Tabs
 
 * * * * * * * * * * * * * * * * * * * * * * */
 
 
 /* * * * * * * * * * * * * * * * * * * * * * *
 
-  Top Navigation Bar 
+  Top Navigation Bar
 
 * * * * * * * * * * * * * * * * * * * * * * */
 
@@ -89,7 +89,7 @@ nav {
         position: absolute;
         bottom: 0;
         right: 0;
-        -webkit-transition: all 0.3s ease-out;  
+        -webkit-transition: all 0.3s ease-out;
         -moz-transition: all 0.3s ease-out;
         -ms-transition: all 0.3s ease-out;
         -o-transition: all 0.3s ease-out;
@@ -304,7 +304,7 @@ nav {
 
 /* * * * * * * * * * * * * * * * * * * * * * *
 
-  Tabs 
+  Tabs
 
   Refills: refills.bourbon.io
 
@@ -344,6 +344,7 @@ nav {
     text-decoration: none;
     border-top: 0;
     display: inline-block;
+    vertical-align: bottom;
 
     &.disabled {
       color: #dcdcdc;

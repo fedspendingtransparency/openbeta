@@ -10,7 +10,7 @@ category: "General:"
 
 headline: Home Page
 
-copy: 
+copy:
   - text: Below is a design option for the Home Page. Please take a look and tell us what you think in the discussion section below the option.
 
 discussion_title: "Discussion suggestions:"
@@ -38,7 +38,7 @@ tabs:
     disqus_identifier: 83728938
     disqus_url: "https://openbeta.usaspending.com/concepts/home-page#!version-0.1A"
 
-no_tabs: 
+no_tabs:
   - archived_text:
     description:
     features:
@@ -49,5 +49,5 @@ no_tabs:
     below_image_content:
     disqus_identifier:
     disqus_url:
-   
+
 ---

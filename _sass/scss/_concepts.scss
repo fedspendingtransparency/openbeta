@@ -45,6 +45,29 @@
   .usa-disclaimer-bold {
     font-weight: 700;
   }
+
+  .disqus-comment-count,
+  .vote-count,
+  .concept-update-date {
+    font-size: 0.8em;
+    font-weight: normal;
+  }
+
+  .disqus-comment-count,
+  .vote-count {
+    color: lighten($primary, 15%);
+    display: inline-block;
+  }
+
+  .vote-count {
+    margin-left: 0.5em;
+  }
+
+  .concept-update-date {
+    color: lighten($primary, 20%);
+    font-style: italic;
+    min-height: 1.5em;
+  }
 }
 
 .usa-main-content {
@@ -132,7 +155,9 @@
   vertical-align: middle;
 }
 
-.total-concepts {
+.total-concepts,
+.comments-count,
+.views-count {
   font-weight: 700;
 
   span {

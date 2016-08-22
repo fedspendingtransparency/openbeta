@@ -10,7 +10,7 @@ category: "Search:"
 
 headline: Search Results
 
-copy: 
+copy:
   - text: Below is an example of how search results could be displayed. Please take a look and tell us what you think in the discussion section.
 
 discussion_title: "Discussion suggestions:"
@@ -22,9 +22,9 @@ discussion_bullet_points:
 
 tabs_required: yes
 
-no_tabs: 
-  - archived_text: 
-    description: 
+no_tabs:
+  - archived_text:
+    description:
     features:
       - description:
     disclaimer_text:

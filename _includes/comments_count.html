@@ -1,0 +1,79 @@
+<script>
+  (function($) {
+    // get all the disqus IDs from page elements
+    var disqusIds = $('.comments-count').map(function() {
+      return $(this).data('disqus-identifiers');
+    })
+      .get() // convert to normal array
+      .join(',') // each element may be comma-separated, so join everything by commas..
+      .split(',') // then split again
+      .filter(function(value, index, arr) {
+        // filter out empty values
+        if (value === "") {
+          return false;
+        }
+
+        // return only unique results
+        return index <= arr.indexOf(value);
+      })
+      .map(function(id) {
+        // convert to a query param
+        return 'thread:ident=' + id;
+      })
+      .join('&'); // join everything by & to pass to API
+
+    // request Disqus thread list
+    $.get(
+      'https://disqus.com/api/3.0/threads/list.json?' +
+      'forum={{ site.disqus_shortname }}&' +
+      'api_key={{ site.disqus_api_key }}&' +
+      disqusIds
+    )
+      .done(function(data) {
+        // parse response and group by thread ID
+        var posts = {};
+
+        data.response.forEach(function(thread) {
+          // each thread should have one identifier
+          if (thread.identifiers instanceof Array && thread.identifiers[0]) {
+            posts[thread.identifiers[0]] = +thread.posts;
+          }
+        });
+
+        // populate # of comments
+        $('.comments-count').each(function() {
+          var ids = $(this).data('disqus-identifiers').toString().split(',');
+
+          var sum = ids.reduce(function(accumulator, value) {
+            return accumulator + (posts[value] || 0);
+          }, 0);
+
+          var unit = (sum === 1) ? 'comment' : 'comments';
+
+          $(this).html(sum).append($('<span>').text(unit));
+        });
+      });
+
+    // request # of views from a dataset
+    $.get(
+      'https://{{ site.socrata_data_site }}/resource/kzd4-upv9.json?' +
+      '$select=key,count(*) as views&$group=key&$$app_token={{ site.socrata_app_token }}'
+    )
+      .done(function(data) {
+        // parse response and group by key
+        var views = data.reduce(function(accumulator, current) {
+          accumulator[current.key] = +current.views;
+          return accumulator;
+        }, {});
+
+        // populate # of views
+        $('.views-count').each(function() {
+          var key = $(this).data('key');
+          var numViews = views[key] || 0;
+          var unit = (numViews === 1) ? 'view' : 'views';
+
+          $(this).html(numViews).append($('<span>').text(unit));
+        });
+      });
+  })(jQuery);
+</script>

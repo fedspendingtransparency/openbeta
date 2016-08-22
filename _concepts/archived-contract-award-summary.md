@@ -22,10 +22,10 @@ discussion_bullet_points:
 
 tabs_required: yes
 
-tabs: 
+tabs:
   - title: Version 0.1A
     url_hash: "#!version-0.1A"
-    archived_text: A new version has replaced this concept. 
+    archived_text: A new version has replaced this concept.
     description: "Key Features:"
     features:
       - description: This option displays high-level views of award details, a table of the prime transactions and subawards, a spending-over-time graph, and a treemap showing data by funding agency and appropriations account.

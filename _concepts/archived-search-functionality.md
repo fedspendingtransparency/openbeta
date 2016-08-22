@@ -10,7 +10,7 @@ category: "Search:"
 
 headline: Search Functionality
 
-copy: 
+copy:
   - text: Below are some options on how we could implement search. Please take a look at each option and tell us what you think about the functionality in the discussion section below the option.
 
 discussion_title: "Discussion suggestions:"
@@ -22,7 +22,7 @@ discussion_bullet_points:
 
 tabs_required: yes
 
-tabs: 
+tabs:
   - title: Live Filters
     url_hash: "#!live-filters"
     archived_text: The <a class='usa-archived-link usa-bold' href='http://openbeta.usaspending.gov/concepts/search-results/index.html'>Search Results</a> concept has replaced this concept, which made it unnecessary.

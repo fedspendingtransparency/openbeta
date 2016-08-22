@@ -154,7 +154,7 @@
                 <div id="disqus_thread"></div>
               {% endif %}
 
-              {% include discussion.html disqus_identifier=page.no_tabs.disqus_identifier disqus_url=page.no_tabs.disqus_url tab_title=tab.title %}
+              {% include discussion_widget.html disqus_identifier=page.no_tabs.disqus_identifier disqus_url=page.no_tabs.disqus_url tab_title=tab.title %}
 
             </div>
           </div>
@@ -162,6 +162,7 @@
       </div>
 
     {% else %}
+
       <div id="usa-sidebar-wrapper">
         <div class="usa-concepts">
           <div class="grid">
@@ -185,9 +186,20 @@
                     {% endif %}
                   {% endif %}
 
-                  <a href="{{ tab.url_hash }}" class="{{ class }}" onclick="reset('{{ tab.disqus_identifier }}', '{{ tab.disqus_url }}');">{{ tab.title }}
-                    <div class="disqus-concept-comment-count" data-disqus-identifier="{{ tab.disqus_identifier }}"></div>
-                    <div class="disqus-thread-updated" data-disqus-identifier="{{ tab.disqus_identifier }}"></div>
+                  <a href="{{ tab.url_hash }}" class="{{ class }}"
+                    onclick="reset('{{ tab.disqus_identifier }}', '{{ tab.disqus_url }}');"
+                  >
+                    {{ tab.title }}
+                    <div>
+                      <div class="disqus-comment-count" data-disqus-identifier="{{ tab.disqus_identifier }}"></div>
+                      <div class="vote-count" data-disqus-identifier="{{ tab.disqus_identifier }}"></div>
+                      <div class="concept-update-date">
+                      {% if tab.update_date %}
+                        {{ tab.update_text | default: 'updated' }}:
+                        {{ tab.update_date | default: '2016-06-22' | convert: "data"  | timeago  }}
+                      {% endif %}
+                      </div>
+                    </div>
                   </a>
 
                   <div class="tab-content">
@@ -310,7 +322,7 @@
                 <div id="disqus_thread"></div>
               {% endif %}
 
-              {% include discussion.html disqus_identifier=tab.disqus_identifier disqus_url=tab.disqus_url %}
+              {% include discussion_widget.html disqus_identifier=tab.disqus_identifier disqus_url=tab.disqus_url %}
 
             </div>
 
@@ -325,11 +337,14 @@
 
     <script type="text/javascript" src="{{ site.baseurl }}/assets/vendor/jquery/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="{{ site.baseurl }}/assets/vendor/jquery/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="{{ site.baseurl }}/assets/vendor/slick/slick.min.js"></script>
     <script type="text/javascript" src="{{ site.baseurl }}/assets/vendor/lightbox2/lightbox.js"></script>
     <script type="text/javascript" src="{{ site.baseurl }}/assets/vendor/sticky-kit/sticky-kit.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/vendor/js.cookie/js.cookie.min.js"></script>
     <script type="text/javascript" src="{{ site.baseurl }}/assets/js/main.js"></script>
-    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/discussion.js"></script>
+    <script id="dsq-count-scr" src="//{{ site.disqus_shortname }}.disqus.com/count.js" async></script>
+
+    {% include voting.html %}
+    {% include record_views.html %}
 
   </body>
 

@@ -1,23 +1,3 @@
-// Slick Carousel
-$(document).ready(function(){
-  $('.carousel').slick({
-    accessibility: true,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    arrows: true,
-    dots: true,
-    fade: true,
-    responsive: [
-      {
-        breakpoint: 800,
-        settings: {
-          arrows: false
-        }
-      }
-    ]
-  });
-});
-
 $(document).ready(function () {
   if ($('.accordion-tabs-minimal')) {
     $('.accordion-tabs-minimal').each(function(index) {
@@ -83,13 +63,14 @@ $(document).ready(function () {
         var jumpobj = jQuery(this);
         var target = jumpobj.attr('href');
         var thespeed = 1000;
+        var offset;
 
         if (target == '#concept-summary') {
-          var offset = $('li.tab-header-and-content:nth-child(1)').offset().top - 30;
+          offset = $('li.tab-header-and-content:nth-child(1)').offset().top - 30;
         } else {
-          var offset = jQuery(target).offset().top;
+          offset = jQuery(target).offset().top;
         }
-        
+
         jQuery('html,body').animate({
           scrollTop: offset
         }, thespeed, 'swing');
@@ -100,6 +81,6 @@ $(document).ready(function () {
 })(jQuery);
 
 
-jQuery(function(){  
+jQuery(function(){
   jQuery.mark.jump();
 });

@@ -40,7 +40,7 @@ tabs:
     disqus_identifier: 97847241
     disqus_url: "https://openbeta.usaspending.com/concepts/contract-award-summary#!version-0.2"
 
-no_tabs: 
+no_tabs:
   - archived_text:
     description:
     features:
