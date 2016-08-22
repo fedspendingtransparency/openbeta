@@ -22,7 +22,7 @@ $('#vote-up, #vote-down').each(function(){
     var settings = {
       "async": true,
       "crossDomain": true,
-      "url": "https://openbeta-data.usaspending.gov/views/wiqh-auj7/rows.html?method=createForm&successRedirect=/views/wiqh-auj7",
+      "url": "https://data.fedspending.gov/views/wiqh-auj7/rows.html?method=createForm&successRedirect=/views/wiqh-auj7",
       "method": "POST",
       "processData": false,
       "contentType": false,
@@ -72,7 +72,7 @@ function update_voting_section(disqus_identifier, disqus_url){
   // update vote counts
   var $up_count_span = $('#vote-up-count');
   var $down_count_span = $('#vote-down-count');
-  $.get('https://openbeta-data.usaspending.gov/resource/upgx-d3ur.json?$select=vote,count(vote)&disqus_id='+ disqus_identifier +'&$group=vote')
+  $.get('https://data.fedspending.gov/resource/upgx-d3ur.json?$select=vote,count(vote)&disqus_id='+ disqus_identifier +'&$group=vote')
     .done(function(data){
       // only two rows should ever come back, but they're not keyed by the vote type, so we normalize it.
       var normalized_data = {};
