@@ -53,27 +53,5 @@
           $(this).html(sum).append($('<span>').text(unit));
         });
       });
-
-    // request # of views from a dataset
-    $.get(
-      'https://{{ site.socrata_data_site }}/resource/kzd4-upv9.json?' +
-      '$select=key,count(*) as views&$group=key&$$app_token={{ site.socrata_app_token }}'
-    )
-      .done(function(data) {
-        // parse response and group by key
-        var views = data.reduce(function(accumulator, current) {
-          accumulator[current.key] = +current.views;
-          return accumulator;
-        }, {});
-
-        // populate # of views
-        $('.views-count').each(function() {
-          var key = $(this).data('key');
-          var numViews = views[key] || 0;
-          var unit = (numViews === 1) ? 'view' : 'views';
-
-          $(this).html(numViews).append($('<span>').text(unit));
-        });
-      });
   })(jQuery);
 </script>

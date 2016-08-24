@@ -22,7 +22,6 @@
             {{ row.total_concepts | pluralize: '<span>concept</span>', '<span>concepts</span>' }}
           </div>
           <div class="comments-count" data-disqus-identifiers="{{ row.disqus_identifiers | join: ',' }}"></div>
-          <div class="views-count" data-key="{{ site.baseurl }}{{ row.link }}"></div>
         </li>
 
         <li class="concept-update-date">
