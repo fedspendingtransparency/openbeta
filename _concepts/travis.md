@@ -16,7 +16,7 @@ copy:
 discussion_title: "Discussion suggestions:"
 
 discussion_bullet_points:
- - Does the layout help you complete your tasks?
+- Does the layout help you complete your tasks?
 - Is it important to download subs with the primes?
 - Are the labels appropriate?
 - Is downloading by fiscal year important?
