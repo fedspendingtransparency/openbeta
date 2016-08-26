@@ -6,4 +6,3 @@ _secret.yml
 vendor
 .bundle
 .ruby-version
-Gemfile.lock
