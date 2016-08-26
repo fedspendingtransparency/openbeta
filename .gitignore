@@ -3,3 +3,7 @@ _site
 tmp
 _secret.yml
 .DS_Store
+vendor
+.bundle
+.ruby-version
+Gemfile.lock

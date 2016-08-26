@@ -101,3 +101,7 @@ To create a new Disqus comments section, include `disqus_identifier` which can b
 ### Search Results Page - `/concepts/search-results`
 
 This page does not contain tabs, which is specified by `tabs_required: no`.
+
+### For Testing
+Travis uses Bundler and the Rakefiles to run tests on pull requests. To emulate this environment locally, run 
+`bundle install --path vendor/bundle`
