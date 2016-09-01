@@ -99,6 +99,17 @@ active_tab:
         update_text: Posted
         disqus_identifiers:
           - 051917
+  - category: Developer Tools
+    scroll_id: developer-tools
+    topics:
+      - headline: API
+        description: Try the Alpha Outbound API
+        total_concepts: 1
+        link: /concepts/api
+        update_date: 2016-09-08
+        update_text: Posted
+        disqus_identifiers:
+          - 6193088
 
 completed_tab:
   - category: Design
