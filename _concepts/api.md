@@ -27,7 +27,7 @@ copy:
         <li>Try it Out!: Calls the API once a value has been entered and returns a response
       </ul>
   - text: <strong>Current Version</strong></li>
-  - text: The current version of the outbound API is built on Swagger, an ecosystem of tools aligned to a formal specification describing REST APIs in both human- and machine-readable formats. At the current stage of API development, the Swagger platform supports rapid and iterative prototyping of the outbound API to best fit users' needs and provide working example of functionality for review. The initial publication of the DATA Act Outbound API is scheduled for the end of August 2016, and will be completed in October of 2016.
+  - text: The current version of the outbound API is built on Swagger, an ecosystem of tools aligned to a formal specification describing REST APIs in both human- and machine-readable formats. At the current stage of API development, the Swagger platform supports rapid and iterative prototyping of the outbound API to best fit users' needs and provide a working example of functionality for review. The initial publication of the DATA Act Outbound API is scheduled for the end of August 2016, and will be completed in October of 2016.
   - text: <strong>Data Schema</strong>
   - text: The backbone of the data is the DATA Act Information Model Schema v1.0 (Schema), which provides technical specifications for the federal financial and award data on USAspending.gov. The DATA Act Outbound API is aligned with the Schema. For more information on the Schema, as well as diagrams, information flow context, and the online data dictionary, please visit <a class="usa-cta external-link" href="http://fedspendingtransparency.github.io/data-model/" target="_blank">here</a>
 
