@@ -27,7 +27,7 @@ disqus_shortname: "dataact-openbeta" # this is the shortname found in the Disqus
 disqus_api_key: "Kqjb4gW6YBIkqtMI2u8OMkVoUBAAPlZVWsO5ZoJS68PpMGIkVQaCsdhT3I1zfuph" # a public key used to make API requests
 
 # Google Analytics
-google_analytics_id: "UA-77512441-1"
+google_analytics_id: "UA-66828913-1"
 
 # Socrata
 socrata_app_token: IpvjLVLiUoqVIUomSdwugAOwe
