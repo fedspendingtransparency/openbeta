@@ -24,12 +24,12 @@ carousel:
   banner_image: /assets/img/header_program-summary-01.png
   banner_image_alt_text: A background image featuring a color gradient from light green to a mint green with a blurred wireframe of a search bar in the foreground.
 - usa_intro: 'Feedback Discussion:'
-  banner_title: Recipient Summary
-  banner_label: Is there other information about a recipient you would like added?
+  banner_title: Outbound API
+  banner_label: Try the API and tell us what you think. 
   banner_cta: Join the discussion
-  banner_cta_link: /concepts/recipient-summary
-  banner_image: /assets/img/header_recipient-summary-01.png
-  banner_image_alt_text: A background image featuring a color gradient from light green to a mint green with a blurred wireframe of a search bar in the foreground.
+  banner_cta_link: /concepts/api
+  banner_image: /assets/img/header_api-01.png
+  banner_image_alt_text: A background image featuring a color gradient from light green to a mint green with a blurred wireframe of an API call in the foreground.
 - usa_intro: 'Feedback Discussion:'
   banner_title: Contract Award Summary
   banner_label: Which features are most important to you?
