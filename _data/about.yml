@@ -1,9 +1,8 @@
 # About Page
 
-headline: About
 
 # Hero
-banner_title: About
+headline: About
 banner_label:
 - text: In May 2014, President Obama signed into law the Digital Accountability and Transparency Act of 2014, which requires agencies to expand the amount of data they report publicly and link federal contract, loan, and grant spending information to federal programs. The expanded and linked data is to be displayed on the future of USAspending.gov, which goes live in May 2017.
 - text: Treasury launched OpenBeta.usaspending.gov in November 2015 as a feedback platform to gather users' recommendations and suggestions for the future website.
