@@ -1,66 +1,163 @@
-# Home Page
+# This data populates the /concepts page
 
-# Carousel Section
-carousel:
-- usa_intro: 'Feedback Discussion:'
-  banner_title: Data Download
-  banner_label: Can you complete your download task?
-  banner_cta: Join the discussion
-  banner_cta_link: /concepts/data-download
-  banner_image: /assets/img/header_data-download-01.png
-  banner_image_alt_text: A background image featuring a color gradient from light green to a mint green with a blurred image of a bar chart in the foreground.
-- usa_intro: 'Feedback Discussion:'
-  banner_title: Search Results
-  banner_label: What fields are most important to you?
-  banner_cta: Join the discussion
-  banner_cta_link: /concepts/search-results
-  banner_image: /assets/img/header_search-results-01.png
-  banner_image_alt_text: A background image featuring a color gradient from light green to a mint green with a blurred image of a bar chart in the foreground.
-- usa_intro: 'Feedback Discussion:'
-  banner_title: CFDA Program Summary 
-  banner_label: Does the information answer your questions?
-  banner_cta: Join the discussion
-  banner_cta_link: /concepts/program-summary
-  banner_image: /assets/img/header_program-summary-01.png
-  banner_image_alt_text: A background image featuring a color gradient from light green to a mint green with a blurred wireframe of a search bar in the foreground.
-- usa_intro: 'Feedback Discussion:'
-  banner_title: Outbound API
-  banner_label: Try the API and tell us what you think. 
-  banner_cta: Join the discussion
-  banner_cta_link: /concepts/api
-  banner_image: /assets/img/header_api-01.png
-  banner_image_alt_text: A background image featuring a color gradient from light green to a mint green with a blurred wireframe of an API call in the foreground.
-- usa_intro: 'Feedback Discussion:'
-  banner_title: Contract Award Summary
-  banner_label: Which features are most important to you?
-  banner_cta: Join the discussion
-  banner_cta_link: /concepts/contract-award-summary
-  banner_image: /assets/img/header_contract-award-summary-01.png
-  banner_image_alt_text: A background image featuring a color gradient from light green to a mint green with a blurred wireframe of a vertical timeline in the foreground.
+banner_title: Concepts
+banner_label:
+  - text: Below are features that we are currently developing and would like your feedback about.
+  - text: Select a topic to learn more and join the discussion.
 
-#First Section
-first_section_title: What is OpenBeta?
-first_section_intro: A new way to build government websites
-first_section_text: OpenBeta.usaspending.gov is the feedback platform for features and functionality being considered for the future of USAspending.gov. You will find ongoing discussions on our development of the site which we encourage you to join.
-first_section_cta: Join our discussions
-first_section_cta_link: /concepts
-first_section_img: /assets/img/illustration_process_500x250.png
-first_section_alt_text: "An image illustrating the OpenBeta process, which consists of three components: the first one being discussion on open beta (represented by two speech bubbles) followed by agile development process (represented by a circular arrow juxtaposed with a straight arrow), followed by a software release (represented by a website displayed in a monitor)."
+active_tab:
+  - category: Search
+    scroll_id: search
+    topics:
+      - headline: Search Results
+        description: How we display search results
+        total_concepts: 1
+        link: /concepts/search-results
+        # enter date in YYYY-MM-DD format
+        update_date: 2016-06-30
+        # following text prepends date above in "time ago" format
+        update_text: Updated
+        disqus_identifiers:
+          - 59476183
+  - category: Summary Pages
+    scroll_id: summary-pages
+    topics:
+      - headline: Contract Award Summary
+        description: How we display contract award data
+        total_concepts: 1
+        link: /concepts/contract-award-summary
+        update_date: 2016-06-29
+        update_text: Updated
+        disqus_identifiers:
+          - 97847241
+      - headline: Agency Summary
+        description: How we display agency data
+        total_concepts: 2
+        link: /concepts/agency-summary
+        update_date: 2016-07-12
+        update_text: Posted
+        disqus_identifiers:
+          - 33785410
+          - 14683571
+      - headline: Financial Assistance Award Summary
+        description: How we display financial assistance data
+        total_concepts: 1
+        link: /concepts/financial-assistance-award-summary
+        update_date: 2016-07-12
+        update_text: Posted
+        disqus_identifiers:
+          - 72704398
+      - headline: CFDA Program Summary
+        description: How we display data for CFDA programs.
+        total_concepts: 1
+        link: /concepts/program-summary
+        update_date: 2016-07-26
+        update_text: Posted
+        disqus_identifiers:
+          - 706896
+      - headline: Recipient Summary
+        description: How we summarize and display data for each award recipient.
+        total_concepts: 1
+        link: /concepts/recipient-summary
+        update_date: 2016-08-12
+        update_text: Posted
+        disqus_identifiers:
+          - 26576965
+      - headline: Appropriation Account Summary
+        description: How data is displayed by Appropriation Account.
+        total_concepts: 1
+        link: /concepts/appropriation-account-summary
+        update_date: 2016-08-12
+        update_text: Posted
+        disqus_identifiers:
+          - 59548620
+  - category: General Pages
+    scroll_id: general-pages
+    topics:
+      - headline: Home Page
+        description: Your introduction to USAspending.gov
+        total_concepts: 1
+        link: /concepts/home-page
+        update_date: 2016-06-29
+        update_text: Posted
+        disqus_identifiers:
+          - 83728938
+      - headline: Browse the Data
+        description: How to access all the Summary pages.
+        total_concepts: 1
+        link: /concepts/browse
+        update_date: 2016-07-27
+        update_text: Posted
+        disqus_identifiers:
+          - 43048475
+          - 600523
+      - headline: Data Download
+        description: How to download all the data.
+        total_concepts: 1
+        link: /concepts/data-download
+        update_date: 2016-07-27
+        update_text: Posted
+        disqus_identifiers:
+          - 051917
+  - category: Developer Tools
+    scroll_id: developer-tools
+    topics:
+      - headline: API
+        description: Try the Alpha Outbound API
+        total_concepts: 1
+        link: /concepts/api
+        update_date: 2016-09-08
+        update_text: Posted
+        disqus_identifiers:
+          - 06193088
 
-#Second Section
-second_section_title: What can you do here?
-second_section_intro: Collaborate with the site developers
-second_section_text: 'Visit the Concepts page to see what we are currently developing and voice your thoughts, concerns, and suggestions in ongoing discussions.'
-second_section_cta: Join our discussions
-second_section_cta_link: /concepts
-second_section_img: /assets/img/illustration_chat_500x250.png
-second_section_alt_text: "An illustration of a conversation, featuring two speech bubbles, one in green and the other in a lighter green."
+completed_tab:
+  - category: Design
+    scroll_id: design
+    topics:
+      - headline: Logo
+        description: The identity of OpenBeta
+        total_concepts: 0
+        link: /concepts/logo
+        update_date: 2016-06-22
+        update_text: Posted
+        disqus_identifiers:
+  - category: Miscellaneous
+    scroll_id: miscellaneous
+    topics:
+      - headline: Glossary
+        description: How we display our glossary of terms
+        total_concepts: 0
+        link: /concepts/glossary
+        update_date: 2016-06-22
+        update_text: Posted
+        disqus_identifiers:
 
-#Third Section
-third_section_title: Why does OpenBeta matter?
-third_section_intro: The public is helping to build a 21st century government
-third_section_text: 'OpenBeta presents an exceptional opportunity for everyone interested in Federal spending to shape and influence how you access Federal spending data. On OpenBeta, you can give feedback on the design and functionality for the future of USAspending.gov. With your help and participation, the discussions on openbeta.usaspending.gov will guide us in building a website that best serves your needs.'
-third_section_cta: Start now
-third_section_cta_link: /about
-third_section_img: /assets/img/illustration_lightbulb_500x250.png
-third_section_alt_text: "An illustration of a light bulb, depicted in a flat style in all green, with 5 short lines radiating from the bulb, suggesting light emitting from it."
+archived_tab:
+  - category: Search
+    scroll_id: archived-search
+    topics:
+      - headline: Search Functionality
+        description: How you can search our data
+        total_concepts: 4
+        link: /concepts/archived-search-functionality
+        update_date: 2016-06-23
+        update_text: Archived
+        disqus_identifiers:
+          - 35891276
+          - 93415672
+          - 12697438
+          - 81493267
+  - category: Summary Pages
+    scroll_id: archived-contract award summary
+    topics:
+      - headline: Contract Award Summary
+        description: How we display contract award data
+        total_concepts: 3
+        link: /concepts/archived-contract-award-summary
+        update_date: 2016-06-27
+        update_text: Archived
+        disqus_identifiers:
+          - 71538462
+          - 56237819
+          - 74813926
