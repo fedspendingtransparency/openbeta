@@ -26,7 +26,7 @@
 
         <li class="concept-update-date">
           {{ row.update_text | default: 'Posted' | capitalize }}
-          {{ row.update_date | default: '2016-06-22' | convert: "data"  | timeago }}
+          <span class="convert-date">{{ row.update_date | default: '2016-06-22' }}</span>
         </li>
       </ul>
     </div>
