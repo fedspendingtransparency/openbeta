@@ -11,42 +11,46 @@
 
     <div class="usa-concepts">
       <div class="grid">
-        <div class="usa-width-twelve usa-main-content">
+        <div id="introduction" class="usa-width-twelve usa-main-content">
           <h1 class="usa-intro">{{ page.category }}</h1>
 
           <ul class="usa-archived-items">
-            <li><h1 class="usa-banner-title list-header">{{ page.headline }}</h2></li>
+            <li><h2 class="usa-banner-title list-header">{{ page.headline }}</h2></li>
 
             {% if page.archived_page == true %}
               <li><span class="usa-archived-button">Archived</span></li>
             {% endif %}
           </ul>
-
-          {% if page.archived_page == true %}
-            <p class="usa-archived-text usa-bold">{{ page.archived_page_text }}</p>
-          {% endif %}
-
-          {% for item in page.copy %}
-            <p>{{ item.text }}</p>
-          {% endfor %}
-
-          <p class="list-header">{{ page.discussion_title }}</p>
-          <ul>
-            {% for item in page.discussion_bullet_points %}
-              <li>{{ item }}</li>
-            {% endfor %}
-          </ul>
         </div>
       </div>
     </div>
 
+    <div id="usa-sidebar-wrapper">
+      <div class="usa-concepts">
+        <div class="grid">
+          <div class="scroll-on-page">
+            <div class="usa-width-nine">
+
+              <div class="usa-content">
+                {% if page.archived_page == true %}
+                  <p class="usa-archived-text usa-bold">{{ page.archived_page_text }}</p>
+                {% endif %}
+
+                {% for item in page.copy %}
+                  <p>{{ item.text }}</p>
+                {% endfor %}
+
+                <p class="list-header">{{ page.discussion_title }}</p>
+                <ul>
+                  {% for item in page.discussion_bullet_points %}
+                    <li>{{ item }}</li>
+                  {% endfor %}
+                </ul>
+              </div>
+
     {% if page.tabs_required == false %}
 
-      <div id="usa-sidebar-wrapper">
-        <div class="usa-concepts">
-          <div class="grid">
-            <div class="scroll-on-page">
-              <div id="concept-summary" class="usa-width-nine usa-no-tabs">
+              <div id="concept-summary" class="usa-no-tabs">
 
               {% for item in page.no_tabs %}
 
@@ -86,28 +90,29 @@
               {% endfor %}
 
               </div>
+            </div>
 
-              <div class="usa-width-three">
-                <aside id="scroll-on-page-top">
+            <div class="usa-width-three">
+              <aside id="scroll-on-page-top">
 
-                  {% if page.archived_page == true %}
-                    {% assign class = "scroll-on-page-link sidebar-is-active usa-archived-item" %}
-                  {% else %}
-                    {% assign class = "scroll-on-page-link sidebar-is-active" %}
-                  {% endif %}
+                {% if page.archived_page == true %}
+                  {% assign class = "scroll-on-page-link sidebar-is-active usa-archived-item" %}
+                {% else %}
+                  {% assign class = "scroll-on-page-link sidebar-is-active" %}
+                {% endif %}
 
-                  <a class="{{ class }}" href="#concept-summary">Concept Summary</a>
+                <a class="{{ class }}" href="#introduction">Introduction</a>
 
-                  {% if page.archived_page == true %}
-                    {% assign class = "scroll-on-page-link usa-archived-item" %}
-                  {% else %}
-                    {% assign class = "scroll-on-page-link" %}
-                  {% endif %}
+                {% if page.archived_page == true %}
+                  {% assign class = "scroll-on-page-link usa-archived-item" %}
+                {% else %}
+                  {% assign class = "scroll-on-page-link" %}
+                {% endif %}
 
-                  <a class="{{ class }}" href="#discussion">Discussion</a>
+                <a class="{{ class }}" href="#concept-summary">Concept Summary</a>
+                <a class="{{ class }}" href="#discussion">Discussion</a>
 
-                </aside>
-              </div>
+              </aside>
             </div>
           </div>
         </div>
@@ -160,116 +165,111 @@
           </div>
         </div>
       </div>
+    </div>
 
     {% else %}
 
-      <div id="usa-sidebar-wrapper">
-        <div class="usa-concepts">
-          <div class="grid">
-            <div class="scroll-on-page">
-              <ul class="accordion-tabs-minimal">
-              {% for tab in page.tabs %}
+              <ul id="concept-summary" class="accordion-tabs-minimal">
+                {% for tab in page.tabs %}
 
-                <li class="tab-header-and-content">
+                  <li class="tab-header-and-content">
 
-                  {% if forloop.first == true %}
-                    {% if page.archived_page == true %}
-                      {% assign class = "tab-link usa-archived-tab is-active" %}
-                    {% else %}
-                      {% assign class = "tab-link is-active" %}
-                    {% endif %}
-                  {% else %}
-                    {% if page.archived_page == true %}
-                      {% assign class = "tab-link usa-archived-tab" %}
-                    {% else %}
-                      {% assign class = "tab-link" %}
-                    {% endif %}
-                  {% endif %}
-
-                  <a href="{{ tab.url_hash }}" class="{{ class }}"
-                    onclick="reset('{{ tab.disqus_identifier }}', '{{ tab.disqus_url }}');"
-                  >
-                    {{ tab.title }}
-                    <div>
-                      <div class="disqus-comment-count" data-disqus-identifier="{{ tab.disqus_identifier }}"></div>
-                      <div class="vote-count" data-disqus-identifier="{{ tab.disqus_identifier }}"></div>
-                      <div class="concept-update-date">
-                      {% if tab.update_date %}
-                        {{ tab.update_text | default: 'updated' }}:
-                        {{ tab.update_date | default: '2016-06-22' | convert: "data"  | timeago  }}
-                      {% endif %}
-                      </div>
-                    </div>
-                  </a>
-
-                  <div class="tab-content">
-                    <div id="concept-summary" class="usa-width-nine">
-
+                    {% if forloop.first == true %}
                       {% if page.archived_page == true %}
-                        <p class="usa-archived-text">{{ tab.archived_text }}</p>
-                      {% endif %}
-
-                      <p class="list-header">{{ tab.description }}</p>
-                      <ul>
-                      {% for item in tab.features %}
-                        <li>{{ item.description }}</li>
-                      {% endfor %}
-                      </ul>
-
-                      <ul class="usa-disclaimer">
-                      {% if tab.disclaimer_text %}
-                        <li>{{ tab.disclaimer_text }}</li>
+                        {% assign class = "tab-link usa-archived-tab is-active" %}
                       {% else %}
-                        <li></li>
+                        {% assign class = "tab-link is-active" %}
                       {% endif %}
+                    {% else %}
+                      {% if page.archived_page == true %}
+                        {% assign class = "tab-link usa-archived-tab" %}
+                      {% else %}
+                        {% assign class = "tab-link" %}
+                      {% endif %}
+                    {% endif %}
 
-                        {% if page.archived_page == true %}
-                          {% assign class = "full-screen-image usa-archived-text" %}
-                        {% else %}
-                          {% assign class = "full-screen-image" %}
+                    <a href="{{ tab.url_hash }}" class="{{ class }}"
+                      onclick="reset('{{ tab.disqus_identifier }}', '{{ tab.disqus_url }}');"
+                    >
+                      {{ tab.title }}
+                      <div>
+                        <div class="disqus-comment-count" data-disqus-identifier="{{ tab.disqus_identifier }}"></div>
+                        <div class="vote-count" data-disqus-identifier="{{ tab.disqus_identifier }}"></div>
+                        <div class="concept-update-date">
+                        {% if tab.update_date %}
+                          {{ tab.update_text | default: 'updated' }}:
+                          {{ tab.update_date | default: '2016-06-22' | convert: "data"  | timeago  }}
                         {% endif %}
-
-                        <li><a class="{{ class }}" href="{{ site.baseurl }}{{ tab.image }}" data-lightbox="concepts">View Fullscreen</a></li>
-                      </ul>
-
-                      <div class="image-background">
-                        <img src="{{ site.baseurl }}{{ tab.image }}" alt="{{ tab.image_alt_text }}" >
+                        </div>
                       </div>
+                    </a>
 
-                    </div>
-
-                    <div class="usa-width-three">
-                      <aside id="scroll-on-page-top">
-
-                        {% if page.archived_page == true %}
-                          {% assign class = "scroll-on-page-link sidebar-is-active usa-archived-item" %}
-                        {% else %}
-                          {% assign class = "scroll-on-page-link sidebar-is-active" %}
-                        {% endif %}
-
-                        <a class="{{ class }}" href="#concept-summary">Concept Summary</a>
+                    <div class="tab-content">
+                      <div>
 
                         {% if page.archived_page == true %}
-                          {% assign class = "scroll-on-page-link usa-archived-item" %}
-                        {% else %}
-                          {% assign class = "scroll-on-page-link" %}
+                          <p class="usa-archived-text">{{ tab.archived_text }}</p>
                         {% endif %}
 
-                        <a class="{{ class }}" href="#discussion">Discussion</a>
+                        <p class="list-header">{{ tab.description }}</p>
+                        <ul>
+                        {% for item in tab.features %}
+                          <li>{{ item.description }}</li>
+                        {% endfor %}
+                        </ul>
 
-                      </aside>
+                        <ul class="usa-disclaimer">
+                        {% if tab.disclaimer_text %}
+                          <li>{{ tab.disclaimer_text }}</li>
+                        {% else %}
+                          <li></li>
+                        {% endif %}
+
+                          {% if page.archived_page == true %}
+                            {% assign class = "full-screen-image usa-archived-text" %}
+                          {% else %}
+                            {% assign class = "full-screen-image" %}
+                          {% endif %}
+
+                          <li><a class="{{ class }}" href="{{ site.baseurl }}{{ tab.image }}" data-lightbox="concepts">View Fullscreen</a></li>
+                        </ul>
+
+                        <div class="image-background">
+                          <img src="{{ site.baseurl }}{{ tab.image }}" alt="{{ tab.image_alt_text }}" >
+                        </div>
+                      </div>
                     </div>
-                  </div>
+                  </li>
 
-                </li>
+                {% endfor %}
 
-              {% endfor %}
-
-              {% if page.link_to_archived_designs != nil %}
-                <li class="usa-cta usa-link-to-archive"><a href="{{ site.baseurl }}{{ page.link_to_archived_designs }}">Archived Designs</a></li>
-              {% endif %}
+                {% if page.link_to_archived_designs != nil %}
+                  <li class="usa-cta usa-link-to-archive"><a href="{{ site.baseurl }}{{ page.link_to_archived_designs }}">Archived Designs</a></li>
+                {% endif %}
 
               </ul>
+            </div>
+            <div class="usa-width-three">
+              <aside id="scroll-on-page-top">
+
+                {% if page.archived_page == true %}
+                  {% assign class = "scroll-on-page-link sidebar-is-active usa-archived-item" %}
+                {% else %}
+                  {% assign class = "scroll-on-page-link sidebar-is-active" %}
+                {% endif %}
+
+                <a class="{{ class }}" href="#introduction">Introduction</a>
+
+                {% if page.archived_page == true %}
+                  {% assign class = "scroll-on-page-link usa-archived-item" %}
+                {% else %}
+                  {% assign class = "scroll-on-page-link" %}
+                {% endif %}
+
+                <a class="{{ class }}" href="#concept-summary">Concept Summary</a>
+                <a class="{{ class }}" href="#discussion">Discussion</a>
+
+              </aside>
             </div>
           </div>
         </div>
@@ -331,6 +331,7 @@
           {% endfor %}
         </div>
       </div>
+    </div>
     {% endif %}
 
     {% include footer.html %}

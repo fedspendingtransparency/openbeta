@@ -256,6 +256,11 @@ section.usa-section:nth-of-type(5) {
   margin-bottom: 2em;
 }
 
+.usa-content {
+  // max-width: rem($text-max-width);
+  margin: 0 1em 3em;
+}
+
 .usa-cta {
   font-weight: 300;
 
