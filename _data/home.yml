@@ -1,9 +1,10 @@
 # This data populates the /concepts page
 
-banner_title: Concepts
+banner_title: Your Voice Matters
 banner_label:
-  - text: Below are features that we are currently developing and would like your feedback about.
-  - text: Select a topic to learn more and join the discussion.
+  - text: This feedback platform lets you peek under the hood, and tell us what you think about proposed features for USAspending.gov. We invite you to join the conversation, because this is your website, and your feedback matters.
+  - text: Comment on the sketches below, or schedule a one-on-one feedback session.
+  - text: <a href="http://bit.ly/2bUh0rC" target="_blank" rel="noopener noreferrer" class="schedule-feedback-link">Schedule a Feedback Session</a>
 
 active_tab:
   - category: Search
