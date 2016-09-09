@@ -73,14 +73,6 @@
                 {% else %}
                   <li></li>
                 {% endif %}
-
-                  {% if page.archived_page == true %}
-                    {% assign class = "full-screen-image usa-archived-text" %}
-                  {% else %}
-                    {% assign class = "full-screen-image" %}
-                  {% endif %}
-
-                  <li><a class="{{ class }}" href="{{ site.baseurl }}{{ item.image }}" data-lightbox="concepts">View Fullscreen</a></li>
                 </ul>
 
                 <div class="image-background">
@@ -224,14 +216,6 @@
                         {% else %}
                           <li></li>
                         {% endif %}
-
-                          {% if page.archived_page == true %}
-                            {% assign class = "full-screen-image usa-archived-text" %}
-                          {% else %}
-                            {% assign class = "full-screen-image" %}
-                          {% endif %}
-
-                          <li><a class="{{ class }}" href="{{ site.baseurl }}{{ tab.image }}" data-lightbox="concepts">View Fullscreen</a></li>
                         </ul>
 
                         <div class="image-background">
