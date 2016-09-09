@@ -8,12 +8,10 @@ usa_disclaimer_link: 'For official Federal Spending data, please visit <a href="
 usa_disclaimer_official: An official website of the United States Government
 usa_flag: /assets/img/us_flag_small.png
 
-# Navigation bar 
+# Navigation bar
 nav_bar_menu_items:
 - text: Home
   url: /
-- text: Concepts
-  url: /concepts/
 - text: About
   url: /about/
 - text: Contact

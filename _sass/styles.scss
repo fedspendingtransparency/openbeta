@@ -8,11 +8,12 @@
 @import "grid-settings";
 @import "vendor/neat/neat";
 
-@import "scss/about";
 @import "scss/base";
+@import "scss/layout";
+
+@import "scss/about";
 @import "scss/concepts";
 @import "scss/footer";
 @import "scss/header";
-@import "scss/layout";
 @import "scss/navigation";
 @import "scss/syntax-highlighting";

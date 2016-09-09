@@ -2,18 +2,91 @@
 layout: default
 ---
 
-<section class="usa-concepts usa-banner-block"></section>
-
-<section id="about" class="usa-section">
+<div class="usa-about usa-banner">
   <div class="grid">
     <div class="usa-width-twelve">
-      <h1 class="usa-banner-title list-header">
+      <h1>
         {{ site.data.about.headline }}
       </h1>
 
-      {% for paragraph in site.data.about.content %}
-        <p>{{ paragraph.text }}</p>
+      {% for line in site.data.about.banner_label %}
+        <p>{{ line.text }}</p>
       {% endfor %}
+    </div>
+  </div>
+</div>
+
+<section class="usa-section">
+  <div class="grid">
+    <div class="usa-width-six">
+      <h1 class="usa-banner-title">
+        {{ site.data.about.first_section_title }}
+      </h1>
+      <h2 class="usa-intro">
+        {{ site.data.about.first_section_intro }}
+      </h2>
+      <h3 class="usa-text">
+        {{ site.data.about.first_section_text }}
+      </h3>
+      <h3 class="usa-cta">
+        <a href="{{ site.baseurl }}{{ site.data.about.first_section_cta_link }}">
+          {{ site.data.about.first_section_cta }}
+        </a>
+      </h3>
+    </div>
+
+    <div class="usa-width-six right-aligned-image">
+      <img src="{{ site.baseurl }}{{ site.data.about.first_section_img }}" alt="{{ site.data.about.first_section_alt_text }}">
+    </div>
+  </div>
+</section>
+
+<section class="usa-section usa-section-alt">
+  <div class="grid">
+    <div class="usa-width-six">
+      <img src="{{ site.baseurl }}{{ site.data.about.second_section_img }}" alt="{{ site.data.about.second_section_alt_text }}">
+    </div>
+
+    <div class="usa-width-six">
+      <h1 class="usa-banner-title">
+        {{ site.data.about.second_section_title }}
+      </h1>
+      <h2 class="usa-intro">
+        {{ site.data.about.second_section_intro }}
+      </h2>
+      <h3 class="usa-text">
+        {{ site.data.about.second_section_text }}
+      </h3>
+      <h3 class="usa-cta">
+        <a href="{{ site.baseurl }}{{ site.data.about.second_section_cta_link }}">
+          {{ site.data.about.second_section_cta }}
+        </a>
+      </h3>
+    </div>
+  </div>
+</section>
+
+<section class="usa-section">
+  <div class="grid">
+    <div class="usa-width-six">
+      <h1 class="usa-banner-title">
+        {{ site.data.about.third_section_title }}
+      </h1>
+      <h2 class="usa-intro">
+        {{ site.data.about.third_section_intro }}
+      </h2>
+      <h3 class="usa-text">
+        {{ site.data.about.third_section_text }}
+      </h3>
+      <h3 class="usa-cta">
+        <a href="{{ site.baseurl }}{{ site.data.about.third_section_cta_link }}">
+          {{ site.data.about.third_section_cta }}
+        </a>
+      </h3>
+    </div>
+
+    <div class="usa-width-six right-aligned-image">
+      <img src="{{ site.baseurl }}{{ site.data.about.third_section_img }}" alt="{{ site.data.about.third_section_alt_text }}">
     </div>
   </div>
 </section>

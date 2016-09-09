@@ -7,18 +7,23 @@
 .usa-concepts {
 
   &.usa-banner {
-    background-image: url(../assets/img/header_concepts-01.png);
-    background-size: cover;
-    padding: 70px 0;
+    // background-image: url(../assets/img/open-beta_homepage-bg.png);
+    // background-size: cover;
+    background-color: #eeeeef;
+    padding: 40px 0;
 
     @include media($medium) {
       padding: 30px 10px;
-      height: 250px;
+      height: auto;
+
+      .banner-image {
+        display: none;
+      }
     }
 
     @include media($small) {
       padding: 20px;
-      height: 275px;
+      height: auto;
     }
 
     h1, h2 {
@@ -67,6 +72,13 @@
     color: lighten($primary, 20%);
     font-style: italic;
     min-height: 1.5em;
+  }
+}
+
+.usa-home {
+  &.usa-banner {
+    color: $primary;
+    background-color: $secondary-background-color;
   }
 }
 

@@ -30,3 +30,26 @@
     text-decoration: underline;
   }
 }
+
+.usa-about {
+
+  &.usa-banner {
+    background-image: url(../assets/img/header_contract-award-summary-01.png);
+    background-size: cover;
+    padding: 40px 0;
+
+    @include media($medium) {
+      padding: 30px 10px;
+      height: auto;
+    }
+
+    @include media($small) {
+      padding: 20px;
+      height: auto;
+    }
+
+    h1  {
+      text-shadow: 1px 1px 2px #808080;
+    }
+  }
+}

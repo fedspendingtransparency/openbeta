@@ -243,6 +243,14 @@ section.usa-section:nth-of-type(5) {
 
 .usa-banner-title {
   font-size: 1.8em;
+
+  &.usa-home-title {
+    margin-bottom: 2em;
+
+    @include media($medium) {
+      padding: 0 1rem;
+    }
+  }
 }
 
 .usa-intro {

@@ -190,7 +190,7 @@
                         <div class="concept-update-date">
                         {% if tab.update_date %}
                           {{ tab.update_text | default: 'updated' }}:
-                          {{ tab.update_date | default: '2016-06-22' | convert: "data"  | timeago  }}
+                          <span class="convert-date">{{ tab.update_date | default: '2016-06-22' }}</span>
                         {% endif %}
                         </div>
                       </div>
@@ -330,6 +330,7 @@
 
     {% include voting.html %}
     {% include record_views.html %}
+    {% include moment_js.html %}
 
   </body>
 
