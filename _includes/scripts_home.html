@@ -1,4 +1,3 @@
-<script type="text/javascript" src="{{ site.baseurl }}/assets/vendor/momentjs/moment.min.js"></script>
 <script>
   (function($) {
     // get all the disqus IDs from page elements
@@ -55,13 +54,7 @@
         });
       });
 
-    // use moment.js to convert date (2016-06-29) to "timeago" format
-    $('.convert-date').each(function() {
-      var date = moment($(this).text());
-      // replace text if it was a valid/parsable date text
-      if (date.isValid()) {
-        $(this).text(date.fromNow());
-      }
-    });
   })(jQuery);
 </script>
+
+{% include moment_js.html %}
