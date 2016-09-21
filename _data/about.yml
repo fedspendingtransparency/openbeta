@@ -4,9 +4,9 @@
 # Hero
 headline: About
 banner_label:
-- text: In May 2014, President Obama signed into law the Digital Accountability and Transparency Act of 2014, which requires agencies to expand the amount of data they report publicly and link federal contract, loan, and grant spending information to federal programs. The expanded and linked data is to be displayed on the future of USAspending.gov, which goes live in May 2017.
-- text: Treasury launched OpenBeta.usaspending.gov in November 2015 as a feedback platform to gather users' recommendations and suggestions for the future website.
-- text: OpenBeta.usaspending.gov is one channel for disseminating information about the development of the future site. For more information on the development process, visit <a href="http://fedspendingtransparency.github.io" target="_blank" rel="noopener noreferrer">http://fedspendingtransparency.github.io</a>.
+- text:
+- text:
+- text:
 
 #First Section
 first_section_title: What is OpenBeta?
