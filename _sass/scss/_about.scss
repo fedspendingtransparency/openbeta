@@ -34,9 +34,10 @@
 .usa-about {
 
   &.usa-banner {
-    background-image: url(../assets/img/header_contract-award-summary-01.png);
+    background-image: url(../assets/img/header_about.png);
     background-size: cover;
     padding: 40px 0;
+    color: #000000;
 
     @include media($medium) {
       padding: 30px 10px;
@@ -50,6 +51,10 @@
 
     h1  {
       text-shadow: 1px 1px 2px #808080;
+    }
+    a {
+      color: #000000;
+      }
     }
   }
 }
