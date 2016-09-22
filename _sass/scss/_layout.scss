@@ -36,6 +36,16 @@
 .usa-width-three {
   @include span-columns(3);
 
+  padding-left: 1em;
+  padding-right: 1em;
+
+  @include media($medium) {
+    img {
+      padding-top: 1em;
+      padding-bottom: 1em;
+    }
+  }
+
   @include media($medium) {
     @include span-columns(8);
   }
@@ -61,6 +71,9 @@
 
 .usa-width-nine {
   @include span-columns(9);
+
+  padding-left: 1em;
+  padding-right: 1em;
 
   @include media($medium) {
     @include span-columns(8);
