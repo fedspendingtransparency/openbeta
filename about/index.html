@@ -4,7 +4,7 @@ layout: default
 
 <div class="usa-about usa-banner">
   <div class="grid">
-    <div class="usa-width-twelve">
+    <div class="usa-width-six">
       <h1>
         {{ site.data.about.headline }}
       </h1>
@@ -12,6 +12,9 @@ layout: default
       {% for line in site.data.about.banner_label %}
         <p>{{ line.text }}</p>
       {% endfor %}
+    </div>
+    <div class="usa-width-six banner-image">
+      <img src="{{ site.baseurl }}/assets/img/header_about.png" alt="">
     </div>
   </div>
 </div>
