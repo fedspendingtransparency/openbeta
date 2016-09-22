@@ -104,7 +104,7 @@
   overflow: hidden;
 
   @include media($medium) {
-    background: $accent-color;
+    // background: $accent-color;
     height: 300px;
     padding-left: 1em;
     padding-right: 1em;

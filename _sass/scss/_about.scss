@@ -5,6 +5,7 @@
 * * * * * * * * * * * * * * * * * * * * * * */
 
 #about, #contact, #commenting-policy {
+  .usa-width-six,
   .usa-width-twelve {
     padding: 1em 6em 6em 6em;
     text-align: left;
@@ -34,28 +35,38 @@
 .usa-about {
 
   &.usa-banner {
-    background-image: url(../assets/img/header_about.png);
-    background-size: cover;
+    // background-image: url(../assets/img/header_about.png);
+    // background-size: cover;
+    background-color: #eeeeef;
     padding: 40px 0;
     color: #000000;
+
+    h1  {
+      text-shadow: 1px 1px 2px #808080;
+    }
+
+    a {
+      color: #000000;
+    }
+
+    .banner-image {
+      margin-top: 2em;
+      text-align: center;
+    }
 
     @include media($medium) {
       padding: 30px 10px;
       height: auto;
+
+      .banner-image {
+        display: none;
+      }
     }
 
     @include media($small) {
       padding: 20px;
       height: auto;
     }
-
-    h1  {
-      text-shadow: 1px 1px 2px #808080;
-    }
-    a {
-      color: #000000;
-    }
-    
 
   }
 }
