@@ -46,15 +46,26 @@ task :htmlproofer do
   end
 end
 
-desc "perform a full jekyll site build"
+desc "perform a jekyll site build"
 task :jekyll do
   puts "Performing a full build...".green
   cmd = 'bundle exec jekyll build'
   exec_and_manually_watch_for_errors(cmd)
 end
 
-desc "watch for changes and automatically rebuild (incrementally)"
+desc "run the local server"
 task :serve do
+  puts "Building and starting the local server..."
+  sh 'bundle exec jekyll serve'
+end
+
+desc "watch for changes and automatically rebuild (incrementally)"
+task :incremental do
   puts "Performing an incremental build..."
   sh 'bundle exec jekyll build --incremental --safe --watch'
+end
+
+desc "perform a full build and test"
+task :build => [:jekyll, :htmlproofer] do
+  puts "Performing full build and tests".green
 end
