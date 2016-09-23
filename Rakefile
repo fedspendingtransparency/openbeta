@@ -1,4 +1,4 @@
-require 'colorize'
+require 'colored'
 require 'open3'
 require 'html-proofer'
 
@@ -29,11 +29,21 @@ end
 # end
 
 desc "run htmlproofer"
-task :htmlpoofer do
+task :htmlproofer do
   puts "Checking for dead links, valid images, etc."
-  # sh 'bundle exec htmlproofer ./_site'
-  sh 'mv ./_site/* ./_site/dev'
-  HTMLProofer.check_directory("./_site").run
+  # htmlproofer doesn't understand the baseurl config
+  # so we move everything into the folder it expects to see
+  sh 'mv _site dev'
+  sh 'mkdir _site'
+  sh 'mv dev _site/'
+  begin
+    HTMLProofer.check_directory("./_site").run
+  ensure
+    # and then move it all back
+    # I hate it too...
+    sh 'mv _site/dev/* _site/'
+    sh 'rm -rf _site/dev'
+  end
 end
 
 desc "perform a full jekyll site build"
@@ -45,6 +55,6 @@ end
 
 desc "watch for changes and automatically rebuild (incrementally)"
 task :serve do
-  puts "Performing an incremental build...".green
+  puts "Performing an incremental build..."
   sh 'bundle exec jekyll build --incremental --safe --watch'
 end

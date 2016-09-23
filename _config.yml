@@ -3,7 +3,7 @@ title: OpenBeta
 description: OpenBeta Description
 relative_permalinks: false
 markdown: kramdown
-# baseurl: "/dev" # the subpath of your site, e.g. /blog
+baseurl: "/dev" # the subpath of your site, e.g. /blog
 
 # Concepts Pages
 collections:
