@@ -26,7 +26,7 @@ tabs_required: yes
 
 tabs:
   - title: Version 0.2
-    url_hash: "#!version-0.2"
+    url_hash: "!version-0.2"
     archived_text:
     description: "Key Features:"
     features:

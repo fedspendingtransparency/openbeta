@@ -1,3 +1,7 @@
+require 'colorize'
+require 'open3'
+require 'html-proofer'
+
 def exec_and_manually_watch_for_errors(cmd)
   stderr_output = []
   # we want to monitor stderr without blocking it from printing live
@@ -18,14 +22,19 @@ def exec_and_manually_watch_for_errors(cmd)
   end
 end
 
-require 'colorize'
-require 'open3'
-
 # desc "install prerequisites"
 # task :install do
 #   puts "Installing prerequisites...".green
 #   sh 'bundle install --path vendor/bundle'
 # end
+
+desc "run htmlproofer"
+task :htmlpoofer do
+  puts "Checking for dead links, valid images, etc."
+  # sh 'bundle exec htmlproofer ./_site'
+  sh 'mv ./_site/* ./_site/dev'
+  HTMLProofer.check_directory("./_site").run
+end
 
 desc "perform a full jekyll site build"
 task :jekyll do

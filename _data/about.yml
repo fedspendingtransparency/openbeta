@@ -13,7 +13,7 @@ first_section_title: What is OpenBeta?
 first_section_intro: A new way to build government websites
 first_section_text: OpenBeta.usaspending.gov is the feedback platform for features and functionality being considered for the future of USAspending.gov. You will find ongoing discussions on our development of the site which we encourage you to join.
 first_section_cta: Join our discussions
-first_section_cta_link: /concepts
+first_section_cta_link: /
 first_section_img: /assets/img/illustration_process_500x250.png
 first_section_alt_text: "An image illustrating the OpenBeta process, which consists of three components: the first one being discussion on open beta (represented by two speech bubbles) followed by agile development process (represented by a circular arrow juxtaposed with a straight arrow), followed by a software release (represented by a website displayed in a monitor)."
 
@@ -22,7 +22,7 @@ second_section_title: What can you do here?
 second_section_intro: Collaborate with the site developers
 second_section_text: 'Visit the Concepts pages from the Home Page to see what we are currently developing and voice your thoughts, concerns, and suggestions in ongoing discussions.'
 second_section_cta: Join our discussions
-second_section_cta_link: /concepts
+second_section_cta_link: /
 second_section_img: /assets/img/illustration_chat_500x250.png
 second_section_alt_text: "An illustration of a conversation, featuring two speech bubbles, one in green and the other in a lighter green."
 

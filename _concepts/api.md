@@ -35,7 +35,7 @@ tabs_required: yes
 
 tabs:
   - title: Version 0.1A
-    url_hash: "#!version-0.1A"
+    url_hash: "!version-0.1A"
     archived_text:
     disclaimer_text: <a class="usa-cta external-link" href="http://ec2-52-222-21-220.us-gov-west-1.compute.amazonaws.com/v1/ui/" target="_blank">Access the Alpha Outbound API</a>
     image: "/assets/img/concepts_api.png"
