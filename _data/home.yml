@@ -116,23 +116,23 @@ completed_tab:
   - category: Design
     scroll_id: design
     topics:
-      - headline: Logo
-        description: The identity of OpenBeta
-        total_concepts: 0
-        link: /concepts/logo
-        update_date: 2016-06-22
-        update_text: Posted
-        disqus_identifiers:
+      # - headline: Logo
+      #   description: The identity of OpenBeta
+      #   total_concepts: 0
+      #   link: /concepts/logo
+      #   update_date: 2016-06-22
+      #   update_text: Posted
+      #   disqus_identifiers:
   - category: Miscellaneous
     scroll_id: miscellaneous
     topics:
-      - headline: Glossary
-        description: How we display our glossary of terms
-        total_concepts: 0
-        link: /concepts/glossary
-        update_date: 2016-06-22
-        update_text: Posted
-        disqus_identifiers:
+      # - headline: Glossary
+      #   description: How we display our glossary of terms
+      #   total_concepts: 0
+      #   link: /concepts/glossary
+      #   update_date: 2016-06-22
+      #   update_text: Posted
+      #   disqus_identifiers:
 
 archived_tab:
   - category: Search

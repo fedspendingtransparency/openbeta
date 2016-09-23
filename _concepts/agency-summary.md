@@ -25,7 +25,7 @@ tabs_required: yes
 
 tabs:
   - title: Version 0.1A
-    url_hash: "#!version-0.1A"
+    url_hash: "!version-0.1A"
     archived_text:
     description: "Key Features:"
     features:
@@ -40,7 +40,7 @@ tabs:
     disqus_identifier: 33785410
     disqus_url: "https://openbeta.usaspending.gov/concepts/agency-summary#!version-0.1A"
   - title: Version 0.1B
-    url_hash: "#!version-0.1B"
+    url_hash: "!version-0.1B"
     archived_text:
     description: "Key Features:"
     features:

@@ -36,7 +36,7 @@ no_tabs:
 
 tabs:
   - title: Version 0.1A
-    url_hash: "#!version-0.1A"
+    url_hash: "!version-0.1A"
     archived_text:
     description: "Key Features:"
     features:

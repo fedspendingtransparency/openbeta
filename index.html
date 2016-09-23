@@ -15,7 +15,7 @@ include_at_bottom: scripts_home.html
       {% endfor %}
     </div>
     <div class="usa-width-six banner-image">
-      <img src="{{ site.baseurl }}/assets/img/openbeta-homepage-reactions.png" alt="">
+      <img src="{{ site.baseurl }}/assets/img/openbeta-homepage-reactions.png" alt="Decorative Reactions Image">
     </div>
   </div>
 </div>
@@ -30,7 +30,7 @@ include_at_bottom: scripts_home.html
     <div class="grid">
       <div class="scroll-on-page">
         <ul class="accordion-tabs-minimal">
-          <li class="tab-header-and-content">
+          <li class="tab-header-and-content" id="active">
             <a href="#active" class="tab-link is-active">Active</a>
             <div class="tab-content">
               <div class="usa-width-nine">
@@ -57,7 +57,7 @@ include_at_bottom: scripts_home.html
 
             </div>
           </li>
-          <li class="tab-header-and-content">
+          <li class="tab-header-and-content" id="completed">
             <a href="#completed" class="tab-link disabled">Completed</a>
             <div class="tab-content">
               <div class="usa-width-nine">
@@ -79,7 +79,7 @@ include_at_bottom: scripts_home.html
               </div>
             </div>
           </li>
-          <li class="tab-header-and-content">
+          <li class="tab-header-and-content" id="archived">
             <a href="#archived" class="tab-link usa-archived-tab">Archived</a>
             <div class="tab-content">
               <div class="usa-width-nine">

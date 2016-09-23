@@ -24,7 +24,7 @@ tabs_required: yes
 
 tabs:
   - title: Advanced Search
-    url_hash: "#!advanced-search"
+    url_hash: "!advanced-search"
     archived_text:
     description: "Key Feature:"
     features:
@@ -36,7 +36,7 @@ tabs:
     disqus_identifier: 93415672
     disqus_url: "https://openbeta.usaspending.com/concepts/search-functionality#!advanced-search"
   - title: Search Builder
-    url_hash: "#!search-builder"
+    url_hash: "!search-builder"
     archived_text:
     description: "Key Feature:"
     features:
@@ -48,7 +48,7 @@ tabs:
     disqus_identifier: 12697438
     disqus_url: "https://openbeta.usaspending.com/concepts/search-functionality#!search-builder"
   - title: SQL Search
-    url_hash: "#!sql-search"
+    url_hash: "!sql-search"
     archived_text:
     description: "Key Feature:"
     features:

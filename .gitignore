@@ -5,4 +5,3 @@ _secret.yml
 .DS_Store
 vendor
 .bundle
-.ruby-version

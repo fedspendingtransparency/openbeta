@@ -164,7 +164,7 @@
               <ul id="concept-summary" class="accordion-tabs-minimal">
                 {% for tab in page.tabs %}
 
-                  <li class="tab-header-and-content">
+                  <li class="tab-header-and-content" id="{{ tab.url_hash }}">
 
                     {% if forloop.first == true %}
                       {% if page.archived_page == true %}
@@ -180,7 +180,7 @@
                       {% endif %}
                     {% endif %}
 
-                    <a href="{{ tab.url_hash }}" class="{{ class }}"
+                    <a href="#{{ tab.url_hash }}" class="{{ class }}"
                       onclick="reset('{{ tab.disqus_identifier }}', '{{ tab.disqus_url }}');"
                     >
                       {{ tab.title }}

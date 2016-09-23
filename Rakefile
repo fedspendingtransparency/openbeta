@@ -1,3 +1,7 @@
+require 'colored'
+require 'open3'
+require 'html-proofer'
+
 def exec_and_manually_watch_for_errors(cmd)
   stderr_output = []
   # we want to monitor stderr without blocking it from printing live
@@ -18,24 +22,50 @@ def exec_and_manually_watch_for_errors(cmd)
   end
 end
 
-require 'colorize'
-require 'open3'
-
 # desc "install prerequisites"
 # task :install do
 #   puts "Installing prerequisites...".green
 #   sh 'bundle install --path vendor/bundle'
 # end
 
-desc "perform a full jekyll site build"
+desc "run htmlproofer"
+task :htmlproofer do
+  puts "Checking for dead links, valid images, etc."
+  # htmlproofer doesn't understand the baseurl config
+  # so we move everything into the folder it expects to see
+  sh 'mv _site dev'
+  sh 'mkdir _site'
+  sh 'mv dev _site/'
+  begin
+    HTMLProofer.check_directory("./_site").run
+  ensure
+    # and then move it all back
+    # I hate it too...
+    sh 'mv _site/dev/* _site/'
+    sh 'rm -rf _site/dev'
+  end
+end
+
+desc "perform a jekyll site build"
 task :jekyll do
   puts "Performing a full build...".green
   cmd = 'bundle exec jekyll build'
   exec_and_manually_watch_for_errors(cmd)
 end
 
-desc "watch for changes and automatically rebuild (incrementally)"
+desc "run the local server"
 task :serve do
-  puts "Performing an incremental build...".green
+  puts "Building and starting the local server..."
+  sh 'bundle exec jekyll serve'
+end
+
+desc "watch for changes and automatically rebuild (incrementally)"
+task :incremental do
+  puts "Performing an incremental build..."
   sh 'bundle exec jekyll build --incremental --safe --watch'
+end
+
+desc "perform a full build and test"
+task :build => [:jekyll, :htmlproofer] do
+  puts "Performing full build and tests".green
 end

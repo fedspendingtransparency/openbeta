@@ -24,7 +24,7 @@ tabs_required: yes
 
 tabs:
   - title: Version 0.1A
-    url_hash: "#!version-0.1A"
+    url_hash: "!version-0.1A"
     archived_text: A new version has replaced this concept.
     description: "Key Features:"
     features:
@@ -36,7 +36,7 @@ tabs:
     disqus_identifier: 71538462
     disqus_url: "http://openbeta.usaspending.gov/concepts/archived-contract-award-summary#!version-0.1A"
   - title: Version 0.1B
-    url_hash: "#!version-0.1B"
+    url_hash: "!version-0.1B"
     archived_text: A new version has replaced this concept.
     description: "Key Features:"
     features:
@@ -48,7 +48,7 @@ tabs:
     disqus_identifier: 56237819
     disqus_url: "http://openbeta.usaspending.gov/concepts/archived-contract-award-summary#!version-0.1B"
   - title: Version 0.1C
-    url_hash: "#!version-0.1C"
+    url_hash: "!version-0.1C"
     archived_text: A new version has replaced this concept.
     description: "Key Features:"
     features:
