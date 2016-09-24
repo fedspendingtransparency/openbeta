@@ -1,4 +1,4 @@
-## OpenBeta.USAspending.gov    [![Build Status](https://travis-ci.org/fedspendingtransparency/openbeta.svg?branch=master)](https://travis-ci.org/fedspendingtransparency/openbeta)
+## OpenBeta.USAspending.gov &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [![Build Status](https://travis-ci.org/fedspendingtransparency/openbeta.svg?branch=master)](https://travis-ci.org/fedspendingtransparency/openbeta)
 
 When the new USAspending.gov – the taxpayer site built for taxpayer needs – is launched in May 2017, users will have an open window into government spending. Users will be able to track Federal spending from congressional appropriations down to purchases and grant details -- what was bought, from whom, when, and for how much.
 

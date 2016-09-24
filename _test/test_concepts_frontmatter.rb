@@ -4,11 +4,6 @@ require 'yaml'
 
 class TestConceptsFrontmatter < Test::Unit::TestCase
 
-  def test_simple
-    assert_equal(4, 4)
-    assert_equal(4, 4)
-  end
-
   def test_all_concepts
     concepts = Dir['_concepts/*']
 
