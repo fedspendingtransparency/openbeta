@@ -67,7 +67,7 @@ task :incremental do
 end
 
 desc "perform a full build and test"
-task :build => [:test, :jekyll, :htmlproofer] do
+task :build => [:jekyll, :test, :htmlproofer] do
   puts "Performed full build and tests".green
 end
 
