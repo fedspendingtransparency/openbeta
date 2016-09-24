@@ -68,7 +68,7 @@ end
 
 desc "perform a full build and test"
 task :build => [:test, :jekyll, :htmlproofer] do
-  puts "Performing full build and tests".green
+  puts "Performed full build and tests".green
 end
 
 Rake::TestTask.new do |t|
