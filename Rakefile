@@ -1,6 +1,7 @@
 require 'colored'
 require 'open3'
 require 'html-proofer'
+require 'rake/testtask'
 
 def exec_and_manually_watch_for_errors(cmd)
   stderr_output = []
@@ -68,4 +69,10 @@ end
 desc "perform a full build and test"
 task :build => [:jekyll, :htmlproofer] do
   puts "Performing full build and tests".green
+end
+
+Rake::TestTask.new do |t|
+  t.libs << "test"
+  t.test_files = FileList['_test/*.rb']
+  t.verbose = true
 end
