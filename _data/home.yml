@@ -135,6 +135,17 @@ completed_tab:
       #   disqus_identifiers:
 
 archived_tab:
+  - category: Search Results
+    scroll_id: archived-search-results
+    topics:
+      - headline: Search Results 
+        description: How search results could be displayed
+        total_concepts: 1
+        link: /concepts/archived-search-results
+        update_date: 2016-09-30
+        update_text: Archived
+        disqus_identifiers:
+          - 59476183
   - category: Search
     scroll_id: archived-search
     topics:
