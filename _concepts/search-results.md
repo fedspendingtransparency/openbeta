@@ -3,7 +3,7 @@ title: Search Results
 
 archived_page: no
 archived_page_text:
-link_to_archived_designs:
+link_to_archived_designs:"/concepts/archived-search-results"
 link_to_active_designs:
 
 category: "Search:"
