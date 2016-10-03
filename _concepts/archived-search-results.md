@@ -1,4 +1,5 @@
 ---
+
 title: Search Results
 
 archived_page: yes
@@ -50,3 +51,5 @@ tabs:
     below_image_content: What do you think of the Search Results option?
     disqus_identifier: 59476183
     disqus_url: "https://openbeta.usaspending.com/concepts/search-results#!version-0.1A"
+
+---
