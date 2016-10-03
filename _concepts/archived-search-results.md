@@ -5,7 +5,7 @@ title: Search Results
 archived_page: yes
 archived_page_text: The following designs have been archived and are no longer being considered for implementation. 
 link_to_archived_designs:
-link_to_active_designs:
+link_to_active_designs: "/concepts/search-results"
 
 category: "Search:"
 
