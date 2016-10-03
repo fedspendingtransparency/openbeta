@@ -15,11 +15,11 @@ active_tab:
         total_concepts: 1
         link: /concepts/search-results
         # enter date in YYYY-MM-DD format
-        update_date: 2016-06-30
+        update_date: 2016-10-03
         # following text prepends date above in "time ago" format
         update_text: Updated
         disqus_identifiers:
-          - 59476183
+          - 10714632
   - category: Summary Pages
     scroll_id: summary-pages
     topics:
