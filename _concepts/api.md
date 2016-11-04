@@ -11,7 +11,7 @@ category: "Developer Tools:"
 headline: API
 
 copy:
-  - text: <a class="usa-cta external-link" href="http://ec2-52-222-21-220.us-gov-west-1.compute.amazonaws.com/v1/ui/" target="_blank">Access the Alpha Outbound API</a>
+  - text: <a class="usa-cta external-link" href="http://ec2-52-222-21-220.us-gov-west-1.compute.amazonaws.com:8000/api/v1/awards/summary/ " target="_blank">Access the Alpha Outbound API</a>
   - text: <strong> What is an API?</strong>
   - text: An API (Application Programming Interface) is code that allows software to communicate over the internet. The DATA Act implementation team has published an open API as part of the future USAspending.gov platform. The DATA Act Outbound API is built as a RESTful (Representational State Transfer) interface to allow interaction with the cloud-based environment that hosts USAspending.gov data.
   - text: <strong>How does the API work?</strong>
