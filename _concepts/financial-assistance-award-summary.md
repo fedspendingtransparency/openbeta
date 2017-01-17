@@ -8,10 +8,10 @@ link_to_active_designs:
 
 category: "Summary Pages:"
 
-headline: Financial Assistance Award Summary
+headline: Grant Summary
 
 copy:
-  - text: Below is an example of how Financial Assistance Award data could be displayed. Please take a look and give us your feedback in the discussion section at the bottom of each tab.
+  - text: Below is an example of how Grant award data could be displayed. Please take a look and give us your feedback in the discussion section at the bottom of each tab.
 
 discussion_title: "Discussion suggestions:"
 
@@ -20,26 +20,26 @@ discussion_bullet_points:
 - Would you like the data displayed in a different way?
 - Is there information you don't need?
 - Are the labels and terminology appropriate?
-- What do you like and dislike?
+
 
 tabs_required: yes
 
 tabs:
-  - title: Version 0.1
-    url_hash: "!version-0.1"
+  - title: Version 0.2
+    url_hash: "!version-0.2"
     archived_text:
     description: "Key Features:"
     features:
-      - description: Details for prime recipients
-      - description: Breakdown of sub-award recipients
-      - description: Visualization of funding
-      - description: Visual timeline of the financial assistance activity
-    disclaimer_text: <a class="usa-cta external-link" href='http://my36m8.axshare.com/financial_assistance_award_summary.html' target="_blank">View an interactive version of the below image</a>
+      - description: Details by awarding agency for prime recipients
+      - description: Visualization of progress of funding
+      - description: Budget details. 
+      - description: Visual timeline of awards over time
+    disclaimer_text: <a class="usa-cta external-link" href='https://hyperlink.services.treasury.gov/?origin=http://my36m8.axshare.com/#g=1&p=financial_assistance_award_summary_v2&c=1">View an interactive version of the below image</a>
     image: "/assets/img/concept_financial-assistance-summary.png"
-    image_alt_text: This image displays the financial assistance award summary wireframe. Across the top of the page are three boxes that include the Award ID, the Total Amount of the Award, and the Period of Performance for the award.  At the far right is the Download button. In the section below to the left  are the details of the Prime Recipient, including the DUNS, Parent DUNS, address, and recipient type. In the next section is a list of the sub-recipients and their award amounts. Other Awards Received by this Recipient is the section below the sub-recipients. To the far right is a box with the details about the award, including the Major Awarding and Funding Agencies, and the Awarding and Funding Sub-tier Agencies, as well as the CFDA, the Award Date, the Place of Performance, and the Appropriation Account. Below is a stacked chart showing the full award amount, the amount un-spent, and the amount spent. Across the bottom of the page is the timeline of transactions and sub-awards.
+    image_alt_text: This image displays the grant summary wireframe. Below the awarding agency and recipient information is a bar graph  displaying total award amounts for the prime recipient and the sub-awards. Below that display is a graph showing the progress of the funding over time, with tabs to toggle to sub-award data and the budget details. 
     below_image_content:
-    disqus_identifier: 72704398
-    disqus_url: "https://openbeta.usaspending.gov/concepts/financial-assistance-award-summary#!version-0.1"
+    disqus_identifier: 29006625
+    disqus_url: "https://openbeta.usaspending.gov/concepts/grant-summary#!version-0.2"
 
 no_tabs:
   - archived_text:
