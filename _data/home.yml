@@ -23,10 +23,10 @@ active_tab:
   - category: Summary Pages
     scroll_id: summary-pages
     topics:
-      - headline: Contract Award Summary
+      - headline: Contract Summary
         description: How we display contract award data
         total_concepts: 1
-        link: /concepts/contract-award-summary
+        link: /concepts/contract-summary
         update_date: 2016-06-29
         update_text: Updated
         disqus_identifiers:
@@ -40,10 +40,10 @@ active_tab:
         disqus_identifiers:
           - 33785410
           - 14683571
-      - headline: Financial Assistance Award Summary
-        description: How we display financial assistance data
+      - headline: Grant Summary
+        description: How we display grants data
         total_concepts: 1
-        link: /concepts/financial-assistance-award-summary
+        link: /concepts/grant-summary
         update_date: 2016-07-12
         update_text: Posted
         disqus_identifiers:
