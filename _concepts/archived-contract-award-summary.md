@@ -23,7 +23,7 @@ discussion_bullet_points:
 tabs_required: yes
 
 tabs:
- - title: Version 0.2
+  - title: Version 0.2
     url_hash: "!version-0.2"
     archived_text: A new version has replaced this concept.
     description: "Key Features:"
@@ -37,7 +37,7 @@ tabs:
     below_image_content:
     disqus_identifier: 97847241
     disqus_url: "https://openbeta.usaspending.com/concepts/contract-award-summary#!version-0.2"
-- title: Version 0.1A
+  - title: Version 0.1A
     url_hash: "!version-0.1A"
     archived_text: A new version has replaced this concept.
     description: "Key Features:"
