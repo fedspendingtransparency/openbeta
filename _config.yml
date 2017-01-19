@@ -1,6 +1,6 @@
 # Site settings
 title: OpenBeta
-description: OpenBeta Description
+description: "OpenBeta.USAspending.gov is where the public can comment on all of the design concepts that will be the basis for the new USAspending.gov."
 relative_permalinks: false
 markdown: kramdown
 baseurl: "/dev" # the subpath of your site, e.g. /blog
@@ -18,7 +18,7 @@ defaults:
     values:
       layout: concept
 
-# Plugin configuration
+# Plugin configurations
 jekyll_timeago:
   depth: 1
 
