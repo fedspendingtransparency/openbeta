@@ -23,7 +23,21 @@ discussion_bullet_points:
 tabs_required: yes
 
 tabs:
-  - title: Version 0.1A
+ - title: Version 0.2
+    url_hash: "!version-0.2"
+    archived_text: A new version has replaced this concept.
+    description: "Key Features:"
+    features:
+      - description: Visualization of spending
+      - description: Visual timeline of the contract activity
+      - description: A breakdown of sub-award recipients
+    disclaimer_text: <a class="usa-cta external-link" href='http://my36m8.axshare.com/#g=1&p=contract_award_summary_v1&c=1' target="_blank">View an interactive version of the below image</a>
+    image: "/assets/img/Contract-Award-Summary_06.30.2016.jpg"
+    image_alt_text: This image displays the contract award summary wireframe. Across the top are three boxes, displaying the Award ID, the Total Award Amount, and the Period of Performance for the individual contract. In the left section are details on the Recipient, including the Recipient Name, address, DUNS, and type of recipient. Below this section are the details about the sub-recipients of the contract and other awards received by the recipient. To the right is a box with the Award Details, including the Awarding and Funding agencies, the appropriation account, the spending type, the contract type, NAICs and PS codes.  Below this box is a nested pie chart showing total award amount, the amount funded and the amount spent.  Across the bottom is a timeline of the transactions and the sub-awards.
+    below_image_content:
+    disqus_identifier: 97847241
+    disqus_url: "https://openbeta.usaspending.com/concepts/contract-award-summary#!version-0.2"
+- title: Version 0.1A
     url_hash: "!version-0.1A"
     archived_text: A new version has replaced this concept.
     description: "Key Features:"
