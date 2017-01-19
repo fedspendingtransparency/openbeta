@@ -3,7 +3,7 @@ title: Financial Assistance Award Summary
 
 archived_page: no
 archived_page_text:
-link_to_archived_designs:
+link_to_archived_designs: "/concepts/archived-financial-award-summary"
 link_to_active_designs:
 
 category: "Summary Pages:"
