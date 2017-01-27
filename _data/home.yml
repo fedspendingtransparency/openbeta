@@ -27,7 +27,7 @@ active_tab:
         description: How we display contract award data
         total_concepts: 1
         link: /concepts/contract-summary
-        update_date: 2016-06-29
+        update_date: 2017-01-20
         update_text: Updated
         disqus_identifiers:
           - 97847241
@@ -44,7 +44,7 @@ active_tab:
         description: How we display grants data
         total_concepts: 1
         link: /concepts/grant-summary
-        update_date: 2016-07-12
+        update_date: 2017-01-20
         update_text: Posted
         disqus_identifiers:
           - 72704398
