@@ -11,7 +11,7 @@ category: "Developer Tools:"
 headline: API
 
 copy:
-  - text: <a class="usa-cta external-link" href="https://spending-api.us/" target="_blank">Access the Alpha Outbound API</a>
+  - text: <a class="usa-cta external-link" href="https://spending-api.us/api/v1/awards/?limit=10" target="_blank">Access the Alpha Outbound API</a>
   - text: <strong> What is an API?</strong>
   - text: An API (Application Programming Interface) is code that allows software to communicate over the internet. The DATA Act implementation team has published an open API as part of the future USAspending.gov platform. The DATA Act Outbound API is built as a RESTful (Representational State Transfer) interface to allow interaction with the cloud-based environment that hosts USAspending.gov data.
   - text: <strong>How does the API work?</strong>
@@ -37,7 +37,7 @@ tabs:
   - title: Version 0.1A
     url_hash: "!version-0.1A"
     archived_text:
-    disclaimer_text: <a class="usa-cta external-link" href="https://spending-api.us/"  target="_blank">Access the Alpha Outbound API</a>
+    disclaimer_text: <a class="usa-cta external-link" href="https://spending-api.us/api/v1/awards/?limit=10"  target="_blank">Access the Alpha Outbound API</a>
     image: "/assets/img/concepts_api.png"
     image_alt_text: An image of the page on Swagger to try out the API.
     disqus_identifier: 06193088
