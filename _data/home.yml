@@ -30,7 +30,9 @@ active_tab:
         update_date: 2017-01-20
         update_text: Updated
         disqus_identifiers:
+          - 91250474
           - 97847241
+          - 71538462
       - headline: Agency Summary
         description: How we display agency data
         total_concepts: 2
@@ -47,6 +49,7 @@ active_tab:
         update_date: 2017-01-20
         update_text: Posted
         disqus_identifiers:
+          - 29006625
           - 72704398
       - headline: CFDA Program Summary
         description: How we display data for CFDA programs.
