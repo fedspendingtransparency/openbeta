@@ -2,11 +2,24 @@
 
 banner_title: Your Voice Matters
 banner_label:
-  - text: Join the conversation and tell us what you think about proposed features for USAspending.gov. Your feedback matters because this is your website. 
-  - text: Take a look at the features below and give us your thoughts. Or, schedule a one-on-one session with the OpenBeta team. Help us make sure that the new USAspending.gov will work for you. 
+  - text: Join the conversation and tell us what you think about proposed features for USAspending.gov. Your feedback matters because this is your website.
+  - text: Take a look at the features below and give us your thoughts. Or, schedule a one-on-one session with the OpenBeta team. Help us make sure that the new USAspending.gov will work for you.
   - text: <a href="http://bit.ly/2bUh0rC" target="_blank" rel="noopener noreferrer" class="schedule-feedback-link">Schedule a One-on-One Session</a>
 
 active_tab:
+  - category: Prototypes
+    scroll_id: prototypes
+    topics:
+      - headline: Search Results & Contract Award Page
+        description: Working prototypes of the Search Results and Contract Award Pages
+        total_concepts: 1
+        link: /concepts/alpha
+        # enter date in YYYY-MM-DD format
+        update_date: 2017-03-06
+        # following text prepends date above in "time ago" format
+        update_text: Created
+        disqus_identifiers:
+          - 10714632
   - category: Search
     scroll_id: search
     topics:
@@ -138,7 +151,7 @@ archived_tab:
   - category: Search Results
     scroll_id: archived-search-results
     topics:
-      - headline: Search Results 
+      - headline: Search Results
         description: How search results could be displayed
         total_concepts: 1
         link: /concepts/archived-search-results
