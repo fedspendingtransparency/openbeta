@@ -10,14 +10,21 @@ category: "Prototypes:"
 headline: Search Results & Contract Award Page
 
 copy:
-  - text: This concept is actually a working prototype of the Search Results and Contract Award pages. It represents the minimum viable product necessary to get feedback from the public. All data contained in the prototype is notional and does not represent actual spending data. Additionally, many intended features are currently placeholders, but will be implemented at a later date. We recommend that you view the individual concepts for the <a class="usa-cta" href="../search-results">search results page</a> and the <a class="usa-cta" href="../contract-summary">contract award summary</a> to better understand the intended functionality.
+  - text: <a class="usa-cta external-link" href="https://spendingdata.us/" target="_blank">Access the Prototype</a>
+  - text: This concept is a working prototype of Search and the Contract and Grant Summary pages. The DATA Act implementation team is publishing this minimum viable product to give the public the opportunity to give feedback.
+  - text: <strong>Features of the Prototype</strong>
+  - text: <em>Search Results</em> -- Select from a series of filters and the graphs, maps, and tables adjust to reflect the results from the selected filters.  
+  - text: <em>Drill Downs</em> -- From the Spending by Award Type on the Search Results, you can drill down to data about specific Contracts or Grants.
+  - text: Some of the features are currently placeholders that will be implemented at a later date as the team develops the future USAspending.gov platform.
+  - text: <strong>The Data</strong>
+  - text: Note that all data in the prototype is notional and does not represent actual spending data. Currently the data includes a small subset of awards data, and a set of financial data from the Small Business Administration and Treasury.
+  - text: We recommend that you view the individual concepts for the <a class="usa-cta" href="../search-results">search results page</a> and the <a class="usa-cta" href="../contract-summary">contract award summary</a> to better understand the intended functionality.
 
 
 discussion_title: "Discussion suggestions:"
 
 discussion_bullet_points:
-- Does the layout and information help you complete your tasks?
-- Is there anything that should be removed from the layout?
+- Are you able to filter data easily?
 - Are the labels and terminology appropriate?
 - Do the visualizations display the data as you expect?
 
@@ -29,15 +36,14 @@ tabs:
     archived_text:
     description: "Key Features:"
     features:
-      - description: Visualization of amounts awarded to date.
-      - description: Visual timeline of funding obligated, sub-award data, and the contract details.
-      - description: Data shown in graphs and tables.
-    disclaimer_text: <a class="usa-cta external-link" href="https://spending-data.us">View an interactive version of the below image</a>
+      - description: Select from a series of filters and the graphs, maps, and tables adjust to reflect the results from the selected filters.
+      - description: From the Spending by Award Type on the Search Results, you can drill down to data about specific Contracts.
+    disclaimer_text: <a class="usa-cta external-link callout" href="https://spendingdata.us" target="_blank">View the interactive prototype</a>
     image: "/assets/img/concept_contract-summary.png"
-    image_alt_text: This image displays the contract summary wireframe. Below the awarding agency and recipient name is a timeline displaying the progress of the award from the Start Date to the Current End Date and the Potential End Date. Below the timeline is a bar graph showing the total amount awarded and the total percentage currently awarded. In addition, the total amount of the sub-awards is also displayed.  Below the bar graph is a timeline showing the funds awarded from the start of the contract to date.
+    image_alt_text: This image displays the search results prototype.
     below_image_content:
-    disqus_identifier: 91250474
-    disqus_url: "https://openbeta.usaspending.com/concepts/contract-summary#!version-0.3"
+    disqus_identifier: 06880423
+    disqus_url: "https://openbeta.usaspending.com/concepts/alpha#!version-0.3"
 
 no_tabs:
   - archived_text:
