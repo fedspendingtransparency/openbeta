@@ -35,7 +35,7 @@ tabs:
       - description: Budget details.
       - description: Visual timeline of awards over time
     disclaimer_text: <a class="usa-cta external-link" href="http://my36m8.axshare.com/#g=1&p=financial_assistance_award_summary_v2&c=1">View an interactive version of the below image</a>
-    image: "/assets/img/concept_financial-assistance-summary.png"
+    image: "/assets/img/concept_financial_assistance_mock.png"
     image_alt_text: This image displays the grant summary wireframe. Below the awarding agency and recipient information is a bar graph  displaying total award amounts for the prime recipient and the sub-awards. Below that display is a graph showing the progress of the funding over time, with tabs to toggle to sub-award data and the budget details.
     below_image_content:
     disqus_identifier: 29006625

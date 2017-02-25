@@ -17,9 +17,9 @@ active_tab:
         # enter date in YYYY-MM-DD format
         update_date: 2017-03-06
         # following text prepends date above in "time ago" format
-        update_text: Created
+        update_text: Posted
         disqus_identifiers:
-          - 06880423
+          - 06880423123
   - category: Search
     scroll_id: search
     topics:
@@ -96,6 +96,14 @@ active_tab:
         update_text: Posted
         disqus_identifiers:
           - 83728938
+      - headline: Guide
+        description: An in-page guide to help you navigate spending data
+        total_concepts: 1
+        link: /concepts/guide
+        update_date: 2017-03-06
+        update_text: Posted
+        disqus_identifiers:
+          - 051917456
       - headline: Browse the Data
         description: How to access all the Summary pages.
         total_concepts: 1

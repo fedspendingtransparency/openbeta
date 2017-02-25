@@ -11,13 +11,13 @@ headline: Search Results & Contract Award Page
 
 copy:
   - text: <a class="usa-cta external-link" href="https://spendingdata.us/" target="_blank">Access the Prototype</a>
-  - text: This concept is a working prototype of Search and the Contract and Grant Summary pages. The DATA Act implementation team is publishing this minimum viable product to give the public the opportunity to give feedback.
+  - text: This concept is a working prototype of Search Results and the Contract Summary pages. The DATA Act team is publishing this minimum viable product to give the public the opportunity to provide feedback on the design of the future USAspending.gov site.
   - text: <strong>Features of the Prototype</strong>
   - text: <em>Search Results</em> -- Select from a series of filters and the graphs, maps, and tables adjust to reflect the results from the selected filters.  
-  - text: <em>Drill Downs</em> -- From the Spending by Award Type on the Search Results, you can drill down to data about specific Contracts or Grants.
+  - text: <em>Drill Downs</em> -- From the Spending by Award Type on the Search Results, you can drill down to data about specific Contracts.
   - text: Some of the features are currently placeholders that will be implemented at a later date as the team develops the future USAspending.gov platform.
   - text: <strong>The Data</strong>
-  - text: Note that all data in the prototype is notional and does not represent actual spending data. Currently the data includes a small subset of awards data, and a set of financial data from the Small Business Administration and Treasury.
+  - text: Note that all data in the prototype is notional and does not represent actual spending data. Currently, the data includes a small subset of awards data and a set of financial data from the Small Business Administration and Treasury.
   - text: We recommend that you view the individual concepts for the <a class="usa-cta" href="../search-results">search results page</a> and the <a class="usa-cta" href="../contract-summary">contract award summary</a> to better understand the intended functionality.
 
 
@@ -42,8 +42,8 @@ tabs:
     image: "/assets/img/concept_contract-summary.png"
     image_alt_text: This image displays the search results prototype.
     below_image_content:
-    disqus_identifier: 06880423
-    disqus_url: "https://openbeta.usaspending.com/concepts/alpha#!version-0.3"
+    disqus_identifier: 06880423123
+    disqus_url: "https://openbeta.usaspending.com/concepts/alpha/"
 
 no_tabs:
   - archived_text:
