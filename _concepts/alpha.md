@@ -1,5 +1,5 @@
 ---
-title: Search Results and Contract Award Page
+title: Search Results and Contract Summary Page
 archived_page: no
 archived_page_text:
 link_to_archived_designs:
@@ -7,7 +7,7 @@ link_to_active_designs:
 
 category: "Prototypes:"
 
-headline: Search Results & Contract Award Page
+headline: Search Results & Contract Summary Page
 
 copy:
   - text: <a class="usa-cta external-link" href="https://spendingdata.us/" target="_blank">Access the Prototype</a>
@@ -18,7 +18,7 @@ copy:
   - text: Some of the features are currently placeholders that will be implemented at a later date as the team develops the future USAspending.gov platform.
   - text: <strong>The Data</strong>
   - text: Note that all data in the prototype is notional and does not represent actual spending data. Currently, the data includes a small subset of awards data and a set of financial data from the Small Business Administration and Treasury.
-  - text: We recommend that you view the individual concepts for the <a class="usa-cta" href="../search-results">search results page</a> and the <a class="usa-cta" href="../contract-summary">contract award summary</a> to better understand the intended functionality.
+  - text: We recommend that you view the individual concepts for the <a class="usa-cta" href="../search-results">search results page</a> and the <a class="usa-cta" href="../contract-summary">contract summary</a> to better understand the intended functionality.
 
 
 discussion_title: "Discussion suggestions:"
