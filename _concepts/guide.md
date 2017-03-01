@@ -29,9 +29,9 @@ tabs:
       - description: Slide out guide from the right side of the page
       - description: Plain language and technical descriptions for terms
       - description: No need to navigate from the current page to look something up
-    disclaimer_text: <a class="usa-cta external-link" href='http://my36m8.axshare.com/#g=1&p=guide__contract_summary' target="_blank">View an interactive version of the below image</a>
+    disclaimer_text: <a class="usa-cta external-link" href='http://my36m8.axshare.com/#g=1&p=guide__contract_summary_&c=1' target="_blank">View an interactive version of the below image</a>
     image: "/assets/img/concept_guide.jpg"
-    image_alt_text: This image displays a keyword search bar and below a table with Data Preview results. To the far right is a Add/Remove Columns link that opens up Award Characteristic, Award Amount Information, Awardee/Recipient Entity Information, and Agency Information checkboxes at the bottom of the page to select which columns to add and which to remove.
+    image_alt_text: This image displays the Contract Summary page with the Guide opened up to the far right.  At the top of the Guide column is a search bar. Below, listed alphabetically, are words that can be clicked on to see a description of the word. 
     below_image_content :
     disqus_identifier:  051917456
     disqus_url: "https://openbeta.usaspending.gov/concepts/guide"
