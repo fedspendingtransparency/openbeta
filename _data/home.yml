@@ -10,8 +10,8 @@ active_tab:
   - category: Prototypes
     scroll_id: prototypes
     topics:
-      - headline: Search Results & Contract Award Page
-        description: Working prototypes of the Search Results and Contract Award Pages
+      - headline: Search Results & Contract Summary Page
+        description: Working prototypes of the Search Results and Contract Summary Pages
         total_concepts: 1
         link: /concepts/alpha
         # enter date in YYYY-MM-DD format

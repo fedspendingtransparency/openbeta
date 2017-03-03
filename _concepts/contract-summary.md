@@ -11,8 +11,8 @@ category: "Summary Pages:"
 headline: Contract Award Summary
 
 copy:
-  - text: Below is an idea on how to display data for a specific contract. Please take a look and give us your feedback in the discussion section at the bottom of each tab.
-
+  - text: Below is an idea on how to display data for a specific contract. Please take a look and give us your feedback in the discussion section at the bottom of each tab. 
+  
 discussion_title: "Discussion suggestions:"
 
 discussion_bullet_points:
