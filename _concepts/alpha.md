@@ -39,7 +39,7 @@ tabs:
       - description: Select from a series of filters and the graphs, maps, and tables adjust to reflect the results from the selected filters.
       - description: From the Spending by Award Type on the Search Results, you can drill down to data about specific Contracts.
     disclaimer_text: <a class="usa-cta external-link callout" href="https://spendingdata.us" target="_blank">View the interactive prototype</a>
-    image: "/assets/img/concept_contract-summary.png"
+    image: "/assets/img/concept_alpha.jpg"
     image_alt_text: This image displays the search results prototype.
     below_image_content:
     disqus_identifier: 06880423123
