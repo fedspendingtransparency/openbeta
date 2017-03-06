@@ -11,7 +11,7 @@ category: "Summary Pages:"
 headline: Contract Award Summary
 
 copy:
-  - text: Below is an idea on how to display data for a specific contract. Please take a look and give us your feedback in the discussion section at the bottom of each tab. Visit the <a class="usa-cta" href="../alpha">contract summary page</a> to see the actual functionality for the Contract Summary. 
+  - text: Below is an idea on how to display data for a specific contract. Please take a look and give us your feedback in the discussion section at the bottom of each tab. Visit the <a class="usa-cta" href="../alpha">live prototypes page</a> to see the actual functionality of the Contract Summary. 
   
 discussion_title: "Discussion suggestions:"
 
