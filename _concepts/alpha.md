@@ -17,7 +17,7 @@ copy:
   - text: <em>Drill Downs</em> -- From the Spending by Award Type on the Search Results, you can drill down to data about specific Contracts.
   - text: Some of the features are currently placeholders that will be implemented at a later date as the team develops the future USAspending.gov platform.
   - text: <strong>The Data</strong>
-  - text: Note that all data in the prototype is notional and does not represent actual spending data. Currently, the data includes a small subset of awards data and a set of financial data from the Small Business Administration and Treasury.
+  - text: Note that all data in the prototype is notional and does not represent actual spending data. Currently, the data includes a small subset of awards data and a small subset of financial data from select DATA Act Broker submissions.
   - text: We recommend that you view the individual concepts for the <a class="usa-cta" href="../search-results">search results page</a> and the <a class="usa-cta" href="../contract-summary">contract summary</a> to better understand the intended functionality.
 
 
