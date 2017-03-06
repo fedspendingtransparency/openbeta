@@ -11,7 +11,7 @@ category: "Search:"
 headline: Search Results
 
 copy:
-  - text: Below is an example of search filters and how the data could be displayed based on the filters chosen. Please take a look and tell us what you think in the comments section. 
+  - text: Below is an example of search filters and how the data could be displayed based on the filters chosen. Please take a look and tell us what you think in the comments section. To use the filters and search for results visit the <a class="usa-cta" href="../alpha">search-results page</a>.
 
 discussion_title: "Discussion suggestions:"
 
