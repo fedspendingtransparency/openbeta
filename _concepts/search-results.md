@@ -45,7 +45,7 @@ tabs:
       - description: Multiple aggregate views
       - description: Sortable table of awards
     disclaimer_text: <a class="usa-cta external-link" href='http://my36m8.axshare.com/search_results.html' target="_blank">View an interactive version of the below image</a>
-    image: "/assets/img/concepts-search-results_0.1B.jpg"
+    image: "/assets/img/concept_search_mock.png"
     image_alt_text: An image of a proposed layout for the search results page that consists of a list of search filters on the left side of the page and to the right, a heat map of spending within the U.S., pie charts showing the distribution of awards by category and object class, a list of top awarding agencies, a list of top awarded recipients, and below, a table of all award results separated by award type, in tabs.
     below_image_content: What do you think of the Search Results option?
     disqus_identifier: 10714632
