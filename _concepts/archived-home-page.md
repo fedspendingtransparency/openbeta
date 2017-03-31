@@ -1,8 +1,8 @@
 ---
 title: Home Page
 
-archived_page: no
-archived_page_text:
+archived_page: yes
+archived_page_text: The following design has been archived and is no longer being considered for implementation. 
 link_to_archived_designs:
 link_to_active_designs:
 
@@ -24,7 +24,7 @@ tabs_required: yes
 tabs:
   - title: Version 0.1A
     url_hash: "!version-0.1A"
-    archived_text:
+    archived_text: A new version has replaced this concept. 
     description: "Key Features:"
     features:
       - description: Immediate access to search
