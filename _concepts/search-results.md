@@ -11,14 +11,15 @@ category: "Search:"
 headline: Search Results
 
 copy:
-  - text: Below is an example of search filters and how the data could be displayed based on the filters chosen. Please take a look and tell us what you think in the comments section. To use the filters and search for results visit the <a class="usa-cta" href="../alpha">prototypes page</a> to see an interactive version of the Search Results. 
-
+  - text: Below is an example of search filters and how the data could be displayed based on the filters chosen. Please take a look and tell us what you think in the comments section. 
+  
 discussion_title: "Discussion suggestions:"
 
 discussion_bullet_points:
-- Do you like the Add/Hide columns feature?
-- Do the filters cover all the data points you want?
-- Are there other "Top" categories you want?
+  - Do the filters cover all the data points you want?
+  - Are there other filters you would want added?
+  - Are the labels clear and easy to understand?
+  - Is the data displayed the way you expected? 
 
 tabs_required: yes
 
@@ -40,11 +41,11 @@ tabs:
     archived_text:
     description: "Key Features:"
     features:
-      - description: Search filters that populate the tables, graphs, and maps. 
-      - description: Summary information based on search filters
+      - description: Search filters and watch the results populate the tables, graphs, and maps. 
+      - description: Spending over time visualization
       - description: Multiple aggregate views
       - description: Sortable table of awards
-    disclaimer_text: <a class="usa-cta external-link" href='https://spendingdata,ys/#/search' target="_blank">View an interactive prototype</a>
+    disclaimer_text: <a class="usa-cta external-link" href='https://spendingdata,ys/#/search' target="_blank">View the interactive prototype</a>
     image: "/assets/img/concept_search_mock.png"
     image_alt_text: An image of a proposed layout for the search results page that consists of a list of search filters on the left side of the page and to the right, a heat map of spending within the U.S., pie charts showing the distribution of awards by category and object class, a list of top awarding agencies, a list of top awarded recipients, and below, a table of all award results separated by award type, in tabs.
     below_image_content: What do you think of the Search Results option?
