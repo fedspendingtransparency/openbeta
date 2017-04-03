@@ -10,16 +10,46 @@ active_tab:
   - category: Prototypes
     scroll_id: prototypes
     topics:
-      - headline: Home Page, Search Results, Contract Summary & Grant Summary pages
-        description: Working prototypes of the Home Page, Search Results, Contract Summary & Grant Summary pages
+       - headline: Home Page
+        description: Working prototype of the Home Page
         total_concepts: 1
         link: /concepts/alpha
         # enter date in YYYY-MM-DD format
         update_date: 2017-04-06
         # following text prepends date above in "time ago" format
-        update_text: Posted
+        update_text: Updated
         disqus_identifiers:
-          - 06880423123
+          - 24609863
+       - headline: Search Results,
+        description: Working prototype of the Search Results
+        total_concepts: 1
+        link: /concepts/alpha
+        # enter date in YYYY-MM-DD format
+        update_date: 2017-04-06
+        # following text prepends date above in "time ago" format
+        update_text: Updated
+        disqus_identifiers:
+          - 26391449
+       -headline: Contract Summary 
+        description: Working prototype of the Contract Summary
+        total_concepts: 1
+        link: /concepts/alpha
+        # enter date in YYYY-MM-DD format
+        update_date: 2017-04-06
+        # following text prepends date above in "time ago" format
+        update_text: Updated
+        disqus_identifiers:
+          - 18999611 
+       - headline: Grant Summary
+        description: Working prototypes of the Grant Summary
+        total_concepts: 1
+        link: /concepts/alpha
+        # enter date in YYYY-MM-DD format
+        update_date: 2017-04-06
+        # following text prepends date above in "time ago" format
+        update_text: Updated
+        disqus_identifiers:
+          - 19393381
   - category: Search
     scroll_id: search
     topics:
