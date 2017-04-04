@@ -37,7 +37,7 @@ tabs:
     disclaimer_text: <a class="usa-cta external-link" href="http://https://spendingdata.us/#/search">View an interactive prototype</a>
     image: "/assets/img/Grant_Summary.png"
     image_alt_text: This image displays the grant summary prototype. 
-    disqus_identifier: 
+    disqus_identifier: 90552244 
     disqus_url: "https://openbeta.usaspending.gov/concepts/grant-summary#!version-0.2"
 
 no_tabs:
