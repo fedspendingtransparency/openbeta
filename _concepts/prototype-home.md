@@ -1,7 +1,7 @@
 ---
 title: Home Page
 archived_page: no
-archived_page_text: 
+archived_page_text:
 link_to_archived_designs:
 link_to_active_designs:
 
@@ -13,8 +13,8 @@ copy:
   - text: <a class="usa-cta external-link" href="https://spendingdata.us/" target="_blank">Access the Prototype</a>
   - text: This concept is a working prototype of the Home Page. The DATA Act team is publishing this minimum viable product to give the public the opportunity to provide feedback on the design of the future USAspending.gov site.
   - text: <strong>Features of the Home Page Prototype</strong>
-  - text: Your introduction to how the government spends money, from the total for one year to a breakdown by categories such as Social Security and National Defense. Immediate access to search. 
-     - text: Some of the features are currently placeholders that will be implemented at a later date as the team develops the future USAspending.gov platform.
+  - text: Your introduction to how the government spends money, from the total for one year to a breakdown by categories such as Social Security and National Defense. Immediate access to search.
+  - text: Some of the features are currently placeholders that will be implemented at a later date as the team develops the future USAspending.gov platform.
   - text: <strong>The Data</strong>
   - text: Note that all data is notional and does not represent actual spending data. Currently, the data includes a subset of awards data and a subset of financial data from select DATA Act Broker submissions.
   - text: We recommend that you view the individual concept for the <a class="usa-cta" href="../home-page">home page</a>to better understand the intended functionality.
@@ -24,7 +24,7 @@ discussion_title: "Discussion suggestions:"
 
 discussion_bullet_points:
 - Does the Home Page answer some of your questions about government spending?
-- Is the trillion dollar figure meaningful? 
+- Is the trillion dollar figure meaningful?
 - Are the labels and language easy to understand?
 - Do the visualizations display the data as you expect?
 
