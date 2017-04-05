@@ -4,8 +4,7 @@ banner_title: Your Voice Matters
 banner_label:
   - text: Join the conversation and tell us what you think about proposed features for USAspending.gov. Your feedback matters because this is your website.
   - text: Take a look at the featured concepts below and give us your thoughts. Help us make sure that the new USAspending.gov will work for you.
-  - text: <a href="http://bit.ly/2bUh0rC" target="_blank" rel="noopener noreferrer" class="schedule-feedback-link">Schedule a One-on-One Session</a>
-
+ 
 active_tab:
   - category: Prototypes
     scroll_id: prototypes
