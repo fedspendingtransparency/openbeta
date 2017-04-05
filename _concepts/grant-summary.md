@@ -11,7 +11,7 @@ category: "Summary Pages:"
 headline: Grant Summary
 
 copy:
-  - text: Below is an example of how Grant award data could be displayed. Please take a look and give us your feedback in the discussion section at the bottom of each tab.
+  - text: Below is an example of how grant award data could be displayed. Please take a look and give us your feedback in the discussion section at the bottom of each tab.
 
 discussion_title: "Discussion suggestions:"
 
@@ -34,10 +34,10 @@ tabs:
       - description: Visualization of progress of funding
       - description: Type of grant and period of performance
       - description: Table with transaction details and Sub-Awards
-    disclaimer_text: <a class="usa-cta external-link" href="http://https://spendingdata.us/#/search">View an interactive prototype</a>
+    disclaimer_text: <a class="usa-cta external-link" href="http://https://spendingdata.us/#/search">View the interactive prototype</a>
     image: "/assets/img/Grant_Summary.png"
     image_alt_text: This image displays the grant summary prototype. 
-    disqus_identifier: 90552244 
+    disqus_identifier: 60888371
     disqus_url: "https://openbeta.usaspending.gov/concepts/grant-summary#!version-0.2"
 
 no_tabs:
