@@ -17,7 +17,7 @@ copy:
   - text: Some of the features are currently placeholders that will be implemented at a later date as the team develops the future USAspending.gov platform.
   - text: <strong>The Data</strong>
   - text: Note that all data is notional and does not represent actual spending data. Currently, the data includes a subset of awards data and a subset of financial data from select DATA Act Broker submissions.
-  - text: We recommend that you view the individual concept for the <a class="usa-cta" href="../home-page">home page</a>to better understand the intended functionality.
+  - text: We recommend that you view the individual concept for the <a class="usa-cta" href="../home-page">home page</a> to better understand the intended functionality.
 
 
 discussion_title: "Discussion suggestions:"
