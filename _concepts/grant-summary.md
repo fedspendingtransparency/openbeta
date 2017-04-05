@@ -2,7 +2,7 @@
 title: Grant Summary
 
 archived_page: no
-archived_page_text: . 
+archived_page_text:
 link_to_archived_designs: 
 link_to_active_designs:
 
