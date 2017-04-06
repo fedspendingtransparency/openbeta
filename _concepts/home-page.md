@@ -3,7 +3,7 @@ title: Home Page
 
 archived_page: no
 archived_page_text:
-link_to_archived_designs: "/concepts/archived-home-page.md"
+link_to_archived_designs: "/concepts/archived-home-page"
 link_to_active_designs:
 
 category: "General:"
