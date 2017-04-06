@@ -38,7 +38,7 @@ tabs:
       - description: Details for the recipient receiving the contract, including the type of business category 
       - description: Graphic displaying the Current Award Amount in relation to the Potential Award Amount
       - description: Toggle between tabsto see Transaction History, Sub-Awards, Financial System Details, and Additional Details
-    disclaimer_text: <a class="usa-cta external-link callout" href="https://spendingdata.us/#/search" target="_blank">View the interactive prototype</a>
+    disclaimer_text: <a class="usa-cta external-link callout" href="https://spendingdata.us/#/award/124131/" target="_blank">View the interactive prototype</a>
     image: "/assets/img/contract_summary.png"
     image_alt_text: This image displays the contract summary prototype.
     below_image_content:
