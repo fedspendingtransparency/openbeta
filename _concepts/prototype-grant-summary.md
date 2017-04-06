@@ -10,7 +10,7 @@ category: "Prototypes:"
 headline: Grant Summary
 
 copy:
-  - text: <a class="usa-cta external-link" href="https://spendingdata.us/#/search" target="_blank">Access the Prototype</a>
+  - text: <a class="usa-cta external-link" href="https://spendingdata.us/#/award/115984" target="_blank">Access the Prototype</a>
   - text: This concept is a working prototype of the Grant Summary page. The DATA Act team is publishing this minimum viable product to give the public the opportunity to provide feedback on the design of the future USAspending.gov site.
   - text: <strong>Features of the Grant Summary</strong>
   - text: Drill down from the Spending by Award Type on the Search Results to find information about specific Grants. 
