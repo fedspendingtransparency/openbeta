@@ -3,7 +3,7 @@ title: Grant Summary
 
 archived_page: no
 archived_page_text:
-link_to_archived_designs:"/concepts/archived-grant-summary"
+link_to_archived_designs: "/concepts/archived-grant-summary"
 link_to_active_designs:
 
 category: "Summary Pages:"
@@ -51,3 +51,5 @@ no_tabs:
     below_image_content:
     disqus_identifier:
     disqus_url:
+
+---
