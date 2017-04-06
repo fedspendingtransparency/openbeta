@@ -10,7 +10,7 @@ category: "Prototypes:"
 headline: Contract Summary
 
 copy:
-  - text: <a class="usa-cta external-link" href="https://spendingdata.us/#/search/" target="_blank">Access the Prototype</a>
+  - text: <a class="usa-cta external-link" href="https://spendingdata.us/#/award/14327/" target="_blank">Access the Prototype</a>
   - text: This concept is a working prototype of the Contract Summary. The DATA Act team is publishing this minimum viable product to give the public the opportunity to provide feedback on the design of the future USAspending.gov site.
   - text: <strong>Features of the Contract Summary Prototype</strong>
   - text: Details include recipient information, awarding agency, award amounts, description of the work, and the type of contract.
