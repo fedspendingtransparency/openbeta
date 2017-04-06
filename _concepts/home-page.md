@@ -34,7 +34,7 @@ tabs:
       - description: High-level breakdown of spending by 19 categories, such as Social Security and National Defense
       - description: Spending displayed geographically  
       - description: Immediate access to search
-    disclaimer_text: <a class="usa-cta external-link" href='https://spendingdata.us' target="_blank">View an interactive prototype</a>
+    disclaimer_text: <a class="usa-cta external-link" href='https://spendingdata.us/#/' target="_blank">View an interactive prototype</a>
     image: "/assets/img/Home_Page.png"
     image_alt_text: An image of Home Page design, featuring the total number for government spending with a box for more details and a box to start a search.  Below is an image of a generic government building with a treemap displaying the 19 budget function categories.  Below is a bar graph displaying the entities, like individual and state and local government and the percentage of the total award amount received compared to the operational costs for the government.  Below is a heat map showing spending geographically.  At the bottom is another search button and other options for exploring the data. 
     below_image_content:
