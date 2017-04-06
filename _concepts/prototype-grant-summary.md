@@ -37,7 +37,7 @@ tabs:
     archived_text:  
     description: "Key Features:"
     features:
-    - description: Details include type of business for the recipient, period of performance, award amount, and type of grant. 
+      - description: Details include type of business for the recipient, period of performance, award amount, and type of grant. 
     disclaimer_text: <a class="usa-cta external-link callout" href="https://spendingdata.us/#/search" target="_blank">View the interactive prototype</a>
     image: "/assets/img/Grant_Summary.png"
     image_alt_text: This image displays the grant summary prototype.
@@ -56,3 +56,5 @@ no_tabs:
     below_image_content:
     disqus_identifier:
     disqus_url:
+
+---
