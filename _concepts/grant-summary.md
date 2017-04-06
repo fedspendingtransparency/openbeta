@@ -25,8 +25,8 @@ discussion_bullet_points:
 tabs_required: yes
 
 tabs:
-  - title: Version 0.2
-    url_hash: "!version-0.2"
+  - title: Version 0.2A
+    url_hash: "!version-0.2A"
     archived_text:  
     description: "Key Features:"
     features:
@@ -38,7 +38,7 @@ tabs:
     image: "/assets/img/Grant_Summary.png"
     image_alt_text: This image displays the grant summary prototype. 
     disqus_identifier: 60888371
-    disqus_url: "https://openbeta.usaspending.gov/concepts/grant-summary#!version-0.2"
+    disqus_url: "https://openbeta.usaspending.gov/concepts/grant-summary#!version-0.2A"
 
 no_tabs:
   - archived_text:
