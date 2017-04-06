@@ -34,7 +34,7 @@ tabs:
       - description: Visualization of progress of funding
       - description: Type of grant and period of performance
       - description: Table with transaction details and Sub-Awards
-    disclaimer_text: <a class="usa-cta external-link" href="https://spendingdata.us/#/search/">View the interactive prototype</a>
+    disclaimer_text: <a class="usa-cta external-link" href="https://spendingdata.us/#/award/104186/">View the interactive prototype</a>
     image: "/assets/img/Grant_Summary.png"
     image_alt_text: This image displays the grant summary prototype. 
     disqus_identifier: 60888371
