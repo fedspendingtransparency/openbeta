@@ -36,7 +36,7 @@ tabs:
       - description: Table with transaction details and Sub-Awards
     disclaimer_text: <a class="usa-cta external-link" href="https://spendingdata.us/#/award/104186/">View the interactive prototype</a>
     image: "/assets/img/Grant_Summary.png"
-    image_alt_text: This image displays the grant summary prototype. 
+    image_alt_text: "This image displays the grant summary prototype."  
     disqus_identifier: 60888371
     disqus_url: "https://openbeta.usaspending.gov/concepts/grant-summary#!version-0.2A"
 
