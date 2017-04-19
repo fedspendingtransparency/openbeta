@@ -40,7 +40,7 @@ active_tab:
         disqus_identifiers:
           - 18999611
       - headline: Grant Summary
-        description: Working prototypes of the Grant Summary
+        description: Working prototype of the Grant Summary
         total_concepts: 1
         link: /concepts/prototype-grant-summary
         # enter date in YYYY-MM-DD format
@@ -50,7 +50,7 @@ active_tab:
         disqus_identifiers:
           - 19393381
       - headline:Federal Account Summary
-        description: Working prototypes of the Federal Account Summary
+        description: Working prototype of the Federal Account Summary
         total_concepts: 1
         link: /concepts/prototype-federal-account-summary
         # enter date in YYYY-MM-DD format
