@@ -13,7 +13,7 @@ copy:
   - text: <a class="usa-cta external-link" href="https://spendingdata.us/#/federal_account/2525/" target="_blank">Access the Prototype</a>
   - text: This concept is a working prototype of the Federal Account Summary. The DATA Act team is publishing this minimum viable product to give the public the opportunity to provide feedback on the design of the future USAspending.gov site.
   - text: <strong>Features of the Federal Account Summary Prototype</strong>
-  - text: Details include a snapshop by fiscal year for a specific Federal Account Symbol and include spending over time, spending by program activity and object class, and by award type.
+  - text: Details include a snapshop by fiscal year for a specific Federal Account Symbol and includes spending over time, spending by program activity and object class, and by award type.
   - text: Some of the features are currently placeholders that will be implemented at a later date as the team develops the future USAspending.gov platform.
   - text: <strong>The Data</strong>
   - text: Note that all data is notional and does not represent actual spending data. Currently, the data includes a subset of awards data and a subset of financial data from select DATA Act Broker submissions.
