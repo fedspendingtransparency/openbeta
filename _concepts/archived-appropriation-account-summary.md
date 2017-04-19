@@ -1,8 +1,8 @@
 ---
 title: Appropriation Account Summary
 
-archived_page: no
-archived_page_text:
+archived_page: yes 
+archived_page_text: The following designs have been archived and are no longer being considered for implementation.
 link_to_archived_designs:
 link_to_active_designs:
 
@@ -25,7 +25,7 @@ tabs_required: yes
 tabs:
   - title: Version 0.1
     url_hash: "!version-0.1"
-    archived_text:
+    archived_text: A new version has replaced this concept.
     description: "Key Features:"
     features:
       - description: Visualization of amounts awarded over time
