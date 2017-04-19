@@ -49,6 +49,16 @@ active_tab:
         update_text: Updated
         disqus_identifiers:
           - 19393381
+      - headline:Federal Account Summary
+        description: Working prototypes of the Federal Account Summary
+        total_concepts: 1
+        link: /concepts/prototype-federal-account-summary
+        # enter date in YYYY-MM-DD format
+        update_date: 2017-04-20
+        # following text prepends date above in "time ago" format
+        update_text: Posted
+        disqus_identifiers:
+          - 44234561
   - category: Search
     scroll_id: search
     topics:
