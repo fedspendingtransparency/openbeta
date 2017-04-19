@@ -116,14 +116,14 @@ active_tab:
         update_text: Posted
         disqus_identifiers:
           - 26576965
-      - headline: Appropriation Account Summary
-        description: How data is displayed by Appropriation Account.
+      - headline: Federal Account Summary
+        description: How data is displayed by Federal Account Symbol.
         total_concepts: 1
-        link: /concepts/appropriation-account-summary
-        update_date: 2016-08-12
-        update_text: Posted
+        link: /concepts/federal-account-summary
+        update_date: 2017-04-20
+        update_text: Updated
         disqus_identifiers:
-          - 59548620
+          - 58646650
   - category: General Pages
     scroll_id: general-pages
     topics:
