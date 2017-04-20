@@ -45,7 +45,7 @@ tabs:
       - description: "Contract Summary: Details include recipient information, awarding agency, award amount, description of the work, and type of contract for a specific contract."
       - description: "Grant Summary: Details include socioeconomic category of the recipient, period of performance, award amount, and type of grant."
     disclaimer_text: '<a class="usa-cta external-link callout" href="https://spendingdata.us" target="_blank">View the interactive prototype</a>'
-    image: "/assets/img/home_page.png"
+    image: "/assets/img/Home_Page.jpg"
     image_alt_text: This image displays the home page prototype.
     below_image_content:
     disqus_identifier: 68648152
