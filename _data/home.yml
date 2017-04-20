@@ -4,7 +4,7 @@ banner_title: Your Voice Matters
 banner_label:
   - text: Join the conversation and tell us what you think about proposed features for USAspending.gov. Your feedback matters because this is your website.
   - text: Take a look at the featured concepts below and give us your thoughts. Help us make sure that the new USAspending.gov will work for you.
- 
+
 active_tab:
   - category: Prototypes
     scroll_id: prototypes
@@ -49,7 +49,7 @@ active_tab:
         update_text: Updated
         disqus_identifiers:
           - 19393381
-      - headline:Federal Account Summary
+      - headline: Federal Account Summary
         description: Working prototype of the Federal Account Summary
         total_concepts: 1
         link: /concepts/prototype-federal-account-summary
