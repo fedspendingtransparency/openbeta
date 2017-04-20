@@ -37,7 +37,7 @@ tabs:
     image: "/assets/img/concept_agency-summary_A.jpg"
     image_alt_text: This image displays information about the objectives of the agency's mission across the top, along with the url to the agency website, the number of employees, the Washington D.C. address, and contact information. At the far right is the name and contact information for the Senior Agency Office. Below is a Spending Overview for Fiscal Year 2015, including the total budget amount, total spend amount, and spending broken down by Operational, Contracts, Grants, Loans, and Financial Assistance cagegories. In the next row are a horizontal bar chart showing highest funded programs and a map displaying spending by geography. In the next row are a horizontal bar chart displaying the highest awarded recipients and a pie chart showing spending by object class. In the next row is a timeline of agency events, and across the bottom of the page is a table displaying the agency awards by spending type.  To the far left are filters related to the categories.
     below_image_content:
-    disqus_identifier: 33785410
+    disqus_identifier: 051917
     disqus_url: "https://openbeta.usaspending.gov/concepts/agency-summary#!version-0.1A"
   - title: Version 0.1B
     url_hash: "!version-0.1B"
