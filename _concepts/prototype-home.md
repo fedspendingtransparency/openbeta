@@ -45,7 +45,7 @@ tabs:
     image_alt_text: This image displays the home page prototype.
     below_image_content:
     disqus_identifier: 24609863
-    disqus_url: "https://openbeta.usaspending.com/concepts/prototypes/"
+    disqus_url: "https://openbeta.usaspending.com/concepts/prototype-home"
 
 no_tabs:
   - archived_text:

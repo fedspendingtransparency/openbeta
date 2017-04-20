@@ -25,7 +25,7 @@ discussion_title: "Discussion suggestions:"
 discussion_bullet_points:
 - Are the labels and language easy to understand?
 - Do the visualizations display the data as you expect?
-- Is there other data you wish to see? 
+- Is there other data you wish to see?
 
 tabs_required: yes
 
@@ -35,15 +35,15 @@ tabs:
     archived_text:  
     description: "Key Features:"
     features:
-      - description: A snapshot of spending by fiscal year for specific Federal Account Symbols. 
+      - description: A snapshot of spending by fiscal year for specific Federal Account Symbols.
       - description: Graphic displaying spending by Program Activities, Object Class, and Treasury Account Symbol.  
-      - description: Toggle between tabs to see recipients of contracts, grants, direct payments, loans, and insurance. 
+      - description: Toggle between tabs to see recipients of contracts, grants, direct payments, loans, and insurance.
     disclaimer_text: <a class="usa-cta external-link callout" href="https://spendingdata.us/#/federal_account/2525" target="_blank">View the interactive prototype</a>
     image: "/assets/img/federal_account_summary.png"
     image_alt_text: This image displays the federal account summary prototype.
     below_image_content:
     disqus_identifier: 19159847
-    disqus_url: "https://openbeta.usaspending.com/concepts/prototypes/"
+    disqus_url: "https://openbeta.usaspending.com/concepts/prototype-federal-account-summary/"
 
 no_tabs:
   - archived_text:

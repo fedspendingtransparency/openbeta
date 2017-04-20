@@ -45,7 +45,7 @@ tabs:
     image_alt_text: This image displays the search results prototype.
     below_image_content:
     disqus_identifier: 26391449
-    disqus_url: "https://openbeta.usaspending.com/concepts/prototypes/"
+    disqus_url: "https://openbeta.usaspending.com/concepts/prototype-search-results"
 
 no_tabs:
   - archived_text:

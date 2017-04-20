@@ -25,7 +25,7 @@ discussion_title: "Discussion suggestions:"
 discussion_bullet_points:
 - Are the labels and language easy to understand?
 - Do the visualizations display the data as you expect?
-- Is there other data you wish to see? 
+- Is there other data you wish to see?
 
 tabs_required: yes
 
@@ -35,7 +35,7 @@ tabs:
     archived_text:  
     description: "Key Features:"
     features:
-      - description: Details for the recipient receiving the contract, including the type of business category 
+      - description: Details for the recipient receiving the contract, including the type of business category
       - description: Graphic displaying the Current Award Amount in relation to the Potential Award Amount
       - description: Toggle between tabsto see Transaction History, Sub-Awards, Financial System Details, and Additional Details
     disclaimer_text: <a class="usa-cta external-link callout" href="https://spendingdata.us/#/award/124131/" target="_blank">View the interactive prototype</a>
@@ -43,7 +43,7 @@ tabs:
     image_alt_text: This image displays the contract summary prototype.
     below_image_content:
     disqus_identifier: 18999611
-    disqus_url: "https://openbeta.usaspending.com/concepts/prototypes/"
+    disqus_url: "https://openbeta.usaspending.gov/concepts/prototype-contract-summary"
 
 no_tabs:
   - archived_text:
