@@ -3,7 +3,7 @@
 banner_title: Your Voice Matters
 banner_label:
   - text: Join the conversation and tell us what you think about proposed features for USAspending.gov. Your feedback matters because this is your website.
-  - text: Take a look at the featured concepts below and give us your thoughts. You can also preview the new site at <a class="usa-cta external-link" href='https://beta.usaspending.gov/#/' target="_blank">beta.usaspending.gov and tell us what you think. We'll be adding new features to the beta site and welcome your suggestions for future enhancements.  Help us make sure the new USAspending.gov will work for you.
+  - text: Take a look at the featured concepts below and give us your thoughts. You can also preview the new site at <a class="usa-cta external-link callout" href="https://beta.usaspending.gov" target="_blank">and tell us what you  . We'll be adding new features to the beta site and welcome your suggestions for future enhancements.  Help us make sure the new USAspending.gov will work for you.
 
 active_tab:
   - category: Prototypes
