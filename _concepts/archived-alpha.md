@@ -10,7 +10,7 @@ category: "Prototypes:"
 headline: Search Results & Contract Summary Page
 
 copy:
-  - text: <a class="usa-cta external-link" href="https://spendingdata.us/" target="_blank">Access the Prototype</a>
+  - text: <a class="usa-cta external-link" href="https://beta.usaspending.gov/" target="_blank">Access the Prototype</a>
   - text: This concept is a working prototype of Search Results and the Contract Summary pages. The DATA Act team is publishing this minimum viable product to give the public the opportunity to provide feedback on the design of the future USAspending.gov site.
   - text: <strong>Features of the Prototype</strong>
   - text: <em>Search Results</em> -- Select from a series of filters and the graphs, maps, and tables adjust to reflect the results from the selected filters.  
@@ -33,12 +33,12 @@ tabs_required: yes
 tabs:
   - title: Version 0.1
     url_hash: "!version-0.1"
-    archived_text: A new version has replaced this concept. 
+    archived_text: A new version has replaced this concept.
     description: "Key Features:"
     features:
       - description: Select from a series of filters and the graphs, maps, and tables adjust to reflect the results from the selected filters.
       - description: From the Spending by Award Type on the Search Results, you can drill down to data about specific Contracts.
-    disclaimer_text: <a class="usa-cta external-link callout" href="https://spendingdata.us" target="_blank">View the interactive prototype</a>
+    disclaimer_text: <a class="usa-cta external-link callout" href="https://beta.usaspending.gov" target="_blank">View the interactive prototype</a>
     image: "/assets/img/concept_alpha.jpg"
     image_alt_text: This image displays the search results prototype.
     below_image_content:

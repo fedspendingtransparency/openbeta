@@ -10,7 +10,7 @@ category: "Prototypes:"
 headline: Federal Account Summary
 
 copy:
-  - text: <a class="usa-cta external-link" href="https://spendingdata.us/#/federal_account/2525/" target="_blank">Access the Prototype</a>
+  - text: <a class="usa-cta external-link" href="https://beta.usaspending.gov/#/federal_account/2525/" target="_blank">Access the Prototype</a>
   - text: This concept is a working prototype of the Federal Account Summary. The DATA Act team is publishing this minimum viable product to give the public the opportunity to provide feedback on the design of the future USAspending.gov site.
   - text: <strong>Features of the Federal Account Summary Prototype</strong>
   - text: Details include a snapshop by fiscal year for a specific Federal Account Symbol and includes spending over time, spending by program activity and object class, and by award type.
@@ -38,7 +38,7 @@ tabs:
       - description: A snapshot of spending by fiscal year for specific Federal Account Symbols.
       - description: Graphic displaying spending by Program Activities, Object Class, and Treasury Account Symbol.  
       - description: Toggle between tabs to see recipients of contracts, grants, direct payments, loans, and insurance.
-    disclaimer_text: <a class="usa-cta external-link callout" href="https://spendingdata.us/#/federal_account/2525" target="_blank">View the interactive prototype</a>
+    disclaimer_text: <a class="usa-cta external-link callout" href="https://beta.usaspending.gov/#/federal_account/2525" target="_blank">View the interactive prototype</a>
     image: "/assets/img/federal_account_summary.png"
     image_alt_text: This image displays the federal account summary prototype.
     below_image_content:

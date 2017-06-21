@@ -10,7 +10,7 @@ category: "Prototypes:"
 headline: Contract Summary
 
 copy:
-  - text: <a class="usa-cta external-link" href="https://spendingdata.us/#/award/124131/" target="_blank">Access the Prototype</a>
+  - text: <a class="usa-cta external-link" href="https://beta.usaspending.gov/#/award/124131/" target="_blank">Access the Prototype</a>
   - text: This concept is a working prototype of the Contract Summary. The DATA Act team is publishing this minimum viable product to give the public the opportunity to provide feedback on the design of the future USAspending.gov site.
   - text: <strong>Features of the Contract Summary Prototype</strong>
   - text: Details include recipient information, awarding agency, award amounts, description of the work, and the type of contract.
@@ -38,7 +38,7 @@ tabs:
       - description: Details for the recipient receiving the contract, including the type of business category
       - description: Graphic displaying the Current Award Amount in relation to the Potential Award Amount
       - description: Toggle between tabsto see Transaction History, Sub-Awards, Financial System Details, and Additional Details
-    disclaimer_text: <a class="usa-cta external-link callout" href="https://spendingdata.us/#/award/124131/" target="_blank">View the interactive prototype</a>
+    disclaimer_text: <a class="usa-cta external-link callout" href="https://beta.usaspending.gov/#/award/124131/" target="_blank">View the interactive prototype</a>
     image: "/assets/img/contract_summary.png"
     image_alt_text: This image displays the contract summary prototype.
     below_image_content:

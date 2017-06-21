@@ -33,7 +33,7 @@ tabs:
       - description: Visualization of spending over time
       - description: Breakdowns by Program Activity and Object Class
       - description: Table showing Spending by Award Types
-    disclaimer_text: '<a class="usa-cta external-link" href="https://spendingdata.us/#/federal_account/2525/" target="_blank">View an interactive prototype.</a>'
+    disclaimer_text: '<a class="usa-cta external-link" href="https://beta.usaspending.gov/#/federal_account/2525/" target="_blank">View an interactive prototype.</a>'
     image: "/assets/img/federal_account_summary.png"
     image_alt_text: This image displays the wireframe of the Federal Account Summary page.
     disqus_identifier: 58646652220

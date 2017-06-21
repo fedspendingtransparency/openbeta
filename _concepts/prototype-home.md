@@ -10,7 +10,7 @@ category: "Prototypes:"
 headline: Home Page
 
 copy:
-  - text: <a class="usa-cta external-link" href="https://spendingdata.us/#/" target="_blank">Access the Prototype</a>
+  - text: <a class="usa-cta external-link" href="https://beta.usaspending.gov/#/" target="_blank">Access the Prototype</a>
   - text: This concept is a working prototype of the Home Page. The DATA Act team is publishing this minimum viable product to give the public the opportunity to provide feedback on the design of the future USAspending.gov site.
   - text: <strong>Features of the Home Page Prototype</strong>
   - text: Your introduction to how the government spends money, from the total for one year to a breakdown by categories such as Social Security and National Defense. Immediate access to search.
@@ -40,7 +40,7 @@ tabs:
       - description: Spending broken down into categories such as Medicare and National Defense.
       - description: Geographical representation of government spending.
       - description: Direct access to start your searches.
-    disclaimer_text: <a class="usa-cta external-link callout" href="https://spendingdata.us/#/" target="_blank">View the interactive prototype</a>
+    disclaimer_text: <a class="usa-cta external-link callout" href="https://beta.usaspending.gov/#/" target="_blank">View the interactive prototype</a>
     image: "/assets/img/Home_Page.png"
     image_alt_text: This image displays the home page prototype.
     below_image_content:

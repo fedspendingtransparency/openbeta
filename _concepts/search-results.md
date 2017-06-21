@@ -45,7 +45,7 @@ tabs:
       - description: Spending over time visualization
       - description: Multiple aggregate views
       - description: Sortable table of awards
-    disclaimer_text: <a class="usa-cta external-link" href='https://spendingdata.us/#/search' target="_blank">View the interactive prototype</a>
+    disclaimer_text: <a class="usa-cta external-link" href='https://beta.usaspending.gov/#/search' target="_blank">View the interactive prototype</a>
     image: "/assets/img/concept_search_mock.png"
     image_alt_text: An image of a proposed layout for the search results page that consists of a list of search filters on the left side of the page and to the right, a heat map of spending within the U.S., pie charts showing the distribution of awards by category and object class, a list of top awarding agencies, a list of top awarded recipients, and below, a table of all award results separated by award type, in tabs.
     below_image_content: What do you think of the Search Results option?

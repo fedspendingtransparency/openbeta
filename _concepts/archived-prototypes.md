@@ -10,7 +10,7 @@ category: "Prototypes:"
 headline: Home Page, Search Results, Contract Summary & Grant Summary Pages
 
 copy:
-  - text: <a class="usa-cta external-link" href="https://spendingdata.us/" target="_blank">Access the Prototype</a>
+  - text: <a class="usa-cta external-link" href="https://beta.usaspending.gov/" target="_blank">Access the Prototype</a>
   - text: This concept is a working prototype of the Home Page, Search Results, Contract Summary, and Grant Summary pages. The DATA Act team is publishing this minimum viable product to give the public the opportunity to provide feedback on the design of the future USAspending.gov site.
   - text: <strong>Features of the Prototype</strong>
   - text: <em>Home Page</em> -- Your introduction to how the government spends money, from the total for one year to a breakdown by categories such as Social Security and National Defense. Immediate access to search.
@@ -44,7 +44,7 @@ tabs:
       - description: "Search Results: Select from a series of filters and the graphs, maps, and tables adjust to reflect the results from the selected filters."
       - description: "Contract Summary: Details include recipient information, awarding agency, award amount, description of the work, and type of contract for a specific contract."
       - description: "Grant Summary: Details include socioeconomic category of the recipient, period of performance, award amount, and type of grant."
-    disclaimer_text: '<a class="usa-cta external-link callout" href="https://spendingdata.us" target="_blank">View the interactive prototype</a>'
+    disclaimer_text: '<a class="usa-cta external-link callout" href="https://beta.usaspending.gov" target="_blank">View the interactive prototype</a>'
     image: "/assets/img/Home_Page.jpg"
     image_alt_text: This image displays the home page prototype.
     below_image_content:
